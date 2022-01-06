@@ -1,10 +1,11 @@
+import Featured from "./Featured/Featured";
 
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <>
+      <Featured />
+    </>
   );
 }
 
