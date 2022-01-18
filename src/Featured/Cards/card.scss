@@ -1,0 +1,32 @@
+.card {
+    position: absolute;
+    visibility: hidden;
+}
+.card.active {
+    visibility: visible;
+    position: absolute;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.MuiCircularProgress-root {
+    position: absolute;
+    bottom: 0em;
+    left: 0%;
+}
+.MuiCircularProgress-svg {
+    color: pink;
+    opacity: 0.4;
+    width: 75%;
+}
+
+@media screen and (min-width: 1280px) {
+    .card.active {
+        left: 5%;
+        bottom: 20%;
+        h3 {
+            transform: translate(3rem);
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+}

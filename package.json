@@ -1,5 +1,6 @@
 {
   "name": "tebbernekkel",
+  "homepage": "https://tebbernekkel.nl",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-scroll-wheel-handler": "^2.1.0",
     "react-transition-group": "^4.4.2",
     "sass": "^1.46.0",
     "vimeo": "^2.1.1",
