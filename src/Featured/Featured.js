@@ -19,7 +19,7 @@ export default function Featured() {
                 console.log(error.message);
             });
         return [];
-    }, []);
+    },[]);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -31,37 +31,45 @@ export default function Featured() {
         return () => clearInterval(interval);
     });
 
-    // const [scrollY, setScrollY] = useState(0);
+    
+    const [scrollY, setScrollY] = useState(0);
 
-    // function handleScroll() {
-    //     setScrollY(window.pageYOffset);
-    //     console.log(new Date().getTime());
-    // }
-
-    // useEffect(() => {
-    //     function watchScroll() {
-    //         window.addEventListener("scroll", handleScroll);
-    //     }
-    //     watchScroll();
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // });
-
+    function handleScroll() {
+        // const scrollTarget = document.getElementById('#featured');
+        // const nextTarget = scrollTarget.nextElementSibling;
+        if (window.pageYOffset > scrollY) {
+            setCurrent(current === featureData.length - 1 ? 0 : current + 1)
+            // console.log('going down')
+        } else {
+            setCurrent(current === featureData.length - 1 ? 0 : current - 1)
+            // console.log('going up')
+        }
+        return setScrollY(window.pageYOffset);
+    }
 
     useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setCurrent(featureData + 1)
-            } else {
-                setCurrent(featureData - 1)
-            }
+        function watchScroll() {
+            window.addEventListener("scroll", handleScroll);
         }
-        window.addEventListener("scroll", handleScroll);
+        watchScroll();
         return () => {
             window.removeEventListener("scroll", handleScroll);
-        }
-    }, []);
+        };
+    });
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY > 50) {
+    //             setCurrent(featureData + 1)
+    //         } else {
+    //             setCurrent(featureData - 1)
+    //         }
+    //     }
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     }
+    // }, []);
 
 
     return (
