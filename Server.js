@@ -9,11 +9,11 @@ const app = express();
 app.use(cors());
 
 let Vimeo = require('vimeo').Vimeo;
-    let client = new Vimeo(
-        process.env.CLIENT_ID,
-        process.env.CLIENT_SECRET,
-        process.env.ACCESS_TOKEN
-    );
+let client = new Vimeo(
+    process.env.CLIENT_ID,
+    process.env.CLIENT_SECRET,
+    process.env.ACCESS_TOKEN
+);
 
 
 //FEATURED ENDPOINT
@@ -21,6 +21,19 @@ app.get("/featured", (req, res) => {
     client.request({
         method: 'GET',
         path: '/me/projects/7511926/videos?fields=name,uri,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+
+//COMMERCIALS ENDPOINT
+app.get("/commercials", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/7511929/videos?fields=name,uri,description,pictures.sizes.link',
     }, function (error, body, status_code, headers) {
         if (error) {
             console.log(error)

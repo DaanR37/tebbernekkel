@@ -1,0 +1,53 @@
+.header-container {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    margin-top: 25px;
+    text-transform: uppercase;
+    // background-color: #d16654;
+    font-family: "Roboto Condensed", sans-serif;
+    z-index: 1;
+}
+.header-left-side {
+    position: relative;
+    display: flex;
+    // justify-content: space-around;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 33vw;
+    padding: 0;
+    a {
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        padding: 25px;
+    }
+}
+.bbk-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 33vw;
+    img {
+        width: 45%;
+    }
+}
+.header-right-side {
+    position: relative;
+    display: flex;
+    // justify-content: space-around;
+    justify-content: flex-start;
+    list-style-type: none;
+    width: 33vw;
+    padding: 0;
+    a {
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        padding: 25px;
+    }
+}

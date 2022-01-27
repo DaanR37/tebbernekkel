@@ -19,7 +19,7 @@ export default function Featured() {
                 console.log(error.message);
             });
         return [];
-    },[]);
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -31,7 +31,7 @@ export default function Featured() {
         return () => clearInterval(interval);
     });
 
-    
+
     const [scrollY, setScrollY] = useState(0);
 
     function handleScroll() {
@@ -83,7 +83,7 @@ export default function Featured() {
                         className={`featured-item ${index === current ? "active" : ""}`}
                     >
                         <ReactPlayer
-                            width='1440px'
+                            width='100vw'
                             height='1024px'
                             url={url}
                             config={{
