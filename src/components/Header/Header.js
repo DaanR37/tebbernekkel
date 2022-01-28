@@ -1,16 +1,16 @@
 import "./header.scss";
-import { Link } from 'react-router-dom';
+import {  Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
         <header className="header-container">
 
             <ul className="header-left-side">
-                <li className="commercial-btn">
-                    <Link to="/commercials">commercials</Link>
+                <li>
+                    <NavLink to="/commercials" className="commercial-btn">commercials</NavLink>
                 </li>
-                <li className="fiction-btn">
-                    <Link to="/fiction">fiction</Link>
+                <li>
+                    <NavLink to="/fiction" className="fiction-btn">fiction</NavLink>
                 </li>
             </ul>
 
@@ -21,11 +21,11 @@ export default function Header() {
             </Link>
 
             <ul className="header-right-side">
-                <li className="about-btn">
-                    <Link to="/about">about</Link>
+                <li>
+                    <NavLink to="/about" className="about-btn">about</NavLink>
                 </li>
-                <li className="contact-btn">
-                    <Link to="/contact">contact</Link>
+                <li>
+                    <NavLink to="/contact" className="contact-btn">contact</NavLink>
                 </li>
             </ul>
 

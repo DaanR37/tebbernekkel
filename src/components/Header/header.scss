@@ -4,7 +4,6 @@
     width: 100vw;
     margin-top: 25px;
     text-transform: uppercase;
-    // background-color: #d16654;
     font-family: "Roboto Condensed", sans-serif;
     z-index: 1;
 }
@@ -23,6 +22,14 @@
         letter-spacing: 0.1em;
         text-decoration: none;
         padding: 25px;
+    }
+    a.commercial-btn.active {
+        color: red;
+        transition: 350ms ease-in-out;
+    }
+    a.fiction-btn.active {
+        color: blue;
+        transition: 350ms ease-in-out;
     }
 }
 .bbk-logo {
@@ -49,5 +56,13 @@
         letter-spacing: 0.1em;
         text-decoration: none;
         padding: 25px;
+    }
+    a.about-btn.active {
+        color: purple;
+        transition: 350ms ease-in-out;
+    }
+    a.contact-btn.active {
+        color: salmon;
+        transition: 350ms ease-in-out;
     }
 }
