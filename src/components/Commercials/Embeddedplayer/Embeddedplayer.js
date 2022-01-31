@@ -3,6 +3,8 @@ import "./embeddedplayer.scss";
 
 const EmbeddedPlayer = () => {
   const location = useLocation();
+  console.log(location.state);
+
   let url = `https://player.vimeo.com${location.state.link}`;
   url = url.replace("/videos/", "/video/");
   const title = location.state.title;
@@ -23,9 +25,9 @@ const EmbeddedPlayer = () => {
         <iframe
           title={url}
           src={url}
-          responsive
-          frameborder="0"
-          allowfullscreen
+          responsive="true"
+          frameBorder="0"
+          allowFullScreen
         ></iframe>
         <div className="player-text">
           <p>{title}</p>

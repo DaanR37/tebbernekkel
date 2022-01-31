@@ -7,6 +7,7 @@ import Commercials from "./components/Commercials/Commercials";
 import Fiction from "./components/Fiction/Fiction";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import EmbeddedPlayer from "./components/Commercials/Embeddedplayer/Embeddedplayer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/fiction" element={<Fiction />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/embeddedplayer" element={<EmbeddedPlayer />}/>
       </Routes>
     </BrowserRouter>
   );

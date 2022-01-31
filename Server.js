@@ -29,7 +29,7 @@ app.get("/featured", (req, res) => {
     });
 });
 
-//COMMERCIALS ENDPOINT
+//COMMERCIALS ENDPOINTS
 app.get("/commercials", (req, res) => {
     client.request({
         method: 'GET',
