@@ -18,7 +18,7 @@ export default function Commercials() {
 
     return (
         <section id="commercial-container">
-            <div id="grid-wrapper" className="wrapper">
+            <div id="grid-wrapper">
                 {portfolioData.map((video, index) => {
                     return (
                         <div className={videoIndex[index]} key={index}>
@@ -37,8 +37,8 @@ export default function Commercials() {
                                         backgroundPosition: "center",
                                         height: "100%",
                                         width: "100%"
-                                    }}
-                                >
+                                    }}>
+                                    <span aria-hidden="true">{video.name}</span>
                                 </div>
                             </Link>
                         </div>

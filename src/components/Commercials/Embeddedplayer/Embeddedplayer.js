@@ -16,7 +16,7 @@ const EmbeddedPlayer = () => {
   return (
     <section id="embedded-player">
 
-      <a href="/#commercial-container">
+      <a href="/commercials">
         <div className="times">
           <img src="images/times-circle-regular.svg" alt="times" />
         </div>
