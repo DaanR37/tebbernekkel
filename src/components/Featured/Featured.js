@@ -23,9 +23,14 @@ export default function Featured() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setProgress(progress + 1);
+            setProgress((oldProgress) => oldProgress + 1);
+            // setProgress(progress + 1);
             if ((progress + 1) % 100 === 0) {
-                setCurrent(current === featureData.length - 1 ? 0 : current + 1);
+                // setProgress((oldProgress) => oldProgress + 1);
+                // setCurrent(current === featureData.length - 1 ? 0 : current + 1);
+                setCurrent((prevCurrent) => {
+                    return prevCurrent === featureData.length - 1 ? 0 : current + 1
+                })
             }
         }, 100);
         return () => clearInterval(interval);
@@ -34,14 +39,18 @@ export default function Featured() {
 
     const [scrollY, setScrollY] = useState(0);
 
+    window.addEventListener('scroll', (e) => console.log('SCROLLED::', e))
     function handleScroll() {
-        // const scrollTarget = document.getElementById('#featured');
-        // const nextTarget = scrollTarget.nextElementSibling;
         if (window.pageYOffset > scrollY) {
-            setCurrent(current === featureData.length - 1 ? 0 : current + 1)
+            setCurrent((prevCurrent) => {
+                return prevCurrent === featureData.length - 1 ? 0 : current + 1
+            })
             // console.log('going down')
         } else {
-            setCurrent(current === featureData.length - 1 ? 0 : current - 1)
+            setCurrent((prevCurrent) => {
+                return prevCurrent === featureData.length - 1 ? 0 : current + 1
+            })
+            // setCurrent(current === featureData.length - 1 ? 0 : current - 1)
             // console.log('going up')
         }
         return setScrollY(window.pageYOffset);
@@ -57,6 +66,9 @@ export default function Featured() {
         };
     });
 
+    const getUrl = () => {
+        return "https://player.vimeo.com" + featureData[current]?.uri.replace("/videos/", "/video/");
+    }
     // useEffect(() => {
     //     const handleScroll = () => {
     //         if (window.scrollY > 50) {
@@ -74,33 +86,33 @@ export default function Featured() {
 
     return (
         <section id="featured">
-            {featureData.map((video, index) => {
+            {/* {featureData.map((video, index) => {
                 let url =
                     "https://player.vimeo.com" + video.uri.replace("/videos/", "/video/");
-                return (
-                    <div
-                        key={index}
-                        className={`featured-item ${index === current ? "active" : ""}`}
-                    >
-                        <ReactPlayer
-                            width='100vw'
-                            height='1024px'
-                            url={url}
-                            config={{
-                                vimeo: {
-                                    playerOptions: {
-                                        background: true,
-                                        quality: "720p",
-                                        dnt: true,
-                                        loop: true,
-                                        playsInline: true,
-                                    },
-                                },
-                            }}
-                        />
-                    </div>
-                );
-            })}
+                return ( */}
+            <div
+            // key={index}
+            // className={`featured-item ${index === current ? "active" : ""}`}
+            >
+                <ReactPlayer
+                    width='100vw'
+                    height='1024px'
+                    url={getUrl()}
+                    config={{
+                        vimeo: {
+                            playerOptions: {
+                                background: true,
+                                quality: "720p",
+                                dnt: true,
+                                loop: true,
+                                playsInline: true,
+                            },
+                        },
+                    }}
+                />
+            </div>
+            {/* );
+            })} */}
             {featureData.map((card, index) => {
                 return (
                     <Card
