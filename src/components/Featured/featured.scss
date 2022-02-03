@@ -1,26 +1,38 @@
 #featured {
-    position: relative;
-    // width: 100vw;
-    height: 100vh;
-    background-color: #000000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  overflow: hidden;
 }
+
 .featured-item {
-    position: absolute;
-    visibility: hidden;
-    // width: 100vw;
-    height: 100%;
-    // top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
 }
+
 .featured-item.active {
-    visibility: visible;
+  visibility: visible;
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  opacity: 0!important;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.swiper-slide-visible {
+  visibility: visible;
+  z-index: 1000;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1280px) {
-    .featured-item {
-        width: 100%;
-        top: 40%;
-    }
+  .featured-item {
+    width: 100%;
+    top: 40%;
+  }
 }

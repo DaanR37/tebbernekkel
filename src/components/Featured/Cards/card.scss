@@ -5,8 +5,10 @@
 .card.active {
     visibility: visible;
     position: absolute;
+    bottom: 40px;
     color: white;
     font-family: "Roboto", sans-serif;
+    z-index: 100;
 }
 .MuiCircularProgress-root {
     position: absolute;
