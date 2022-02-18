@@ -30,6 +30,7 @@
     "react-scripts": "5.0.0",
     "react-scroll-wheel-handler": "^2.1.0",
     "react-transition-group": "^4.4.2",
+    "react-video-scroll": "^1.0.1",
     "sass": "^1.46.0",
     "swiper": "^8.0.2",
     "vimeo": "^2.1.1",
