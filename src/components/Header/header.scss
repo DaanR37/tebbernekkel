@@ -15,20 +15,26 @@
     list-style-type: none;
     width: 33vw;
     padding: 0;
+    transform: scale(1);
     a {
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
         letter-spacing: 0.1em;
         text-decoration: none;
         padding: 25px;
+        &:hover {
+            color: #f5a1a3;
+            transition: 400ms ease-in-out;
+        }
     }
     a.commercial-btn.active {
-        color: red;
+        color: #75d5fd;
         transition: 350ms ease-in-out;
     }
     a.fiction-btn.active {
-        color: blue;
+        color: #75d5fd;
+        // color: rgb(78, 148, 210);
         transition: 350ms ease-in-out;
     }
 }
@@ -38,7 +44,7 @@
     justify-content: center;
     width: 33vw;
     img {
-        width: 45%;
+        width: 27.5%;
     }
 }
 .header-right-side {
@@ -51,18 +57,24 @@
     padding: 0;
     a {
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
         letter-spacing: 0.1em;
         text-decoration: none;
         padding: 25px;
+        &:hover {
+            color: #f5a1a3;
+            transition: 400ms ease-in-out;
+        }
     }
     a.about-btn.active {
-        color: purple;
+        color: #75d5fd;
+        // color: purple;
         transition: 350ms ease-in-out;
     }
     a.contact-btn.active {
-        color: salmon;
+        color: #75d5fd;
+        // color: salmon;
         transition: 350ms ease-in-out;
     }
 }

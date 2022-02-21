@@ -14,7 +14,6 @@ import debounce from 'lodash.debounce';
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
 
-
 // 1. window viewport must be fixed (at least the height)
 // 2. scroll fires lots of event at a time
 //    a. throttle

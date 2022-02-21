@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./commercials.scss";
 
 export default function Commercials() {
-    const videoIndex = ["one", "two", "three", "four", "five", "six", "seven"];
+    const videoIndex = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
 
     const [portfolioData, setPortfolioData] = useState([]);
     useEffect(() => {
@@ -33,12 +33,15 @@ export default function Commercials() {
                                 <div
                                     style={{
                                         backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                        backgroundSize: "cover",
-                                        backgroundPosition: "center",
+                                        // backgroundSize: "cover", /// "cover" initially
+                                        // backgroundRepeat: 'no-repeat',
+                                        // backgroundPosition: "center",
                                         height: "100%",
                                         width: "100%"
                                     }}>
-                                    <span aria-hidden="true">{video.name}</span>
+                                    <div className="hover-overlay">
+                                        <span aria-hidden="true">{video.name}</span>
+                                    </div>
                                 </div>
                             </Link>
                         </div>

@@ -1,0 +1,87 @@
+.topsection-awards-container {
+    position: absolute;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    gap: 10px;
+}
+.awards-one {
+    grid-column: 2/4;
+    grid-row: 5/6;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 9px;
+    color: white;
+    opacity: 0.7;
+    z-index: 1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+.awards-two {
+    grid-column: 5/7;
+    grid-row: 5/6;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 9px;
+    color: white;
+    opacity: 0.7;
+    z-index: 1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+.awards-three {
+    grid-column: 2/4;
+    grid-row: 7/8;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 9px;
+    color: white;
+    opacity: 0.7;
+    z-index: 1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+.awards-four {
+    grid-column: 5/7;
+    grid-row: 7/8;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 9px;
+    color: white;
+    opacity: 0.7;
+    z-index: 1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+.awards-five {
+    grid-column: 2/4;
+    grid-row: 9/10;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 9px;
+    color: white;
+    opacity: 0.7;
+    z-index: 1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+.awards-six {
+    grid-column: 5/7;
+    grid-row: 9/10;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 9px;
+    color: white;
+    opacity: 0.7;
+    z-index: 1;
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
