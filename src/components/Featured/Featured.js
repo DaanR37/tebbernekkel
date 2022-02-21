@@ -15,7 +15,6 @@ export default function Featured() {
   const [progress, setProgress] = useState(0);
   const [winHeight, setwinHeight] = useState(window.innerHeight);
   const containerRef = useRef();
-  const theme = useTheme();
   //FETCHING DATA
   useEffect(() => {
     fetch("http://localhost:3001/featured")
@@ -47,6 +46,26 @@ export default function Featured() {
     return () => clearInterval(interval);
   }, [progress]);
 
+  const moveNextSlide = (current, isUpDirection) => {
+
+    if (!featureData.length) return;
+    const newActive =
+      (featureData.length + (isUpDirection ? current + 1 : current - 1)) %
+      featureData.length;
+
+    setCurrent(newActive);
+    setProgress(0);
+  };
+  const throttledUpdate = useMemo(
+    () => throttle(moveNextSlide, 1 * 1000, { trailing: false, leading: true }),
+    [featureData.length]
+  );
+
+  const onScroll = (e) => {
+    const isUp = e.deltaY > 0;
+    throttledUpdate(current, isUp);
+  };
+
   useEffect(() => {
     let startPos,
       endPos = 0;
@@ -57,11 +76,12 @@ export default function Featured() {
     const endTouch = (e) => {
       endPos = e.changedTouches[0].clientY;
       const isUp = endPos - startPos < 0;
-
-      throttledUpdate(current, isUp);
+      console.log('moveNextSlide', current);
+      moveNextSlide(current, isUp);
       e.preventDefault();
       e.stopPropagation();
     };
+
     if (containerRef.current) {
       containerRef.current.addEventListener("touchstart", startTouch);
       containerRef.current.addEventListener("touchend", endTouch);
@@ -72,29 +92,7 @@ export default function Featured() {
         containerRef.current.removeEventListener("touchend", endTouch);
       }
     };
-  }, [current]);
-
-  const throttledUpdate = useMemo(
-    () =>
-      throttle(
-        (current, isUpDirection) => {
-          if (!featureData.length) return;
-          const newActive =
-            (featureData.length + (isUpDirection ? current + 1 : current - 1)) %
-            featureData.length;
-          setCurrent(newActive);
-          setProgress(0);
-        },
-        1 * 1000,
-        { trailing: false, leading: true }
-      ),
-    [featureData.length]
-  );
-
-  const onScroll = (e) => {
-    const isUp = e.deltaY > 0;
-    throttledUpdate(current, isUp);
-  };
+  }, [featureData.length, current]);
 
   return (
     <section
@@ -104,6 +102,11 @@ export default function Featured() {
       id="featured"
       ref={containerRef}
     >
+      {!featureData.length && <CircularProgress sx={{
+        top: '50%',
+        left: '50%',
+        zIndex: 90
+      }} />}
       {featureData.map((video, index) => {
         const url = `https://player.vimeo.com${video.uri.replace(
           "/videos/",
@@ -130,6 +133,7 @@ export default function Featured() {
                   height={height}
                   url={url}
                   playing={index === current}
+                  muted
                   config={{
                     playerOptions: {
                       background: true,
@@ -152,7 +156,7 @@ export default function Featured() {
           variant="determinate"
           value={progress}
           size={30}
-          thickness={3}          
+          thickness={3}
         />
       )}
     </section>
