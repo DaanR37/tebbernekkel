@@ -134,13 +134,13 @@ export default function Featured() {
                   url={url}
                   playing={index === current}
                   muted
+                  playsinline
                   config={{
                     playerOptions: {
                       background: true,
                       quality: "720p",
                       dnt: true,
                       loop: true,
-                      playsInline: true,
                       height: height,
                     },
                   }}
