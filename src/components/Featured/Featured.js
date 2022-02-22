@@ -1,31 +1,20 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import ReactPlayer from "react-player/vimeo";
+import { Box, CircularProgress } from "@mui/material";
+
 import Card from "./Cards/Card";
+import classNames from "classnames";
+import { throttle } from "lodash";
+
+
 import "./featured.scss";
-
-import debounce from 'lodash.debounce';
-
-//import Swiper slider
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay, Pagination, Mousewheel, Navigation, EffectFade } from "swiper";
-
-//import Swiper and modules styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-
-// 1. window viewport must be fixed (at least the height)
-// 2. scroll fires lots of event at a time
-//    a. throttle
-//      a state var that store the time first scroll event fires
-//      useEffect(scroll) we check now - this time > .5s
-
 
 export default function Featured() {
   const [current, setCurrent] = useState(0);
   const [featureData, setFeatureData] = useState([]);
   const [progress, setProgress] = useState(0);
-
+  const [winHeight, setwinHeight] = useState(window.innerHeight);
+  const containerRef = useRef();
   //FETCHING DATA
   useEffect(() => {
     fetch("http://localhost:3001/featured")
@@ -36,125 +25,152 @@ export default function Featured() {
       .catch((error) => {
         console.log(error.message);
       });
+    const resizeHeight = () => {
+      setwinHeight(() => window.innerHeight);
+    };
+    window.addEventListener("resize", resizeHeight);
+    return () => {
+      window.removeEventListener("resize", resizeHeight);
+    };
   }, []);
-
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setProgress((oldProgress) => oldProgress + 1);
-      // setProgress(progress + 1);
+      setProgress((oldProgress) => (oldProgress + 1) % 100);
       if ((progress + 1) % 100 === 0) {
-        // setProgress((oldProgress) => oldProgress + 1);
-        // setCurrent(current === featureData.length - 1 ? 0 : current + 1);
         setCurrent((prevCurrent) => {
           return prevCurrent === featureData.length - 1 ? 0 : current + 1;
         });
       }
     }, 100);
     return () => clearInterval(interval);
-  });
+  }, [progress]);
 
-  const [winHeight, setwinHeight] = useState(window.innerHeight);
-  window.addEventListener('resize', () => {
-    setwinHeight(() => window.innerHeight);
-  })
+  const moveNextSlide = (current, isUpDirection) => {
+    if (!featureData.length) return;
+    const newActive =
+      (featureData.length + (isUpDirection ? current + 1 : current - 1)) %
+      featureData.length;
 
-  const [scrollY, setScrollY] = useState(0);
+    setCurrent(newActive);
+    setProgress(0);
+  };
+  const throttledUpdate = useMemo(
+    () => throttle(moveNextSlide, 1 * 1000, { trailing: false, leading: true }),
+    [featureData.length]
+  );
 
-  // window.addEventListener("scroll", (e) => console.log("SCROLLED::", e));
-  function handleScroll(e) {
-
-
-    e.preventDefault();
-    if (window.pageYOffset > scrollY + 10) {
-      setCurrent((prevCurrent) => {
-        return prevCurrent === featureData.length - 1 ? 0 : current + 1;
-      });
-      setScrollY(window.pageYOffset);
-      setProgress(() => 0)
-      // console.log('going down')
-    } else if (window.pageYOffset < scrollY - 10) {
-      setCurrent((prevCurrent) => {
-        return prevCurrent === featureData.length - 1 ? 0 : current + 1;
-      });
-      setScrollY(window.pageYOffset);
-      setProgress(() => 0)
-      // setCurrent(current === featureData.length - 1 ? 0 : current - 1)
-      // console.log('going up')
-    }
-    //return setScrollY(window.pageYOffset);
-  }
-
-  const debouncedChangeHandler = useMemo(
-    () => debounce(handleScroll, 5000)
-    , []);
+  const onScroll = (e) => {
+    const isUp = e.deltaY > 0;
+    throttledUpdate(current, isUp);
+  };
 
   useEffect(() => {
-    function watchScroll() {
-      window.addEventListener("scroll", handleScroll, debouncedChangeHandler);
-    }
-    watchScroll();
-    return () => {
-      window.removeEventListener("scroll", handleScroll, debouncedChangeHandler);
-    };
-  });
+    let startPos,
+      endPos = 0;
 
-  // const getUrl = () => {
-  //   return "https://player.vimeo.com" + featureData[current]?.uri.replace("/videos/", "/video/");
-  // };
+    const startTouch = (e) => {
+      startPos = e.touches[0].clientY;
+    };
+    const endTouch = (e) => {
+      endPos = e.changedTouches[0].clientY;
+      const isUp = endPos - startPos < 0;
+      moveNextSlide(current, isUp);
+      e.preventDefault();
+      e.stopPropagation();
+    };
+
+    if (containerRef.current) {
+      containerRef.current.addEventListener("touchstart", startTouch);
+      containerRef.current.addEventListener("touchend", endTouch);
+    }
+    return () => {
+      if (containerRef.current) {
+        containerRef.current.removeEventListener("touchstart", startTouch);
+        containerRef.current.removeEventListener("touchend", endTouch);
+      }
+    };
+  }, [featureData.length, current]);
+
   return (
-    <section id="featured">
-      {/* <Swiper
-        direction={"vertical"}
-        slidesPerView={1}
-        // spaceBetween={30}
-        mousewheel={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   waitForTransition: true,
-        //   disableOnInteraction: false,
-        // }}
-        pagination={{
-          clickable: true,
-        }}
-        effect={"fade"}
-        modules={[Navigation, EffectFade]}
-        navigation={true}
-        className="mySwiper"
-      > */}
+    <section role="presentation" className="slide-container" id="featured">
+      <div
+        ref={containerRef}
+        onWheel={onScroll}
+        className="slide-container__listener"
+      ></div>
+      {!featureData.length && (
+        <CircularProgress
+          sx={{
+            top: "50%",
+            left: "50%",
+            zIndex: 90,
+          }}
+        />
+      )}
       {featureData.map((video, index) => {
-        let url = "https://player.vimeo.com" + video.uri.replace("/videos/", "/video/");
+        const url = `https://player.vimeo.com${video.uri.replace(
+          "/videos/",
+          "/video/"
+        )}`;
+        const height = `${winHeight}px`;
         return (
-          <div key={index} className={`featured-item ${index === current ? "active" : ""}`}>
-            {/* <SwiperSlide key={index}> */}
-            <ReactPlayer
-              width="100vw"
-              height={winHeight + "px"}
-              url={url}
-              config={{
-                playerOptions: {
-                  background: true,
-                  quality: "720p",
-                  dnt: true,
-                  loop: true,
-                  playsInline: true,
-                  height: window.innerHeight + "px"
-                },
-              }}
-            />
-            {/* </SwiperSlide> */}
+          <div
+            key={index}
+            onWheel={onScroll}
+            className={`slide-item featured-item ${
+              index === current ? "active" : ""
+            }`}
+          >
+            <div className="slide-item__inner">
+              <div
+                className={classNames("slide-item__video", {
+                  "slide-item__video--active": index === current,
+                  "slide-item__video--inactive": index !== current,
+                })}
+              >
+                <ReactPlayer
+                  width="100vw"
+                  height={height}
+                  url={url}
+                  playing={index === current}
+                  muted
+                  playsinline
+                  config={{
+                    playerOptions: {
+                      background: true,
+                      quality: "720p",
+                      dnt: true,
+                      loop: true,
+                      height: height,
+                    },
+                  }}
+                />
+              </div>
+              <Card title={video.name} active={index === current} key={index} />
+            </div>
           </div>
         );
       })}
-      {/* </Swiper> */}
-      {featureData.map((card, index) => {
-        return (
-          <Card title={card.name} active={index === current} key={index} progress={progress} />
-        );
-      })}
+      <div className="slide-progress">
+        <Box
+          className="slide-progress__inner"
+          sx={{
+            transform: `translate3d(0px, 0px, 0px) scale(1, ${
+              (100 - progress) / 100
+            })`,
+            transition: "transform 200ms",
+          }}
+        ></Box>
+      </div>
+      {featureData.length && (
+        <CircularProgress
+          variant="determinate"
+          value={progress}
+          size={30}
+          thickness={3}
+        />
+      )}
     </section>
   );
 }
