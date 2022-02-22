@@ -14,9 +14,11 @@ export default function Featured() {
   const [progress, setProgress] = useState(0);
   const [winHeight, setwinHeight] = useState(window.innerHeight);
   const containerRef = useRef();
+
+  
   //FETCHING DATA
   useEffect(() => {
-    fetch("http://192.168.7.36:3001/featured")
+    fetch("http://localhost:3001/featured")
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData);
