@@ -29,7 +29,9 @@ export default function Featured() {
       setwinHeight(() => window.innerHeight);
     };
     window.addEventListener("resize", resizeHeight);
+    document.body.classList.add('slide-page');    
     return () => {
+      document.body.classList.remove('slide-page');    
       window.removeEventListener("resize", resizeHeight);
     };
   }, []);
@@ -56,7 +58,7 @@ export default function Featured() {
     setProgress(0);
   };
   const throttledUpdate = useMemo(
-    () => throttle(moveNextSlide, 1 * 1000, { trailing: false, leading: true }),
+    () => throttle(moveNextSlide, 2 * 1000, { trailing: false, leading: true }),
     [featureData.length]
   );
 
