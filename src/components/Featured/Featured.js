@@ -92,13 +92,12 @@ export default function Featured() {
   }, [featureData.length, current]);
 
   return (
-    <section
-      role="presentation"
-      onWheel={onScroll}
-      className="slide-container"
-      id="featured"
-      ref={containerRef}
-    >
+    <section role="presentation" className="slide-container" id="featured">
+      <div
+        ref={containerRef}
+        onWheel={onScroll}
+        className="slide-container__listener"
+      ></div>
       {!featureData.length && (
         <CircularProgress
           sx={{
@@ -156,8 +155,10 @@ export default function Featured() {
         <Box
           className="slide-progress__inner"
           sx={{
-            transform: `translate3d(0px, 0px, 0px) scale(1, ${(100-progress)/100})`,
-            transition: 'transform 200ms'
+            transform: `translate3d(0px, 0px, 0px) scale(1, ${
+              (100 - progress) / 100
+            })`,
+            transition: "transform 200ms",
           }}
         ></Box>
       </div>
