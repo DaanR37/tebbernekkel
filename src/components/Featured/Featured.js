@@ -120,7 +120,6 @@ export default function Featured() {
         return (
           <div
             key={index}
-            onWheel={onScroll}
             className={`slide-item featured-item ${
               index === current ? "active" : ""
             }`}
