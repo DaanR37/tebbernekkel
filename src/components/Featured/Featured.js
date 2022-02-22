@@ -28,7 +28,9 @@ export default function Featured() {
       setwinHeight(() => window.innerHeight);
     };
     window.addEventListener("resize", resizeHeight);
+    document.body.classList.add('slide-page');    
     return () => {
+      document.body.classList.remove('slide-page');    
       window.removeEventListener("resize", resizeHeight);
     };
   }, []);
@@ -55,7 +57,7 @@ export default function Featured() {
     setProgress(0);
   };
   const throttledUpdate = useMemo(
-    () => throttle(moveNextSlide, 2 * 1000, { trailing: false, leading: true }),
+    () => throttle(moveNextSlide, 1.3 * 1000, { trailing: false, leading: true }),
     [featureData.length]
   );
 
@@ -72,6 +74,7 @@ export default function Featured() {
       startPos = e.touches[0].clientY;
     };
     const endTouch = (e) => {
+      console.log(e);
       endPos = e.changedTouches[0].clientY;
       const isUp = endPos - startPos < 0;
       moveNextSlide(current, isUp);
@@ -116,7 +119,6 @@ export default function Featured() {
         return (
           <div
             key={index}
-            onWheel={onScroll}
             className={`slide-item featured-item ${
               index === current ? "active" : ""
             }`}
