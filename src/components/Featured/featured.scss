@@ -1,11 +1,29 @@
+
+
+
+// #featured {
+//     position: relative;
+//     // width: 100vw;
+//     height: 110vh;
+//     background-color: #000000;
+// }
 // .featured-item {
+//     position: absolute;
+//     visibility: hidden;
+//     // width: 100vw;
+//     height: 100%;
+//     // top: 40%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
 // }
 // .featured-item.active {
-//   visibility: visible;
+//     visibility: visible;
 // }
 // @media screen and (min-width: 1280px) {
-//   .featured-item {
-//   }
+//     .featured-item {
+//         width: 100%;
+//         top: 40%;
+//     }
 // }
 
 .slide-container {
@@ -70,28 +88,3 @@
     transform-origin: 50% 100%;
   }
 }
-
-// #featured {
-//     position: relative;
-//     // width: 100vw;
-//     height: 110vh;
-//     background-color: #000000;
-// }
-// .featured-item {
-//     position: absolute;
-//     visibility: hidden;
-//     // width: 100vw;
-//     height: 100%;
-//     // top: 40%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
-// .featured-item.active {
-//     visibility: visible;
-// }
-// @media screen and (min-width: 1280px) {
-//     .featured-item {
-//         width: 100%;
-//         top: 40%;
-//     }
-// }

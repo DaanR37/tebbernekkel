@@ -16,7 +16,7 @@ export default function Featured() {
   const containerRef = useRef();
   //FETCHING DATA
   useEffect(() => {
-    fetch("http://192.168.1.113:3001/featured")
+    fetch("http://localhost:3001/featured")
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData);
@@ -162,130 +162,6 @@ export default function Featured() {
           }}
         ></Box>
       </div>
-      {/* {featureData.length && (
-        <CircularProgress
-          variant="determinate"
-          value={progress}
-          size={30}
-          thickness={3}
-        />
-      )} */}
     </section>
   );
 }
-
-
-
-
-
-// import { useState, useEffect, useMemo } from "react";
-// import ReactPlayer from "react-player/vimeo";
-// import Card from "./Cards/Card";
-// import "./featured.scss";
-
-// import debounce from 'lodash.debounce';
-
-
-// export default function Featured() {
-//   const [current, setCurrent] = useState(0);
-//   const [featureData, setFeatureData] = useState([]);
-//   const [progress, setProgress] = useState(0);
-
-  //FETCHING DATA
-//   useEffect(() => {
-//     fetch("http://localhost:3001/featured")
-//       .then((response) => response.json())
-//       .then((featureData) => {
-//         setFeatureData(featureData);
-//       })
-//       .catch((error) => {
-//         console.log(error.message);
-//       });
-//   }, []);
-
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setProgress((oldProgress) => oldProgress + 1);
-//       if ((progress + 1) % 100 === 0) {
-//         setCurrent((prevCurrent) => {
-//           return prevCurrent === featureData.length - 1 ? 0 : current + 1;
-//         });
-//       }
-//     }, 100);
-//     return () => clearInterval(interval);
-//   });
-
-//   const [winHeight, setwinHeight] = useState(window.innerHeight);
-//   window.addEventListener('resize', () => {
-//     setwinHeight(() => window.innerHeight);
-//   })
-
-//   const [scrollY, setScrollY] = useState(0);
-
-//   function handleScroll(e) {
-
-
-//     e.preventDefault();
-//     if (window.pageYOffset > scrollY + 10) {
-//       setCurrent((prevCurrent) => {
-//         return prevCurrent === featureData.length - 1 ? 0 : current + 1;
-//       });
-//       setScrollY(window.pageYOffset);
-//       setProgress(() => 0)
-//     } else if (window.pageYOffset < scrollY - 10) {
-//       setCurrent((prevCurrent) => {
-//         return prevCurrent === featureData.length - 1 ? 0 : current + 1;
-//       });
-//       setScrollY(window.pageYOffset);
-//       setProgress(() => 0)
-     
-//     }
-//   }
-
-//   const debouncedChangeHandler = useMemo(
-//     () => debounce(handleScroll, 5000)
-//     , []);
-
-//   useEffect(() => {
-//     function watchScroll() {
-//       window.addEventListener("scroll", handleScroll, debouncedChangeHandler);
-//     }
-//     watchScroll();
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll, debouncedChangeHandler);
-//     };
-//   });
-
-//   return (
-//     <section id="featured">
-//       {featureData.map((video, index) => {
-//         let url = "https://player.vimeo.com" + video.uri.replace("/videos/", "/video/");
-//         return (
-//           <div key={index} className={`featured-item ${index === current ? "active" : ""}`}>
-//             <ReactPlayer
-//               width="100vw"
-//               height={winHeight + "px"}
-//               url={url}
-//               config={{
-//                 playerOptions: {
-//                   background: true,
-//                   quality: "720p",
-//                   dnt: true,
-//                   loop: true,
-//                   playsInline: true,
-//                   height: window.innerHeight + "px"
-//                 },
-//               }}
-//             />
-//           </div>
-//         );
-//       })}
-//       {featureData.map((card, index) => {
-//         return (
-//           <Card title={card.name} active={index === current} key={index} progress={progress} />
-//         );
-//       })}
-//     </section>
-//   );
-// }
