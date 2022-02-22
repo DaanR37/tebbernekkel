@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import ReactPlayer from "react-player/vimeo";
-import { LinearProgress, CircularProgress } from "@mui/material";
-import { useTheme } from "@mui/system";
+import { Box, CircularProgress } from "@mui/material";
 
 import Card from "./Cards/Card";
 import classNames from "classnames";
@@ -47,7 +46,6 @@ export default function Featured() {
   }, [progress]);
 
   const moveNextSlide = (current, isUpDirection) => {
-
     if (!featureData.length) return;
     const newActive =
       (featureData.length + (isUpDirection ? current + 1 : current - 1)) %
@@ -76,7 +74,6 @@ export default function Featured() {
     const endTouch = (e) => {
       endPos = e.changedTouches[0].clientY;
       const isUp = endPos - startPos < 0;
-      console.log('moveNextSlide', current);
       moveNextSlide(current, isUp);
       e.preventDefault();
       e.stopPropagation();
@@ -102,11 +99,15 @@ export default function Featured() {
       id="featured"
       ref={containerRef}
     >
-      {!featureData.length && <CircularProgress sx={{
-        top: '50%',
-        left: '50%',
-        zIndex: 90
-      }} />}
+      {!featureData.length && (
+        <CircularProgress
+          sx={{
+            top: "50%",
+            left: "50%",
+            zIndex: 90,
+          }}
+        />
+      )}
       {featureData.map((video, index) => {
         const url = `https://player.vimeo.com${video.uri.replace(
           "/videos/",
@@ -151,6 +152,15 @@ export default function Featured() {
           </div>
         );
       })}
+      <div className="slide-progress">
+        <Box
+          className="slide-progress__inner"
+          sx={{
+            transform: `translate3d(0px, 0px, 0px) scale(1, ${(100-progress)/100})`,
+            transition: 'transform 200ms'
+          }}
+        ></Box>
+      </div>
       {featureData.length && (
         <CircularProgress
           variant="determinate"
