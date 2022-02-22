@@ -66,7 +66,7 @@ export default function Topsection() {
                 </div>
 
                 <div className="content-details-title-four">
-                    <h3>Producer</h3>
+                    <h3>Production</h3>
                 </div>
 
                 <a href='mailto:lauren@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-four">
@@ -74,7 +74,7 @@ export default function Topsection() {
                 </a>
 
                 <a href='tel:0645727687' target="_blank" rel="noreferrer" className="content-details-phone-four">
-                    <h3>+31(0)612345678</h3>
+                    <h3>+31(0)683811543</h3>
                 </a>
             </div>
 
@@ -88,7 +88,7 @@ export default function Topsection() {
                 </div>
 
                 <a href='mailto:lauren@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-five">
-                    <h3>lauren@tebbernekkel.com</h3>
+                    <h3>invoices@tebbernekkel.com</h3>
                 </a>
 
                 <a href='tel:0645727687' target="_blank" rel="noreferrer" className="content-details-phone-five">

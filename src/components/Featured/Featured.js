@@ -16,7 +16,7 @@ export default function Featured() {
   const containerRef = useRef();
   //FETCHING DATA
   useEffect(() => {
-    fetch("http://localhost:3001/featured")
+    fetch("http://192.168.7.36:3001/featured")
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData);

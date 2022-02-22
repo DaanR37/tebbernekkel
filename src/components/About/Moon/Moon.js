@@ -28,7 +28,7 @@ export default function Moon(props) {
             <Stars
                 radius={300}
                 depth={60}
-                count={12500}
+                count={5000}
                 factor={9.5}
                 saturation={0}
                 fade={true}
