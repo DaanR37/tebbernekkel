@@ -42,6 +42,21 @@ app.get("/commercials", (req, res) => {
     });
 });
 
+//FICTION ENDPOINT
+app.get("/fiction", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/7511934/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+
+
+
 app.listen(port, () => {
     console.log(`Server running at https://localhost:${port}`)
 });

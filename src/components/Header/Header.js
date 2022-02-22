@@ -1,34 +1,79 @@
 import "./header.scss";
-import {  Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 export default function Header() {
     return (
         <header className="header-container">
-
             <ul className="header-left-side">
-                <li>
+                <motion.li
+                    whileHover={{
+                        scale: 1.1
+                    }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 80
+                    }}
+                >
                     <NavLink to="/commercials" className="commercial-btn">commercials</NavLink>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                    whileHover={{
+                        scale: 1.1
+                    }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 80
+                    }}
+                >
                     <NavLink to="/fiction" className="fiction-btn">fiction</NavLink>
-                </li>
+                </motion.li>
             </ul>
-
-            <Link to="/" className="bbk-logo">
-                <img
-                    src="images/BBKK-pink.png" alt="tebbernekkel logo"
-                />
-            </Link>
-
+            <div>
+                <Link to="/" className="bbk-logo">
+                    <motion.img
+                        initial={{ y: '+50vh', scale: 0.1 }}
+                        animate={{
+                            scale: 1,
+                            y: 0,
+                            rotateY: 360
+                        }}
+                        transition={{
+                            duration: 1,
+                            type: 'tween'
+                        }}
+                        whileHover={{
+                            rotateX: 360
+                        }}
+                        src="images/BBKK-pink.png" alt="tebbernekkel logo"
+                    />
+                </Link>
+            </div>
             <ul className="header-right-side">
-                <li>
-                    <NavLink to="/about" className="about-btn">about</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/contact" className="contact-btn">contact</NavLink>
-                </li>
-            </ul>
 
+                <motion.li
+                    whileHover={{
+                        scale: 1.1
+                    }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 80
+                    }}
+                >
+                    <NavLink to="/about" className="about-btn">awards</NavLink>
+                </motion.li>
+                <motion.li
+                    whileHover={{
+                        scale: 1.1,
+                    }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 80
+                    }}
+                >
+                    <NavLink to="/contact" className="contact-btn">contact</NavLink>
+                </motion.li>
+            </ul>
         </header>
     );
 }

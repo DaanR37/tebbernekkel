@@ -6,6 +6,7 @@ import Card from "./Cards/Card";
 import classNames from "classnames";
 import { throttle } from "lodash";
 
+
 import "./featured.scss";
 
 export default function Featured() {
