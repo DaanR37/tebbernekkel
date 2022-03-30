@@ -1,24 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&family=Julius+Sans+One&family=Montserrat&family=Roboto+Condensed:wght@300;400&family=Wire+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&family=Julius+Sans+One&family=Montserrat&family=Roboto+Condensed:wght@300;400&family=Wire+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:wght@400;500&family=Bungee+Shade&family=Julius+Sans+One&family=Montserrat&family=Roboto+Condensed:wght@300;400&family=Wire+One&display=swap");
 
 // * {
 //   margin: 0;
 //   padding: 0;
 //   box-sizing: border-box;
 // }
+
 html,
 body,
 #root {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  background-color: rgba(0, 0, 0, 0.714);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
 }

@@ -5,8 +5,8 @@ import { TextureLoader } from 'three';
 import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 
-import MoonColorMap from "../../../assets/textures/moon_color_map.jpg";
-import MoonNormalMap from "../../../assets/textures/moon_normal_map.jpg";
+import MoonColorMap from "../../../assets/textures/moon_color_map_kopie.jpg";
+import MoonNormalMap from "../../../assets/textures/moon_normal_map_kopie.jpg";
 
 export default function Moon(props) {
 
@@ -18,22 +18,22 @@ export default function Moon(props) {
     const moonRef = useRef();
 
     return (
-        <>
-            <pointLight
-                color="#f6f3ea"
-                position={[-3.9, -1, 5]}
-                // position={[15, 0, 5]}
-                intensity={1.3}
-            />
-            <Stars
-                radius={300}
-                depth={60}
-                count={5000}
-                factor={9.5}
-                saturation={0}
-                fade={true}
-            />
-            <mesh ref={moonRef} position={[1.1, -0.1, 2.5]} rotation={[-50, -15, 75]}>
+            <>
+                <pointLight
+                    color="#f6f3ea"
+                    position={[-3.9, -1, 5]}
+                    // position={[15, 0, 5]}
+                    intensity={1.21}
+                />
+                <Stars
+                    radius={300}
+                    depth={60}
+                    count={800}
+                    factor={9.1}
+                    saturation={0}
+                    fade={true}
+                />
+                {/* <mesh ref={moonRef} position={[1.1, -0.1, 2.5]} rotation={[-50, -15, 75]}>
                 <sphereGeometry args={[1.005, 32, 32]} />
                 <meshPhongMaterial
                     map={normalMap}
@@ -52,14 +52,14 @@ export default function Moon(props) {
                     transparent={true}
                 />
                 <OrbitControls
-                    enableZoom={true}
+                    enableZoom={false}
                     enablePan={false}
                     enableRotate={true}
                     zoomSpeed={0.6}
                     panSpeed={0.5}
                     rotateSpeed={0.4}
                 />
-            </mesh>
-        </>
+            </mesh> */}
+            </>
     )
 }

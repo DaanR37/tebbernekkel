@@ -1,33 +1,17 @@
 .header-container {
-    position: absolute;
-    display: flex;
+    position: relative;
     width: 100vw;
-    margin-top: 25px;
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
-    z-index: 100;
-    overflow: scroll;
+    z-index: 99;
 }
 .header-left-side {
     position: relative;
-    display: flex;
-    // justify-content: space-around;
-    justify-content: flex-end;
     list-style-type: none;
-    width: 33vw;
     padding: 0;
-    transform: scale(1);
     a {
         color: whitesmoke;
-        font-size: 22px;
-        font-weight: 400;
-        letter-spacing: 0.1em;
         text-decoration: none;
-        padding: 25px;
-        &:hover {
-            color: #f5a1a3;
-            transition: 400ms ease-in-out;
-        }
     }
     a.commercial-btn.active {
         color: #75d5fd;
@@ -35,47 +19,272 @@
     }
     a.fiction-btn.active {
         color: #75d5fd;
-        // color: rgb(78, 148, 210);
         transition: 350ms ease-in-out;
     }
 }
 .bbk-logo {
     position: relative;
-    display: flex;
-    justify-content: center;
-    width: 33vw;
-    img {
-        width: 27.5%;
-    }
 }
 .header-right-side {
     position: relative;
-    display: flex;
-    // justify-content: space-around;
-    justify-content: flex-start;
     list-style-type: none;
-    width: 33vw;
     padding: 0;
     a {
         color: whitesmoke;
-        font-size: 22px;
-        font-weight: 400;
-        letter-spacing: 0.1em;
         text-decoration: none;
-        padding: 25px;
-        &:hover {
-            color: #f5a1a3;
-            transition: 400ms ease-in-out;
-        }
     }
     a.about-btn.active {
         color: #75d5fd;
-        // color: purple;
         transition: 350ms ease-in-out;
     }
     a.contact-btn.active {
         color: #75d5fd;
-        // color: salmon;
         transition: 350ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    #mobile-container {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        // height: 10vh;
+        margin-top: 15px;
+        top: 8vh;
+    }
+    .desktop-container {
+        display: none;
+    }
+    .nav-buttons {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        top: 50%;
+        a {
+            color: whitesmoke;
+            font-size: 15px;
+            text-decoration: none;
+            letter-spacing: 0.09em;
+        }
+        a.commercial-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+        a.fiction-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+        a.about-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+        a.contact-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+    }
+    .bbk-logo-mobile {
+        position: fixed;
+        width: 22vw;
+        top: 4vh;
+        left: 50%;
+        transform: translate(-50%);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    #mobile-container {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        // height: 10vh;
+        margin-top: 30px;
+        top: 8vh;
+    }
+    .desktop-container {
+        display: none;
+    }
+    .nav-buttons {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        top: 50%;
+        a {
+            color: whitesmoke;
+            font-size: 25px;
+            text-decoration: none;
+            letter-spacing: 0.09em;
+        }
+        a.commercial-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+        a.fiction-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+        a.about-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+        a.contact-btn.active {
+            color: #75d5fd;
+            transition: 350ms ease-in-out;
+        }
+    }
+    .bbk-logo-mobile {
+        position: fixed;
+        width: 22vw;
+        top: 4vh;
+        left: 50%;
+        transform: translate(-50%);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .desktop-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        margin-top: 15px;
+    }
+    #mobile-container {
+        display: none;
+    }
+    .bbk-logo-mobile {
+        display: none;
+    }
+    .header-left-side {
+        display: flex;
+        justify-content: flex-end;
+        width: 40vw;
+        transform: scale(1);
+        a {
+            color: whitesmoke;
+            font-size: 22.5px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            &:hover {
+                color: #f5a1a3;
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+    #root > header > .desktop-container > ul.header-left-side > li:nth-child(1) {
+        position: relative;
+        right: 3.5rem;
+    }
+    .bbk-logo {
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+        img {
+            width: 45%;
+        }
+    }
+    .header-right-side {
+        display: flex;
+        justify-content: flex-start;
+        width: 40vw;
+        transform: scale(1);
+        a {
+            color: whitesmoke;
+            font-size: 22.5px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            &:hover {
+                color: #f5a1a3;
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+    #root > header > .desktop-container > ul.header-right-side > li:nth-child(2) {
+        position: relative;
+        left: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .desktop-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        margin-top: 15px;
+    }
+    #mobile-container {
+        display: none;
+    }
+    .bbk-logo-mobile {
+        display: none;
+    }
+    .header-left-side {
+        display: flex;
+        justify-content: flex-end;
+        width: 40vw;
+        transform: scale(1);
+        a {
+            color: whitesmoke;
+            font-size: 22.5px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            &:hover {
+                color: #f5a1a3;
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+    #root > header > .desktop-container > ul.header-left-side > li:nth-child(1) {
+        position: relative;
+        right: 3.5rem;
+    }
+    .bbk-logo {
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+        img {
+            width: 45%;
+        }
+    }
+    .header-right-side {
+        display: flex;
+        justify-content: flex-start;
+        width: 40vw;
+        transform: scale(1);
+        a {
+            color: whitesmoke;
+            font-size: 22.5px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            &:hover {
+                color: #f5a1a3;
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+    #root > header > .desktop-container > ul.header-right-side > li:nth-child(2) {
+        position: relative;
+        left: 3.5rem;
     }
 }

@@ -1,816 +1,1156 @@
 .topsection-container {
     position: absolute;
-    display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    gap: 10px;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-//QUINTIN CARD
-.contact-name-one {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 4/5;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    top: 0;
-    left: 0;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 9px;
-    color: white;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-    z-index: 1;
-    h1 {
-        margin: 0;
-        padding: 0;
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    ///DISPLAY NONE
+    .container-desktop {
+        display: none;
     }
-    &:hover {
-        opacity: 1;
-        transition: ease-in-out 350ms;
-        cursor: pointer;
+    .card-five {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        max-height: 30vh;
+        top: 175px;
+        left: 30%;
+        line-height: 1.3rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-details-title {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 5/6;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: ease-in-out 1.5s;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    font-style: italic;
-    // transform: translateY(400px);
-    h2 {
-        margin: 0;
+    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+        color: #f5a1a3;
     }
-}
-.content-one:hover .content-details-title {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-}
-.content-details-mail {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 6/7;
-    top: 0;
-    left: 0;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    .card-two {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        max-height: 30vh;
+        top: 300px;
+        left: 30%;
+        line-height: 1.3rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-one:hover .content-details-mail {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+        color: #f5a1a3;
     }
-}
-.content-details-phone {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 6/7;
-    top: 25px;
-    left: 0;
-    // height: 100%;
-    // display: flex;
-    // align-items: flex-end;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    .card-one {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        max-height: 30vh;
+        top: 400px;
+        left: 30%;
+        line-height: 1.3rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-one:hover .content-details-phone {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    #root > div > section > div.card-one > a.content-details-phone > h3 {
+        color: #f5a1a3;
     }
-}
-
-//BLUE CARD
-.contact-name-two {
-    position: absolute;
-    // grid-column: 12/15;
-    grid-column: 12/14;
-    grid-row: 4/5;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    top: 0;
-    left: 0;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 9px;
-    color: white;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-    z-index: 1;
-    h1 {
-        margin: 0;
-        padding: 0;
+    .card-four {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        max-height: 30vh;
+        top: 500px;
+        left: 30%;
+        line-height: 1.3rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-    &:hover {
-        opacity: 1;
-        transition: ease-in-out 350ms;
-        cursor: pointer;
+    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
     }
-}
-.content-details-title-two {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 5/6;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: ease-in-out 1.5s;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    font-style: italic;
-    // transform: translateY(400px);
-    h3 {
-        margin: 0;
+    .card-three {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        max-height: 30vh;
+        top: 600px;
+        left: 30%;
+        line-height: 1.3rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-two:hover .content-details-title-two {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-}
-.content-details-mail-two {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 6/7;
-    top: 0;
-    left: 0;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
-    }
-}
-.content-two:hover .content-details-mail-two {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
-    }
-}
-.content-details-phone-two {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 6/7;
-    top: 25px;
-    left: 0;
-    // height: 100%;
-    // display: flex;
-    // align-items: flex-end;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
-    }
-}
-.content-two:hover .content-details-phone-two {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    .card-six {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        max-height: 30vh;
+        top: 725px;
+        left: 30%;
+        line-height: 1.3rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
 }
 
-//ACHMED CARD
-.contact-name-three {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 7/8;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    top: 0;
-    left: 0;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 9px;
-    color: white;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-    z-index: 1;
-    h1 {
-        margin: 0;
-        padding: 0;
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    ///DISPLAY NONE
+    .container-desktop {
+        display: none;
     }
-    &:hover {
-        opacity: 1;
-        transition: ease-in-out 350ms;
-        cursor: pointer;
+    ///HQ CARD
+    .card-five {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 22rem;
+        left: 28%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-details-title-three {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 8/9;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: ease-in-out 1.5s;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    font-style: italic;
-    // transform: translateY(400px);
-    h3 {
-        margin: 0;
+    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+        color: #f5a1a3;
     }
-}
-.content-three:hover .content-details-title-three {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-}
-.content-details-mail-three {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 9/10;
-    top: 0;
-    left: 0;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    ///EMILY CARD
+    .card-two {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 22rem;
+        left: 65%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-three:hover .content-details-mail-three {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+        color: #f5a1a3;
     }
-}
-.content-details-phone-three {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 9/10;
-    top: 25px;
-    left: 0;
-    // height: 100%;
-    // display: flex;
-    // align-items: flex-end;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    ///QUINTEN CARD
+    .card-one {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 30rem;
+        left: 28%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-three:hover .content-details-phone-three {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    #root > div > section > div.card-one > a.content-details-phone > h3 {
+        color: #f5a1a3;
     }
-}
-
-//EMILY CARD
-.contact-name-four {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 7/8;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    top: 0;
-    left: 0;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 9px;
-    color: white;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-    z-index: 1;
-    h1 {
-        margin: 0;
-        padding: 0;
+    ///LAUREN CARD
+    .card-four {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 30rem;
+        left: 65%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-    &:hover {
-        opacity: 1;
-        transition: ease-in-out 350ms;
-        cursor: pointer;
+    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
     }
-}
-.content-details-title-four {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 8/9;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: ease-in-out 1.5s;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    font-style: italic;
-    // transform: translateY(400px);
-    h3 {
-        margin: 0;
+    ///CREATIVES CARD
+    .card-three {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 39rem;
+        left: 28%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-four:hover .content-details-title-four {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-}
-.content-details-mail-four {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 9/10;
-    top: 0;
-    left: 0;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
-    }
-}
-.content-four:hover .content-details-mail-four {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
-    }
-}
-.content-details-phone-four {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 9/10;
-    top: 25px;
-    left: 0;
-    // height: 100%;
-    // display: flex;
-    // align-items: flex-end;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
-    }
-}
-.content-four:hover .content-details-phone-four {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    ///SOCIALS CARD
+    .card-six {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 39rem;
+        left: 65%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
 }
 
-//LAUREN CARD
-.contact-name-five {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 10/11;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    top: 0;
-    left: 0;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 9px;
-    color: white;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-    z-index: 1;
-    h1 {
-        margin: 0;
-        padding: 0;
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    ///DISPLAY NONE
+    .container-desktop {
+        display: none;
     }
-    &:hover {
-        opacity: 1;
-        transition: ease-in-out 350ms;
-        cursor: pointer;
+    ///HQ CARD
+    .card-five {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 14rem;
+        left: 45%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-details-title-five {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 11/12;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: ease-in-out 1.5s;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    font-style: italic;
-    // transform: translateY(400px);
-    h3 {
-        margin: 0;
+    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+        color: #f5a1a3;
     }
-}
-.content-five:hover .content-details-title-five {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-}
-.content-details-mail-five {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 12/13;
-    top: 0;
-    left: 0;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    ///EMILY CARD
+    .card-two {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 14rem;
+        left: 72%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-five:hover .content-details-mail-five {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+        color: #f5a1a3;
     }
-}
-.content-details-phone-five {
-    position: absolute;
-    grid-column: 10/12;
-    grid-row: 12/13;
-    top: 25px;
-    left: 0;
-    // height: 100%;
-    // display: flex;
-    // align-items: flex-end;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    ///QUINTEN CARD
+    .card-one {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 23rem;
+        left: 45%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
-}
-.content-five:hover .content-details-phone-five {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
-        opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+    #root > div > section > div.card-one > a.content-details-phone > h3 {
+        color: #f5a1a3;
+    }
+    ///LAUREN CARD
+    .card-four {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 23rem;
+        left: 72%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
+    }
+    ///CREATIVES CARD
+    .card-three {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 32rem;
+        left: 45%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    ///SOCIALS CARD
+    .card-six {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 32rem;
+        left: 72%;
+        line-height: 1.5rem;
+        z-index: 2;
+        h1 {
+            position: relative;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            position: relative;
+            letter-spacing: 0.01rem;
+            line-height: 1.7rem;
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
     }
 }
 
-//SOCIALS CARD
-.contact-name-six {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 10/11;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    top: 0;
-    left: 0;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 9px;
-    color: white;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-    z-index: 1;
-    h1 {
-        margin: 0;
-        padding: 0;
+@media screen and (min-width: 1280px) {
+    .card-one {
+        display: none;
     }
-    &:hover {
+    .card-two {
+        display: none;
+    }
+    .card-three {
+        display: none;
+    }
+    .card-four {
+        display: none;
+    }
+    .card-five {
+        display: none;
+    }
+    .card-six {
+        display: none;
+    }
+    .container-desktop {
+        position: absolute;
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        gap: 1px;
+    }
+    //HQ BBKK CARD
+    .contact-name-five {
+        position: absolute;
+        grid-column: 11/14;
+        grid-row: 4/5;
+        top: 25px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
         opacity: 1;
-        transition: ease-in-out 350ms;
         cursor: pointer;
+        z-index: 1;
+        letter-spacing: 0.05rem;
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
     }
-}
-.content-instagram {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 11/12;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: ease-in-out 1.5s;
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    font-style: italic;
-    cursor: pointer;
-    text-decoration: none;
-    // transform: translateY(400px);
-    h3 {
-        margin: 0;
+    .content-details-title-five {
+        position: absolute;
+        grid-column: 11/14;
+        grid-row: 5/6;
+        top: 0;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
     }
-}
-.content-six:hover .content-instagram {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
+    .content-five:hover .content-details-title-five {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-details-mail-five {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 5/6;
+        top: 20px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-five:hover .content-details-mail-five {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-details-phone-five {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 5/6;
+        top: 40px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: #f5a1a3;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-five:hover .content-details-phone-five {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    //EMILY CARD
+    .contact-name-two {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 4/5;
+        top: 25px;
+        left: 0;
+        font-size: 12px;
+        color: white;
         opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+        cursor: pointer;
+        letter-spacing: 0.05rem;
+        z-index: 1;
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
     }
-    // transform: translateY(0);
-}
-.content-facebook {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 12/13;
-    top: 0;
-    left: 0;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    .content-details-title-two {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 5/6;
+        top: 0;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        z-index: 1;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
     }
-}
-.content-six:hover .content-facebook {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
+    .content-details-mail-two {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 5/6;
+        top: 20px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-two:hover .content-details-mail-two {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-details-phone-two {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 5/6;
+        top: 40px;
+        left: 0;
+        font-size: 12px;
+        color: #f5a1a3;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-two:hover .content-details-phone-two {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    //QUINTIN CARD
+    .contact-name-one {
+        position: absolute;
+        grid-column: 11/14;
+        grid-row: 6/7;
+        top: 30px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
         opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+        cursor: pointer;
+        letter-spacing: 0.05rem;
+        z-index: 1;
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
     }
-}
-.content-vimeo {
-    position: absolute;
-    grid-column: 12/14;
-    grid-row: 12/13;
-    top: 25px;
-    left: 0;
-    // height: 100%;
-    // display: flex;
-    // align-items: flex-end;
-    transition: ease-in-out 1.5s;
-    // transform: translateY(400px);
-    // font-family: 'Anton', sans-serif;
-    // font-family: 'Bungee Shade', cursive;
-    font-family: "Julius Sans One", sans-serif;
-    // font-family: "Wire One", sans-serif;
-    // font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    color: white;
-    opacity: 0;
-    z-index: 1;
-    visibility: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    h3 {
-        margin: 0;
+    .content-details-title {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 7/8;
+        top: 5px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        z-index: 1;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
     }
-}
-.content-six:hover .content-vimeo {
-    opacity: 0.6;
-    visibility: visible;
-    // transform: translateY(0);
-    &:hover {
+    .content-details-mail {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 7/8;
+        top: 25px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-one:hover .content-details-mail {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-details-phone {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 7/8;
+        top: 45px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: #f5a1a3;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-one:hover .content-details-phone {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    //LAUREN CARD
+    .contact-name-four {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 6/7;
+        top: 30px;
+        left: 0;
+        font-size: 12px;
+        color: white;
         opacity: 1;
-        transition: opacity 0.25s;
-        transition: ease-in-out 350ms;
+        z-index: 1;
+        letter-spacing: 0.05rem;
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .content-details-title-four {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 7/8;
+        top: 5px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        z-index: 1;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-details-mail-four {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 7/8;
+        top: 25px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-four:hover .content-details-mail-four {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-details-phone-four {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 7/8;
+        top: 45px;
+        left: 0;
+        font-size: 12px;
+        color: #f5a1a3;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-four:hover .content-details-phone-four {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    //ACHMED & BLUE CARD
+    .contact-name-three {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 8/9;
+        top: 45px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 1;
+        cursor: pointer;
+        z-index: 1;
+        letter-spacing: 0.05rem;
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .content-details-title-three {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 9/10;
+        top: 20px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 1;
+        z-index: 1;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-details-mail-three {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 9/10;
+        top: 40px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-three:hover .content-details-mail-three {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-details-title-three-blue {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 9/10;
+        top: 70px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 1;
+        z-index: 1;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-details-mail-three-blue {
+        position: absolute;
+        grid-column: 11/13;
+        grid-row: 9/10;
+        top: 90px;
+        left: 0.2rem;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-three:hover .content-details-mail-three-blue {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    //SOCIALS CARD
+    .contact-name-six {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 8/9;
+        top: 45px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        opacity: 1;
+        cursor: pointer;
+        z-index: 1;
+        letter-spacing: 0.05rem;
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .content-instagram {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 9/10;
+        top: 20px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-six:hover .content-instagram {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-facebook {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 9/10;
+        top: 40px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-six:hover .content-facebook {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
+    }
+    .content-vimeo {
+        position: absolute;
+        grid-column: 14/16;
+        grid-row: 9/10;
+        top: 60px;
+        left: 0;
+        font-size: 12px;
+        color: white;
+        opacity: 0.75;
+        z-index: 1;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.03rem;
+        h3 {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .content-six:hover .content-vimeo {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 100ms;
+        }
     }
 }

@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import Animatedpage from "../../Animatedpage";
 import "./embeddedplayer.scss";
 
 const EmbeddedPlayer = () => {
@@ -14,28 +15,54 @@ const EmbeddedPlayer = () => {
   }
 
   return (
-    <section id="embedded-player">
+    <Animatedpage>
+      <section id="embedded-player">
 
-      <a href="/commercials">
-        <div className="times">
-          <img src="images/times-circle-regular.svg" alt="times" />
+        <div className="embedded-container-dekstop">
+          <a href="/commercials">
+            <div className="times">
+              <img src="images/times-circle-regular-copy.svg" alt="times" />
+            </div>
+          </a>
+          <div className="embedded-player">
+            <iframe
+              title={url}
+              src={url}
+              responsive="true"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <div className="player-text">
+              <p>{title}</p>
+              <br></br>
+              <p>{description}</p>
+            </div>
+          </div>
         </div>
-      </a>
-      <div className="embedded-player">
-        <iframe
-          title={url}
-          src={url}
-          responsive="true"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-        <div className="player-text">
-          <p>{title}</p>
-          <br></br>
-          <p>{description}</p>
+
+        <div className="embedded-container-mobile">
+          <div className="embedded-player">
+            <a href="/commercials">
+              <div className="times">
+                <img src="images/times-circle-outline-mobile.svg" alt="times" />
+              </div>
+            </a>
+            <iframe
+              title={url}
+              src={url}
+              responsive="true"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <div className="player-text">
+              <p>{title}</p>
+              <br></br>
+              <p>{description}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Animatedpage>
   );
 };
 

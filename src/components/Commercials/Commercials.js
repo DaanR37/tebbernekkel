@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Animatedpage from '../Animatedpage';
 import "./commercials.scss";
 
 export default function Commercials() {
-    const videoIndex = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
+    const videoIndex = ["one", "two", "three", "four", "eleven", "six", "eight", "seven", "nine", "ten", "five", "twelve"];
 
     const [portfolioData, setPortfolioData] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/commercials").then(response => response.json())
+        fetch("http://192.168.1.17:3001/commercials")
+            // fetch("http://localhost:3001/commercials")
+            .then(response => response.json())
             .then(portfolioData => {
                 setPortfolioData(portfolioData)
                 // console.log(portfolioData);
@@ -17,37 +20,39 @@ export default function Commercials() {
     }, []);
 
     return (
-        <section id="commercial-container">
-            <div id="grid-wrapper">
-                {portfolioData.map((video, index) => {
-                    return (
-                        <div className={videoIndex[index]} key={index}>
-                            <Link
-                                to="/embeddedplayer"
-                                state={{
-                                    link: `${video.uri}`,
-                                    title: `${video.name}`,
-                                    description: `${video.description}`,
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                        // backgroundSize: "cover", /// "cover" initially
-                                        // backgroundRepeat: 'no-repeat',
-                                        // backgroundPosition: "center",
-                                        height: "100%",
-                                        width: "100%"
-                                    }}>
-                                    <div className="hover-overlay">
-                                        <span aria-hidden="true">{video.name}</span>
+        <Animatedpage>
+            <section id="commercial-container">
+                <div id="grid-wrapper">
+                    {portfolioData.map((video, index) => {
+                        return (
+                            <div className={videoIndex[index]} key={index}>
+                                <Link
+                                    to="/embeddedplayer"
+                                    state={{
+                                        link: `${video.uri}`,
+                                        title: `${video.name}`,
+                                        description: `${video.description}`,
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                                            // backgroundSize: "cover", /// "cover" initially
+                                            // backgroundRepeat: 'no-repeat',
+                                            // backgroundPosition: "center",
+                                            height: "100%",
+                                            width: "100%"
+                                        }}>
+                                        <div className="hover-overlay">
+                                            <span aria-hidden="true">{video.name}</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                    )
-                })}
-            </div>
-        </section>
+                                </Link>
+                            </div>
+                        )
+                    })}
+                </div>
+            </section>
+        </Animatedpage>
     );
 }

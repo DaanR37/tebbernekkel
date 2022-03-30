@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import ReactPlayer from "react-player/vimeo";
-import { Box, CircularProgress } from "@mui/material";
+import { Box } from "@mui/material";
 import classNames from "classnames";
 import { throttle } from "lodash";
 
@@ -8,6 +8,7 @@ import Card from "./Cards/Card";
 import SlideNavigation from "./SlideNavigation";
 
 import "./featured.scss";
+import Animatedpage from "../Animatedpage";
 
 export default function Featured() {
   const [current, setCurrent] = useState(0);
@@ -16,10 +17,11 @@ export default function Featured() {
   const [winHeight, setwinHeight] = useState(window.innerHeight);
   const containerRef = useRef();
 
-  
+
   //FETCHING DATA
   useEffect(() => {
-    fetch("http://localhost:3001/featured")
+    fetch("http://192.168.1.17:3001/featured")
+      // fetch("http://localhost:3001/featured")
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData);
@@ -99,13 +101,14 @@ export default function Featured() {
   }, [featureData.length, current]);
 
   return (
-    <section role="presentation" className="slide-container" id="featured">
-      <div
-        ref={containerRef}
-        onWheel={onScroll}
-        className="slide-container__listener"
-      ></div>
-      {!featureData.length && (
+    <Animatedpage>
+      <section role="presentation" className="slide-container" id="featured">
+        <div
+          ref={containerRef}
+          onWheel={onScroll}
+          className="slide-container__listener"
+        ></div>
+        {/* {!featureData.length && (
         <CircularProgress
           sx={{
             top: "50%",
@@ -113,66 +116,65 @@ export default function Featured() {
             zIndex: 90,
           }}
         />
-      )}
-      {featureData.map((video, index) => {
-        const url = `https://player.vimeo.com${video.uri.replace(
-          "/videos/",
-          "/video/"
-        )}`;
-        const height = `${winHeight}px`;
-        return (
-          <div
-            key={index}
-            className={`slide-item featured-item ${
-              index === current ? "active" : ""
-            }`}
-          >
-            <div className="slide-item__inner">
-              <div
-                className={classNames("slide-item__video", {
-                  "slide-item__video--active": index === current,
-                  "slide-item__video--inactive": index !== current,
-                })}
-              >
-                <ReactPlayer
-                  width="100vw"
-                  height={height}
-                  url={url}
-                  playing={index === current}
-                  muted
-                  playsinline
-                  config={{
-                    playerOptions: {
-                      background: true,
-                      quality: "720p",
-                      dnt: true,
-                      loop: true,
-                      height: height,
-                    },
-                  }}
-                />
+      )} */}
+        {featureData.map((video, index) => {
+          const url = `https://player.vimeo.com${video.uri.replace(
+            "/videos/",
+            "/video/"
+          )}`;
+          const height = `${winHeight}px`;
+          return (
+            <div
+              key={index}
+              className={`slide-item featured-item ${index === current ? "active" : ""
+                }`}
+            >
+              <div className="slide-item__inner">
+                <div
+                  className={classNames("slide-item__video", {
+                    "slide-item__video--active": index === current,
+                    "slide-item__video--inactive": index !== current,
+                  })}
+                >
+                  <ReactPlayer
+                    width="100vw"
+                    height={height}
+                    url={url}
+                    playing={index === current}
+                    muted
+                    playsinline
+                    config={{
+                      playerOptions: {
+                        background: true,
+                        quality: "1080p", ///eventueel 480?
+                        dnt: true,
+                        loop: true,
+                        height: height, ////optioneel
+                      },
+                    }}
+                  />
+                </div>
+                <Card title={video.name} active={index === current} key={index} />
               </div>
-              <Card title={video.name} active={index === current} key={index} />
             </div>
-          </div>
-        );
-      })}
-      {featureData.length && (
-        <>
-          <div className="slide-progress">
-            <Box
-              className="slide-progress__inner"
-              sx={{
-                transform: `translate3d(0px, 0px, 0px) scale(1, ${
-                  (100 - progress) / 100
-                })`,
-                transition: "transform 200ms",
-              }}
-            ></Box>
-          </div>
-          <SlideNavigation total={featureData.length} active={current} />
-        </>
-      )}
-    </section>
+          );
+        })}
+        {featureData.length && (
+          <>
+            <div className="slide-progress">
+              <Box
+                className="slide-progress__inner"
+                sx={{
+                  transform: `translate3d(0px, 0px, 0px) scale(1, ${(100 - progress) / 100
+                    })`,
+                  transition: "transform 200ms",
+                }}
+              ></Box>
+            </div>
+            <SlideNavigation total={featureData.length} active={current} />
+          </>
+        )}
+      </section>
+    </Animatedpage>
   );
 }

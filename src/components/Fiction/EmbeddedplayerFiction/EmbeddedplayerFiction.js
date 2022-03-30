@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import Animatedpage from "../../Animatedpage";
 import "./embeddedplayerfiction.scss";
 
 const EmbeddedPlayerFiction = () => {
@@ -14,28 +15,55 @@ const EmbeddedPlayerFiction = () => {
   }
 
   return (
-    <section id="embedded-player-fiction">
+    <Animatedpage>
+      <section id="embedded-player-fiction">
 
-      <a href="/fiction">
-        <div className="times">
-          <img src="images/times-circle-regular.svg" alt="times" />
+        <div className="embedded-container-dekstop-fiction">
+          <a href="/fiction">
+            <div className="times-fiction">
+              <img src="images/times-circle-regular-copy.svg" alt="times" />
+            </div>
+          </a>
+          <div className="embedded-player-fiction">
+            <iframe
+              title={url}
+              src={url}
+              responsive="true"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <div className="player-text-fiction">
+              <p>{title}</p>
+              <br></br>
+              <p>{description}</p>
+            </div>
+          </div>
         </div>
-      </a>
-      <div className="embedded-player-fiction">
-        <iframe
-          title={url}
-          src={url}
-          responsive="true"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-        <div className="player-text-fiction">
-          <p>{title}</p>
-          <br></br>
-          <p>{description}</p>
+
+        <div className="embedded-container-mobile-fiction">
+          <div className="embedded-player-fiction">
+            <a href="/fiction">
+              <div className="times-fiction">
+                <img src="images/times-circle-outline-mobile.svg" alt="times" />
+              </div>
+            </a>
+            <iframe
+              title={url}
+              src={url}
+              responsive="true"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <div className="player-text-fiction">
+              <p>{title}</p>
+              <br></br>
+              <p>{description}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+
+      </section>
+    </Animatedpage>
   );
 };
 
