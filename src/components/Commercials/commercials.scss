@@ -80,7 +80,7 @@
         text-align: center;
     }
     #grid-wrapper > div.one > a div {
-        background-size: 550%;
+        background-size: auto 150%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -102,7 +102,7 @@
         text-align: center;
     }
     #grid-wrapper > div.two > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -124,7 +124,7 @@
         // text-align: center;
     }
     #grid-wrapper > div.three > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -146,8 +146,8 @@
         text-align: center;
     }
     #grid-wrapper > div.four > a div {
-        background-size: cover;
-        background-position: 28% center;
+        background-size: auto 100%;
+        background-position: 40%;
         background-repeat: no-repeat;
     }
     //CARD FIVE
@@ -168,9 +168,8 @@
         text-align: center;
     }
     #grid-wrapper > div.five > a div {
-        background-size: cover;
-        // background-size: 340%;
-        background-position: 55% center;
+        background-size: auto 100%;
+        background-position: 55%;
         background-repeat: no-repeat;
     }
     //CARD SIX
@@ -190,8 +189,8 @@
         text-decoration: none;
     }
     #grid-wrapper > div.six > a div {
-        background-size: 605%;
-        background-position: center;
+        background-size: auto 100%;
+        background-position: 30%;
         background-repeat: no-repeat;
     }
     //CARD SEVEN
@@ -211,8 +210,8 @@
         text-decoration: none;
     }
     #grid-wrapper > div.seven > a div {
-        background-size: 450%;
-        background-position: 25% center;
+        background-size: auto 120%;
+        background-position: 25%;
         background-repeat: no-repeat;
     }
     //CARD EIGHT
@@ -232,8 +231,8 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eight > a div {
-        background-size: 450%;
-        background-position: 40% center;
+        background-size: auto 150%;
+        background-position: 40%;
         background-repeat: no-repeat;
     }
     //CARD NINE
@@ -254,7 +253,7 @@
     }
     #grid-wrapper > div.nine > a div {
         background-size: auto 115%;
-        background-position: 60% center;
+        background-position: 60%;
         background-repeat: no-repeat;
     }
     //CARD TEN
@@ -274,7 +273,7 @@
         text-decoration: none;
     }
     #grid-wrapper > div.ten > a div {
-        background-size: 450%;
+        background-size: auto 115%;
         background-position: 90%;
         background-repeat: no-repeat;
     }
@@ -295,8 +294,8 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eleven > a div {
-        background-size: cover;
-        background-position: 29% center;
+        background-size: auto 100%;
+        background-position: 30%;
         background-repeat: no-repeat;
     }
     //CARD TWELVE
@@ -316,7 +315,7 @@
         text-decoration: none;
     }
     #grid-wrapper > div.twelve > a div {
-        background-size: auto 150%;
+        background-size: auto 140%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -404,7 +403,8 @@
     }
     #grid-wrapper > div.twelve > a div {
         background-size: auto 150%;
-        background-position: center;
+        background-position: 50%;
+        background-repeat: no-repeat;
     }
     //CARD ELEVEN
     #grid-wrapper div.eleven a div {
@@ -423,8 +423,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eleven > a div {
-        background-size: auto;
-        background-position: center;
+        background-size: auto 100%;
+        background-position: 40%;
+        background-repeat: no-repeat;
     }
     //CARD TEN
     #grid-wrapper div.ten a div {
@@ -443,8 +444,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.ten > a div {
-        background-size: auto;
+        background-size: auto 110%;
         background-position: 90%;
+        background-repeat: no-repeat;
     }
     //CARD NINE
     #grid-wrapper div.nine a div {
@@ -463,8 +465,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.nine > a div {
-        background-size: auto;
-        background-position: center;
+        background-size: auto 115%;
+        background-position: 55%;
+        background-repeat: no-repeat;
     }
     //CARD EIGHT
     #grid-wrapper div.eight a div {
@@ -483,8 +486,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eight > a div {
-        background-size: auto;
-        background-position: 40% center;
+        background-size: auto 150%;
+        background-position: 40%;
+        background-repeat: no-repeat;
     }
     //CARD SEVEN
     #grid-wrapper div.seven a div {
@@ -503,8 +507,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.seven > a div {
-        background-size: auto;
-        background-position: center;
+        background-size: auto 120%;
+        background-position: 40%;
+        background-repeat: no-repeat;
     }
     //CARD SIX
     #grid-wrapper div.six a div {
@@ -523,8 +528,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.six > a div {
-        background-size: auto 150%;
-        background-position: center;
+        background-size: auto 100%;
+        background-position: 25%;
+        background-repeat: no-repeat;
     }
     //CARD FIVE
     #grid-wrapper div.five a div {
@@ -544,9 +550,9 @@
         text-align: center;
     }
     #grid-wrapper > div.five > a div {
-        background-size: cover;
-        // background-size: 340%;
-        background-position: 55% center;
+        background-size: auto 100%;
+        background-position: 55%;
+        background-repeat: no-repeat;
     }
     //CARD FOUR
     #grid-wrapper div.four a div {
@@ -566,8 +572,9 @@
         text-align: center;
     }
     #grid-wrapper > div.four > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD THREE
     #grid-wrapper div.three a div {
@@ -587,8 +594,9 @@
         // text-align: center;
     }
     #grid-wrapper > div.three > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD TWO
     #grid-wrapper div.two a div {
@@ -608,8 +616,9 @@
         text-align: center;
     }
     #grid-wrapper > div.two > a div {
-        background-size: cover;
+        background-size: auto 130%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD ONE
     #grid-wrapper div.one a div {
@@ -629,8 +638,9 @@
         text-align: center;
     }
     #grid-wrapper > div.one > a div {
-        background-size: 222%;
+        background-size: auto 135%;
         background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -717,6 +727,7 @@
     #grid-wrapper > div.twelve > a div {
         background-size: auto 150%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD ELEVEN
     #grid-wrapper div.eleven a div {
@@ -735,8 +746,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eleven > a div {
-        background-size: auto;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD TEN
     #grid-wrapper div.ten a div {
@@ -755,8 +767,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.ten > a div {
-        background-size: auto;
+        background-size: auto 120%;
         background-position: 90%;
+        background-repeat: no-repeat;
     }
     //CARD NINE
     #grid-wrapper div.nine a div {
@@ -775,8 +788,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.nine > a div {
-        background-size: auto;
+        background-size: auto 120%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD EIGHT
     #grid-wrapper div.eight a div {
@@ -795,8 +809,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eight > a div {
-        background-size: auto;
-        background-position: 40% center;
+        background-size: auto 150%;
+        background-position: 40%;
+        background-repeat: no-repeat;
     }
     //CARD SEVEN
     #grid-wrapper div.seven a div {
@@ -815,8 +830,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.seven > a div {
-        background-size: auto;
+        background-size: auto 120%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD SIX
     #grid-wrapper div.six a div {
@@ -836,7 +852,8 @@
     }
     #grid-wrapper > div.six > a div {
         background-size: auto 150%;
-        background-position: center;
+        background-position: 30%;
+        background-repeat: no-repeat;
     }
     //CARD FIVE
     #grid-wrapper div.five a div {
@@ -856,9 +873,9 @@
         text-align: center;
     }
     #grid-wrapper > div.five > a div {
-        background-size: cover;
-        // background-size: 340%;
-        background-position: 55% center;
+        background-size: auto 100%;
+        background-position: 55%;
+        background-repeat: no-repeat;
     }
     //CARD FOUR
     #grid-wrapper div.four a div {
@@ -878,8 +895,9 @@
         text-align: center;
     }
     #grid-wrapper > div.four > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD THREE
     #grid-wrapper div.three a div {
@@ -899,8 +917,9 @@
         // text-align: center;
     }
     #grid-wrapper > div.three > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD TWO
     #grid-wrapper div.two a div {
@@ -920,8 +939,9 @@
         text-align: center;
     }
     #grid-wrapper > div.two > a div {
-        background-size: cover;
+        background-size: auto 135%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD ONE
     #grid-wrapper div.one a div {
@@ -941,8 +961,9 @@
         text-align: center;
     }
     #grid-wrapper > div.one > a div {
-        background-size: 222%;
+        background-size: auto 140%;
         background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -1027,8 +1048,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.twelve > a div {
-        background-size: auto 150%;
+        background-size: auto 140%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD ELEVEN
     #grid-wrapper div.eleven a div {
@@ -1047,8 +1069,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eleven > a div {
-        background-size: auto;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD TEN
     #grid-wrapper div.ten a div {
@@ -1067,8 +1090,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.ten > a div {
-        background-size: auto;
+        background-size: auto 120%;
         background-position: 90%;
+        background-repeat: no-repeat;
     }
     //CARD NINE
     #grid-wrapper div.nine a div {
@@ -1087,8 +1111,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.nine > a div {
-        background-size: auto;
+        background-size: auto 120%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD EIGHT
     #grid-wrapper div.eight a div {
@@ -1107,8 +1132,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.eight > a div {
-        background-size: auto;
-        background-position: 40% center;
+        background-size: auto 150%;
+        background-position: 40%;
+        background-repeat: no-repeat;
     }
     //CARD SEVEN
     #grid-wrapper div.seven a div {
@@ -1127,8 +1153,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.seven > a div {
-        background-size: auto;
+        background-size: auto 120%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD SIX
     #grid-wrapper div.six a div {
@@ -1147,8 +1174,9 @@
         text-decoration: none;
     }
     #grid-wrapper > div.six > a div {
-        background-size: auto 150%;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD FIVE
     #grid-wrapper div.five a div {
@@ -1168,9 +1196,9 @@
         text-align: center;
     }
     #grid-wrapper > div.five > a div {
-        background-size: cover;
-        // background-size: 340%;
-        background-position: 55% center;
+        background-size: auto 100%;
+        background-position: 55%;
+        background-repeat: no-repeat;
     }
     //CARD FOUR
     #grid-wrapper div.four a div {
@@ -1190,8 +1218,9 @@
         text-align: center;
     }
     #grid-wrapper > div.four > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD THREE
     #grid-wrapper div.three a div {
@@ -1211,8 +1240,9 @@
         // text-align: center;
     }
     #grid-wrapper > div.three > a div {
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD TWO
     #grid-wrapper div.two a div {
@@ -1232,8 +1262,9 @@
         text-align: center;
     }
     #grid-wrapper > div.two > a div {
-        background-size: cover;
+        background-size: auto 140%;
         background-position: center;
+        background-repeat: no-repeat;
     }
     //CARD ONE
     #grid-wrapper div.one a div {
@@ -1253,8 +1284,9 @@
         text-align: center;
     }
     #grid-wrapper > div.one > a div {
-        background-size: 222%;
+        background-size: auto 140%;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     //HOVER EFFECT GRID AREA'S

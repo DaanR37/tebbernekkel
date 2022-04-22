@@ -4,11 +4,11 @@ import Animatedpage from '../Animatedpage';
 import "./commercials.scss";
 
 export default function Commercials() {
-    const videoIndex = ["one", "two", "three", "four", "eleven", "six", "eight", "seven", "nine", "ten", "five", "twelve"];
+    const videoIndex = ["two", "one", "three", "four", "eleven", "six", "eight", "seven", "nine", "ten", "five", "twelve"];
 
     const [portfolioData, setPortfolioData] = useState([]);
     useEffect(() => {
-        fetch("http://192.168.1.17:3001/commercials")
+        fetch("http://192.168.1.31:3001/commercials")
             // fetch("http://localhost:3001/commercials")
             .then(response => response.json())
             .then(portfolioData => {

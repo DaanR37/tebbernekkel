@@ -15,20 +15,16 @@ export default function About() {
       width: 100%;
       height: 200%;
     }
-    // @media (min-width: 600px) and (orientation: portrait) {
-    //   width: 100%;
-    //   height: 200%;
-    // }
   `
 
   return (
-      <CanvasContainerMoon>
-        <TopsectionAwards />
-        <Canvas>
-          <Suspense fallback={null}>
-            <Moon />
-          </Suspense>
-        </Canvas>
-      </CanvasContainerMoon>
+    <CanvasContainerMoon>
+      <TopsectionAwards />
+      <Canvas>
+        <Suspense fallback={null}>
+          <Moon />
+        </Suspense>
+      </Canvas>
+    </CanvasContainerMoon>
   );
 }
