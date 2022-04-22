@@ -8,8 +8,8 @@ export default function Fiction() {
 
   const [portfolioDataFiction, setPortfolioDataFiction] = useState([]);
   useEffect(() => {
-    fetch("http://192.168.1.31:3001/fiction")
-      // fetch("http://localhost:3001/fiction")
+    // fetch("http://192.168.1.31:3001/fiction")
+      fetch("http://localhost:3001/fiction")
       .then(response => response.json())
       .then(portfolioDataFiction => {
         setPortfolioDataFiction(portfolioDataFiction)
