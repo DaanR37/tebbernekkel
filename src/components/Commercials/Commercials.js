@@ -9,7 +9,7 @@ export default function Commercials() {
     const [portfolioData, setPortfolioData] = useState([]);
     useEffect(() => {
         // fetch("http://192.168.1.31:3001/commercials")
-            fetch("http://localhost:3001/commercials")
+            fetch("https://www.tebbernekkel.nl/commercials")
             .then(response => response.json())
             .then(portfolioData => {
                 setPortfolioData(portfolioData)
