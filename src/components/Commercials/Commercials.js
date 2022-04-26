@@ -16,7 +16,7 @@ export default function Commercials() {
                 setPortfolioData(portfolioData)
                 // console.log(portfolioData);
             }).catch(error => {
-                console.log(error.message)
+                // console.log(error.message)
             })
     }, []);
 

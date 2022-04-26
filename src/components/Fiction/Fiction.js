@@ -15,7 +15,7 @@ export default function Fiction() {
         setPortfolioDataFiction(portfolioDataFiction)
         // console.log(portfolioData);
       }).catch(error => {
-        console.log(error.message)
+        // console.log(error.message)
       })
   }, []);
 

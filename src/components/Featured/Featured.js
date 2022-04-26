@@ -27,7 +27,7 @@ export default function Featured() {
         setFeatureData(featureData)
       })
       .catch((error) => {
-        console.log(error.message)
+        // console.log(error.message)
       });
     const resizeHeight = () => {
       setwinHeight(() => window.innerHeight)
