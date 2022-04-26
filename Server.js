@@ -3,7 +3,9 @@ require('dotenv').config()
 const express = require("express");
 const cors = require("cors");
 
-const port = process.env.PORT || 3001;
+// const port = "https://api.tebbernekkel.nl.mycube.dev/";
+const port = process.env.PORT || "https://api.tebbernekkel.nl.mycube.dev";
+// const port = process.env.tebbernekkel.nl;
 const app = express();
 
 app.use(cors());
@@ -58,5 +60,6 @@ app.get("/fiction", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Server running at https://localhost:${port}`)
+    console.log(`Server running at https://api.tebbernekkel.nl.mycube.dev`)
+    // console.log(`Server running at https://localhost:${port}`)
 });
