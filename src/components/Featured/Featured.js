@@ -24,13 +24,13 @@ export default function Featured() {
       fetch("https://tebbernekkel.nl.mycube.dev/featured")
       .then((response) => response.json())
       .then((featureData) => {
-        setFeatureData(featureData);
+        setFeatureData(featureData)
       })
       .catch((error) => {
-        console.log(error.message);
+        console.log(error.message)
       });
     const resizeHeight = () => {
-      setwinHeight(() => window.innerHeight);
+      setwinHeight(() => window.innerHeight)
     };
     window.addEventListener("resize", resizeHeight);
     document.body.classList.add("slide-page");
