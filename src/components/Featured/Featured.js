@@ -21,7 +21,8 @@ export default function Featured() {
   //FETCHING DATA
   useEffect(() => {
     // fetch("http://www.localhost:3001/featured")
-      fetch("https://tebbernekkel.nl.mycube.dev/featured")
+    // fetch("https://tebbernekkel.nl.mycube.dev/featured")
+    fetch("https://tebbernekkel.nl/featured")
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData)
