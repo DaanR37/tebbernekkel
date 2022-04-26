@@ -20,8 +20,7 @@ export default function Featured() {
 
   //FETCHING DATA
   useEffect(() => {
-    // fetch("http://192.168.1.31:3001/featured")
-      // fetch("http://localhost:3001/featured")
+    // fetch("http://www.localhost:3001/featured")
       fetch("https://www.tebbernekkel.nl/featured")
       .then((response) => response.json())
       .then((featureData) => {
