@@ -10,8 +10,8 @@ export default function Commercials() {
 
     useEffect(() => {
         // fetch("http://www.localhost:3001/commercials")
-        // fetch("https://tebbernekkel.nl.mycube.dev/commercials")
-        fetch("https://tebbernekkel.nl/commercials")
+        fetch("https://tebbernekkel.nl.mycube.dev/commercials")
+        // fetch("https://tebbernekkel.nl/commercials")
             .then(response => response.json())
             .then(portfolioData => {
                 setPortfolioData(portfolioData)
