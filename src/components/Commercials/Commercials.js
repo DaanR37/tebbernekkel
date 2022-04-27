@@ -1,26 +1,23 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import Animatedpage from '../Animatedpage';
 import "./commercials.scss";
 
 export default function Commercials() {
     const videoIndex = ["two", "one", "three", "four", "eleven", "six", "eight", "seven", "nine", "ten", "five", "twelve"];
-
     const [portfolioData, setPortfolioData] = useState([]);
 
     useEffect(() => {
-        // fetch("http://www.localhost:3001/commercials")
-        fetch("https://tebbernekkel.nl.mycube.dev/commercials")
-        // fetch("https://tebbernekkel.nl/commercials")
+        fetch("https://api.tebbernekkel.nl/commercials")
             .then(response => response.json())
             .then(portfolioData => {
-                setPortfolioData(portfolioData)
-                // console.log(portfolioData);
-            }).catch(error => {
-                // console.log(error.message)
-            })
+                    setPortfolioData(portfolioData)
+                }
+            ).catch(error => {
+                console.log(error.message)
+            }
+        )
     }, []);
-
     return (
         <Animatedpage>
             <section id="commercial-container">
