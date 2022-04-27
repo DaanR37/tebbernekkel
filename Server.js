@@ -60,6 +60,6 @@ app.get("/fiction", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Server running at https://api.tebbernekkel.nl.mycube.dev`)
+    console.log(`Server running at ${port}`)
     // console.log(`Server running at https://localhost:${port}`)
 });
