@@ -7,10 +7,11 @@ export default function Commercials() {
     const videoIndex = ["two", "one", "three", "four", "eleven", "six", "eight", "seven", "nine", "ten", "five", "twelve"];
 
     const [portfolioData, setPortfolioData] = useState([]);
-    
+
     useEffect(() => {
         // fetch("http://www.localhost:3001/commercials")
-            fetch("https://tebbernekkel.nl.mycube.dev/commercials")
+        // fetch("https://tebbernekkel.nl.mycube.dev/commercials")
+        fetch("https://tebbernekkel.nl/commercials")
             .then(response => response.json())
             .then(portfolioData => {
                 setPortfolioData(portfolioData)

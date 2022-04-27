@@ -9,7 +9,8 @@ export default function Fiction() {
   const [portfolioDataFiction, setPortfolioDataFiction] = useState([]);
   useEffect(() => {
     // fetch("http://www.localhost:3001/fiction")
-      fetch("https://tebbernekkel.nl.mycube.dev/fiction")
+    // fetch("https://tebbernekkel.nl.mycube.dev/fiction")
+    fetch("https://tebbernekkel.nl/fiction")
       .then(response => response.json())
       .then(portfolioDataFiction => {
         setPortfolioDataFiction(portfolioDataFiction)

@@ -4,8 +4,8 @@ const express = require("express");
 const cors = require("cors");
 
 // const port = "https://api.tebbernekkel.nl.mycube.dev/";
-const port = process.env.PORT || "https://api.tebbernekkel.nl.mycube.dev";
-// const port = process.env.tebbernekkel.nl;
+// const port = process.env.PORT || "https://api.tebbernekkel.nl.mycube.dev";
+const port = process.env.tebbernekkel.nl;
 const app = express();
 
 app.use(cors());
