@@ -3,8 +3,8 @@ require('dotenv').config()
 const express = require("express");
 const cors = require("cors");
 
-// const port = "https://api.tebbernekkel.nl.mycube.dev/";
-const port = process.env.PORT || "https://api.tebbernekkel.nl.mycube.dev";
+const port = "https://api.tebbernekkel.nl.mycube.dev/";
+// const port = process.env.PORT || "https://api.tebbernekkel.nl.mycube.dev";
 // const port = process.env.tebbernekkel.nl;
 const app = express();
 
