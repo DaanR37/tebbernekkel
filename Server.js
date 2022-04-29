@@ -3,9 +3,7 @@ require('dotenv').config()
 const express = require("express");
 const cors = require("cors");
 
-const port = "https://api.tebbernekkel.nl.mycube.dev/";
-// const port = process.env.PORT || "https://api.tebbernekkel.nl.mycube.dev";
-// const port = process.env.tebbernekkel.nl;
+const port = process.env.PORT || 3001;
 const app = express();
 
 app.use(cors());
@@ -16,7 +14,6 @@ let client = new Vimeo(
     process.env.CLIENT_SECRET,
     process.env.ACCESS_TOKEN
 );
-
 
 //FEATURED ENDPOINT
 app.get("/featured", (req, res) => {
@@ -57,9 +54,6 @@ app.get("/fiction", (req, res) => {
     });
 });
 
-
-
 app.listen(port, () => {
-    console.log(`Server running at ${port}`)
-    // console.log(`Server running at https://localhost:${port}`)
+    console.log(`Server running at http://localhost:${port}`)
 });
