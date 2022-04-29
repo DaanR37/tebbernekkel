@@ -17,7 +17,7 @@ export default function Topsection() {
                             <h3>quintin@tebbernekkel.com</h3>
                         </a>
 
-                        <a href='tel:0681476083' target="_blank" rel="noreferrer" className="content-details-phone">
+                        <a href='tel:0631973485' target="_blank" rel="noreferrer" className="content-details-phone">
                             <h3>+31 (0)6 31 97 34 85</h3>
                         </a>
                     </div>
@@ -93,7 +93,7 @@ export default function Topsection() {
                             <h3>info@tebbernekkel.com</h3>
                         </a>
 
-                        <a href='tel:0681476083' target="_blank" rel="noreferrer" className="content-details-phone-five">
+                        <a href='tel:0631973485' target="_blank" rel="noreferrer" className="content-details-phone-five">
                             <h3>+31 (0)6 31 97 34 85</h3>
                         </a>
                     </div>
