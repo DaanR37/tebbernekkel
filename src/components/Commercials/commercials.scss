@@ -644,7 +644,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 600px) and (orientation: landscape) {
     #grid-wrapper {
         display: grid;
         // max-width: 1920px;

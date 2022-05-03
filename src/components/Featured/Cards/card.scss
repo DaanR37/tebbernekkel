@@ -40,12 +40,12 @@
     }
 }
 
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 600px) and (orientation: landscape) {
     .card.active {
-        left: 7%;
+        left: 8.5%;
         bottom: 50%;
         color: #75d5fd;
-        transform: translate(-7%, 50%);
+        transform: translate(-8.5%, 50%);
         h3 {
             transform: translate(0.1rem);
             font-size: 32.5px;

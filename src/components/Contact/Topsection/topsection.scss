@@ -5,7 +5,6 @@
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
 }
-
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .container-desktop {
         display: none;
@@ -148,6 +147,193 @@
             letter-spacing: 0.03rem;
             color: whitesmoke;
             font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+    ///DISPLAY NONE
+    .container-desktop {
+        display: none;
+    }
+    ///HQ CARD
+    .card-five {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 5rem;
+        left: 45%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        h3 {
+            letter-spacing: 0.01rem;
+            line-height: 1.1rem;
+            color: whitesmoke;
+            font-size: 10px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+        color: #f5a1a3;
+    }
+    ///EMILY CARD
+    .card-two {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 5rem;
+        left: 72%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        h3 {
+            letter-spacing: 0.01rem;
+            line-height: 1.1rem;
+            color: whitesmoke;
+            font-size: 10px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+        color: #f5a1a3;
+    }
+    ///QUINTEN CARD
+    .card-one {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 10.5rem;
+        left: 45%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        h3 {
+            letter-spacing: 0.01rem;
+            line-height: 1.1rem;
+            color: whitesmoke;
+            font-size: 10px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    #root > div > section > div.card-one > a.content-details-phone > h3 {
+        color: #f5a1a3;
+    }
+    ///LAUREN CARD
+    .card-four {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 10.5rem;
+        left: 72%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        h3 {
+            letter-spacing: 0.01rem;
+            line-height: 1.1rem;
+            color: whitesmoke;
+            font-size: 10px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
+    }
+    ///CREATIVES CARD
+    .card-three {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 16.5rem;
+        left: 45%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        h3 {
+            letter-spacing: 0.01rem;
+            line-height: 1.1rem;
+            color: whitesmoke;
+            font-size: 10px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    ///SOCIALS CARD
+    .card-six {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 16.5rem;
+        left: 72%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        h3 {
+            letter-spacing: 0.01rem;
+            line-height: 1.1rem;
+            color: whitesmoke;
+            font-size: 10px;
             font-weight: 100;
             margin: 0;
         }
@@ -362,7 +548,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     ///DISPLAY NONE
     .container-desktop {
         display: none;
@@ -374,7 +560,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 14rem;
+        top: 12rem;
         left: 45%;
         line-height: 1.5rem;
         z-index: 2;
@@ -390,7 +576,7 @@
             letter-spacing: 0.01rem;
             line-height: 1.7rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
@@ -408,7 +594,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 14rem;
+        top: 12rem;
         left: 72%;
         line-height: 1.5rem;
         z-index: 2;
@@ -424,7 +610,7 @@
             letter-spacing: 0.01rem;
             line-height: 1.7rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
@@ -442,7 +628,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 23rem;
+        top: 22rem;
         left: 45%;
         line-height: 1.5rem;
         z-index: 2;
@@ -458,7 +644,7 @@
             letter-spacing: 0.01rem;
             line-height: 1.7rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
@@ -476,7 +662,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 23rem;
+        top: 22rem;
         left: 72%;
         line-height: 1.5rem;
         z-index: 2;
@@ -492,7 +678,7 @@
             letter-spacing: 0.01rem;
             line-height: 1.7rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
@@ -526,7 +712,7 @@
             letter-spacing: 0.01rem;
             line-height: 1.7rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
@@ -557,7 +743,7 @@
             letter-spacing: 0.01rem;
             line-height: 1.7rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
