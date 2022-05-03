@@ -241,11 +241,11 @@
         display: flex;
         justify-content: flex-end;
         width: 40vw;
-        transform: scale(1);
+        // transform: scale(1);
         a {
             color: whitesmoke;
-            font-size: 22.5px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 100;
             letter-spacing: 0.1em;
             text-decoration: none;
             &:hover {
@@ -256,7 +256,7 @@
     }
     #root > header > .desktop-container > ul.header-left-side > li:nth-child(1) {
         position: relative;
-        right: 3.5rem;
+        right: 2rem;
     }
     .bbk-logo {
         display: flex;
@@ -273,8 +273,8 @@
         transform: scale(1);
         a {
             color: whitesmoke;
-            font-size: 22.5px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 100;
             letter-spacing: 0.1em;
             text-decoration: none;
             &:hover {
@@ -285,7 +285,7 @@
     }
     #root > header > .desktop-container > ul.header-right-side > li:nth-child(2) {
         position: relative;
-        left: 3.5rem;
+        left: 2rem;
     }
 }
 
