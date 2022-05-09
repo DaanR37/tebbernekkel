@@ -4,7 +4,7 @@ import Animatedpage from '../Animatedpage';
 import "./commercials.scss";
 
 export default function Commercials() {
-    const videoIndex = ["two", "one", "three", "four", "eleven", "six", "eight", "seven", "nine", "ten", "five", "twelve"];
+    const videoIndex = ["two", "one", "three", "four", "six", "eleven", "eight", "seven", "nine", "ten", "five", "twelve"];
     const [portfolioData, setPortfolioData] = useState([]);
 
     useEffect(() => {

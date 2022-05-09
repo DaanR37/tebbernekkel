@@ -4,7 +4,7 @@ import Animatedpage from "../Animatedpage";
 import "./fiction.scss";
 
 export default function Fiction() {
-    const videoIndexFiction = ["seven-f", "six-f", "three-f", "four-f", "five-f", "two-f", "one-f"];
+    const videoIndexFiction = ["seven-f", "three-f", "four-f", "five-f", "six-f", "two-f", "one-f"];
 
     const [portfolioDataFiction, setPortfolioDataFiction] = useState([]);
     useEffect(() => {
