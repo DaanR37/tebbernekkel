@@ -37,7 +37,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
     }
     .card-two {
@@ -61,7 +61,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
     }
     .card-one {
@@ -85,7 +85,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-one > a.content-details-phone > h3 {
+    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
         color: #f5a1a3;
     }
     .card-four {
@@ -109,7 +109,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
     }
     .card-three {
@@ -189,7 +189,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
     }
     ///EMILY CARD
@@ -220,7 +220,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
     }
     ///QUINTEN CARD
@@ -251,7 +251,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-one > a.content-details-phone > h3 {
+    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
         color: #f5a1a3;
     }
     ///LAUREN CARD
@@ -282,7 +282,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
     }
     ///CREATIVES CARD
@@ -379,7 +379,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
     }
     ///EMILY CARD
@@ -413,7 +413,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
     }
     ///QUINTEN CARD
@@ -447,7 +447,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-one > a.content-details-phone > h3 {
+    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
         color: #f5a1a3;
     }
     ///LAUREN CARD
@@ -481,7 +481,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
     }
     ///CREATIVES CARD
@@ -584,7 +584,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-five > a.content-details-phone-five > h3 {
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
     }
     ///EMILY CARD
@@ -618,7 +618,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-two > a.content-details-phone-two > h3 {
+    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
     }
     ///QUINTEN CARD
@@ -652,7 +652,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-one > a.content-details-phone > h3 {
+    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
         color: #f5a1a3;
     }
     ///LAUREN CARD
@@ -686,7 +686,7 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.card-four > a.content-details-phone-four > h3 {
+    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
     }
     ///CREATIVES CARD
@@ -754,547 +754,320 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .card-one {
-        display: none;
-    }
-    .card-two {
-        display: none;
-    }
-    .card-three {
-        display: none;
-    }
-    .card-four {
-        display: none;
-    }
-    .card-five {
-        display: none;
-    }
-    .card-six {
-        display: none;
-    }
+    ///DISPLAY NONE
     .container-desktop {
-        position: absolute;
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: repeat(18, 1fr);
-        grid-template-rows: repeat(13, 1fr);
-        gap: 1px;
+        display: none;
     }
-    //HQ BBKK CARD
-    .contact-name-five {
+
+    ///HQ CARD
+    .card-five {
         position: absolute;
-        grid-column: 11/14;
-        grid-row: 3/4;
-        top: 50px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        cursor: pointer;
-        z-index: 1;
-        letter-spacing: 0.05rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 10rem;
+        left: 55%;
+        line-height: 1.5rem;
+        z-index: 2;
         h1 {
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-    }
-    .content-details-title-five {
-        position: absolute;
-        grid-column: 11/14;
-        grid-row: 4/5;
-        top: 25px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
         h3 {
-            margin: 0;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            color: whitesmoke;
+            font-size: 15px;
             font-weight: 100;
+            margin: 0;
+            // padding: 0;
+            opacity: 0.75;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
-    .content-five:hover .content-details-title-five {
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-title-five > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-details-mail-five {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 4/5;
-        top: 45px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-five:hover .content-details-mail-five {
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-mail-five > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-details-phone-five {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 4/5;
-        top: 65px;
-        left: 0.2rem;
-        font-size: 12px;
+    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-five:hover .content-details-phone-five {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    //EMILY CARD
-    .contact-name-two {
+
+    ///EMILY CARD
+    .card-two {
         position: absolute;
-        grid-column: 14/16;
-        grid-row: 3/4;
-        top: 50px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        cursor: pointer;
-        letter-spacing: 0.05rem;
-        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 10rem;
+        left: 75%;
+        line-height: 1.5rem;
+        z-index: 2;
         h1 {
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-    }
-    .content-details-title-two {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 4/5;
-        top: 25px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        z-index: 1;
-        letter-spacing: 0.03rem;
         h3 {
-            margin: 0;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            color: whitesmoke;
+            font-size: 15px;
             font-weight: 100;
+            margin: 0;
+            // padding: 0;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
-    .content-details-mail-two {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 4/5;
-        top: 45px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-two:hover .content-details-mail-two {
+    #root > div > section > div.container-mobile > div.card-two > div.content-details-title-two > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-details-phone-two {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 4/5;
-        top: 65px;
-        left: 0;
-        font-size: 12px;
+    #root > div > section > div.container-mobile > div.card-two > a.content-details-mail-two > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
+        opacity: 0.75;
         color: #f5a1a3;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-two:hover .content-details-phone-two {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    //QUINTIN CARD
-    .contact-name-one {
+
+    ///QUINTEN CARD
+    .card-one {
         position: absolute;
-        grid-column: 11/14;
-        grid-row: 5/6;
-        top: 80px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        cursor: pointer;
-        letter-spacing: 0.05rem;
-        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 20rem;
+        left: 55%;
+        line-height: 1.5rem;
+        z-index: 2;
         h1 {
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-    }
-    .content-details-title {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 6/7;
-        top: 55px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        z-index: 1;
-        letter-spacing: 0.03rem;
         h3 {
-            margin: 0;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            color: whitesmoke;
+            font-size: 15px;
             font-weight: 100;
+            margin: 0;
+            // padding: 0;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
-    .content-details-mail {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 6/7;
-        top: 75px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-one:hover .content-details-mail {
+    #root > div > section > div.container-mobile > div.card-one > div.content-details-title > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-details-phone {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 6/7;
-        top: 95px;
-        left: 0.2rem;
-        font-size: 12px;
+    #root > div > section > div.container-mobile > div.card-one > a.content-details-mail > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
+        opacity: 0.75;
         color: #f5a1a3;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-one:hover .content-details-phone {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    //LAUREN CARD
-    .contact-name-four {
+
+    ///LAUREN CARD
+    .card-four {
         position: absolute;
-        grid-column: 14/16;
-        grid-row: 5/6;
-        top: 80px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        z-index: 1;
-        letter-spacing: 0.05rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 20rem;
+        left: 75%;
+        line-height: 1.5rem;
+        z-index: 2;
         h1 {
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-    }
-    .content-details-title-four {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 6/7;
-        top: 55px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        z-index: 1;
-        letter-spacing: 0.03rem;
         h3 {
-            margin: 0;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            color: whitesmoke;
+            font-size: 15px;
             font-weight: 100;
+            margin: 0;
+            // padding: 0;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
-    .content-details-mail-four {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 6/7;
-        top: 75px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-four:hover .content-details-mail-four {
+    #root > div > section > div.container-mobile > div.card-four > div.content-details-title-four > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-details-phone-four {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 6/7;
-        top: 95px;
-        left: 0;
-        font-size: 12px;
+    #root > div > section > div.container-mobile > div.card-four > a.content-details-mail-four > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
+        opacity: 0.75;
         color: #f5a1a3;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-four:hover .content-details-phone-four {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    //ACHMED & BLUE CARD
-    .contact-name-three {
+
+    ///CREATIVES CARD
+    .card-three {
         position: absolute;
-        grid-column: 11/13;
-        grid-row: 8/9;
-        top: 45px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        cursor: pointer;
-        z-index: 1;
-        letter-spacing: 0.05rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 30rem;
+        left: 55%;
+        line-height: 1.5rem;
+        z-index: 2;
         h1 {
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-    }
-    .content-details-title-three {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 9/10;
-        top: 20px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        z-index: 1;
-        letter-spacing: 0.03rem;
         h3 {
-            margin: 0;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            color: whitesmoke;
+            font-size: 15px;
             font-weight: 100;
+            margin: 0;
+            // padding: 0;
+            // opacity: 0.75;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
-    .content-details-mail-three {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 9/10;
-        top: 40px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
+    #root > div > section > div.container-mobile > div.card-three > a.content-details-mail-three > h3 {
         opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-three:hover .content-details-mail-three {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-details-title-three-blue {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 9/10;
-        top: 70px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        z-index: 1;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
+    #root > div > section > div.container-mobile > div.card-three > div.content-details-title-three-blue {
+        margin-top: 8px;
     }
-    .content-details-mail-three-blue {
-        position: absolute;
-        grid-column: 11/13;
-        grid-row: 9/10;
-        top: 90px;
-        left: 0.2rem;
-        font-size: 12px;
-        color: white;
+    #root > div > section > div.container-mobile > div.card-three > a.content-details-mail-three-blue > h3 {
         opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-three:hover .content-details-mail-three-blue {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    //SOCIALS CARD
-    .contact-name-six {
+
+    ///SOCIALS CARD
+    .card-six {
         position: absolute;
-        grid-column: 14/16;
-        grid-row: 8/9;
-        top: 45px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 1;
-        cursor: pointer;
-        z-index: 1;
-        letter-spacing: 0.05rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 30rem;
+        left: 75%;
+        line-height: 1.5rem;
+        z-index: 2;
         h1 {
-            margin: 0;
-            padding: 0;
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
-    }
-    .content-instagram {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 9/10;
-        top: 20px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
         h3 {
-            margin: 0;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            color: whitesmoke;
+            font-size: 15px;
             font-weight: 100;
+            margin: 0;
+            // padding: 0;
+            opacity: 0.75;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
-    .content-six:hover .content-instagram {
+    #root > div > section > div.container-mobile > div.card-six > a.content-instagram > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-facebook {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 9/10;
-        top: 40px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-six:hover .content-facebook {
+    #root > div > section > div.container-mobile > div.card-six > a.content-facebook > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
-    .content-vimeo {
-        position: absolute;
-        grid-column: 14/16;
-        grid-row: 9/10;
-        top: 60px;
-        left: 0;
-        font-size: 12px;
-        color: white;
-        opacity: 0.75;
-        z-index: 1;
-        cursor: pointer;
-        text-decoration: none;
-        letter-spacing: 0.03rem;
-        h3 {
-            margin: 0;
-            font-weight: 100;
-        }
-    }
-    .content-six:hover .content-vimeo {
+    #root > div > section > div.container-mobile > div.card-six > a.content-vimeo > h3 {
         &:hover {
             opacity: 1;
-            transition: ease-in-out 100ms;
+            transition: ease-in-out 350ms;
         }
     }
 }
