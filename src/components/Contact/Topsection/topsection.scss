@@ -5,12 +5,12 @@
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
 }
+///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .container-desktop {
         display: none;
     }
     h1 {
-        // position: relative;
         letter-spacing: 0.04rem;
         color: whitesmoke;
         font-size: 17px;
@@ -155,7 +155,7 @@
         }
     }
 }
-
+///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     ///DISPLAY NONE
     .container-desktop {
@@ -169,7 +169,7 @@
         max-width: 35vw;
         max-height: 30vh;
         top: 5rem;
-        left: 45%;
+        left: 55%;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -200,7 +200,7 @@
         max-width: 35vw;
         max-height: 30vh;
         top: 5rem;
-        left: 72%;
+        left: 80%;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -231,7 +231,7 @@
         max-width: 35vw;
         max-height: 30vh;
         top: 10.5rem;
-        left: 45%;
+        left: 55%;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -262,7 +262,7 @@
         max-width: 35vw;
         max-height: 30vh;
         top: 10.5rem;
-        left: 72%;
+        left: 80%;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -293,7 +293,7 @@
         max-width: 35vw;
         max-height: 30vh;
         top: 16.5rem;
-        left: 45%;
+        left: 55%;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -321,7 +321,7 @@
         max-width: 35vw;
         max-height: 30vh;
         top: 16.5rem;
-        left: 72%;
+        left: 80%;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -342,7 +342,7 @@
         }
     }
 }
-
+///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
     ///DISPLAY NONE
     .container-desktop {
@@ -355,7 +355,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 22rem;
+        top: 15rem;
         left: 28%;
         line-height: 1.5rem;
         z-index: 2;
@@ -369,10 +369,10 @@
         h3 {
             position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.9rem;
             color: whitesmoke;
             font-size: 18px;
-            font-weight: 100;
+            font-weight: 400;
             margin: 0;
         }
         a {
@@ -389,7 +389,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 22rem;
+        top: 15rem;
         left: 65%;
         line-height: 1.5rem;
         z-index: 2;
@@ -403,10 +403,10 @@
         h3 {
             position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.9rem;
             color: whitesmoke;
             font-size: 18px;
-            font-weight: 100;
+            font-weight: 400;
             margin: 0;
         }
         a {
@@ -423,7 +423,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 30rem;
+        top: 25rem;
         left: 28%;
         line-height: 1.5rem;
         z-index: 2;
@@ -437,10 +437,10 @@
         h3 {
             position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.9rem;
             color: whitesmoke;
             font-size: 18px;
-            font-weight: 100;
+            font-weight: 400;
             margin: 0;
         }
         a {
@@ -457,7 +457,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 30rem;
+        top: 25rem;
         left: 65%;
         line-height: 1.5rem;
         z-index: 2;
@@ -471,10 +471,10 @@
         h3 {
             position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.9rem;
             color: whitesmoke;
             font-size: 18px;
-            font-weight: 100;
+            font-weight: 400;
             margin: 0;
         }
         a {
@@ -491,7 +491,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 39rem;
+        top: 35rem;
         left: 28%;
         line-height: 1.5rem;
         z-index: 2;
@@ -505,10 +505,10 @@
         h3 {
             position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.9rem;
             color: whitesmoke;
             font-size: 18px;
-            font-weight: 100;
+            font-weight: 400;
             margin: 0;
         }
         a {
@@ -522,7 +522,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 39rem;
+        top: 35rem;
         left: 65%;
         line-height: 1.5rem;
         z-index: 2;
@@ -536,10 +536,10 @@
         h3 {
             position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.9rem;
             color: whitesmoke;
             font-size: 18px;
-            font-weight: 100;
+            font-weight: 400;
             margin: 0;
         }
         a {
@@ -547,7 +547,7 @@
         }
     }
 }
-
+///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     ///DISPLAY NONE
     .container-desktop {
@@ -560,23 +560,21 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 12rem;
-        left: 45%;
+        top: 11rem;
+        left: 52%;
         line-height: 1.5rem;
         z-index: 2;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.6rem;
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 100;
             margin: 0;
         }
@@ -594,23 +592,21 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 12rem;
-        left: 72%;
+        top: 11rem;
+        left: 77%;
         line-height: 1.5rem;
         z-index: 2;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.6rem;
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 100;
             margin: 0;
         }
@@ -628,23 +624,21 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 22rem;
-        left: 45%;
+        top: 21rem;
+        left: 52%;
         line-height: 1.5rem;
         z-index: 2;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.6rem;
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 100;
             margin: 0;
         }
@@ -662,23 +656,21 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 22rem;
-        left: 72%;
+        top: 21rem;
+        left: 77%;
         line-height: 1.5rem;
         z-index: 2;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.6rem;
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 100;
             margin: 0;
         }
@@ -696,23 +688,21 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 32rem;
-        left: 45%;
+        top: 31rem;
+        left: 52%;
         line-height: 1.5rem;
         z-index: 2;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.6rem;
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 100;
             margin: 0;
         }
@@ -727,23 +717,21 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 32rem;
-        left: 72%;
+        top: 31rem;
+        left: 77%;
         line-height: 1.5rem;
         z-index: 2;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 19px;
+            margin-bottom: 10px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.7rem;
+            line-height: 1.6rem;
             color: whitesmoke;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 100;
             margin: 0;
         }
@@ -752,7 +740,7 @@
         }
     }
 }
-
+///Desktop
 @media screen and (min-width: 1280px) {
     ///DISPLAY NONE
     .container-desktop {
@@ -766,7 +754,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 10rem;
+        top: 11rem;
         left: 55%;
         line-height: 1.5rem;
         z-index: 2;
@@ -818,7 +806,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 10rem;
+        top: 11rem;
         left: 75%;
         line-height: 1.5rem;
         z-index: 2;
@@ -871,7 +859,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 20rem;
+        top: 21rem;
         left: 55%;
         line-height: 1.5rem;
         z-index: 2;
@@ -924,7 +912,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 20rem;
+        top: 21rem;
         left: 75%;
         line-height: 1.5rem;
         z-index: 2;
@@ -977,7 +965,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 30rem;
+        top: 31rem;
         left: 55%;
         line-height: 1.5rem;
         z-index: 2;
@@ -1027,7 +1015,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 30rem;
+        top: 31rem;
         left: 75%;
         line-height: 1.5rem;
         z-index: 2;

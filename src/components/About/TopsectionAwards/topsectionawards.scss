@@ -5,6 +5,7 @@
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
 }
+///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .award-container-desktop-2020 {
         display: none;
@@ -71,7 +72,7 @@
         }
     }
 }
-
+///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     .award-container-mobile-2020 {
         display: none;
@@ -86,7 +87,7 @@
         flex-direction: column;
         max-width: 50vw;
         max-height: 30vh;
-        top: 3.5rem;
+        top: 5rem;
         left: 30%;
         z-index: 2;
         h1 {
@@ -117,7 +118,7 @@
         flex-direction: column;
         max-width: 50vw;
         max-height: 30vh;
-        top: 3.5rem;
+        top: 5rem;
         left: 60%;
         z-index: 2;
         h1 {
@@ -142,11 +143,13 @@
         }
     }
 }
-
+///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
+    ///DISPLAY NONE
     .award-container-mobile-2020 {
         display: none;
     }
+    ///DISPLAY NONE
     .award-container-mobile-2021 {
         display: none;
     }
@@ -164,7 +167,7 @@
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
+            font-size: 21px;
             margin-bottom: 5px;
         }
         h3 {
@@ -194,7 +197,7 @@
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
+            font-size: 21px;
             margin-bottom: 5px;
         }
         h3 {
@@ -211,7 +214,7 @@
         }
     }
 }
-
+///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     .award-container-mobile-2020 {
         display: none;
@@ -224,12 +227,10 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        // text-align: center;
         max-width: 50vw;
         max-height: 30vh;
-        top: 9rem;
+        top: 11rem;
         left: 30%;
-        // line-height: 2.1rem;
         z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
@@ -259,7 +260,7 @@
         flex-direction: column;
         max-width: 50vw;
         max-height: 30vh;
-        top: 9rem;
+        top: 11rem;
         left: 60%;
         // line-height: 2.1rem;
         z-index: 2;
@@ -285,7 +286,7 @@
         }
     }
 }
-
+///Desktop
 @media screen and (min-width: 1280px) {
     .award-container-mobile-2020 {
         display: none;
@@ -300,7 +301,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 10rem;
+        top: 11rem;
         left: 30%;
         z-index: 2;
         h1 {
@@ -331,7 +332,7 @@
         flex-direction: column;
         max-width: 35vw;
         max-height: 30vh;
-        top: 10rem;
+        top: 11rem;
         left: 60%;
         z-index: 2;
         h1 {

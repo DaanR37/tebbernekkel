@@ -17,29 +17,23 @@
         }
     }
     .embedded-player {
+        position: relative;
         iframe {
             width: 100%;
             height: 100%;
         }
         .player-text {
             display: none;
-            // text-align: center;
-            // margin-top: 8px;
-            // p {
-            //     color: whitesmoke;
-            //     display: inline-block;
-            //     margin-top: 0;
-            // }
         }
     }
 }
 
+///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .embedded-container-dekstop {
         display: none;
     }
     #embedded-player > div.embedded-container-mobile > div {
-        position: relative;
         width: 85vw;
         height: 30vh;
         bottom: 5rem;
@@ -49,18 +43,33 @@
         top: 15%;
         right: 0.9rem;
         opacity: 1;
-        // &:hover {
-        //     opacity: 1;
-        // }
     }
 }
-
+///Mobile Landscape
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+    .embedded-container-mobile {
+        display: none;
+    }
+    .embedded-player {
+        width: 50vw;
+        height: 55vh;
+        iframe {
+            transform: scale(1.1);
+        }
+    }
+    .times {
+        width: 2vw;
+        top: 5%;
+        right: 4%;
+        opacity: 1;
+    }
+}
+///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
     .embedded-container-dekstop {
         display: none;
     }
     #embedded-player > div.embedded-container-mobile > div {
-        position: relative;
         width: 85vw;
         height: 35vh;
         bottom: 5rem;
@@ -72,14 +81,13 @@
         opacity: 1;
     }
 }
-
-@media screen and (min-width: 600px) and (orientation: landscape) {
+///Tablet Landscape
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     .embedded-container-mobile {
         display: none;
     }
     .embedded-player {
-        position: relative;
-        width: 75vw;
+        width: 65vw;
         height: 55vh;
         iframe {
             transform: scale(1.1);
@@ -89,22 +97,15 @@
         width: 2vw;
         top: 5%;
         right: 4%;
-        opacity: 0.9;
-        cursor: pointer;
-        &:hover {
-            opacity: 1;
-            transform: rotate(180deg);
-            transition: 300ms linear;
-        }
+        opacity: 1;
     }
 }
-
+///Desktop
 @media screen and (min-width: 1280px) {
     .embedded-container-mobile {
         display: none;
     }
     .embedded-player {
-        position: relative;
         width: 55vw;
         height: 60vh;
         margin-top: 4%;

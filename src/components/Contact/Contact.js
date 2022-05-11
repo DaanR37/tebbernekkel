@@ -33,10 +33,8 @@ export default function Contact() {
                 <Earth />
               )
             }
-            {/* <Earth /> */}
           </Media>
         </Suspense>
-
       </Canvas>
     </CanvasContainer>
   );

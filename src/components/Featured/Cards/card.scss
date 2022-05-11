@@ -12,6 +12,7 @@
     }
 }
 
+///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .card.active {
         left: 15%;
@@ -19,28 +20,14 @@
         transform: translate(-4%, 50%);
         h3 {
             transform: translate(0.1rem);
-            font-size: 25px;
+            font-size: 27.5px;
             font-weight: 300;
             letter-spacing: 0.09rem;
         }
     }
 }
-
-@media screen and (min-width: 600px) and (orientation: portrait) {
-    .card.active {
-        left: 12%;
-        bottom: 50%;
-        transform: translate(-12%, 50%);
-        h3 {
-            transform: translate(0.1rem);
-            font-size: 35px;
-            font-weight: 300;
-            letter-spacing: 0.09rem;
-        }
-    }
-}
-
-@media screen and (min-width: 600px) and (orientation: landscape) {
+///Mobile Landscape
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     .card.active {
         left: 8.5%;
         bottom: 50%;
@@ -48,13 +35,42 @@
         transform: translate(-8.5%, 50%);
         h3 {
             transform: translate(0.1rem);
-            font-size: 32.5px;
+            font-size: 27.5px;
+            font-weight: 100;
+            letter-spacing: 0.05rem;
+        }
+    }
+}
+///Tablet Portrait
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    .card.active {
+        left: 12%;
+        bottom: 50%;
+        transform: translate(-12%, 50%);
+        h3 {
+            transform: translate(0.1rem);
+            font-size: 37px;
+            font-weight: 300;
+            letter-spacing: 0.09rem;
+        }
+    }
+}
+///Tablet Landscape
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
+    .card.active {
+        left: 8.5%;
+        bottom: 50%;
+        color: #75d5fd;
+        transform: translate(-8.5%, 50%);
+        h3 {
+            transform: translate(0.1rem);
+            font-size: 37px;
             font-weight: 300;
             letter-spacing: 0.05rem;
         }
     }
 }
-
+///Desktop
 @media screen and (min-width: 1280px) {
     .card.active {
         left: 6%;
