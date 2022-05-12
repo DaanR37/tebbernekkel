@@ -167,13 +167,13 @@
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 21px;
+            font-size: 19px;
             margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 100;
             margin-bottom: 0px;
             line-height: 14px;
@@ -197,13 +197,13 @@
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 21px;
+            font-size: 19px;
             margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 100;
             margin-bottom: 0px;
             line-height: 14px;
@@ -216,6 +216,7 @@
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
+    ///DISPLAY NONE
     .award-container-mobile-2020 {
         display: none;
     }
@@ -237,7 +238,7 @@
             color: whitesmoke;
             font-size: 19px;
             // opacity: 0.85;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.05rem;
@@ -269,7 +270,7 @@
             color: whitesmoke;
             font-size: 19px;
             // opacity: 0.85;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.05rem;
@@ -307,9 +308,9 @@
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 19px;
             // opacity: 0.85;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.05rem;
@@ -338,9 +339,80 @@
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 18px;
+            font-size: 19px;
             // opacity: 0.85;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            font-weight: 100;
+            opacity: 0.9;
+            margin-bottom: 0px;
+            line-height: 11px;
+            i {
+                font-size: 10px;
+                color: #f5a1a3;
+            }
+        }
+    }
+}
+///Desktop Big
+@media screen and (min-width: 1600px) {
+    .award-container-mobile-2020 {
+        display: none;
+    }
+    .award-container-mobile-2021 {
+        display: none;
+    }
+    ///AWARDS 2021 H1 & H3
+    .award-container-desktop-2021 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 13rem;
+        left: 30%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 19px;
+            // opacity: 0.85;
+            margin-bottom: 5px;
+        }
+        h3 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 15px;
+            font-weight: 100;
+            opacity: 0.9;
+            margin-bottom: 0px;
+            line-height: 11px;
+            i {
+                font-size: 10px;
+                color: #f5a1a3;
+            }
+        }
+    }
+    ///AWARDS 2020 H1 & H3
+    .award-container-desktop-2020 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+        max-height: 30vh;
+        top: 13rem;
+        left: 60%;
+        z-index: 2;
+        h1 {
+            letter-spacing: 0.05rem;
+            color: whitesmoke;
+            font-size: 19px;
+            // opacity: 0.85;
+            margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.05rem;
