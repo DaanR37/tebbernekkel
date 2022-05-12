@@ -741,7 +741,7 @@
     }
 }
 ///Desktop
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
     ///DISPLAY NONE
     .container-desktop {
         display: none;
@@ -1054,7 +1054,7 @@
     }
 }
 ///Desktop Big
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1441px) and (max-width: 1960px) {
     ///DISPLAY NONE
     .container-desktop {
         display: none;
