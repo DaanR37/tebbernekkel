@@ -3,6 +3,11 @@ import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 export default function Header() {
+
+    // const refreshPageOnClick = () => {
+    //     window.location.reload();
+    // }
+
     return (
         <header className="header-container">
             <div className="desktop-container">
@@ -16,7 +21,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/commercials" className="commercial-btn">commercials</NavLink>
+                        <NavLink to="/commercials" reloadDocument className="commercial-btn">commercials</NavLink>
                     </motion.li>
                     <motion.li
                         whileHover={{
@@ -27,7 +32,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/fiction" className="fiction-btn">fiction</NavLink>
+                        <NavLink to="/fiction" reloadDocument className="fiction-btn">fiction</NavLink>
                     </motion.li>
                 </ul>
                 <div>
@@ -61,7 +66,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/about" className="about-btn">awards</NavLink>
+                        <NavLink to="/about" reloadDocument className="about-btn">awards</NavLink>
                     </motion.li>
                     <motion.li
                         whileHover={{
@@ -72,7 +77,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/contact" className="contact-btn">contact</NavLink>
+                        <NavLink to="/contact" reloadDocument className="contact-btn">contact</NavLink>
                     </motion.li>
                 </ul>
             </div>
@@ -84,16 +89,16 @@ export default function Header() {
             <div id="mobile-container">
                 <ul className="nav-buttons">
                     <li>
-                        <NavLink to="/commercials" className="commercial-btn">commercials</NavLink>
+                        <NavLink to="/commercials" reloadDocument className="commercial-btn">commercials</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/fiction" className="fiction-btn">fiction</NavLink>
+                        <NavLink to="/fiction" reloadDocument className="fiction-btn">fiction</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className="about-btn">awards</NavLink>
+                        <NavLink to="/about" reloadDocument className="about-btn">awards</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" className="contact-btn">contact</NavLink>
+                        <NavLink to="/contact" reloadDocument className="contact-btn">contact</NavLink>
                     </li>
                 </ul>
             </div>
