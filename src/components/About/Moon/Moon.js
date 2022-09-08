@@ -9,11 +9,11 @@ export default function Moon(props) {
                 intensity={1.21}
             />
             <Stars
-                radius={100}
-                depth={40}
-                count={1500}
-                factor={4}
-                saturation={4}
+                radius={1}
+                depth={1}
+                count={0}
+                factor={1}
+                saturation={0}
                 fade={true}
             />
         </>

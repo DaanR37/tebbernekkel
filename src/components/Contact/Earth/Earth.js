@@ -36,9 +36,9 @@ export default function Earth(props) {
                     intensity={1.9}
                 />
                 <Stars
-                    radius={300}
-                    depth={60}
-                    count={5000}
+                    radius={1}
+                    depth={1}
+                    count={0}
                     factor={1}
                     saturation={0}
                     fade={true}
