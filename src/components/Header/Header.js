@@ -37,26 +37,12 @@ export default function Header() {
                 </ul>
                 <div>
                     <Link to="/" className="bbk-logo">
-                        <motion.img
-                            // initial={{ y: '+50vh', scale: 0.1 }}
-                            // animate={{
-                            //     scale: 1,
-                            //     y: 0,
-                            //     rotateY: 360
-                            // }}
-                            whileHover={{
-                                rotateX: 360
-                            }}
-                            transition={{
-                                duration: 1,
-                                type: 'tween'
-                            }}
+                        <img
                             src="images/BBKK-pink.png" alt="tebbernekkel logo"
                         />
                     </Link>
                 </div>
                 <ul className="header-right-side">
-
                     <motion.li
                         whileHover={{
                             scale: 1.1

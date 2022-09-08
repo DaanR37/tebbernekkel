@@ -4,22 +4,22 @@ export default function Topsection() {
     return (
         <section className="topsection-container">
             <div className="container-mobile">
-                <div className="card-one">
-                    <div className="contact-name-one">
-                        <h1>Managing director</h1>
+                <div className="cards five">
+                    <div className="contact-name-five">
+                        <h1>HQ Tebbernekkel</h1>
                     </div>
-                    <div className="content-details-title">
-                        <h3>Quintin Baker</h3>
-                    </div>
-                    <a href='mailto:quintin@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail">
-                        <h3>quintin@tebbernekkel.com</h3>
+                    <a href="https://g.page/tebbernekkel?share" target="_blank" rel="noreferrer" className="content-details-title-five">
+                        <h3>Weteringschans 79, 1017RX A'dam</h3>
                     </a>
-                    <a href='tel:0631973485' target="_blank" rel="noreferrer" className="content-details-phone">
+                    <a href='mailto:info@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-five">
+                        <h3>info@tebbernekkel.com</h3>
+                    </a>
+                    <a href='tel:0631973485' target="_blank" rel="noreferrer" className="content-details-phone-five">
                         <h3>+31 (0)6 31 97 34 85</h3>
                     </a>
                 </div>
 
-                <div className="card-two">
+                <div className="cards two">
                     <div className="contact-name-two">
                         <h1>Production</h1>
                     </div>
@@ -34,7 +34,37 @@ export default function Topsection() {
                     </a>
                 </div>
 
-                <div className="card-three">
+                <div className="cards one">
+                    <div className="contact-name-one">
+                        <h1>Managing director</h1>
+                    </div>
+                    <div className="content-details-title">
+                        <h3>Quintin Baker</h3>
+                    </div>
+                    <a href='mailto:quintin@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail">
+                        <h3>quintin@tebbernekkel.com</h3>
+                    </a>
+                    <a href='tel:0631973485' target="_blank" rel="noreferrer" className="content-details-phone">
+                        <h3>+31 (0)6 31 97 34 85</h3>
+                    </a>
+                </div>
+
+                <div className="cards four">
+                    <div className="contact-name-four">
+                        <h1>Finance</h1>
+                    </div>
+                    <div className="content-details-title-four">
+                        <h3>Lauren Visser</h3>
+                    </div>
+                    <a href='mailto:invoices@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-four">
+                        <h3>invoices@tebbernekkel.com</h3>
+                    </a>
+                    <a href='tel:0645727687' target="_blank" rel="noreferrer" className="content-details-phone-four">
+                        <h3>+31 (0)6 45 72 76 87</h3>
+                    </a>
+                </div>
+
+                <div className="cards three">
                     <div className="contact-name-three">
                         <h1>Creatives</h1>
                     </div>
@@ -52,37 +82,7 @@ export default function Topsection() {
                     </a>
                 </div>
 
-                <div className="card-four">
-                    <div className="contact-name-four">
-                        <h1>Finance</h1>
-                    </div>
-                    <div className="content-details-title-four">
-                        <h3>Lauren Visser</h3>
-                    </div>
-                    <a href='mailto:invoices@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-four">
-                        <h3>invoices@tebbernekkel.com</h3>
-                    </a>
-                    <a href='tel:0645727687' target="_blank" rel="noreferrer" className="content-details-phone-four">
-                        <h3>+31 (0)6 45 72 76 87</h3>
-                    </a>
-                </div>
-
-                <div className="card-five">
-                    <div className="contact-name-five">
-                        <h1>HQ Tebbernekkel</h1>
-                    </div>
-                    <a href="https://g.page/tebbernekkel?share" target="_blank" rel="noreferrer" className="content-details-title-five">
-                        <h3>Weteringschans 79, 1017RX A'dam</h3>
-                    </a>
-                    <a href='mailto:info@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-five">
-                        <h3>info@tebbernekkel.com</h3>
-                    </a>
-                    <a href='tel:0631973485' target="_blank" rel="noreferrer" className="content-details-phone-five">
-                        <h3>+31 (0)6 31 97 34 85</h3>
-                    </a>
-                </div>
-
-                <div className="card-six">
+                <div className="cards six">
                     <div className="contact-name-six">
                         <h1>Socials</h1>
                     </div>

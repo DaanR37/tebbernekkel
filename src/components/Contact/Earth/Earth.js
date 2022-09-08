@@ -1,31 +1,32 @@
-import { useRef } from 'react';
-import { useFrame, useLoader } from '@react-three/fiber';
-import { TextureLoader } from 'three';
-import { OrbitControls, Stars } from "@react-three/drei";
-import * as THREE from "three";
+// import { useRef } from 'react';
+// import { useFrame, useLoader } from '@react-three/fiber';
+// import { TextureLoader } from 'three';
+// import { OrbitControls, Stars } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
+// import * as THREE from "three";
 
-import EarthDayMap from "../../../assets/textures/8k_earth_daymap.jpg";
-import EarthNormalMap from "../../../assets/textures/8k_earth_normal_map.jpg";
-import EarthSpecularMap from "../../../assets/textures/8k_earth_specular_map.jpg";
-import EarthCloudsMap from "../../../assets/textures/8k_earth_clouds_kopie.jpg";
+// import EarthDayMap from "../../../assets/textures/8k_earth_daymap.jpg";
+// import EarthNormalMap from "../../../assets/textures/8k_earth_normal_map.jpg";
+// import EarthSpecularMap from "../../../assets/textures/8k_earth_specular_map.jpg";
+// import EarthCloudsMap from "../../../assets/textures/8k_earth_clouds_kopie.jpg";
 
 
 export default function Earth(props) {
 
-    const [colorMap, normalMap, specularMap, cloudsMap] = useLoader
-        (TextureLoader,
-            [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap]
-        );
+    // const [colorMap, normalMap, specularMap, cloudsMap] = useLoader
+    //     (TextureLoader,
+    //         [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap]
+    //     );
 
-    const earthRef = useRef();
-    const cloudsRef = useRef();
+    // const earthRef = useRef();
+    // const cloudsRef = useRef();
 
-    useFrame(({ clock }) => {
-        const elapsedTime = clock.getElapsedTime();
+    // useFrame(({ clock }) => {
+    //     const elapsedTime = clock.getElapsedTime();
 
-        earthRef.current.rotation.y = elapsedTime / 6;
-        cloudsRef.current.rotation.y = elapsedTime / 6;
-    });
+    //     earthRef.current.rotation.y = elapsedTime / 6;
+    //     cloudsRef.current.rotation.y = elapsedTime / 6;
+    // });
 
     return (
             <>
@@ -42,7 +43,7 @@ export default function Earth(props) {
                     saturation={0}
                     fade={true}
                 />
-                <mesh ref={cloudsRef} position={[-1.1, -0.1, 2.5]} rotation={[-50, 10, 75]}>
+                {/* <mesh ref={cloudsRef} position={[-1.1, -0.1, 2.5]} rotation={[-50, 10, 75]}>
                     <sphereGeometry args={[1.109, 32, 32]} />
                     <meshPhongMaterial
                         map={cloudsMap}
@@ -69,7 +70,7 @@ export default function Earth(props) {
                         panSpeed={0.5}
                         rotateSpeed={0.4}
                     />
-                </mesh>
+                </mesh> */}
             </>
     )
 }

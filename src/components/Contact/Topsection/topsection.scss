@@ -4,26 +4,25 @@
     height: 100vh;
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
+    z-index: 99;
 }
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    .container-desktop {
-        display: none;
-    }
     h1 {
         letter-spacing: 0.04rem;
         color: whitesmoke;
-        font-size: 17px;
+        font-size: 16px;
         margin-bottom: 5px;
     }
-    .card-five {
+    .cards.five {
         position: absolute;
         display: flex;
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 150px;
-        left: 20%;
+        top: 175px;
+        left: 50%;
+        transform: translate(-50%);
         line-height: 1.3rem;
         z-index: 2;
         h3 {
@@ -37,17 +36,18 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
+    #root > div > section > div.container-mobile > div.cards.five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
     }
-    .card-two {
+    .cards.two {
         position: absolute;
         display: flex;
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 275px;
-        left: 20%;
+        top: 325px;
+        left: 50%;
+        transform: translate(-50%);
         line-height: 1.3rem;
         z-index: 2;
         h3 {
@@ -61,41 +61,18 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
+    #root > div > section > div.container-mobile > div.cards.two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
     }
-    .card-one {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 55vw;
-        // max-height: 30vh;
-        top: 375px;
-        left: 20%;
-        line-height: 1.3rem;
-        z-index: 2;
-        h3 {
-            letter-spacing: 0.03rem;
-            color: whitesmoke;
-            font-size: 13.5px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
-        color: #f5a1a3;
-    }
-    .card-four {
+    .cards.one {
         position: absolute;
         display: flex;
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 475px;
-        left: 20%;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%);
         line-height: 1.3rem;
         z-index: 2;
         h3 {
@@ -109,17 +86,18 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
+    #root > div > section > div.container-mobile > div.cards.one > a.content-details-phone > h3 {
         color: #f5a1a3;
     }
-    .card-three {
+    .cards.four {
         position: absolute;
         display: flex;
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
         top: 575px;
-        left: 20%;
+        left: 50%;
+        transform: translate(-50%);
         line-height: 1.3rem;
         z-index: 2;
         h3 {
@@ -133,14 +111,40 @@
             text-decoration: none;
         }
     }
-    .card-six {
+    #root > div > section > div.container-mobile > div.cards.four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
+    }
+    .cards.three {
         position: absolute;
         display: flex;
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
         top: 700px;
-        left: 20%;
+        left: 50%;
+        transform: translate(-50%);
+        line-height: 1.3rem;
+        z-index: 2;
+        h3 {
+            letter-spacing: 0.03rem;
+            color: whitesmoke;
+            font-size: 13.5px;
+            font-weight: 100;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    .cards.six {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+        // max-height: 30vh;
+        top: 850px;
+        left: 36%;
+        transform: translate(-36%);
         line-height: 1.3rem;
         z-index: 2;
         h3 {
@@ -157,20 +161,22 @@
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    ///DISPLAY NONE
-    .container-desktop {
-        display: none;
-    }
-    ///HQ CARD
-    .card-five {
+    .container-mobile {
         position: absolute;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // width: 100%;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+    .container-mobile .cards {
+        display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 5rem;
-        left: 55%;
-        z-index: 2;
+        width: 33%;
+        margin: 0 33px;
+        // line-height: 1.5rem;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
@@ -184,397 +190,228 @@
             font-size: 10px;
             font-weight: 100;
             margin: 0;
+            // padding: 0;
+            // opacity: 0.75;
+            // cursor: pointer;
         }
         a {
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
+    ///HQ BBKK
+    #root > div > section > div.container-mobile > div.cards.five > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
-    }
-    ///EMILY CARD
-    .card-two {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 5rem;
-        left: 80%;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.1rem;
-            color: whitesmoke;
-            font-size: 10px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
+    ///EMILY
+    #root > div > section > div.container-mobile > div.cards.two > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
-    }
-    ///QUINTEN CARD
-    .card-one {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 10.5rem;
-        left: 55%;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.1rem;
-            color: whitesmoke;
-            font-size: 10px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
+    ///QUINTIN
+    #root > div > section > div.container-mobile > div.cards.one > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.one > a.content-details-phone > h3 {
         color: #f5a1a3;
-    }
-    ///LAUREN CARD
-    .card-four {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 10.5rem;
-        left: 80%;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.1rem;
-            color: whitesmoke;
-            font-size: 10px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
+    ///LAUREN
+    #root > div > section > div.container-mobile > div.cards.four > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
-    }
-    ///CREATIVES CARD
-    .card-three {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 16.5rem;
-        left: 55%;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.1rem;
-            color: whitesmoke;
-            font-size: 10px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    ///SOCIALS CARD
-    .card-six {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 16.5rem;
-        left: 80%;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 3px;
+    ///CREATIVES
+    #root > div > section > div.container-mobile > div.cards.three > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.1rem;
-            color: whitesmoke;
-            font-size: 10px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+    }
+    #root > div > section > div.container-mobile > div.cards.three > div.content-details-title-three-blue {
+        margin-top: 8px;
+    }
+    ///SOCIALS
+    #root > div > section > div.container-mobile > div.cards.six > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-    ///DISPLAY NONE
-    .container-desktop {
-        display: none;
-    }
-    ///HQ CARD
-    .card-five {
+    .container-mobile {
         position: absolute;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        // height: 60%;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .container-mobile .cards {
+        display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 15rem;
-        left: 28%;
-        line-height: 1.5rem;
-        z-index: 2;
+        width: 40%;
+        margin: 20px 27.5px;
         h1 {
-            position: relative;
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 19px;
+            font-size: 20px;
             margin-bottom: 5px;
         }
         h3 {
-            position: relative;
             letter-spacing: 0.01rem;
-            line-height: 1.9rem;
+            line-height: 1.4rem;
             color: whitesmoke;
-            font-size: 16px;
-            font-weight: 400;
+            font-size: 17px;
+            font-weight: 100;
             margin: 0;
         }
         a {
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
+    ///HQ BBKK
+    #root > div > section > div.container-mobile > div.cards.five > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
-    }
-    ///EMILY CARD
-    .card-two {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 15rem;
-        left: 65%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            position: relative;
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            position: relative;
-            letter-spacing: 0.01rem;
-            line-height: 1.9rem;
-            color: whitesmoke;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
+    ///EMILY
+    #root > div > section > div.container-mobile > div.cards.two > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
-    }
-    ///QUINTEN CARD
-    .card-one {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 25rem;
-        left: 28%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            position: relative;
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            position: relative;
-            letter-spacing: 0.01rem;
-            line-height: 1.9rem;
-            color: whitesmoke;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
+    ///QUINTIN
+    #root > div > section > div.container-mobile > div.cards.one > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.one > a.content-details-phone > h3 {
         color: #f5a1a3;
-    }
-    ///LAUREN CARD
-    .card-four {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 25rem;
-        left: 65%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            position: relative;
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            position: relative;
-            letter-spacing: 0.01rem;
-            line-height: 1.9rem;
-            color: whitesmoke;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
+    ///LAUREN
+    #root > div > section > div.container-mobile > div.cards.four > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
-    }
-    ///CREATIVES CARD
-    .card-three {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 35rem;
-        left: 28%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            position: relative;
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            position: relative;
-            letter-spacing: 0.01rem;
-            line-height: 1.9rem;
-            color: whitesmoke;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    ///SOCIALS CARD
-    .card-six {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 35rem;
-        left: 65%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            position: relative;
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
+    ///CREATIVES
+    #root > div > section > div.container-mobile > div.cards.three > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
-        h3 {
-            position: relative;
-            letter-spacing: 0.01rem;
-            line-height: 1.9rem;
-            color: whitesmoke;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+    }
+    #root > div > section > div.container-mobile > div.cards.three > div.content-details-title-three-blue {
+        margin-top: 8px;
+    }
+    ///SOCIALS
+    #root > div > section > div.container-mobile > div.cards.six > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-    ///DISPLAY NONE
-    .container-desktop {
-        display: none;
-    }
-    ///HQ CARD
-    .card-five {
+    .container-mobile {
         position: absolute;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        // height: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container-mobile .cards {
+        display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 11rem;
-        left: 52%;
+        width: 35%;
+        margin: 17.5px 37.5px;
         line-height: 1.5rem;
-        z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 19px;
+            font-size: 20px;
             margin-bottom: 5px;
         }
         h3 {
             letter-spacing: 0.01rem;
-            line-height: 1.6rem;
+            line-height: 1.4rem;
             color: whitesmoke;
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 100;
             margin: 0;
         }
@@ -582,388 +419,99 @@
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
+    ///HQ BBKK
+    #root > div > section > div.container-mobile > div.cards.five > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.five > a.content-details-phone-five > h3 {
         color: #f5a1a3;
-    }
-    ///EMILY CARD
-    .card-two {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 11rem;
-        left: 77%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.6rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
+    ///EMILY
+    #root > div > section > div.container-mobile > div.cards.two > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.two > a.content-details-phone-two > h3 {
         color: #f5a1a3;
-    }
-    ///QUINTEN CARD
-    .card-one {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 21rem;
-        left: 52%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.6rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
+    ///QUINTIN
+    #root > div > section > div.container-mobile > div.cards.one > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.one > a.content-details-phone > h3 {
         color: #f5a1a3;
-    }
-    ///LAUREN CARD
-    .card-four {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 21rem;
-        left: 77%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.6rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
+    ///LAUREN
+    #root > div > section > div.container-mobile > div.cards.four > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.four > a.content-details-phone-four > h3 {
         color: #f5a1a3;
-    }
-    ///CREATIVES CARD
-    .card-three {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 31rem;
-        left: 52%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.6rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
-    ///SOCIALS CARD
-    .card-six {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 31rem;
-        left: 77%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
+    ///CREATIVES
+    #root > div > section > div.container-mobile > div.cards.three > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.6rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
+    }
+    #root > div > section > div.container-mobile > div.cards.three > div.content-details-title-three-blue {
+        margin-top: 8px;
+    }
+    ///SOCIALS
+    #root > div > section > div.container-mobile > div.cards.six > a > h3 {
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
         }
     }
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-    ///DISPLAY NONE
-    .container-desktop {
-        display: none;
-    }
-    ///HQ CARD
-    .card-five {
+    .container-mobile {
         position: absolute;
         display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 11rem;
-        left: 55%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            opacity: 0.75;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
+        flex-wrap: wrap;
+        justify-content: center;
+        // width: 60%;
+        // height: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-title-five > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-mail-five > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///EMILY CARD
-    .card-two {
-        position: absolute;
+    .container-mobile .cards {
         display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 11rem;
-        left: 75%;
+        width: 33.33%;
+        margin: 15px 30px;
         line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-two > div.content-details-title-two > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-mail-two > h3 {
-        opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
-        opacity: 0.75;
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///QUINTEN CARD
-    .card-one {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 21rem;
-        left: 55%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > div.content-details-title > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-mail > h3 {
-        opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
-        opacity: 0.75;
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///LAUREN CARD
-    .card-four {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 21rem;
-        left: 75%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-four > div.content-details-title-four > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-mail-four > h3 {
-        opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
-        opacity: 0.75;
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///CREATIVES CARD
-    .card-three {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 31rem;
-        left: 55%;
-        line-height: 1.5rem;
-        z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
@@ -979,74 +527,86 @@
             margin: 0;
             // padding: 0;
             // opacity: 0.75;
-            cursor: pointer;
+            // cursor: pointer;
         }
         a {
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-three > a.content-details-mail-three > h3 {
+    ///HQ BBKK
+    #root > div > section > div.container-mobile > div.cards.five > a > h3 {
         opacity: 0.75;
         &:hover {
             opacity: 1;
             transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-three > div.content-details-title-three-blue {
+    #root > div > section > div.container-mobile > div.cards.five > a.content-details-phone-five > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///EMILY
+    #root > div > section > div.container-mobile > div.cards.two > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.two > a.content-details-phone-two > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///QUINTIN
+    #root > div > section > div.container-mobile > div.cards.one > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.one > a.content-details-phone > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///LAUREN
+    #root > div > section > div.container-mobile > div.cards.four > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///CREATIVES
+    #root > div > section > div.container-mobile > div.cards.three > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.three > div.content-details-title-three-blue {
         margin-top: 8px;
     }
-    #root > div > section > div.container-mobile > div.card-three > a.content-details-mail-three-blue > h3 {
+    ///SOCIALS
+    #root > div > section > div.container-mobile > div.cards.six > a > h3 {
         opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///SOCIALS CARD
-    .card-six {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 31rem;
-        left: 75%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            opacity: 0.75;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-six > a.content-instagram > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-six > a.content-facebook > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-six > a.content-vimeo > h3 {
         &:hover {
             opacity: 1;
             transition: ease-in-out 350ms;
@@ -1055,228 +615,23 @@
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-    ///DISPLAY NONE
-    .container-desktop {
-        display: none;
-    }
-    ///HQ CARD
-    .card-five {
+    .container-mobile {
         position: absolute;
         display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 13.5rem;
-        left: 55%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            opacity: 0.75;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
+        flex-wrap: wrap;
+        justify-content: center;
+        // width: 60%;
+        // height: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-title-five > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-mail-five > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-five > a.content-details-phone-five > h3 {
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///EMILY CARD
-    .card-two {
-        position: absolute;
+    .container-mobile .cards {
         display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 13.5rem;
-        left: 75%;
+        width: 33.33%;
+        margin: 15px 30px;
         line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-two > div.content-details-title-two > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-mail-two > h3 {
-        opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-two > a.content-details-phone-two > h3 {
-        opacity: 0.75;
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///QUINTEN CARD
-    .card-one {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 23.5rem;
-        left: 55%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > div.content-details-title > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-mail > h3 {
-        opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-one > a.content-details-phone > h3 {
-        opacity: 0.75;
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///LAUREN CARD
-    .card-four {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 23.5rem;
-        left: 75%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-four > div.content-details-title-four > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-mail-four > h3 {
-        opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-four > a.content-details-phone-four > h3 {
-        opacity: 0.75;
-        color: #f5a1a3;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///CREATIVES CARD
-    .card-three {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 33.5rem;
-        left: 55%;
-        line-height: 1.5rem;
-        z-index: 2;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
@@ -1292,74 +647,86 @@
             margin: 0;
             // padding: 0;
             // opacity: 0.75;
-            cursor: pointer;
+            // cursor: pointer;
         }
         a {
             text-decoration: none;
         }
     }
-    #root > div > section > div.container-mobile > div.card-three > a.content-details-mail-three > h3 {
+    ///HQ BBKK
+    #root > div > section > div.container-mobile > div.cards.five > a > h3 {
         opacity: 0.75;
         &:hover {
             opacity: 1;
             transition: ease-in-out 350ms;
         }
     }
-    #root > div > section > div.container-mobile > div.card-three > div.content-details-title-three-blue {
+    #root > div > section > div.container-mobile > div.cards.five > a.content-details-phone-five > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///EMILY
+    #root > div > section > div.container-mobile > div.cards.two > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.two > a.content-details-phone-two > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///QUINTIN
+    #root > div > section > div.container-mobile > div.cards.one > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.one > a.content-details-phone > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///LAUREN
+    #root > div > section > div.container-mobile > div.cards.four > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.four > a.content-details-phone-four > h3 {
+        color: #f5a1a3;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    ///CREATIVES
+    #root > div > section > div.container-mobile > div.cards.three > a > h3 {
+        opacity: 0.75;
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 350ms;
+        }
+    }
+    #root > div > section > div.container-mobile > div.cards.three > div.content-details-title-three-blue {
         margin-top: 8px;
     }
-    #root > div > section > div.container-mobile > div.card-three > a.content-details-mail-three-blue > h3 {
+    ///SOCIALS
+    #root > div > section > div.container-mobile > div.cards.six > a > h3 {
         opacity: 0.75;
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    ///SOCIALS CARD
-    .card-six {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 33.5rem;
-        left: 75%;
-        line-height: 1.5rem;
-        z-index: 2;
-        h1 {
-            letter-spacing: 0.05rem;
-            color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 15px;
-            font-weight: 100;
-            margin: 0;
-            // padding: 0;
-            opacity: 0.75;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-six > a.content-instagram > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-six > a.content-facebook > h3 {
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 350ms;
-        }
-    }
-    #root > div > section > div.container-mobile > div.card-six > a.content-vimeo > h3 {
         &:hover {
             opacity: 1;
             transition: ease-in-out 350ms;
