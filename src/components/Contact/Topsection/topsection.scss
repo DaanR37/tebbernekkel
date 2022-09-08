@@ -20,7 +20,7 @@
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 175px;
+        top: 150px;
         left: 50%;
         transform: translate(-50%);
         line-height: 1.3rem;
@@ -45,7 +45,7 @@
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 325px;
+        top: 285px;
         left: 50%;
         transform: translate(-50%);
         line-height: 1.3rem;
@@ -70,7 +70,7 @@
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 450px;
+        top: 390px;
         left: 50%;
         transform: translate(-50%);
         line-height: 1.3rem;
@@ -95,7 +95,7 @@
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 575px;
+        top: 500px;
         left: 50%;
         transform: translate(-50%);
         line-height: 1.3rem;
@@ -120,7 +120,7 @@
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 700px;
+        top: 615px;
         left: 50%;
         transform: translate(-50%);
         line-height: 1.3rem;
@@ -137,14 +137,14 @@
         }
     }
     .cards.six {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         max-width: 40vw;
         // max-height: 30vh;
-        top: 850px;
-        left: 36%;
-        transform: translate(-36%);
+        top: 750px;
+        left: 50%;
+        transform: translate(-50%);
         line-height: 1.3rem;
         z-index: 2;
         h3 {
@@ -166,7 +166,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // width: 100%;
+        width: 100%;
         left: 50%;
         top: 55%;
         transform: translate(-50%, -50%);
@@ -174,7 +174,7 @@
     .container-mobile .cards {
         display: flex;
         flex-direction: column;
-        width: 33%;
+        width: 33.33%;
         margin: 0 33px;
         // line-height: 1.5rem;
         h1 {
@@ -499,18 +499,17 @@
         position: absolute;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        // width: 60%;
-        // height: 60%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        justify-content: space-around;
+        left: 52%;
+        top: 11rem;
+        // top: 50%;
+        transform: translate(-50%);
     }
     .container-mobile .cards {
         display: flex;
         flex-direction: column;
-        width: 33.33%;
-        margin: 15px 30px;
+        width: 35.33%;
+        margin: 15px 20px;
         line-height: 1.5rem;
         h1 {
             letter-spacing: 0.05rem;
@@ -519,15 +518,12 @@
             margin-bottom: 5px;
         }
         h3 {
-            letter-spacing: 0.01rem;
+            letter-spacing: 0.03rem;
             line-height: 1.4rem;
             color: whitesmoke;
             font-size: 15px;
             font-weight: 100;
             margin: 0;
-            // padding: 0;
-            // opacity: 0.75;
-            // cursor: pointer;
         }
         a {
             text-decoration: none;

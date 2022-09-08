@@ -300,11 +300,12 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
-        top: 11rem;
+        // max-width: 35vw;
+        // max-height: 30vh;
         left: 30%;
+        top: 11rem;
         z-index: 2;
+        margin: 15px 20px;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
@@ -331,11 +332,12 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        max-width: 35vw;
-        max-height: 30vh;
+        // max-width: 35vw;
+        // max-height: 30vh;
         top: 11rem;
         left: 60%;
         z-index: 2;
+        margin: 15px 20px;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;

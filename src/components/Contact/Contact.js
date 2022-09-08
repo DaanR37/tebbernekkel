@@ -18,10 +18,10 @@ export default function Contact() {
       width: 100%;
       height: 150%;
     }
-    // @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    //   width: 100%;
-    //   height: 150%;
-    // }
+    @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+      width: 100%;
+      height: 125%;
+    }
   `
 
   return (
