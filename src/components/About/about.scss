@@ -16,7 +16,7 @@
         flex-direction: column;
         // flex-wrap: wrap;
         // justify-content: center;
-        // width: 100%; 
+        // width: 100%;
         left: 50%;
         top: 9rem;
         transform: translate(-50%);
@@ -75,137 +75,67 @@
             }
         }
     }
-    // .award-container-desktop-2020 {
-    //     display: none;
-    // }
-    // .award-container-desktop-2021 {
-    //     display: none;
-    // }
-    // ///AWARDS 2021 H1 & H3
-    // .award-container-mobile-2021 {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 100vw;
-    //     // max-height: 100vh;
-    //     top: 150px;
-    //     left: 20%;
-    //     z-index: 2;
-    //     color: whitesmoke;
-    //     h1 {
-    //         letter-spacing: 0.06rem;
-    //         font-size: 17px;
-    //         margin-bottom: 5px;
-    //     }
-    //     h3 {
-    //         letter-spacing: 0.05rem;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         opacity: 0.9;
-    //         margin-bottom: 10px;
-    //         line-height: 9px;
-    //         i {
-    //             font-size: 10px;
-    //             color: #f5a1a3;
-    //         }
-    //     }
-    // }
-    // ///AWARDS 2020 H1 & H3
-    // .award-container-mobile-2020 {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 100vw;
-    //     // max-height: 100vh;
-    //     top: 740px;
-    //     left: 20%;
-    //     z-index: 2;
-    //     color: whitesmoke;
-    //     h1 {
-    //         letter-spacing: 0.06rem;
-    //         font-size: 17px;
-    //         margin-bottom: 5px;
-    //     }
-    //     h3 {
-    //         letter-spacing: 0.05rem;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         opacity: 0.9;
-    //         margin-bottom: 10px;
-    //         line-height: 9px;
-    //         i {
-    //             font-size: 10px;
-    //             color: #f5a1a3;
-    //         }
-    //     }
-    // }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    .award-container-mobile-2020 {
-        display: none;
+    .topsection-awards-container {
+        height: 200vh;
     }
-    .award-container-mobile-2021 {
-        display: none;
+    .awards-container {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        // width: 100%;
+        left: 50%;
+        top: 6rem;
+        transform: translate(-50%);
     }
     ///AWARDS 2021 H1 & H3
     .award-container-desktop-2021 {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 50vw;
-        max-height: 30vh;
-        top: 5rem;
-        left: 30%;
-        z-index: 2;
+        width: 40%;
+        margin: 15px 0px 0px 5px;
+        line-height: 0.7rem;
         h1 {
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.03rem;
             color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 1px;
+            font-size: 16px;
         }
         h3 {
-            letter-spacing: 0.01rem;
+            letter-spacing: 0.03rem;
             color: whitesmoke;
-            font-size: 10px;
+            font-size: 13.5px;
             font-weight: 100;
             opacity: 0.9;
-            margin-top: 2px;
-            margin-bottom: 2.7px;
-            line-height: 9.5px;
+            margin-bottom: 0px;
+            line-height: 0.7rem;
             i {
-                font-size: 8px;
+                font-size: 10px;
                 color: #f5a1a3;
             }
         }
     }
     ///AWARDS 2020 H1 & H3
     .award-container-desktop-2020 {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        max-width: 50vw;
-        max-height: 30vh;
-        top: 5rem;
-        left: 60%;
-        z-index: 2;
+        width: 40%;
+        margin: 15px 0px 0px 5px;
+        line-height: 0.7rem;
         h1 {
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.03rem;
             color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 1px;
+            font-size: 16px;
+            margin-bottom: 5px;
         }
         h3 {
-            letter-spacing: 0.01rem;
+            letter-spacing: 0.03rem;
             color: whitesmoke;
-            font-size: 10px;
+            font-size: 13.5px;
             font-weight: 100;
             opacity: 0.9;
-            margin-top: 2px;
-            margin-bottom: 2.7px;
-            line-height: 9.5px;
+            margin-bottom: 0px;
+            line-height: 0.7rem;
             i {
-                font-size: 8px;
+                font-size: 10px;
                 color: #f5a1a3;
             }
         }
@@ -216,18 +146,12 @@
     .topsection-awards-container {
         height: 100vh;
     }
-    .award-container-mobile-2020 {
-        display: none;
-    }
-    .award-container-mobile-2021 {
-        display: none;
-    }
     .awards-container {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 90%; ///100%
+        width: 90%;
         left: 50%;
         top: 13rem;
         transform: translate(-50%);
@@ -291,12 +215,6 @@
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     .topsection-awards-container {
         height: 100vh;
-    }
-    .award-container-mobile-2020 {
-        display: none;
-    }
-    .award-container-mobile-2021 {
-        display: none;
     }
     .awards-container {
         position: absolute;
@@ -362,12 +280,6 @@
     .topsection-awards-container {
         height: 100vh;
     }
-    .award-container-mobile-2020 {
-        display: none;
-    }
-    .award-container-mobile-2021 {
-        display: none;
-    }
     .awards-container {
         position: absolute;
         display: flex;
@@ -430,12 +342,6 @@
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
     .topsection-awards-container {
         height: 100vh;
-    }
-    .award-container-mobile-2020 {
-        display: none;
-    }
-    .award-container-mobile-2021 {
-        display: none;
     }
     .awards-container {
         position: absolute;

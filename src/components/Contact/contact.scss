@@ -65,189 +65,40 @@
     .content-details-title-three-blue > h3:nth-child(1) {
         margin-top: 8px;
     }
-    // h1 {
-    //     letter-spacing: 0.04rem;
-    //     color: whitesmoke;
-    //     font-size: 16px;
-    //     margin-bottom: 5px;
-    // }
-    // .cards.five {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 40vw;
-    //     // max-height: 30vh;
-    //     top: 150px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     line-height: 1.3rem;
-    //     z-index: 2;
-    //     h3 {
-    //         letter-spacing: 0.03rem;
-    //         color: whitesmoke;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         text-decoration: none;
-    //     }
-    // }
-    // #root > section > div > div.cards.five > a.content-details-phone-five > h3 {
-    //     color: #f5a1a3;
-    // }
-    // .cards.two {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 40vw;
-    //     // max-height: 30vh;
-    //     top: 285px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     line-height: 1.3rem;
-    //     z-index: 2;
-    //     h3 {
-    //         letter-spacing: 0.03rem;
-    //         color: whitesmoke;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         text-decoration: none;
-    //     }
-    // }
-    // #root > section > div > div.cards.two > a.content-details-phone-two > h3 {
-    //     color: #f5a1a3;
-    // }
-    // .cards.one {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 40vw;
-    //     // max-height: 30vh;
-    //     top: 390px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     line-height: 1.3rem;
-    //     z-index: 2;
-    //     h3 {
-    //         letter-spacing: 0.03rem;
-    //         color: whitesmoke;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         text-decoration: none;
-    //     }
-    // }
-    // #root > section > div > div.cards.one > a.content-details-phone > h3 {
-    //     color: #f5a1a3;
-    // }
-    // .cards.four {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 40vw;
-    //     // max-height: 30vh;
-    //     top: 500px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     line-height: 1.3rem;
-    //     z-index: 2;
-    //     h3 {
-    //         letter-spacing: 0.03rem;
-    //         color: whitesmoke;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         text-decoration: none;
-    //     }
-    // }
-    // #root > section > div > div.cards.four > a.content-details-phone-four > h3 {
-    //     color: #f5a1a3;
-    // }
-    // .cards.three {
-    //     position: absolute;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 40vw;
-    //     // max-height: 30vh;
-    //     top: 615px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     line-height: 1.3rem;
-    //     z-index: 2;
-    //     h3 {
-    //         letter-spacing: 0.03rem;
-    //         color: whitesmoke;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         text-decoration: none;
-    //     }
-    // }
-    // .cards.six {
-    //     position: relative;
-    //     display: flex;
-    //     flex-direction: column;
-    //     max-width: 40vw;
-    //     // max-height: 30vh;
-    //     top: 750px;
-    //     left: 50%;
-    //     transform: translate(-50%);
-    //     line-height: 1.3rem;
-    //     z-index: 2;
-    //     h3 {
-    //         letter-spacing: 0.03rem;
-    //         color: whitesmoke;
-    //         font-size: 13.5px;
-    //         font-weight: 100;
-    //         margin: 0;
-    //     }
-    //     a {
-    //         text-decoration: none;
-    //     }
-    // }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     .topsection-container {
-        height: 125vh;
+        height: 150vh;
     }
     .container-mobile {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         // width: 100%;
         left: 50%;
-        top: 5rem;
+        top: 6rem;
         transform: translate(-50%);
     }
     .container-mobile .cards {
         display: flex;
         flex-direction: column;
-        width: 33.33%;
-        margin: 5px 25px;
-        // line-height: 1.5rem;
+        width: 40%;
+        margin: 15px 5px 0px 5px;
+        // padding: 15px 0px 0px 0px;
+        line-height: 1rem;
         h1 {
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.03rem;
             color: whitesmoke;
-            font-size: 14px;
-            margin-bottom: 3px;
+            font-size: 16px;
+            margin-bottom: 5px;
         }
         h3 {
-            letter-spacing: 0.01rem;
-            line-height: 1.1rem;
+            letter-spacing: 0.03rem;
+            line-height: 1.2rem;
             color: whitesmoke;
-            font-size: 10px;
+            font-size: 13.5px;
             font-weight: 100;
             margin: 0;
         }
