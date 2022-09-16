@@ -2,26 +2,23 @@
     position: relative;
     width: 100vw;
     text-transform: uppercase;
-    background-color: black;
+    // background-color: black;
     font-family: "Roboto Condensed", sans-serif;
 }
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .topsection-container {
-        height: 150vh;
+        height: 150vh; ///was 150vh
     }
-    .container-mobile {
+    .contact-container {
         position: absolute;
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
-        // justify-content: center;
-        // width: 100%;
         left: 50%;
         top: 9rem;
         transform: translate(-50%);
     }
-    .container-mobile .cards {
+    .contact-container .cards {
         flex-direction: column;
         width: 100%;
         // margin: 0px 35px 5px 35px;
@@ -62,7 +59,7 @@
         color: #f5a1a3;
     }
     ///CREATIVES
-    .content-details-title-three-blue > h3:nth-child(1) {
+    #root > section > div > div.cards.three > h3:nth-child(4) {
         margin-top: 8px;
     }
 }
@@ -71,7 +68,7 @@
     .topsection-container {
         height: 150vh;
     }
-    .container-mobile {
+    .contact-container {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
@@ -81,7 +78,7 @@
         top: 6rem;
         transform: translate(-50%);
     }
-    .container-mobile .cards {
+    .contact-container .cards {
         display: flex;
         flex-direction: column;
         width: 40%;
@@ -123,7 +120,7 @@
         color: #f5a1a3;
     }
     ///CREATIVES
-    #root > section > div > div.cards.three > div.content-details-title-three-blue > h3 {
+    #root > section > div > div.cards.three > h3:nth-child(4) {
         margin-top: 8px;
     }
 }
@@ -132,7 +129,7 @@
     .topsection-container {
         height: 100vh;
     }
-    .container-mobile {
+    .contact-container {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
@@ -142,7 +139,7 @@
         top: 13rem;
         transform: translate(-50%);
     }
-    .container-mobile .cards {
+    .contact-container .cards {
         display: flex;
         flex-direction: column;
         width: 40%;
@@ -184,7 +181,7 @@
         color: #f5a1a3;
     }
     ///CREATIVES
-    .content-details-title-three-blue > h3:nth-child(1) {
+    #root > section > div > div.cards.three > h3:nth-child(4) {
         margin-top: 8px;
     }
 }
@@ -193,7 +190,7 @@
     .topsection-container {
         height: 100vh;
     }
-    .container-mobile {
+    .contact-container {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
@@ -203,7 +200,7 @@
         top: 11rem;
         transform: translate(-50%);
     }
-    .container-mobile .cards {
+    .contact-container .cards {
         display: flex;
         flex-direction: column;
         width: 35%;
@@ -244,7 +241,7 @@
         color: #f5a1a3;
     }
     ///CREATIVES
-    .content-details-title-three-blue > h3:nth-child(1) {
+    #root > section > div > div.cards.three > h3:nth-child(4) {
         margin-top: 8px;
     }
 }
@@ -253,7 +250,7 @@
     .topsection-container {
         height: 100vh;
     }
-    .container-mobile {
+    .contact-container {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
@@ -263,7 +260,7 @@
         top: 11rem;
         transform: translate(-50%);
     }
-    .container-mobile .cards {
+    .contact-container .cards {
         display: flex;
         flex-direction: column;
         width: 35%;
@@ -355,7 +352,7 @@
             transition: ease-in-out 350ms;
         }
     }
-    #root > section > div > div.cards.three > div.content-details-title-three-blue {
+    #root > section > div > div.cards.three > h3:nth-child(4) {
         margin-top: 8px;
     }
     ///SOCIALS
@@ -372,7 +369,7 @@
     .topsection-container {
         height: 100vh;
     }
-    .container-mobile {
+    .contact-container {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
@@ -382,7 +379,7 @@
         top: 12rem;
         transform: translate(-50%);
     }
-    .container-mobile .cards {
+    .contact-container .cards {
         display: flex;
         flex-direction: column;
         width: 30%;
@@ -474,7 +471,7 @@
             transition: ease-in-out 350ms;
         }
     }
-    #root > section > div > div.cards.three > div.content-details-title-three-blue {
+    #root > section > div > div.cards.three > h3:nth-child(4) {
         margin-top: 8px;
     }
     ///SOCIALS
