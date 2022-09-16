@@ -34,88 +34,88 @@ export default function Contact() {
     intersection && intersection.intersectionRatio < 1 ? fadeOut(".cards.five") : fadeIn(".cards.five");
 
     ///CARD TWO
-    const sectionRef2 = useRef(null);
-    const intersection2 = useIntersection(sectionRef2, {
-        root: null,
-        rootMargin: "-60px",
-        threshold: 1
-    });
-    const fadeIn2 = (element) => {
-        gsap.to(".cards.two", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    const fadeOut2 = (element) => {
-        gsap.to(".cards.two", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    intersection2 && intersection2.intersectionRatio < 1 ? fadeOut2(".cards.two") : fadeIn2(".cards.two");
+    // const sectionRef2 = useRef(null);
+    // const intersection2 = useIntersection(sectionRef2, {
+    //     root: null,
+    //     rootMargin: "-60px",
+    //     threshold: 1
+    // });
+    // const fadeIn2 = (element) => {
+    //     gsap.to(".cards.two", 0.60, {
+    //         // duration: 8,
+    //         opacity: 1,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+    // const fadeOut2 = (element) => {
+    //     gsap.to(".cards.two", 0.60, {
+    //         // duration: 8,
+    //         opacity: 0,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //     });
+    // };
+    // intersection2 && intersection2.intersectionRatio < 1 ? fadeOut2(".cards.two") : fadeIn2(".cards.two");
 
     ///CARD ONE
-    const sectionRef3 = useRef(null);
-    const intersection3 = useIntersection(sectionRef3, {
-        root: null,
-        rootMargin: "-60px",
-        threshold: 1
-    });
-    const fadeIn3 = (element) => {
-        gsap.to(".cards.one", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    const fadeOut3 = (element) => {
-        gsap.to(".cards.one", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    intersection3 && intersection3.intersectionRatio < 1 ? fadeOut3(".cards.one") : fadeIn3(".cards.one");
+    // const sectionRef3 = useRef(null);
+    // const intersection3 = useIntersection(sectionRef3, {
+    //     root: null,
+    //     rootMargin: "-60px",
+    //     threshold: 1
+    // });
+    // const fadeIn3 = (element) => {
+    //     gsap.to(".cards.one", 0.60, {
+    //         // duration: 8,
+    //         opacity: 1,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+    // const fadeOut3 = (element) => {
+    //     gsap.to(".cards.one", 0.60, {
+    //         // duration: 8,
+    //         opacity: 0,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //     });
+    // };
+    // intersection3 && intersection3.intersectionRatio < 1 ? fadeOut3(".cards.one") : fadeIn3(".cards.one");
 
     ///CARD FOUR
-    const sectionRef4 = useRef(null);
-    const intersection4 = useIntersection(sectionRef4, {
-        root: null,
-        rootMargin: "-60px",
-        threshold: 1
-    });
-    const fadeIn4 = (element) => {
-        gsap.to(".cards.four", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    const fadeOut4 = (element) => {
-        gsap.to(".cards.four", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    intersection4 && intersection4.intersectionRatio < 1 ? fadeOut4(".cards.four") : fadeIn4(".cards.four");
+    // const sectionRef4 = useRef(null);
+    // const intersection4 = useIntersection(sectionRef4, {
+    //     root: null,
+    //     rootMargin: "-60px",
+    //     threshold: 1
+    // });
+    // const fadeIn4 = (element) => {
+    //     gsap.to(".cards.four", 0.60, {
+    //         // duration: 8,
+    //         opacity: 1,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+    // const fadeOut4 = (element) => {
+    //     gsap.to(".cards.four", 0.60, {
+    //         // duration: 8,
+    //         opacity: 0,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //     });
+    // };
+    // intersection4 && intersection4.intersectionRatio < 1 ? fadeOut4(".cards.four") : fadeIn4(".cards.four");
 
     return (
         <section className="topsection-container">
@@ -133,7 +133,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <div ref={sectionRef2} className="cards two">
+                <div className="cards two">
                     <h1>Production</h1>
                     <h3>Emily Barendse</h3>
                     <a href='mailto:emily@tebbernekkel.com' target="_blank" rel="noreferrer">
@@ -144,7 +144,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <div ref={sectionRef3} className="cards one">
+                <div className="cards one">
                     <h1>Managing director</h1>
                     <h3>Quintin Baker</h3>
                     <a href='mailto:quintin@tebbernekkel.com' target="_blank" rel="noreferrer">
@@ -155,7 +155,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <div ref={sectionRef4} className="cards four">
+                <div className="cards four">
                     <h1>Finance</h1>
                     <h3>Lauren Visser</h3>
                     <a href='mailto:invoices@tebbernekkel.com' target="_blank" rel="noreferrer">
