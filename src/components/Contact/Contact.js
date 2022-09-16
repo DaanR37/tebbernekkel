@@ -9,8 +9,8 @@ export default function Contact() {
     const sectionRef = useRef(null);
     const intersection = useIntersection(sectionRef, {
         root: null,
-        rootMargin: "-60px", ///-80px
-        threshold: 1
+        rootMargin: "-60px", ///-60px
+        threshold: 0.75
     });
     const fadeOut = (element) => {
         gsap.to(".cards.five", 0.60, {
@@ -31,7 +31,7 @@ export default function Contact() {
             }
         });
     };
-    intersection && intersection.intersectionRatio < 1 ? fadeOut(".cards.five") : fadeIn(".cards.five");
+    intersection && intersection.intersectionRatio < 0.75 ? fadeOut(".cards.five") : fadeIn(".cards.five");
 
     ///CARD TWO
     // const sectionRef2 = useRef(null);
