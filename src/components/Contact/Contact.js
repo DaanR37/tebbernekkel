@@ -90,32 +90,32 @@ export default function Contact() {
     intersection3 && intersection3.intersectionRatio < 0.75 ? fadeOut3(".cards.one") : fadeIn3(".cards.one");
 
     ///CARD FOUR
-    const sectionRef4 = useRef(null);
-    const intersection4 = useIntersection(sectionRef4, {
-        root: null,
-        rootMargin: "-60px",
-        threshold: 0.75
-    });
-    const fadeIn4 = (element) => {
-        gsap.to(".cards.four", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    const fadeOut4 = (element) => {
-        gsap.to(".cards.four", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    intersection4 && intersection4.intersectionRatio < 0.75 ? fadeOut4(".cards.four") : fadeIn4(".cards.four");
+    // const sectionRef4 = useRef(null);
+    // const intersection4 = useIntersection(sectionRef4, {
+    //     root: null,
+    //     rootMargin: "-60px",
+    //     threshold: 0.45
+    // });
+    // const fadeIn4 = (element) => {
+    //     gsap.to(".cards.four", 0.60, {
+    //         // duration: 8,
+    //         opacity: 1,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+    // const fadeOut4 = (element) => {
+    //     gsap.to(".cards.four", 0.60, {
+    //         // duration: 8,
+    //         opacity: 0,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //     });
+    // };
+    // intersection4 && intersection4.intersectionRatio < 0.45 ? fadeOut4(".cards.four") : fadeIn4(".cards.four");
 
     return (
         <section className="topsection-container">
@@ -155,7 +155,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <div ref={sectionRef4} className="cards four">
+                <div className="cards four">
                     <h1>Finance</h1>
                     <h3>Lauren Visser</h3>
                     <a href='mailto:invoices@tebbernekkel.com' target="_blank" rel="noreferrer">
