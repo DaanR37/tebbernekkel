@@ -1,103 +1,27 @@
 import "./contact.scss";
-import { useRef } from "react";
-import { useIntersection } from "react-use";
-import gsap from "gsap";
+// import { useRef } from "react";
+// import { useIntersection } from "react-use";
+// import gsap from "gsap";
 
 export default function Contact() {
 
     ///CARD FIVE
-    const sectionRef = useRef(null);
-    const intersection = useIntersection(sectionRef, {
-        root: null,
-        rootMargin: "-60px", ///-60px
-        threshold: 0.75
-    });
-    const fadeOut = (element) => {
-        gsap.to(".cards.five", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    const fadeIn = (element) => {
-        gsap.to(".cards.five", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    intersection && intersection.intersectionRatio < 0.75 ? fadeOut(".cards.five") : fadeIn(".cards.five");
-
-    ///CARD TWO
-    const sectionRef2 = useRef(null);
-    const intersection2 = useIntersection(sectionRef2, {
-        root: null,
-        rootMargin: "-60px", ///-60px
-        threshold: 0.75
-    });
-    const fadeIn2 = (element) => {
-        gsap.to(".cards.two", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    const fadeOut2 = (element) => {
-        gsap.to(".cards.two", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    intersection2 && intersection2.intersectionRatio < 0.75 ? fadeOut2(".cards.two") : fadeIn2(".cards.two");
-
-    ///CARD ONE
-    const sectionRef3 = useRef(null);
-    const intersection3 = useIntersection(sectionRef3, {
-        root: null,
-        rootMargin: "-60px",
-        threshold: 0.75
-    });
-    const fadeIn3 = (element) => {
-        gsap.to(".cards.one", 0.60, {
-            // duration: 8,
-            opacity: 1,
-            // y: -1,
-            ease: 'power4.out',
-            stagger: {
-                amount: 0.3
-            }
-        });
-    };
-    const fadeOut3 = (element) => {
-        gsap.to(".cards.one", 0.60, {
-            // duration: 8,
-            opacity: 0,
-            // y: -1,
-            ease: 'power4.out',
-        });
-    };
-    intersection3 && intersection3.intersectionRatio < 0.75 ? fadeOut3(".cards.one") : fadeIn3(".cards.one");
-
-    ///CARD FOUR
-    // const sectionRef4 = useRef(null);
-    // const intersection4 = useIntersection(sectionRef4, {
+    // const sectionRef = useRef(null);
+    // const intersection = useIntersection(sectionRef, {
     //     root: null,
-    //     rootMargin: "-60px",
-    //     threshold: 0.45
+    //     rootMargin: "0px", ///-60px
+    //     threshold: 0.95 ///0.75
     // });
-    // const fadeIn4 = (element) => {
-    //     gsap.to(".cards.four", 0.60, {
+    // const fadeOut = (element) => {
+    //     gsap.to(".cards.five", 0.60, {
+    //         // duration: 8,
+    //         opacity: 0,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //     });
+    // };
+    // const fadeIn = (element) => {
+    //     gsap.to(".cards.five", 0.60, {
     //         // duration: 8,
     //         opacity: 1,
     //         // y: -1,
@@ -107,20 +31,70 @@ export default function Contact() {
     //         }
     //     });
     // };
-    // const fadeOut4 = (element) => {
-    //     gsap.to(".cards.four", 0.60, {
+    // intersection && intersection.intersectionRatio < 0.95 ? fadeOut(".cards.five") : fadeIn(".cards.five");
+
+    ///CARD TWO
+    // const sectionRef2 = useRef(null);
+    // const intersection2 = useIntersection(sectionRef2, {
+    //     root: null,
+    //     rootMargin: "0px", ///-60px
+    //     threshold: 0.95 ///0.75
+    // });
+    // const fadeIn2 = (element) => {
+    //     gsap.to(".cards.two", 0.60, {
+    //         // duration: 8,
+    //         opacity: 1,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+    // const fadeOut2 = (element) => {
+    //     gsap.to(".cards.two", 0.60, {
     //         // duration: 8,
     //         opacity: 0,
     //         // y: -1,
     //         ease: 'power4.out',
     //     });
     // };
-    // intersection4 && intersection4.intersectionRatio < 0.45 ? fadeOut4(".cards.four") : fadeIn4(".cards.four");
+    // intersection2 && intersection2.intersectionRatio < 0.95 ? fadeOut2(".cards.two") : fadeIn2(".cards.two");
+
+    ///CARD ONE
+    // const sectionRef3 = useRef(null);
+    // const intersection3 = useIntersection(sectionRef3, {
+    //     root: null,
+    //     rootMargin: "0px",
+    //     threshold: 0.95 ///0.75
+    // });
+    // const fadeIn3 = (element) => {
+    //     gsap.to(".cards.one", 0.60, {
+    //         // duration: 8,
+    //         opacity: 1,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //         stagger: {
+    //             amount: 0.3
+    //         }
+    //     });
+    // };
+    // const fadeOut3 = (element) => {
+    //     gsap.to(".cards.one", 0.60, {
+    //         // duration: 8,
+    //         opacity: 0,
+    //         // y: -1,
+    //         ease: 'power4.out',
+    //     });
+    // };
+    // intersection3 && intersection3.intersectionRatio < 0.95 ? fadeOut3(".cards.one") : fadeIn3(".cards.one");
 
     return (
         <section className="topsection-container">
-            <div className="contact-container">
-                <div ref={sectionRef} className="cards five">
+            <div className="contact-container" style={{
+                backgroundImage: "url(images/background-black.jpg)"
+            }}>
+                {/* <div className="cards five">
                     <h1>HQ Tebbernekkel</h1>
                     <a href="https://g.page/tebbernekkel?share" target="_blank" rel="noreferrer">
                         <h3>Weteringschans 79, 1017RX A'dam</h3>
@@ -133,7 +107,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <div ref={sectionRef2} className="cards two">
+                <div className="cards two">
                     <h1>Production</h1>
                     <h3>Emily Barendse</h3>
                     <a href='mailto:emily@tebbernekkel.com' target="_blank" rel="noreferrer">
@@ -144,7 +118,7 @@ export default function Contact() {
                     </a>
                 </div>
 
-                <div ref={sectionRef3} className="cards one">
+                <div className="cards one">
                     <h1>Managing director</h1>
                     <h3>Quintin Baker</h3>
                     <a href='mailto:quintin@tebbernekkel.com' target="_blank" rel="noreferrer">
@@ -189,6 +163,38 @@ export default function Contact() {
                     <a href='https://vimeo.com/tebbernekkel' target="_blank" rel="noreferrer">
                         <h3>Vimeo</h3>
                     </a>
+                </div> */}
+
+                <div className="wrapper">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe voluptas et quibusdam, at quis, laboriosam culpa consequatur modi,
+                        quod adipisci odit dicta reprehenderit. Reprehenderit exercitationem
+                        quam dolorem, deserunt placeat tenetur?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe voluptas et quibusdam, at quis, laboriosam culpa consequatur modi,
+                        quod adipisci odit dicta reprehenderit. Reprehenderit exercitationem
+                        quam dolorem, deserunt placeat tenetur?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe voluptas et quibusdam, at quis, laboriosam culpa consequatur modi,
+                        quod adipisci odit dicta reprehenderit. Reprehenderit exercitationem
+                        quam dolorem, deserunt placeat tenetur?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe voluptas et quibusdam, at quis, laboriosam culpa consequatur modi,
+                        quod adipisci odit dicta reprehenderit. Reprehenderit exercitationem
+                        quam dolorem, deserunt placeat tenetur?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe voluptas et quibusdam, at quis, laboriosam culpa consequatur modi,
+                        quod adipisci odit dicta reprehenderit. Reprehenderit exercitationem
+                        quam dolorem, deserunt placeat tenetur?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe voluptas et quibusdam, at quis, laboriosam culpa consequatur modi,
+                        quod adipisci odit dicta reprehenderit. Reprehenderit exercitationem
+                        quam dolorem, deserunt placeat tenetur?</p>
                 </div>
             </div>
         </section>

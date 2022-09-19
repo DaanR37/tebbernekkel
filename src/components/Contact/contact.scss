@@ -8,40 +8,66 @@
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .topsection-container {
-        height: 200vh; ///was 150vh
+        // height: 150vh; /// WAS 150VH
     }
     .contact-container {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        left: 50%;
-        top: 9rem;
-        transform: translate(-50%);
+        position: relative; /// WAS ABSOLUTE
+        // display: flex;
+        // flex-direction: column;
+        // left: 50%;
+        // top: 9rem;
+        // transform: translate(-50%);
+        padding: 17.5vh 3.5em;
+
+        // width: 100%;
+        // max-width: 30em;
+        // height: 100%;
+
+        min-height: 100vh;
+        color: #fff;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
-    .contact-container .cards {
-        flex-direction: column;
+    .wrapper {
         width: 100%;
-        // margin: 0px 35px 5px 35px;
-        padding: 0px 35px 5px 35px;
-        line-height: 1.5rem;
-        h1 {
-            letter-spacing: 0.03rem;
-            color: whitesmoke;
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.03rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
-            font-size: 13.5px;
-            font-weight: 100;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-        }
+        max-width: 300px;
+        margin: auto;
+        background-image: linear-gradient(transparent 10%, #fff 30%, #fff 70%, transparent 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-attachment: fixed;
     }
+    .wrapper p {
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    // .contact-container .cards {
+    //     flex-direction: column;
+    //     width: 100%;
+    //     // margin: 0px 35px 5px 35px;
+    //     padding: 0px 35px 5px 35px;
+    //     line-height: 1.5rem;
+    //     h1 {
+    //         letter-spacing: 0.03rem;
+    //         color: whitesmoke;
+    //         font-size: 16px;
+    //         margin-bottom: 5px;
+    //     }
+    //     h3 {
+    //         letter-spacing: 0.03rem;
+    //         line-height: 1.4rem;
+    //         color: whitesmoke;
+    //         font-size: 13.5px;
+    //         font-weight: 100;
+    //         margin: 0;
+    //     }
+    //     a {
+    //         text-decoration: none;
+    //     }
+    // }
     ///HQ BBKK
     .content-details-phone-five > h3:nth-child(1) {
         color: #f5a1a3;
