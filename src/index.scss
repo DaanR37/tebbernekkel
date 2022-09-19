@@ -21,7 +21,7 @@ body,
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-  // background-color: #060606;
+  background-color: #060606;
 }
 
 code {
@@ -29,6 +29,8 @@ code {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
