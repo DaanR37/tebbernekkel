@@ -25,19 +25,30 @@
         line-height: 1.5rem;
         width: 100%;
         max-width: 200px;
-        background-image: linear-gradient(transparent 12.5%, #fff 25%, #fff 70%, transparent 90%);
+        background-image: linear-gradient(transparent 9%, #fff 32.5%, #fff 90%, transparent 100%);
         background-clip: text;
         -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -ms-background-clip: text;
         background-attachment: fixed;
         color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        -ms-text-fill-color: transparent;
         h1 {
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -ms-text-fill-color: transparent;
             letter-spacing: 0.03rem;
             font-size: 14px;
             margin-bottom: 2.5px;
         }
         h3 {
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -ms-text-fill-color: transparent;
             letter-spacing: 0.03rem;
             line-height: 1.4rem;
             font-size: 12.5px; /// WAS 13.5PX
