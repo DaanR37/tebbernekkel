@@ -69,12 +69,19 @@ export default function Header() {
             </div>
 
             <div id="mobile-container">
-                <div className="bbk-logo-mobile">
+                {/* <div className="bbk-logo-mobile">
                     <Link to="/">
                         <img src="images/BBKK-pink.png" alt="tebbernekkel logo" />
                     </Link>
-                </div>
+                </div> */}
                 <ul className="nav-buttons">
+                    <li>
+                        <div className="bbk-logo-mobile">
+                            <Link to="/">
+                                <img src="images/BBKK-pink.png" alt="tebbernekkel logo" />
+                            </Link>
+                        </div>
+                    </li>
                     <li>
                         <NavLink to="/commercials" reloadDocument className="commercial-btn">commercials</NavLink>
                     </li>

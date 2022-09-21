@@ -49,11 +49,11 @@
         display: none;
     }
     #mobile-container {
-        position: relative; ///FIXED
-        display: inline-block;
-        align-items: center;
+        position: fixed;
+        // display: flex; ///Inline-block
+        // align-items: center;
         width: 100vw;
-        height: 11vh;
+        min-height: 11.5vh;
         background: linear-gradient(90deg, #060603, #060606);
         // border-bottom: 0.5px solid #f5a1a2ba;
         // margin-top: 15px;
@@ -69,22 +69,11 @@
         right: 6.5%;
         width: 87%;
     }
-    .bbk-logo-mobile {
-        position: fixed; ///ABSOLUTE
-        width: 22vw;
-        left: 50%;
-        top: 1.5rem;
-        transform: translate(-50%);
-        // margin-top: 1.5rem;
-        img {
-            width: 100%;
-        }
-    }
     .nav-buttons {
-        position: fixed; ///ABSOLUTE
+        position: absolute;
         display: flex;
         justify-content: space-evenly;
-        width: 100vw;
+        width: 100%; ///was 100vw
         top: 4rem;
         margin: 0;
         padding: 0;
@@ -112,6 +101,24 @@
         a.contact-btn.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
+        }
+    }
+    .nav-buttons > li:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+    }
+    .bbk-logo-mobile {
+        position: absolute;
+        width: 22vw;
+        // left: 50%;
+        // top: 1.5rem;
+        // transform: translate(-50%);
+        // margin-top: 1.5rem;
+        margin-bottom: 15px;
+        img {
+            width: 100%;
         }
     }
 }
