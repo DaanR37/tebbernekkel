@@ -49,28 +49,28 @@
         display: none;
     }
     #mobile-container {
-        position: fixed;
+        position: relative; ///FIXED
         display: inline-block;
         align-items: center;
         width: 100vw;
-        min-height: 11vh;
+        height: 11vh;
         background: linear-gradient(90deg, #060603, #060606);
-        border-bottom: 0.5px solid #f5a1a2ba;
+        // border-bottom: 0.5px solid #f5a1a2ba;
         // margin-top: 15px;
         // top: 8vh;
     }
-    // #mobile-container:after {
-    //     content: "";
-    //     position: absolute;
-    //     background: black;
-    //     border-bottom: 0.5px solid #f5a1a2ba;
-    //     bottom: 0;
-    //     left: 6.5%;
-    //     right: 6.5%;
-    //     width: 87%;
-    // }
-    .bbk-logo-mobile {
+    #mobile-container:after {
+        content: "";
         position: absolute;
+        background: #060603;
+        border-bottom: 0.5px solid #f5a1a2ba;
+        bottom: 0;
+        left: 6.5%;
+        right: 6.5%;
+        width: 87%;
+    }
+    .bbk-logo-mobile {
+        position: fixed; ///ABSOLUTE
         width: 22vw;
         left: 50%;
         top: 1.5rem;
@@ -81,7 +81,7 @@
         }
     }
     .nav-buttons {
-        position: absolute;
+        position: fixed; ///ABSOLUTE
         display: flex;
         justify-content: space-evenly;
         width: 100vw;
