@@ -67,12 +67,13 @@ export default function Header() {
                     </motion.li>
                 </ul>
             </div>
-            <div className="bbk-logo-mobile">
-                <Link to="/">
-                    <img src="images/BBKK-pink.png" alt="tebbernekkel logo" />
-                </Link>
-            </div>
+
             <div id="mobile-container">
+                <div className="bbk-logo-mobile">
+                    <Link to="/">
+                        <img src="images/BBKK-pink.png" alt="tebbernekkel logo" />
+                    </Link>
+                </div>
                 <ul className="nav-buttons">
                     <li>
                         <NavLink to="/commercials" reloadDocument className="commercial-btn">commercials</NavLink>
@@ -88,6 +89,7 @@ export default function Header() {
                     </li>
                 </ul>
             </div>
+
         </header>
     );
 }

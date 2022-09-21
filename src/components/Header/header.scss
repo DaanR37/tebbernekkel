@@ -45,26 +45,51 @@
 
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    #mobile-container {
-        position: fixed;
-        display: flex;
-        align-items: center;
-        width: 100vw;
-        margin-top: 15px;
-        top: 8vh;
-    }
     .desktop-container {
         display: none;
+    }
+    #mobile-container {
+        position: fixed;
+        display: inline-block;
+        align-items: center;
+        width: 100vw;
+        min-height: 11vh;
+        background: linear-gradient(90deg, #060603, #060606);
+        // border-bottom: 0.5px solid #f5a1a2ba;
+        // margin-top: 15px;
+        // top: 8vh;
+    }
+    #mobile-container:after {
+        content: "";
+        position: absolute;
+        background: black;
+        border-bottom: 0.5px solid #f5a1a2ba;
+        bottom: 0;
+        left: 6.5%;
+        right: 6.5%;
+        width: 87%;
+    }
+    .bbk-logo-mobile {
+        position: absolute;
+        width: 22vw;
+        // top: 4vh;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 1.5rem;
+        img {
+            width: 100%;
+        }
     }
     .nav-buttons {
         position: absolute;
         display: flex;
         justify-content: space-evenly;
         width: 100vw;
-        margin: 0;
+        // margin: 0;
+        margin: 65px 0px 0px 0px;
         padding: 0;
         list-style-type: none;
-        top: 50%;
+        // top: 50%;
         a {
             color: whitesmoke;
             font-size: 13.5px;
@@ -86,16 +111,6 @@
         a.contact-btn.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
-        }
-    }
-    .bbk-logo-mobile {
-        position: fixed;
-        width: 22vw;
-        top: 4vh;
-        left: 50%;
-        transform: translate(-50%);
-        img {
-            width: 100%;
         }
     }
 }
