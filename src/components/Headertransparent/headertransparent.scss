@@ -1,11 +1,11 @@
-.header-container {
+.header-container-transparent {
     position: absolute;
     width: 100vw;
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
     z-index: 2000;
 }
-.header-left-side {
+.header-left-side-transparent {
     position: relative;
     list-style-type: none;
     padding: 0;
@@ -13,19 +13,19 @@
         color: whitesmoke;
         text-decoration: none;
     }
-    a.commercial-btn.active {
+    a.commercial-btn-transparent.active {
         color: #75d5fd;
         transition: 350ms ease-in-out;
     }
-    a.fiction-btn.active {
+    a.fiction-btn-transparent.active {
         color: #75d5fd;
         transition: 350ms ease-in-out;
     }
 }
-.bbk-logo {
+.bbk-logo-transparent {
     position: relative;
 }
-.header-right-side {
+.header-right-side-transparent {
     position: relative;
     list-style-type: none;
     padding: 0;
@@ -33,11 +33,11 @@
         color: whitesmoke;
         text-decoration: none;
     }
-    a.about-btn.active {
+    a.about-btn-transparent.active {
         color: #75d5fd;
         transition: 350ms ease-in-out;
     }
-    a.contact-btn.active {
+    a.contact-btn-transparent.active {
         color: #75d5fd;
         transition: 350ms ease-in-out;
     }
@@ -45,34 +45,33 @@
 
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    /// DISPLAY NONE
-    .desktop-container {
+    /// display none
+    .desktop-container-transparent {
         display: none;
     }
-    #mobile-container {
+    #mobile-container-transparent {
         position: fixed;
         display: flex; 
         align-items: flex-end; 
-        width: 100%;
-        min-height: 11.5%;
-        background: linear-gradient(90deg, #060603, #060606);
+        width: 100%; 
+        min-height: 11.5%; 
         // border-bottom: 0.5px solid #f5a1a2ba;
     }
-    #mobile-container:after {
+    #mobile-container-transparent:after {
         content: "";
         position: absolute;
-        background: #060603;
+        // background: #060603;
         border-bottom: 0.5px solid #f5a1a2ba;
         bottom: 0;
         left: 6.5%;
         right: 6.5%;
         width: 87%;
     }
-    .nav-buttons {
+    .nav-buttons-transparent {
         // position: absolute;
         display: flex;
         justify-content: space-between;
-        width: 87%; 
+        width: 87%;
         margin: 0 auto;
         margin-bottom: 5px;
         padding: 0;
@@ -83,31 +82,31 @@
             text-decoration: none;
             letter-spacing: 0.09em;
         }
-        a.commercial-btn.active {
+        a.commercial-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
-        a.fiction-btn.active {
+        a.fiction-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
-        a.about-btn.active {
+        a.about-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
-        a.contact-btn.active {
+        a.contact-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
     }
-    .nav-buttons > li:nth-child(1) {
+    .nav-buttons-transparent > li:nth-child(1) {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         width: 87%;
     }
-    .bbk-logo-mobile {
+    .bbk-logo-mobile-transparent {
         position: absolute;
         width: 22vw;
         margin-bottom: 0.5rem; 
@@ -119,21 +118,20 @@
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     /// DISPLAY NONE
-    #mobile-container {
+    #mobile-container-transparent {
         display: none;
     }
-    .bbk-logo-mobile {
+    .bbk-logo-mobile-transparent {
         display: none;
     }
-    /// START CODE
-    .desktop-container {
+    .desktop-container-transparent {
         position: fixed;
         display: flex;
         align-items: center;
         height: 10vh;
         margin-top: 15px;
     }
-    .header-left-side {
+    .header-left-side-transparent {
         display: flex;
         justify-content: flex-end;
         width: 45vw;
@@ -143,22 +141,22 @@
             letter-spacing: 0.1em;
         }
     }
-    .header-left-side > li:nth-child(1) {
+    .header-left-side-transparent > li:nth-child(1) {
         position: relative;
         right: 4rem;
     }
-    .header-left-side > li:nth-child(2) {
+    .header-left-side-transparent > li:nth-child(2) {
         position: relative;
         right: 2rem;
     }
-    .bbk-logo {
+    .bbk-logo-transparent {
         display: flex;
         width: 10vw;
         img {
             width: 100%;
         }
     }
-    .header-right-side {
+    .header-right-side-transparent {
         display: flex;
         justify-content: flex-start;
         width: 45vw;
@@ -168,30 +166,30 @@
             letter-spacing: 0.1em;
         }
     }
-    .header-right-side > li:nth-child(2) {
+    .header-right-side-transparent > li:nth-child(2) {
         position: relative;
         left: 4rem;
     }
-    .header-right-side > li:nth-child(1) {
+    .header-right-side-transparent > li:nth-child(1) {
         position: relative;
         left: 2rem;
     }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-    .desktop-container {
+    .desktop-container-transparent {
         display: none;
     }
-    #mobile-container {
+    #mobile-container-transparent {
         position: fixed;
-        display: flex;
-        align-items: flex-end; /// Was Center
-        width: 100%;
-        min-height: 11.5%;
-        // margin-top: 30px;
-        // top: 8vh;
+        display: flex; ///EXPEREMIMENT TO LINE OUT NAV BUTTONS WITH BORDER BOTTOM
+        align-items: flex-end; ///EXPEREMIMENT TO LINE OUT NAV BUTTONS WITH BORDER BOTTOM
+        width: 100%; /// WAS 100VW
+        min-height: 11.5%; /// WAS 11.5VH
+        // background: linear-gradient(90deg, #060603, #060606);
+        // border-bottom: 0.5px solid #f5a1a2ba;
     }
-    #mobile-container:after {
+    #mobile-container-transparent:after {
         content: "";
         position: absolute;
         // background: #060603;
@@ -201,7 +199,7 @@
         right: 6.5%;
         width: 87%;
     }
-    .nav-buttons {
+    .nav-buttons-transparent {
         // position: absolute;
         display: flex;
         justify-content: space-between;
@@ -218,31 +216,31 @@
             text-decoration: none;
             letter-spacing: 0.09em;
         }
-        a.commercial-btn.active {
+        a.commercial-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
-        a.fiction-btn.active {
+        a.fiction-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
-        a.about-btn.active {
+        a.about-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
-        a.contact-btn.active {
+        a.contact-btn-transparent.active {
             color: #75d5fd;
             transition: 350ms ease-in-out;
         }
     }
-    .nav-buttons > li:nth-child(1) {
+    .nav-buttons-transparent > li:nth-child(1) {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         width: 87%; ///EXPEREMIMENT TO LINE OUT NAV BUTTONS WITH BORDER BOTTOM
     }
-    .bbk-logo-mobile {
+    .bbk-logo-mobile-transparent {
         position: fixed;
         width: 19vw;
         margin-bottom: 0.5rem; /// WAS 10PX
@@ -254,20 +252,20 @@
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     /// DISPLAY NONE
-    #mobile-container {
+    #mobile-container-transparent {
         display: none;
     }
-    .bbk-logo-mobile {
+    .bbk-logo-mobile-transparent {
         display: none;
     }
-    .desktop-container {
+    .desktop-container-transparent {
         position: fixed;
         display: flex;
         align-items: center;
         height: 10vh;
         margin-top: 15px;
     }
-    .header-left-side {
+    .header-left-side-transparent {
         display: flex;
         justify-content: flex-end;
         width: 45vw;
@@ -279,22 +277,22 @@
             text-decoration: none;
         }
     }
-    .header-left-side > li:nth-child(1) {
+    .header-left-side-transparent > li:nth-child(1) {
         position: relative;
         right: 4rem;
     }
-    .header-left-side > li:nth-child(2) {
+    .header-left-side-transparent > li:nth-child(2) {
         position: relative;
         right: 2rem;
     }
-    .bbk-logo {
+    .bbk-logo-transparent {
         display: flex;
         width: 10vw;
         img {
             width: 100%;
         }
     }
-    .header-right-side {
+    .header-right-side-transparent {
         display: flex;
         justify-content: flex-start;
         width: 45vw;
@@ -307,11 +305,11 @@
             text-decoration: none;
         }
     }
-    .header-right-side > li:nth-child(2) {
+    .header-right-side-transparent > li:nth-child(2) {
         position: relative;
         left: 4rem;
     }
-    .header-right-side > li:nth-child(1) {
+    .header-right-side-transparent > li:nth-child(1) {
         position: relative;
         left: 2rem;
     }
@@ -319,20 +317,20 @@
 ///Desktop
 @media screen and (min-width: 1280px) {
     /// DISPLAY NONE
-    #mobile-container {
+    #mobile-container-transparent {
         display: none;
     }
-    .bbk-logo-mobile {
+    .bbk-logo-mobile-transparent {
         display: none;
     }
-    .desktop-container {
+    .desktop-container-transparent {
         position: fixed;
         display: flex;
         align-items: center;
         height: 10vh;
         margin-top: 15px;
     }
-    .header-left-side {
+    .header-left-side-transparent {
         display: flex;
         justify-content: flex-end;
         width: 45vw;
@@ -348,22 +346,22 @@
             }
         }
     }
-    .header-left-side > li:nth-child(1) {
+    .header-left-side-transparent > li:nth-child(1) {
         position: relative;
         right: 8rem;
     }
-    .header-left-side > li:nth-child(2) {
+    .header-left-side-transparent > li:nth-child(2) {
         position: relative;
         right: 4rem;
     }
-    .bbk-logo {
+    .bbk-logo-transparent {
         display: flex;
         width: 10vw;
         img {
             width: 100%;
         }
     }
-    .header-right-side {
+    .header-right-side-transparent {
         display: flex;
         justify-content: flex-start;
         width: 45vw;
@@ -379,11 +377,11 @@
             }
         }
     }
-    .header-right-side > li:nth-child(2) {
+    .header-right-side-transparent > li:nth-child(2) {
         position: relative;
         left: 8rem;
     }
-    .header-right-side > li:nth-child(1) {
+    .header-right-side-transparent > li:nth-child(1) {
         position: relative;
         left: 4rem;
     }

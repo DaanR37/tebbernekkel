@@ -1,6 +1,7 @@
-import {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Animatedpage from '../Animatedpage';
+import HeaderTransparent from '../Headertransparent/HeaderTransparent';
 import "./commercials.scss";
 
 export default function Commercials() {
@@ -11,16 +12,19 @@ export default function Commercials() {
         fetch("https://api.tebbernekkel.nl/commercials")
             .then(response => response.json())
             .then(portfolioData => {
-                    setPortfolioData(portfolioData)
-                }
+                setPortfolioData(portfolioData)
+            }
             ).catch(error => {
                 console.log(error.message)
             }
-        )
+            )
     }, []);
     return (
         <Animatedpage>
             <section id="commercial-container">
+                <div className="header-transparent-commercials">
+                    <HeaderTransparent />
+                </div>
                 <div id="grid-wrapper">
                     {portfolioData.map((video, index) => {
                         return (

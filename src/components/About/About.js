@@ -1,8 +1,12 @@
+import Header from "../Header/Header";
 import "./about.scss";
 
 export default function About() {
     return (
         <section className="topsection-awards-container">
+            <div className="header-black-background-awards">
+                <Header />
+            </div>
             <div className="awards-container">
                 <div className="award-container-desktop-2021">
                     <h1>Awards 2021</h1>

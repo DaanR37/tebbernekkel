@@ -1,6 +1,7 @@
-import {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Animatedpage from "../Animatedpage";
+import HeaderTransparent from "../Headertransparent/HeaderTransparent";
 import "./fiction.scss";
 
 export default function Fiction() {
@@ -13,13 +14,16 @@ export default function Fiction() {
             .then(portfolioDataFiction => {
                 setPortfolioDataFiction(portfolioDataFiction)
             }).catch(error => {
-            console.log(error.message)
-        })
+                console.log(error.message)
+            })
     }, []);
 
     return (
         <Animatedpage>
             <section id="fiction-container">
+                <div className="header-transparent-fiction">
+                    <HeaderTransparent />
+                </div>
                 <div id="grid-wrapper-fiction">
                     {portfolioDataFiction.map((video, index) => {
                         return (

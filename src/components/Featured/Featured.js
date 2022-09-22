@@ -1,14 +1,15 @@
-import {useState, useEffect, useMemo, useRef} from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import ReactPlayer from "react-player/vimeo";
-import {Box} from "@mui/material";
+import { Box } from "@mui/material";
 import classNames from "classnames";
-import {throttle} from "lodash";
+import { throttle } from "lodash";
 
 import Card from "./Cards/Card";
 import SlideNavigation from "./SlideNavigation";
 
 import "./featured.scss";
 import Animatedpage from "../Animatedpage";
+import HeaderTransparent from "../Headertransparent/HeaderTransparent";
 
 export default function Featured() {
     const [current, setCurrent] = useState(0);
@@ -61,7 +62,7 @@ export default function Featured() {
     };
     const throttledUpdate = useMemo(
         () =>
-            throttle(moveNextSlide, 1.3 * 1000, {trailing: false, leading: true}),
+            throttle(moveNextSlide, 1.3 * 1000, { trailing: false, leading: true }),
         [featureData.length]
     );
 
@@ -101,6 +102,9 @@ export default function Featured() {
     return (
         <Animatedpage>
             <section role="presentation" className="slide-container" id="featured">
+                <div className="header-transparent-featured">
+                    <HeaderTransparent />
+                </div>
                 <div
                     ref={containerRef}
                     onWheel={onScroll}
@@ -125,7 +129,7 @@ export default function Featured() {
                         <div
                             key={index}
                             className={`slide-item featured-item ${index === current ? "active" : ""
-                            }`}
+                                }`}
                         >
                             <div className="slide-item__inner">
                                 <div
@@ -152,7 +156,7 @@ export default function Featured() {
                                         }}
                                     />
                                 </div>
-                                <Card title={video.name} active={index === current} key={index}/>
+                                <Card title={video.name} active={index === current} key={index} />
                             </div>
                         </div>
                     );
@@ -164,12 +168,12 @@ export default function Featured() {
                                 className="slide-progress__inner"
                                 sx={{
                                     transform: `translate3d(0px, 0px, 0px) scale(1, ${(100 - progress) / 100
-                                    })`,
+                                        })`,
                                     transition: "transform 200ms",
                                 }}
                             ></Box>
                         </div>
-                        <SlideNavigation total={featureData.length} active={current}/>
+                        <SlideNavigation total={featureData.length} active={current} />
                     </>
                 )}
             </section>
