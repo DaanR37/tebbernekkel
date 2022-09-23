@@ -10,24 +10,22 @@
         width: 100%;
         max-width: 30em;
         padding: 14vh 5.5em;
-        // padding: 17.5vh 3.5em;
         min-height: 100vh;
     }
     .contact-container-desktop .cards {
-        margin: 35px auto;
-        // line-height: 1.5rem;
         width: 100%;
         max-width: 200px;
+        margin: 35px auto;
         h1 {
             letter-spacing: 0.05rem;
             font-size: 14px;
-            margin-bottom: 5px; 
+            margin-bottom: 5px;
             color: whitesmoke;
         }
         h3 {
             letter-spacing: 0.03rem;
-            line-height: 1.5rem; 
-            font-size: 12.5px; 
+            line-height: 17px;
+            font-size: 12.5px;
             font-weight: 100;
             margin: 0;
             color: whitesmoke;
@@ -62,29 +60,29 @@
     .contact-container-desktop {
         display: flex;
         flex-wrap: wrap;
-        min-height: 100vh;
+        justify-content: center;
         width: 100%;
-        // max-width: 45em;
-        padding: 20vh 13em;
+        min-height: 100vh;
+        padding: 22vh 19vw;
     }
     .contact-container-desktop .cards {
-        margin: 5px auto; ///OR 10PX AUTO
-        line-height: 1.5rem;
         width: 100%;
         max-width: 200px;
+        margin: 10px 0px 10px 0px;
+        padding: 0px 10px 0px 10px;
         h1 {
-            letter-spacing: 0.03rem;
-            color: whitesmoke;
+            letter-spacing: 0.05rem;
             font-size: 14px;
-            margin-bottom: 2.5px;
+            margin-bottom: 5px;
+            color: whitesmoke;
         }
         h3 {
             letter-spacing: 0.03rem;
-            line-height: 1.4rem;
-            color: whitesmoke;
+            line-height: 17px;
             font-size: 12.5px;
             font-weight: 100;
             margin: 0;
+            color: whitesmoke;
         }
         a {
             text-decoration: none;
@@ -116,28 +114,26 @@
     .contact-container-desktop {
         display: flex;
         flex-wrap: wrap;
-        min-height: 100vh;
         width: 100%;
-        // max-width: 45em;
-        padding: 22.5vh 6em 40vh 6em; /// OR padding: 27vh 8em;
+        min-height: 100vh;
+        padding: 20vh 6em 25vh 6em;
     }
     .contact-container-desktop .cards {
-        margin: 5px auto; ///OR 10PX AUTO
-        line-height: 1.5rem;
         width: 100%;
         max-width: 250px;
-        padding: 0px 5px 0px 5px;
+        margin: 15px auto;
+        padding: 0px 10px 0px 10px;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 21px;
+            font-size: 20px;
             margin-bottom: 10px;
         }
         h3 {
             letter-spacing: 0.05rem;
-            // line-height: 1.4rem;
+            line-height: 1.8rem;
             color: whitesmoke;
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 100;
             margin: 0;
         }
@@ -171,28 +167,26 @@
     .contact-container-desktop {
         display: flex;
         flex-wrap: wrap;
-        min-height: 100vh;
         width: 100%;
-        // max-width: 45em;
-        padding: 15.5vh 15em 21.5vh 15em;
+        min-height: 100vh;
+        padding: 15vh 11em 15vh 11em;
     }
     .contact-container-desktop .cards {
-        margin: 5px auto; ///OR 10PX AUTO
-        line-height: 1.5rem;
         width: 100%;
         max-width: 250px;
-        padding: 0px 5px 0px 5px;
+        margin: 15px auto;
+        padding: 0px 10px 0px 10px;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 21px;
+            font-size: 20px;
             margin-bottom: 10px;
         }
         h3 {
             letter-spacing: 0.05rem;
-            // line-height: 1.4rem;
+            line-height: 1.8rem;
             color: whitesmoke;
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 100;
             margin: 0;
         }
@@ -224,32 +218,28 @@
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
     .contact-container-desktop {
-        position: absolute;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // width: 100%;
-        left: 50%;
-        top: 11rem;
-        transform: translate(-50%);
+        width: 100%;
+        min-height: 100vh;
+        padding: 20vh 20em 20vh 20em;
     }
     .contact-container-desktop .cards {
-        display: flex;
-        flex-direction: column;
-        width: 35%;
-        margin: 15px 0px 15px 50px; /// margin: 15px 20px;
-        line-height: 1.5rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 15px 0px 15px 50px;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 19px;
-            margin-bottom: 5px;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
         h3 {
-            letter-spacing: 0.03rem;
+            letter-spacing: 0.05rem;
             line-height: 1.4rem;
             color: whitesmoke;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 100;
             margin: 0;
         }
@@ -340,32 +330,28 @@
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
     .contact-container-desktop {
-        position: absolute;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // width: 100%;
-        left: 50%;
-        top: 12rem;
-        transform: translate(-50%);
+        width: 100%;
+        min-height: 100vh;
+        padding: 25vh 50em 20vh 50em;
     }
     .contact-container-desktop .cards {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin: 15px 0px 25px 95px; /// margin: 15px 20px;
-        line-height: 1.5rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 15px 30px 20px 30px;
         h1 {
             letter-spacing: 0.05rem;
             color: whitesmoke;
-            font-size: 20px;
-            margin-bottom: 5px;
+            font-size: 21px;
+            margin-bottom: 10px;
         }
         h3 {
-            letter-spacing: 0.03rem;
-            line-height: 1.4rem;
+            letter-spacing: 0.05rem;
+            line-height: 1.5rem;
             color: whitesmoke;
-            font-size: 16px;
+            font-size: 19px;
             font-weight: 100;
             margin: 0;
         }
