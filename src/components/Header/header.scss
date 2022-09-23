@@ -51,28 +51,27 @@
     }
     #mobile-container {
         position: fixed;
-        display: flex; 
-        align-items: flex-end; 
+        display: flex;
+        align-items: flex-end;
         width: 100%;
         min-height: 11.5%;
         background: linear-gradient(90deg, #060603, #060606);
-        // border-bottom: 0.5px solid #f5a1a2ba;
     }
     #mobile-container:after {
         content: "";
         position: absolute;
         background: #060603;
-        border-bottom: 0.5px solid #f5a1a2ba;
+        border-bottom: 1px solid #f5a1a2ba;
         bottom: 0;
-        left: 6.5%;
-        right: 6.5%;
-        width: 87%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
     }
     .nav-buttons {
         // position: absolute;
         display: flex;
         justify-content: space-between;
-        width: 87%; 
+        width: 87%;
         margin: 0 auto;
         margin-bottom: 5px;
         padding: 0;
@@ -110,7 +109,7 @@
     .bbk-logo-mobile {
         position: absolute;
         width: 22vw;
-        margin-bottom: 0.5rem; 
+        margin-bottom: 0.5rem;
         img {
             width: 100%;
         }
@@ -185,29 +184,24 @@
     #mobile-container {
         position: fixed;
         display: flex;
-        align-items: flex-end; /// Was Center
+        align-items: flex-end;
         width: 100%;
         min-height: 11.5%;
-        // margin-top: 30px;
-        // top: 8vh;
     }
     #mobile-container:after {
         content: "";
         position: absolute;
-        // background: #060603;
-        border-bottom: 0.5px solid #f5a1a2ba;
+        border-bottom: 1px solid #f5a1a2ba;
         bottom: 0;
-        left: 6.5%;
-        right: 6.5%;
-        width: 87%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
     }
     .nav-buttons {
         // position: absolute;
         display: flex;
         justify-content: space-between;
-        width: 87%; ///EXPEREMIMENT TO LINE OUT NAV BUTTONS WITH BORDER BOTTOM
-        // width: 100%; ///was 100vw
-        // top: 67.5%; /// WAS 3.5REM
+        width: 87%;
         margin: 0 auto;
         margin-bottom: 5px;
         padding: 0;
@@ -240,12 +234,12 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        width: 87%; ///EXPEREMIMENT TO LINE OUT NAV BUTTONS WITH BORDER BOTTOM
+        width: 87%;
     }
     .bbk-logo-mobile {
         position: fixed;
         width: 19vw;
-        margin-bottom: 0.5rem; /// WAS 10PX
+        margin-bottom: 0.5rem;
         img {
             width: 100%;
         }
@@ -361,6 +355,77 @@
         width: 10vw;
         img {
             width: 100%;
+        }
+    }
+    .header-right-side {
+        display: flex;
+        justify-content: flex-start;
+        width: 45vw;
+        a {
+            color: whitesmoke;
+            font-size: 19px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            &:hover {
+                color: #f5a1a3;
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+    .header-right-side > li:nth-child(2) {
+        position: relative;
+        left: 8rem;
+    }
+    .header-right-side > li:nth-child(1) {
+        position: relative;
+        left: 4rem;
+    }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
+    #mobile-container {
+        display: none;
+    }
+    .bbk-logo-mobile {
+        display: none;
+    }
+    .desktop-container {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        margin-top: 15px;
+    }
+    .header-left-side {
+        display: flex;
+        justify-content: flex-end;
+        width: 45vw;
+        a {
+            color: whitesmoke;
+            font-size: 19px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            &:hover {
+                color: #f5a1a3;
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+    .header-left-side > li:nth-child(1) {
+        position: relative;
+        right: 8rem;
+    }
+    .header-left-side > li:nth-child(2) {
+        position: relative;
+        right: 4rem;
+    }
+    .bbk-logo {
+        display: flex;
+        width: 10vw;
+        img {
+            width: 90%;
         }
     }
     .header-right-side {

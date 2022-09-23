@@ -9,24 +9,25 @@
     .contact-container-desktop {
         width: 100%;
         max-width: 30em;
-        padding: 17.5vh 3.5em;
+        padding: 14vh 5.5em;
+        // padding: 17.5vh 3.5em;
         min-height: 100vh;
     }
     .contact-container-desktop .cards {
         margin: 35px auto;
-        line-height: 1.5rem;
+        // line-height: 1.5rem;
         width: 100%;
         max-width: 200px;
         h1 {
-            letter-spacing: 0.03rem;
+            letter-spacing: 0.05rem;
             font-size: 14px;
-            margin-bottom: 2.5px;
+            margin-bottom: 5px; 
             color: whitesmoke;
         }
         h3 {
             letter-spacing: 0.03rem;
-            line-height: 1.4rem;
-            font-size: 12.5px; /// WAS 13.5PX
+            line-height: 1.5rem; 
+            font-size: 12.5px; 
             font-weight: 100;
             margin: 0;
             color: whitesmoke;
