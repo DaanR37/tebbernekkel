@@ -41,7 +41,7 @@ app.get("/commercials", (req, res) => {
     });
 });
 
-//FICTION ENDPOINT
+//FICTION ENDPOINT ///WILL BE REMOVED
 app.get("/fiction", (req, res) => {
     client.request({
         method: 'GET',
@@ -53,6 +53,58 @@ app.get("/fiction", (req, res) => {
         res.send(body.data)
     });
 });
+
+///HERE MUST COME DIFFERENT ENDPOINTS FOR EVERY SINGLE CREATIVE IN THE LIST - FICTION WILL BE REMOVED 
+
+///ACHMED ENDPOINT
+app.get("/fictionachmed", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/12880998/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+///BLUE ENDPOINT
+app.get("/fictionblue", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/12885045/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+///FOLKERT ENDPOINT
+app.get("/fictionfolkert", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/12885057/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+///JOOSJE ENDPOINT
+app.get("/fictionjoosje", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/12885062/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`)

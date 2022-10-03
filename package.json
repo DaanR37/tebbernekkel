@@ -39,6 +39,7 @@
     "react-use": "^17.4.0",
     "sass": "^1.50.1",
     "styled-components": "^5.3.3",
+    "swiper": "^8.4.2",
     "three": "^0.137.5",
     "vimeo": "^2.1.1",
     "web-vitals": "^2.1.2"
@@ -68,6 +69,6 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   }
 }

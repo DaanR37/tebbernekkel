@@ -1,0 +1,28 @@
+#list-container {
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+.creatives-card {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.names-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    line-height: 3rem;
+    a {
+        font-size: 5rem;
+        text-decoration: none;
+        color: whitesmoke;
+        &:hover {
+            color: #f5a1a3;
+            transition: 400ms ease-in-out;
+        }
+    }
+}
