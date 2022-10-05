@@ -1,198 +1,455 @@
-///Desktop
-@media screen and (min-width: 1280px) {
+///APPLIES TO ALL CARDS
+#grid-wrapper-fiction-achmed {
+    display: grid;
+    margin: 0 auto;
+    gap: 5px;
+}
+#grid-wrapper-fiction-achmed a div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+}
+#grid-wrapper-fiction-achmed > div > a {
+    text-decoration: none;
+    text-align: center;
+}
+///Mobile Portrait
+@media screen and (max-width: 600px) and (orientation: portrait) {
     #grid-wrapper-fiction-achmed {
-        display: grid;
-        margin: 0 auto;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(50, 50px); ///WAS 11
-        gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 90vh);
     }
-    /// GRID
     .three-achmed {
-        grid-column: 1/4;
-        grid-row: 8/19;
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
     .seven-achmed {
-        grid-column: 4/7;
-        grid-row: 8/19;
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
     .four-achmed {
-        grid-column: 1/4;
-        grid-row: 19/30;
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
     .five-achmed {
-        grid-column: 4/7;
-        grid-row: 19/30;
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
     .six-achmed {
-        grid-column: 1/4;
-        grid-row: 30/41;
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
     .two-achmed {
-        grid-column: 4/7;
-        grid-row: 30/41;
+        grid-column: 1/2;
+        grid-row: 6/7;
     }
-    //CARD SEVEN
-    #grid-wrapper-fiction-achmed div.seven-achmed a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
-    }
-    #grid-wrapper-fiction-achmed > div.seven-achmed > a {
-        text-decoration: none;
-        text-align: center;
-    }
-    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
-        background-size: auto 150%;
-        background-position: 35%;
+    ///CARD TWO
+    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
+        background-size: auto 115%;
+        background-position: 50%;
         background-repeat: no-repeat;
     }
-    ///CARD SIX
-    #grid-wrapper-fiction-achmed div.six-achmed a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
-    }
-    #grid-wrapper-fiction-achmed > div.six-achmed > a {
-        text-decoration: none;
-        text-align: center;
-    }
-    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+    //CARD THREE
+    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
         background-size: auto 100%;
-        background-position: 70%;
+        background-position: center;
         background-repeat: no-repeat;
     }
-    ///CARD FIVE
-    #grid-wrapper-fiction-achmed div.five-achmed a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
-    }
-    #grid-wrapper-fiction-achmed > div.five-achmed > a {
-        text-decoration: none;
-        text-align: center;
-    }
-    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
-        background-size: auto 100%;
-        background-position: 40% 30%;
-        background-repeat: no-repeat;
-    }
-   ///CARD FOUR
-    #grid-wrapper-fiction-achmed div.four-achmed a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
-    }
-    #grid-wrapper-fiction-achmed > div.four-achmed > a {
-        text-decoration: none;
-        text-align: center;
-    }
+    ///CARD FOUR
     #grid-wrapper-fiction-achmed > div.four-achmed > a div {
         background-size: auto 100%;
         background-position: 50%;
         background-repeat: no-repeat;
     }
-    //CARD THREE
-    #grid-wrapper-fiction-achmed div.three-achmed a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+    ///CARD FIVE
+    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
+        background-size: auto 100%;
+        background-position: 50%;
+        background-repeat: no-repeat;
     }
-    #grid-wrapper-fiction-achmed > div.three-achmed > a {
-        text-decoration: none;
-        text-align: center;
+    ///CARD SIX
+    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+        background-size: auto 100%;
+        background-position: 80%;
+        background-repeat: no-repeat;
     }
-    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
+    //CARD SEVEN
+    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
+        background-size: auto 150%;
+        background-position: 25%;
+        background-repeat: no-repeat;
+    }
+}
+///Mobile Landscape
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+    #grid-wrapper-fiction-achmed {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 200px);
+    }
+    .three-achmed {
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    .seven-achmed {
+        grid-column: 4/7;
+        grid-row: 1/3;
+    }
+    .four-achmed {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+    .five-achmed {
+        grid-column: 3/5;
+        grid-row: 3/5;
+    }
+    .six-achmed {
+        grid-column: 5/7;
+        grid-row: 3/5;
+    }
+    .two-achmed {
+        grid-column: 1/4;
+        grid-row: 5/7;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
         background-size: auto 115%;
         background-position: 50%;
         background-repeat: no-repeat;
     }
-    ///CARD TWO
-    #grid-wrapper-fiction-achmed div.two-achmed a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
-    }
-    #grid-wrapper-fiction-achmed > div.two-achmed > a {
-        text-decoration: none;
-        text-align: center;
-    }
-    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
-        background-size: auto 110%;
+    //CARD THREE
+    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
+        background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
     }
-    //CARD ONE
-    // #grid-wrapper-fiction div.one-f a div {
-    //     position: relative;
-    //     display: flex;
-    //     width: 100%;
-    //     height: 100%;
-    //     justify-content: center;
-    //     align-items: center;
-    //     color: whitesmoke;
-    //     font-size: 30px;
-    //     font-family: "Roboto Condensed", sans-serif;
-    //     text-transform: uppercase;
-    // }
-    // #grid-wrapper-fiction > div.one-f > a {
-    //     text-decoration: none;
-    //     text-align: center;
-    // }
-    // #grid-wrapper-fiction > div.one-f > a div {
-    //     background-size: auto 100%;
-    //     background-position: 10%;
-    //     background-repeat: no-repeat;
-    // }
+    ///CARD FOUR
+    #grid-wrapper-fiction-achmed > div.four-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+}
+///Tablet Portrait
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    #grid-wrapper-fiction-achmed {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(9, 200px);
+    }
+    .three-achmed {
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    .seven-achmed {
+        grid-column: 4/7;
+        grid-row: 1/3;
+    }
+    .four-achmed {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+    .five-achmed {
+        grid-column: 3/5;
+        grid-row: 3/5;
+    }
+    .six-achmed {
+        grid-column: 5/7;
+        grid-row: 3/5;
+    }
+    .two-achmed {
+        grid-column: 1/4;
+        grid-row: 5/7;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
+        background-size: auto 115%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    //CARD THREE
+    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-achmed > div.four-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+}
+///Tablet Landscape
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
+    #grid-wrapper-fiction-achmed {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(37, 50px);
+    }
+    /// GRID
+    .three-achmed {
+        grid-column: 1/4;
+        grid-row: 5/16;
+    }
+    .seven-achmed {
+        grid-column: 4/7;
+        grid-row: 5/16;
+    }
+    .four-achmed {
+        grid-column: 1/4;
+        grid-row: 16/27;
+    }
+    .five-achmed {
+        grid-column: 4/7;
+        grid-row: 16/27;
+    }
+    .six-achmed {
+        grid-column: 1/4;
+        grid-row: 27/38;
+    }
+    .two-achmed {
+        grid-column: 4/7;
+        grid-row: 27/38;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
+        background-size: auto 115%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    //CARD THREE
+    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-achmed > div.four-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+}
+///Desktop
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+    #grid-wrapper-fiction-achmed {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(37, 50px);
+    }
+    /// GRID
+    .three-achmed {
+        grid-column: 1/4;
+        grid-row: 5/16;
+    }
+    .seven-achmed {
+        grid-column: 4/7;
+        grid-row: 5/16;
+    }
+    .four-achmed {
+        grid-column: 1/4;
+        grid-row: 16/27;
+    }
+    .five-achmed {
+        grid-column: 4/7;
+        grid-row: 16/27;
+    }
+    .six-achmed {
+        grid-column: 1/4;
+        grid-row: 27/38;
+    }
+    .two-achmed {
+        grid-column: 4/7;
+        grid-row: 27/38;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
+        background-size: auto 115%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    //CARD THREE
+    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-achmed > div.four-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
     //HOVER EFFECT GRID AREA'S
     #ho-achmed {
         position: absolute;
         top: 0;
         left: 0;
-        // width: 100%;
-        // height: 100%;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.4);
+        transition: opacity 0.25s;
+        &:hover {
+            opacity: 1;
+            backdrop-filter: blur(5px);
+            transition: ease-in-out 350ms;
+        }
+    }
+    #ho-achmed > * {
+        transform: translateY(30px);
+        transition: transform 0.5s;
+    }
+    #ho-achmed:hover > * {
+        transform: translateY(0);
+    }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
+    #grid-wrapper-fiction-achmed {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(37, 50px);
+    }
+    /// GRID
+    .three-achmed {
+        grid-column: 1/4;
+        grid-row: 5/16;
+    }
+    .seven-achmed {
+        grid-column: 4/7;
+        grid-row: 5/16;
+    }
+    .four-achmed {
+        grid-column: 1/4;
+        grid-row: 16/27;
+    }
+    .five-achmed {
+        grid-column: 4/7;
+        grid-row: 16/27;
+    }
+    .six-achmed {
+        grid-column: 1/4;
+        grid-row: 27/38;
+    }
+    .two-achmed {
+        grid-column: 4/7;
+        grid-row: 27/38;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-achmed > div.two-achmed > a div {
+        background-size: auto 115%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    //CARD THREE
+    #grid-wrapper-fiction-achmed > div.three-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-achmed > div.four-achmed > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-achmed > div.five-achmed > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-achmed > div.six-achmed > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-achmed > div.seven-achmed > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+    //HOVER EFFECT GRID AREA'S
+    #ho-achmed {
+        position: absolute;
+        top: 0;
+        left: 0;
         opacity: 0;
         background: rgba(0, 0, 0, 0.4);
         transition: opacity 0.25s;
