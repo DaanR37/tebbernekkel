@@ -4,35 +4,43 @@
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
 }
+.awards-container {
+    width: 100%;
+    min-height: 100vh;
+}
+.awards-container .awards {
+    width: 100%;
+    h1 {
+        color: whitesmoke;
+    }
+    h3 {
+        color: whitesmoke;
+        font-weight: 100;
+        opacity: 0.9;
+    }
+    i {
+        font-size: 10px;
+        color: #f5a1a3;
+    }
+}
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .awards-container {
-        width: 100%;
         max-width: 30em;
         padding: 14vh 5.5em;
-        min-height: 100vh;
     }
     .awards-container .awards {
-        width: 100%;
         max-width: 200px;
         margin: 35px auto;
         h1 {
             letter-spacing: 0.05rem;
             font-size: 14px;
             margin-bottom: 5px;
-            color: whitesmoke;
         }
         h3 {
             letter-spacing: 0.03rem;
             line-height: 12px;
             font-size: 12.5px;
-            font-weight: 100;
-            color: whitesmoke;
-            opacity: 0.9;
-            i {
-                font-size: 10px;
-                color: #f5a1a3;
-            }
         }
     }
 }
@@ -42,12 +50,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        min-height: 100vh;
         padding: 22vh 19vw;
     }
     .awards-container .awards {
-        width: 100%;
         max-width: 200px;
         margin: 10px 0px 10px 0px;
         padding: 0px 10px 0px 10px;
@@ -55,19 +60,11 @@
             letter-spacing: 0.05rem;
             font-size: 14px;
             margin-bottom: 5px;
-            color: whitesmoke;
         }
         h3 {
             letter-spacing: 0.03rem;
             line-height: 12px;
             font-size: 12.5px;
-            font-weight: 100;
-            color: whitesmoke;
-            opacity: 0.9;
-            i {
-                font-size: 10px;
-                color: #f5a1a3;
-            }
         }
     }
 }
@@ -77,32 +74,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        min-height: 100vh;
         padding: 20vh 6em 0vh 6em;
     }
     .awards-container .awards {
-        width: 100%;
         max-width: 250px;
         margin: 15px auto;
         padding: 0px 10px 0px 10px;
         h1 {
             letter-spacing: 0.05rem;
-            color: whitesmoke;
             font-size: 20px;
             margin-bottom: 10px;
         }
         h3 {
             letter-spacing: 0.05rem;
             line-height: 1rem;
-            color: whitesmoke;
-            opacity: 0.9;
             font-size: 18px;
-            font-weight: 100;
-            i {
-                font-size: 10px;
-                color: #f5a1a3;
-            }
         }
     }
 }
@@ -111,32 +97,22 @@
     .awards-container {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        min-height: 100vh;
+        justify-content: center;
         padding: 15vh 11em 15vh 11em;
     }
     .awards-container .awards {
-        width: 100%;
         max-width: 250px;
         margin: 15px auto;
         padding: 0px 10px 0px 10px;
         h1 {
             letter-spacing: 0.05rem;
-            color: whitesmoke;
             font-size: 20px;
             margin-bottom: 10px;
         }
         h3 {
             letter-spacing: 0.05rem;
             line-height: 1.1rem;
-            color: whitesmoke;
-            opacity: 0.9;
             font-size: 18px;
-            font-weight: 100;
-            i {
-                font-size: 10px;
-                color: #f5a1a3;
-            }
         }
     }
 }
@@ -146,32 +122,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        min-height: 100vh;
         padding: 20vh 20em 20vh 20em;
     }
     .awards-container .awards {
-        width: 100%;
         max-width: 300px;
         margin: 15px 0px 15px 50px;
         h1 {
             letter-spacing: 0.05rem;
-            color: whitesmoke;
             font-size: 20px;
             margin-bottom: 10px;
         }
         h3 {
             letter-spacing: 0.05rem;
             line-height: 0.89rem;
-            color: whitesmoke;
-            opacity: 0.9;
             font-size: 18px;
-            font-weight: 100;
             margin-bottom: 0;
-            i {
-                font-size: 10px;
-                color: #f5a1a3;
-            }
         }
     }
 }
@@ -181,31 +146,20 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        min-height: 100vh;
         padding: 20vh 20em 20vh 20em;
     }
     .awards-container .awards {
-        width: 100%;
         max-width: 300px;
         margin: 15px 0px 15px 50px;
         h1 {
             letter-spacing: 0.05rem;
-            color: whitesmoke;
             font-size: 21px;
             margin-bottom: 10px;
         }
         h3 {
             letter-spacing: 0.05rem;
             line-height: 0.89rem;
-            color: whitesmoke;
-            opacity: 0.9;
             font-size: 19px;
-            font-weight: 100;
-            i {
-                font-size: 10px;
-                color: #f5a1a3;
-            }
         }
     }
 }

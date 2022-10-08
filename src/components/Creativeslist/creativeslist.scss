@@ -21,13 +21,17 @@
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .creatives-card {
         left: 50%;
-        top: 40%;
-        transform: translate(-50%, -40%);
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     .names-list {
-        line-height: 2.5rem;
+        line-height: 2.2rem;
+        li {
+            margin-bottom: 20px;
+        }
         a {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
         }
     }
 }
@@ -36,12 +40,16 @@
     .creatives-card {
         left: 50%;
         top: 55%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -55%);
     }
     .names-list {
         line-height: 2.5rem;
+        li {
+            margin-bottom: 5px;
+        }
         a {
             font-size: 2.5rem;
+            letter-spacing: 1px;
         }
     }
 }
@@ -49,13 +57,18 @@
 @media screen and (min-width: 600px) and (orientation: portrait) {
     .creatives-card {
         left: 50%;
-        top: 40%;
-        transform: translate(-50%, -40%);
+        top: 55%;
+        transform: translate(-50%, -55%);
+        max-width: 300px;
     }
     .names-list {
         line-height: 3rem;
+        li {
+            margin-bottom: 20px;
+        }
         a {
-            font-size: 5rem;
+            font-size: 4rem;
+            letter-spacing: 2px;
         }
     }
 }
@@ -67,9 +80,10 @@
         transform: translate(-50%, -50%);
     }
     .names-list {
-        line-height: 3rem;
+        line-height: 4rem;
         a {
-            font-size: 5rem;
+            font-size: 4rem;
+            letter-spacing: 2.5px;
         }
     }
 }
@@ -81,9 +95,10 @@
         transform: translate(-50%, -50%);
     }
     .names-list {
-        line-height: 3rem;
+        line-height: 4rem;
         a {
-            font-size: 5rem;
+            font-size: 4rem;
+            letter-spacing: 2.5px;
             &:hover {
                 color: #f5a1a3;
                 transition: 400ms ease-in-out;
@@ -99,9 +114,10 @@
         transform: translate(-50%, -50%);
     }
     .names-list {
-        line-height: 3rem;
+        line-height: 4rem;
         a {
-            font-size: 5rem;
+            font-size: 4rem;
+            letter-spacing: 2.5px;
             &:hover {
                 color: #f5a1a3;
                 transition: 400ms ease-in-out;

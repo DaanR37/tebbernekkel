@@ -6,7 +6,7 @@ import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 
 export default function FictionFolkert() {
-    const videoIndexFictionFolkert = ["seven-f", "three-f", "four-f", "five-f", "six-f", "two-f", "one-f"];
+    const videoIndexFictionFolkert = ["seven-folkert", "three-folkert", "four-folkert", "five-folkert", "six-folkert", "two-folkert", "one-folkert", "eight-folkert", "nine-folkert", "ten-folkert"];
 
     const [portfolioDataFictionFolkert, setPortfolioDataFictionFolkert] = useState([]);
     useEffect(() => {
@@ -22,19 +22,19 @@ export default function FictionFolkert() {
 
     return (
         // <Animatedpage>
-            <section id="fiction-container">
+            <section id="fiction-container-folkert">
                 <div className="header-transparent-fiction">
                     <HeaderTransparent />
                 </div>
                 <div className="slider-nav">
                     <SliderCreatives />
                 </div>
-                <div id="grid-wrapper-fiction">
+                <div id="grid-wrapper-fiction-folkert">
                     {portfolioDataFictionFolkert.map((video, index) => {
                         return (
                             <div className={videoIndexFictionFolkert[index]} key={index}>
                                 <Link
-                                    to="/embeddedplayerfiction"
+                                    to="/embeddedplayerfolkert"
                                     state={{
                                         link: `${video.uri}`,
                                         title: `${video.name}`,
@@ -50,7 +50,7 @@ export default function FictionFolkert() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-f">
+                                        <div id="ho-folkert">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

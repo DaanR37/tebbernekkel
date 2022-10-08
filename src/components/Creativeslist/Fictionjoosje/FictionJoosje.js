@@ -6,7 +6,7 @@ import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 
 export default function FictionJoosje() {
-    const videoIndexFictionJoosje = ["seven-f", "three-f", "four-f", "five-f", "six-f", "two-f", "one-f"];
+    const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje"];
 
     const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
     useEffect(() => {
@@ -22,19 +22,19 @@ export default function FictionJoosje() {
 
     return (
         // <Animatedpage>
-            <section id="fiction-container">
+            <section id="fiction-container-joosje">
                 <div className="header-transparent-fiction">
                     <HeaderTransparent />
                 </div>
                 <div className="slider-nav">
                     <SliderCreatives />
                 </div>
-                <div id="grid-wrapper-fiction">
+                <div id="grid-wrapper-fiction-joosje">
                     {portfolioDataFictionJoosje.map((video, index) => {
                         return (
                             <div className={videoIndexFictionJoosje[index]} key={index}>
                                 <Link
-                                    to="/embeddedplayerfiction"
+                                    to="/embeddedplayerjoosje"
                                     state={{
                                         link: `${video.uri}`,
                                         title: `${video.name}`,
@@ -50,7 +50,7 @@ export default function FictionJoosje() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-f">
+                                        <div id="ho-joosje">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

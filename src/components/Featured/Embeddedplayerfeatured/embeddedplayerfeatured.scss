@@ -1,4 +1,4 @@
-#embedded-player-fiction {
+#embedded-player {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     width: 100vw; ///was 100%
     background-color: #001f32;
     // }
-    .times-fiction {
+    .times {
         position: absolute;
         z-index: 999;
         img {
@@ -16,29 +16,28 @@
             filter: invert(1);
         }
     }
-    .embedded-player-fiction {
+    .embedded-player {
         position: relative;
         iframe {
             width: 100%;
             height: 100%;
         }
-        .player-text-fiction {
+        .player-text {
             display: none;
         }
     }
 }
-
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    .embedded-container-dekstop-fiction {
+    .embedded-container-dekstop {
         display: none;
     }
-    #embedded-player-fiction > div.embedded-container-mobile-fiction > div {
+    #embedded-player > div.embedded-container-mobile > div {
         width: 85vw;
         height: 30vh;
         bottom: 5rem;
     }
-    .times-fiction {
+    .times {
         width: 5vw;
         top: 15%;
         right: 0.9rem;
@@ -47,17 +46,17 @@
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    .embedded-container-mobile-fiction {
+    .embedded-container-mobile {
         display: none;
     }
-    .embedded-player-fiction {
+    .embedded-player {
         width: 50vw;
         height: 55vh;
         iframe {
             transform: scale(1.1);
         }
     }
-    .times-fiction {
+    .times {
         width: 2vw;
         top: 5%;
         right: 4%;
@@ -66,15 +65,15 @@
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-    .embedded-container-dekstop-fiction {
+    .embedded-container-dekstop {
         display: none;
     }
-    #embedded-player-fiction > div.embedded-container-mobile-fiction > div {
+    #embedded-player > div.embedded-container-mobile > div {
         width: 85vw;
         height: 35vh;
         bottom: 5rem;
     }
-    .times-fiction {
+    .times {
         width: 4vw;
         top: 7%;
         right: 1.4rem;
@@ -83,17 +82,17 @@
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-    .embedded-container-mobile-fiction {
+    .embedded-container-mobile {
         display: none;
     }
-    .embedded-player-fiction {
+    .embedded-player {
         width: 65vw;
         height: 55vh;
         iframe {
             transform: scale(1.1);
         }
     }
-    .times-fiction {
+    .times {
         width: 2vw;
         top: 5%;
         right: 4%;
@@ -101,11 +100,11 @@
     }
 }
 ///Desktop
-@media screen and (min-width: 1280px) {
-    .embedded-container-mobile-fiction {
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+    .embedded-container-mobile {
         display: none;
     }
-    .embedded-player-fiction {
+    .embedded-player {
         width: 55vw;
         height: 60vh;
         margin-top: 4%;
@@ -113,7 +112,33 @@
             transform: scale(1.2);
         }
     }
-    .times-fiction {
+    .times {
+        width: 1.5vw;
+        top: 5%;
+        right: 4%;
+        opacity: 0.8;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+            transform: rotate(180deg);
+            transition: 300ms linear;
+        }
+    }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
+    .embedded-container-mobile {
+        display: none;
+    }
+    .embedded-player {
+        width: 55vw;
+        height: 60vh;
+        margin-top: 4%;
+        iframe {
+            transform: scale(1.2);
+        }
+    }
+    .times {
         width: 1.5vw;
         top: 5%;
         right: 4%;

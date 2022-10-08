@@ -16,7 +16,7 @@ export default function HeaderTransparent() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/commercials" reloadDocument className="commercial-btn-transparent">latest</NavLink>
+                        <NavLink to="/featured" reloadDocument className="commercial-btn-transparent">featured</NavLink>
                     </motion.li>
                     <motion.li
                         whileHover={{
@@ -47,7 +47,7 @@ export default function HeaderTransparent() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/about" reloadDocument className="about-btn-transparent">awards</NavLink>
+                        <NavLink to="/awards" reloadDocument className="about-btn-transparent">awards</NavLink>
                     </motion.li>
                     <motion.li
                         whileHover={{
@@ -73,13 +73,13 @@ export default function HeaderTransparent() {
                         </div>
                     </li>
                     <li>
-                        <NavLink to="/commercials" reloadDocument className="commercial-btn-transparent">latest</NavLink>
+                        <NavLink to="/featured" reloadDocument className="commercial-btn-transparent">featured</NavLink>
                     </li>
                     <li>
                         <NavLink to="/creativeslist" reloadDocument className="fiction-btn-transparent">creatives</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" reloadDocument className="about-btn-transparent">awards</NavLink>
+                        <NavLink to="/awards" reloadDocument className="about-btn-transparent">awards</NavLink>
                     </li>
                     <li>
                         <NavLink to="/contact" reloadDocument className="contact-btn-transparent">contact</NavLink>

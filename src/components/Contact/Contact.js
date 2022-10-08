@@ -8,7 +8,7 @@ export default function Contact() {
             <div className="header-black-background-contact">
                 <Header />
             </div>
-            <div className="contact-container-desktop">
+            <div className="contact-container">
                 <div className="cards five">
                     <h1>HQ Tebbernekkel</h1>
                     <a href="https://g.page/tebbernekkel?share" target="_blank" rel="noreferrer">

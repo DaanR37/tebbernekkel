@@ -6,7 +6,7 @@ import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 
 export default function FictionBlue() {
-    const videoIndexFictionBlue = ["seven-f", "three-f", "four-f", "five-f", "six-f", "two-f", "one-f"];
+    const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue", "twelve-blue"];
 
     const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
     useEffect(() => {
@@ -22,19 +22,19 @@ export default function FictionBlue() {
 
     return (
         // <Animatedpage>
-            <section id="fiction-container">
+            <section id="fiction-container-blue">
                 <div className="header-transparent-fiction">
                     <HeaderTransparent />
                 </div>
                 <div className="slider-nav">
                     <SliderCreatives />
                 </div>
-                <div id="grid-wrapper-fiction">
+                <div id="grid-wrapper-fiction-blue">
                     {portfolioDataFictionBlue.map((video, index) => {
                         return (
                             <div className={videoIndexFictionBlue[index]} key={index}>
                                 <Link
-                                    to="/embeddedplayerfiction"
+                                    to="/embeddedplayerblue"
                                     state={{
                                         link: `${video.uri}`,
                                         title: `${video.name}`,
@@ -50,7 +50,7 @@ export default function FictionBlue() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-f">
+                                        <div id="ho-blue">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

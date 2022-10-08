@@ -17,7 +17,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/commercials" reloadDocument className="commercial-btn">latest</NavLink>
+                        <NavLink to="/featured" reloadDocument className="commercial-btn">featured</NavLink>
                     </motion.li>
                     <motion.li
                         whileHover={{
@@ -48,7 +48,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/about" reloadDocument className="about-btn">awards</NavLink>
+                        <NavLink to="/awards" reloadDocument className="about-btn">awards</NavLink>
                     </motion.li>
                     <motion.li
                         whileHover={{
@@ -74,13 +74,13 @@ export default function Header() {
                         </div>
                     </li>
                     <li>
-                        <NavLink to="/commercials" reloadDocument className="commercial-btn">latest</NavLink>
+                        <NavLink to="/featured" reloadDocument className="commercial-btn">featured</NavLink>
                     </li>
                     <li>
                         <NavLink to="/creativeslist" reloadDocument className="fiction-btn">creatives</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" reloadDocument className="about-btn">awards</NavLink>
+                        <NavLink to="/awards" reloadDocument className="about-btn">awards</NavLink>
                     </li>
                     <li>
                         <NavLink to="/contact" reloadDocument className="contact-btn">contact</NavLink>

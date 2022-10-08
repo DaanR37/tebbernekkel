@@ -24,7 +24,7 @@ export default function FictionAchmed() {
     return (
         // <Animatedpage>
             <section id="fiction-container-achmed">
-                <div className="header-transparent-fiction">
+                <div className="header-transparent-achmed">
                     <HeaderTransparent />
                 </div>
                 <div className="slider-nav">
@@ -35,7 +35,7 @@ export default function FictionAchmed() {
                         return (
                             <div className={videoIndexFictionAchmed[index]} key={index}>
                                 <Link
-                                    to="/embeddedplayerfiction"
+                                    to="/embeddedplayerachmed"
                                     state={{
                                         link: `${video.uri}`,
                                         title: `${video.name}`,

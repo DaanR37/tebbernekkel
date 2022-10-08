@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 import Animatedpage from "../../Animatedpage";
-import "./embeddedplayerfiction.scss";
+import "./embeddedplayerfeatured.scss";
 
-const EmbeddedPlayerFiction = () => {
+const EmbeddedPlayerFeatured = () => {
   const location = useLocation();
   console.log(location.state);
 
@@ -16,15 +16,14 @@ const EmbeddedPlayerFiction = () => {
 
   return (
     <Animatedpage>
-      <section id="embedded-player-fiction">
-
-        <div className="embedded-container-dekstop-fiction">
-          <a href="/fiction">
-            <div className="times-fiction">
+      <section id="embedded-player">
+        <div className="embedded-container-dekstop">
+          <a href="/featured">
+            <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />
             </div>
           </a>
-          <div className="embedded-player-fiction">
+          <div className="embedded-player">
             <iframe
               title={url}
               src={url}
@@ -32,7 +31,7 @@ const EmbeddedPlayerFiction = () => {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-            <div className="player-text-fiction">
+            <div className="player-text">
               <p>{title}</p>
               <br></br>
               <p>{description}</p>
@@ -40,10 +39,10 @@ const EmbeddedPlayerFiction = () => {
           </div>
         </div>
 
-        <div className="embedded-container-mobile-fiction">
-          <div className="embedded-player-fiction">
-            <a href="/fiction">
-              <div className="times-fiction">
+        <div className="embedded-container-mobile">
+          <div className="embedded-player">
+            <a href="/featured">
+              <div className="times">
                 <img src="images/times-circle-outline-mobile.svg" alt="times" />
               </div>
             </a>
@@ -54,19 +53,16 @@ const EmbeddedPlayerFiction = () => {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-            <div className="player-text-fiction">
+            <div className="player-text">
               <p>{title}</p>
               <br></br>
               <p>{description}</p>
             </div>
           </div>
         </div>
-
       </section>
     </Animatedpage>
   );
 };
 
-export default EmbeddedPlayerFiction;
-
-
+export default EmbeddedPlayerFeatured;

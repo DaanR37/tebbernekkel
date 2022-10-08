@@ -15,8 +15,8 @@ let client = new Vimeo(
     process.env.ACCESS_TOKEN
 );
 
-//FEATURED ENDPOINT
-app.get("/featured", (req, res) => {
+///HOMEPAGE ENDPOINT
+app.get("/homepage", (req, res) => {
     client.request({
         method: 'GET',
         path: '/me/projects/7511926/videos?fields=name,uri,pictures.sizes.link',
@@ -28,8 +28,8 @@ app.get("/featured", (req, res) => {
     });
 });
 
-//COMMERCIALS ENDPOINTS
-app.get("/commercials", (req, res) => {
+///FEATURED (COMMERCIALS) ENDPOINTS
+app.get("/featured", (req, res) => {
     client.request({
         method: 'GET',
         path: '/me/projects/7511929/videos?fields=name,uri,description,pictures.sizes.link',
@@ -40,21 +40,6 @@ app.get("/commercials", (req, res) => {
         res.send(body.data)
     });
 });
-
-//FICTION ENDPOINT ///WILL BE REMOVED
-app.get("/fiction", (req, res) => {
-    client.request({
-        method: 'GET',
-        path: '/me/projects/7511934/videos?fields=name,uri,description,pictures.sizes.link',
-    }, function (error, body, status_code, headers) {
-        if (error) {
-            console.log(error)
-        }
-        res.send(body.data)
-    });
-});
-
-///HERE MUST COME DIFFERENT ENDPOINTS FOR EVERY SINGLE CREATIVE IN THE LIST - FICTION WILL BE REMOVED 
 
 ///ACHMED ENDPOINT
 app.get("/fictionachmed", (req, res) => {
@@ -104,7 +89,6 @@ app.get("/fictionjoosje", (req, res) => {
         res.send(body.data)
     });
 });
-
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`)

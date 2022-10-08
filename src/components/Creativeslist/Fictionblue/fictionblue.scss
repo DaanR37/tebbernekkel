@@ -1,204 +1,569 @@
-///Desktop
-@media screen and (min-width: 1280px) {
-    #grid-wrapper-fiction {
-        display: grid;
-        margin: 0 auto;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(11, 200px);
-        gap: 5px;
+///APPLIES TO ALL CARDS
+#grid-wrapper-fiction-blue {
+    display: grid;
+    margin: 0 auto;
+    gap: 5px;
+}
+#grid-wrapper-fiction-blue a div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+}
+#grid-wrapper-fiction-blue > div > a {
+    text-decoration: none;
+    text-align: center;
+}
+///Mobile Portrait
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    #grid-wrapper-fiction-blue a div {
+        font-size: 25px;
     }
-    ///2 BIG
-    // .one-f {
-    //     grid-column: 1/4;
-    //     grid-row: 1/4;
-    // }
-    // .two-f {
-    //     grid-column: 4/7;
-    //     grid-row: 1/4;
-    // }
-    //3 SMALL
-    .three-f {
-        grid-column: 1/4;
-        grid-row: 3/6;
+    #grid-wrapper-fiction-blue {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 90vh);
     }
-    // .four-f {
-    //     grid-column: 3/5;
-    //     grid-row: 4/7;
-    // }
-    // .five-f {
-    //     grid-column: 5/7;
-    //     grid-row: 4/7;
-    // }
-    //2 BIG
-    // .six-f {
-    //     grid-column: 1/4;
-    //     grid-row: 7/10;
-    // }
-    .seven-f {
-        grid-column: 4/7;
-        grid-row: 3/6;
+    .three-blue {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-    //CARD SEVEN
-    #grid-wrapper-fiction div.seven-f a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+    .seven-blue {
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
-    #grid-wrapper-fiction > div.seven-f > a {
-        text-decoration: none;
-        text-align: center;
+    .four-blue {
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
-    #grid-wrapper-fiction > div.seven-f > a div {
+    .five-blue {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .six-blue {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .two-blue {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .eight-blue {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .nine-blue {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .ten-blue {
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    .eleven-blue {
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    .twelve-blue {
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    .one-blue {
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+    ///CARD ONE
+    #grid-wrapper-fiction-blue > div.one-blue > a div {
         background-size: auto 150%;
-        background-position: 35%;
+        background-position: 47%;
         background-repeat: no-repeat;
     }
-    //CARD SIX
-    #grid-wrapper-fiction div.six-f a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+    ///CARD TWO
+    #grid-wrapper-fiction-blue > div.two-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    #grid-wrapper-fiction > div.six-f > a {
-        text-decoration: none;
-        text-align: center;
+    //CARD THREE
+    #grid-wrapper-fiction-blue > div.three-blue > a div {
+        background-size: auto 150%;
+        background-position: 26%;
+        background-repeat: no-repeat;
     }
-    #grid-wrapper-fiction > div.six-f > a div {
-        background-size: auto 100%;
-        background-position: 70%;
+    ///CARD FOUR
+    #grid-wrapper-fiction-blue > div.four-blue > a div {
+        background-size: auto 150%;
+        background-position: center;
         background-repeat: no-repeat;
     }
     ///CARD FIVE
-    #grid-wrapper-fiction div.five-f a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+    #grid-wrapper-fiction-blue > div.five-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    // #grid-wrapper-fiction > div.five-f > a {
-    //     text-decoration: none;
-    //     text-align: center;
-    // }
-    // #grid-wrapper-fiction > div.five-f > a div {
-    //     background-size: auto 100%;
-    //     background-position: 40% 30%;
-    //     background-repeat: no-repeat;
-    // }
-    //CARD FOUR
-    // #grid-wrapper-fiction div.four-f a div {
-    //     position: relative;
-    //     display: flex;
-    //     width: 100%;
-    //     height: 100%;
-    //     justify-content: center;
-    //     align-items: center;
-    //     color: whitesmoke;
-    //     font-size: 30px;
-    //     font-family: "Roboto Condensed", sans-serif;
-    //     text-transform: uppercase;
-    // }
-    // #grid-wrapper-fiction > div.four-f > a {
-    //     text-decoration: none;
-    //     text-align: center;
-    // }
-    // #grid-wrapper-fiction > div.four-f > a div {
-    //     background-size: auto 100%;
-    //     background-position: 50%;
-    //     background-repeat: no-repeat;
-    // }
-    //CARD THREE
-    #grid-wrapper-fiction div.three-f a div {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        color: whitesmoke;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+    ///CARD SIX
+    #grid-wrapper-fiction-blue > div.six-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    #grid-wrapper-fiction > div.three-f > a {
-        text-decoration: none;
-        text-align: center;
+    //CARD SEVEN
+    #grid-wrapper-fiction-blue > div.seven-blue > a div {
+        background-size: auto 130%;
+        background-position: 55%;
+        background-repeat: no-repeat;
     }
-    #grid-wrapper-fiction > div.three-f > a div {
+    //CARD EIGHT
+    #grid-wrapper-fiction-blue > div.eight-blue > a div {
+        background-size: auto 115%;
+        background-position: 41%;
+        background-repeat: no-repeat;
+    }
+    //CARD NINE
+    #grid-wrapper-fiction-blue > div.nine-blue > a div {
+        background-size: auto 112%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    //CARD TEN
+    #grid-wrapper-fiction-blue > div.ten-blue > a div {
+        background-size: auto 112%;
+        background-position: 88%;
+        background-repeat: no-repeat;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-blue > div.eleven-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    //CARD TWELVE
+    #grid-wrapper-fiction-blue > div.twelve-blue > a div {
+        background-size: auto 137%;
+        background-position: 45%;
+        background-repeat: no-repeat;
+    }
+}
+///Mobile Landscape
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+    #grid-wrapper-fiction-blue a div {
+        font-size: 25px;
+    }
+    #grid-wrapper-fiction-blue {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 200px);
+    }
+    /// 2 BIG
+    .one-blue {
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    .two-blue {
+        grid-column: 4/7;
+        grid-row: 1/3;
+    }
+    /// 3 SMALL
+    .three-blue {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+    .four-blue {
+        grid-column: 3/5;
+        grid-row: 3/5;
+    }
+    .five-blue {
+        grid-column: 5/7;
+        grid-row: 3/5;
+    }
+    /// 2 BIG
+    .six-blue {
+        grid-column: 1/4;
+        grid-row: 5/7;
+    }
+    .seven-blue {
+        grid-column: 4/7;
+        grid-row: 5/7;
+    }
+    /// 3 SMALL
+    .eight-blue {
+        grid-column: 1/3;
+        grid-row: 7/9;
+    }
+    .nine-blue {
+        grid-column: 3/5;
+        grid-row: 7/9;
+    }
+    .ten-blue {
+        grid-column: 5/7;
+        grid-row: 7/9;
+    }
+    /// 2 BIG
+    .eleven-blue {
+        grid-column: 1/4;
+        grid-row: 9/11;
+    }
+    .twelve-blue {
+        grid-column: 4/7;
+        grid-row: 9/11;
+    }
+    ///CARD TWELVE
+    #grid-wrapper-fiction-blue > div.twelve-blue > a div {
+        background-size: auto 140%;
+        background-position: 40%;
+        background-repeat: no-repeat;
+    }
+    ///CARD ELEVEN
+    #grid-wrapper-fiction-blue > div.eleven-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD TEN
+    #grid-wrapper-fiction-blue > div.ten-blue > a div {
+        background-size: auto 112%;
+        background-position: 90%;
+        background-repeat: no-repeat;
+    }
+    ///CARD NINE
+    #grid-wrapper-fiction-blue > div.nine-blue > a div {
+        background-size: auto 115%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD EIGHT
+    #grid-wrapper-fiction-blue > div.eight-blue > a div {
+        background-size: auto 115%;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SEVEN
+    #grid-wrapper-fiction-blue > div.seven-blue > a div {
+        background-size: auto 135%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-blue > div.six-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-blue > div.five-blue > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-blue > div.four-blue > a div {
+        background-size: auto 140%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD THREE
+    #grid-wrapper-fiction-blue > div.three-blue > a div {
+        background-size: auto 150%;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-blue > div.two-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD ONE
+    #grid-wrapper-fiction-blue > div.one-blue > a div {
+        background-size: auto 150%;
+        background-position: 45%;
+        background-repeat: no-repeat;
+    }
+}
+///Tablet Portrait
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    #grid-wrapper-fiction-blue a div {
+        font-size: 25px;
+    }
+    #grid-wrapper-fiction-blue {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(13, 200px);
+    }
+    .three-blue {
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+    .seven-blue {
+        grid-column: 4/7;
+        grid-row: 2/4;
+    }
+    .four-blue {
+        grid-column: 1/3;
+        grid-row: 4/6;
+    }
+    .five-blue {
+        grid-column: 3/5;
+        grid-row: 4/6;
+    }
+    .six-blue {
+        grid-column: 5/7;
+        grid-row: 6/8;
+    }
+    .two-blue {
+        grid-column: 1/4;
+        grid-row: 6/8;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-blue > div.two-blue > a div {
         background-size: auto 115%;
         background-position: 50%;
         background-repeat: no-repeat;
     }
-    //CARD TWO
-    // #grid-wrapper-fiction div.two-f a div {
-    //     position: relative;
-    //     display: flex;
-    //     width: 100%;
-    //     height: 100%;
-    //     justify-content: center;
-    //     align-items: center;
-    //     color: whitesmoke;
-    //     font-size: 30px;
-    //     font-family: "Roboto Condensed", sans-serif;
-    //     text-transform: uppercase;
-    // }
-    // #grid-wrapper-fiction > div.two-f > a {
-    //     text-decoration: none;
-    //     text-align: center;
-    // }
-    // #grid-wrapper-fiction > div.two-f > a div {
-    //     background-size: auto 110%;
-    //     background-position: 50%;
-    //     background-repeat: no-repeat;
-    // }
-    //CARD ONE
-    // #grid-wrapper-fiction div.one-f a div {
-    //     position: relative;
-    //     display: flex;
-    //     width: 100%;
-    //     height: 100%;
-    //     justify-content: center;
-    //     align-items: center;
-    //     color: whitesmoke;
-    //     font-size: 30px;
-    //     font-family: "Roboto Condensed", sans-serif;
-    //     text-transform: uppercase;
-    // }
-    // #grid-wrapper-fiction > div.one-f > a {
-    //     text-decoration: none;
-    //     text-align: center;
-    // }
-    // #grid-wrapper-fiction > div.one-f > a div {
-    //     background-size: auto 100%;
-    //     background-position: 10%;
-    //     background-repeat: no-repeat;
-    // }
+    //CARD THREE
+    #grid-wrapper-fiction-blue > div.three-blue > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-blue > div.four-blue > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-blue > div.five-blue > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-blue > div.six-blue > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-blue > div.seven-blue > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+}
+///Tablet Landscape
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
+    #grid-wrapper-fiction-blue a div {
+        font-size: 25px;
+    }
+    #grid-wrapper-fiction-blue {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(36, 50px);
+    }
+    /// GRID
+    .three-blue {
+        grid-column: 1/4;
+        grid-row: 4/15;
+    }
+    .seven-blue {
+        grid-column: 4/7;
+        grid-row: 4/15;
+    }
+    .four-blue {
+        grid-column: 1/4;
+        grid-row: 15/26;
+    }
+    .five-blue {
+        grid-column: 4/7;
+        grid-row: 15/26;
+    }
+    .six-blue {
+        grid-column: 1/4;
+        grid-row: 26/37;
+    }
+    .two-blue {
+        grid-column: 4/7;
+        grid-row: 26/37;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-blue > div.two-blue > a div {
+        background-size: auto 115%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    //CARD THREE
+    #grid-wrapper-fiction-blue > div.three-blue > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-blue > div.four-blue > a div {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-blue > div.five-blue > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-blue > div.six-blue > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    //CARD SEVEN
+    #grid-wrapper-fiction-blue > div.seven-blue > a div {
+        background-size: cover;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+}
+///Desktop
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+    #grid-wrapper-fiction-blue a div {
+        font-size: 27.5px;
+    }
+    #grid-wrapper-fiction-blue {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(16, 200px);
+    }
+    /// 2 BIG
+    .one-blue {
+        grid-column: 1/4;
+        grid-row: 2/5;
+    }
+    .two-blue {
+        grid-column: 4/7;
+        grid-row: 2/5;
+    }
+    /// 3 SMALL
+    .three-blue {
+        grid-column: 1/3;
+        grid-row: 5/8;
+    }
+    .four-blue {
+        grid-column: 3/5;
+        grid-row: 5/8;
+    }
+    .five-blue {
+        grid-column: 5/7;
+        grid-row: 5/8;
+    }
+    /// 2 BIG
+    .six-blue {
+        grid-column: 1/4;
+        grid-row: 8/11;
+    }
+    .seven-blue {
+        grid-column: 4/7;
+        grid-row: 8/11;
+    }
+    /// 3 SMALL
+    .eight-blue {
+        grid-column: 1/3;
+        grid-row: 11/14;
+    }
+    .nine-blue {
+        grid-column: 3/5;
+        grid-row: 11/14;
+    }
+    .ten-blue {
+        grid-column: 5/7;
+        grid-row: 11/14;
+    }
+    /// 2 BIG
+    .eleven-blue {
+        grid-column: 1/4;
+        grid-row: 14/17;
+    }
+    .twelve-blue {
+        grid-column: 4/7;
+        grid-row: 14/17;
+    }
+    ///CARD TWELVE
+    #grid-wrapper-fiction-blue > div.twelve-blue > a div {
+        background-size: auto 140%;
+        background-position: 40%;
+        background-repeat: no-repeat;
+    }
+    ///CARD ELEVEN
+    #grid-wrapper-fiction-blue > div.eleven-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD TEN
+    #grid-wrapper-fiction-blue > div.ten-blue > a div {
+        background-size: auto 112%;
+        background-position: 90%;
+        background-repeat: no-repeat;
+    }
+    ///CARD NINE
+    #grid-wrapper-fiction-blue > div.nine-blue > a div {
+        background-size: auto 115%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD EIGHT
+    #grid-wrapper-fiction-blue > div.eight-blue > a div {
+        background-size: auto 115%;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SEVEN
+    #grid-wrapper-fiction-blue > div.seven-blue > a div {
+        background-size: auto 135%;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-blue > div.six-blue > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-blue > div.five-blue > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-blue > div.four-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD THREE
+    #grid-wrapper-fiction-blue > div.three-blue > a div {
+        background-size: auto 150%;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-blue > div.two-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD ONE
+    #grid-wrapper-fiction-blue > div.one-blue > a div {
+        background-size: auto 150%;
+        background-position: 45%;
+        background-repeat: no-repeat;
+    }
     //HOVER EFFECT GRID AREA'S
-    #ho-f {
+    #ho-blue {
         position: absolute;
         top: 0;
         left: 0;
-        // width: 100%;
-        // height: 100%;
         opacity: 0;
         background: rgba(0, 0, 0, 0.4);
         transition: opacity 0.25s;
@@ -208,11 +573,167 @@
             transition: ease-in-out 350ms;
         }
     }
-    #ho-f > * {
+    #ho-blue > * {
         transform: translateY(30px);
         transition: transform 0.5s;
     }
-    #ho-f:hover > * {
+    #ho-blue:hover > * {
+        transform: translateY(0);
+    }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
+    #grid-wrapper-fiction-blue a div {
+        font-size: 27.5px;
+    }
+    #grid-wrapper-fiction-blue {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(16, 200px);
+    }
+    /// 2 BIG
+    .one-blue {
+        grid-column: 1/4;
+        grid-row: 2/5;
+    }
+    .two-blue {
+        grid-column: 4/7;
+        grid-row: 2/5;
+    }
+    /// 3 SMALL
+    .three-blue {
+        grid-column: 1/3;
+        grid-row: 5/8;
+    }
+    .four-blue {
+        grid-column: 3/5;
+        grid-row: 5/8;
+    }
+    .five-blue {
+        grid-column: 5/7;
+        grid-row: 5/8;
+    }
+    /// 2 BIG
+    .six-blue {
+        grid-column: 1/4;
+        grid-row: 8/11;
+    }
+    .seven-blue {
+        grid-column: 4/7;
+        grid-row: 8/11;
+    }
+    /// 3 SMALL
+    .eight-blue {
+        grid-column: 1/3;
+        grid-row: 11/14;
+    }
+    .nine-blue {
+        grid-column: 3/5;
+        grid-row: 11/14;
+    }
+    .ten-blue {
+        grid-column: 5/7;
+        grid-row: 11/14;
+    }
+    /// 2 BIG
+    .eleven-blue {
+        grid-column: 1/4;
+        grid-row: 14/17;
+    }
+    .twelve-blue {
+        grid-column: 4/7;
+        grid-row: 14/17;
+    }
+    ///CARD TWELVE
+    #grid-wrapper-fiction-blue > div.twelve-blue > a div {
+        background-size: auto 140%;
+        background-position: 40%;
+        background-repeat: no-repeat;
+    }
+    ///CARD ELEVEN
+    #grid-wrapper-fiction-blue > div.eleven-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD TEN
+    #grid-wrapper-fiction-blue > div.ten-blue > a div {
+        background-size: auto 112%;
+        background-position: 90%;
+        background-repeat: no-repeat;
+    }
+    ///CARD NINE
+    #grid-wrapper-fiction-blue > div.nine-blue > a div {
+        background-size: auto 115%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD EIGHT
+    #grid-wrapper-fiction-blue > div.eight-blue > a div {
+        background-size: auto 115%;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SEVEN
+    #grid-wrapper-fiction-blue > div.seven-blue > a div {
+        background-size: auto 135%;
+        background-position: 35%;
+        background-repeat: no-repeat;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-blue > div.six-blue > a div {
+        background-size: cover;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-blue > div.five-blue > a div {
+        background-size: cover;
+        background-position: 40% 30%;
+        background-repeat: no-repeat;
+    }
+    ///CARD FOUR
+    #grid-wrapper-fiction-blue > div.four-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD THREE
+    #grid-wrapper-fiction-blue > div.three-blue > a div {
+        background-size: auto 150%;
+        background-position: 70%;
+        background-repeat: no-repeat;
+    }
+    ///CARD TWO
+    #grid-wrapper-fiction-blue > div.two-blue > a div {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    ///CARD ONE
+    #grid-wrapper-fiction-blue > div.one-blue > a div {
+        background-size: auto 150%;
+        background-position: 45%;
+        background-repeat: no-repeat;
+    }
+    //HOVER EFFECT GRID AREA'S
+    #ho-blue {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.4);
+        transition: opacity 0.25s;
+        &:hover {
+            opacity: 1;
+            backdrop-filter: blur(5px);
+            transition: ease-in-out 350ms;
+        }
+    }
+    #ho-blue > * {
+        transform: translateY(30px);
+        transition: transform 0.5s;
+    }
+    #ho-blue:hover > * {
         transform: translateY(0);
     }
 }

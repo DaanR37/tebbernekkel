@@ -71,7 +71,22 @@
     }
 }
 ///Desktop
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+    .card.active {
+        left: 6%;
+        bottom: 50%;
+        color: #75d5fd;
+        transform: translate(-6%, 50%);
+        h3 {
+            transform: translate(0.1rem);
+            font-size: 32.5px;
+            font-weight: 300;
+            letter-spacing: 0.05rem;
+        }
+    }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
     .card.active {
         left: 6%;
         bottom: 50%;
