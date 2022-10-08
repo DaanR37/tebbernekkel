@@ -9,8 +9,8 @@ export default function Featured() {
     const [portfolioData, setPortfolioData] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/featured")
-            // fetch("https://api.tebbernekkel.nl/featured")
+        // fetch("http://localhost:3001/featured")
+            fetch("https://api.tebbernekkel.nl/featured")
             .then(response => response.json())
             .then(portfolioData => {
                 setPortfolioData(portfolioData)

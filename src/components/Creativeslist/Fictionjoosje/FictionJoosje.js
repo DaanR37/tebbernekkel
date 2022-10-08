@@ -10,8 +10,8 @@ export default function FictionJoosje() {
 
     const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/fictionjoosje")
-            // fetch("https://api.tebbernekkel.nl/fictionjoosje")
+        // fetch("http://localhost:3001/fictionjoosje")
+            fetch("https://api.tebbernekkel.nl/fictionjoosje")
             .then(response => response.json())
             .then(portfolioDataFictionJoosje => {
                 setPortfolioDataFictionJoosje(portfolioDataFictionJoosje)

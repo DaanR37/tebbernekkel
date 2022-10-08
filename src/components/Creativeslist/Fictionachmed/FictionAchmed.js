@@ -11,8 +11,8 @@ export default function FictionAchmed() {
 
     const [portfolioDataFictionAchmed, setPortfolioDataFictionAchmed] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/fictionachmed")
-        // fetch("https://api.tebbernekkel.nl/fictionachmed")
+        // fetch("http://localhost:3001/fictionachmed")
+        fetch("https://api.tebbernekkel.nl/fictionachmed")
             .then(response => response.json())
             .then(portfolioDataFictionAchmed => {
                 setPortfolioDataFictionAchmed(portfolioDataFictionAchmed)

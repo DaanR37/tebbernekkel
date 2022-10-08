@@ -10,8 +10,8 @@ export default function FictionFolkert() {
 
     const [portfolioDataFictionFolkert, setPortfolioDataFictionFolkert] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/fictionfolkert")
-            // fetch("https://api.tebbernekkel.nl/fictionfolkert")
+        // fetch("http://localhost:3001/fictionfolkert")
+            fetch("https://api.tebbernekkel.nl/fictionfolkert")
             .then(response => response.json())
             .then(portfolioDataFictionFolkert => {
                 setPortfolioDataFictionFolkert(portfolioDataFictionFolkert)

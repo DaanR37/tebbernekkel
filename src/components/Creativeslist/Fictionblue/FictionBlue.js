@@ -10,8 +10,8 @@ export default function FictionBlue() {
 
     const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3001/fictionblue")
-            // fetch("https://api.tebbernekkel.nl/fictionachmed")
+        // fetch("http://localhost:3001/fictionblue")
+            fetch("https://api.tebbernekkel.nl/fictionblue")
             .then(response => response.json())
             .then(portfolioDataFictionBlue => {
                 setPortfolioDataFictionBlue(portfolioDataFictionBlue)
