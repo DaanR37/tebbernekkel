@@ -74,7 +74,6 @@ a.joosje-btn-slider.active {
         top: 130px;
         width: 100%;
         margin: 150px auto;
-        // margin-top: 150px;
         li {
             margin: 0px 25px;
         }
@@ -93,7 +92,7 @@ a.joosje-btn-slider.active {
         position: sticky;
         top: 80px;
         width: 100%;
-        margin: 100px auto;
+        margin: 130px auto;
         li {
             margin: 0px 25px;
         }
@@ -125,7 +124,6 @@ a.joosje-btn-slider.active {
             margin: 0px 25px;
         }
         a:hover {
-            transform: scale(1.1);
             color: #75d5fd;
             transition: 250ms ease-in-out;
         }
