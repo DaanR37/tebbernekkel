@@ -98,7 +98,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 15vh 11em 15vh 11em;
+        padding: 15vh 15em 15vh 15em;
     }
     .awards-container .awards {
         max-width: 250px;
@@ -122,11 +122,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 20vh 20em 20vh 20em;
+        padding: 10% 25% 10% 25%;
+        // padding: 20vh 20em 20vh 20em;
     }
     .awards-container .awards {
         max-width: 300px;
         margin: 15px 0px 15px 50px;
+        // margin: 5px 5px 5px 30px;
         h1 {
             letter-spacing: 0.05rem;
             font-size: 20px;
@@ -146,7 +148,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 20vh 20em 20vh 20em;
+        padding: 10% 25% 10% 25%;
+        // padding: 20vh 20em 20vh 20em;
     }
     .awards-container .awards {
         max-width: 300px;
