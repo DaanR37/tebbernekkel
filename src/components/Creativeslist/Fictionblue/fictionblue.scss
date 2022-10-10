@@ -28,23 +28,28 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 90vh);
     }
-    .three-blue {
+    ///adidas
+    .eleven-blue {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .seven-blue {
+    ///yubo
+    .six-blue {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .four-blue {
+    ///ballontastic
+    .one-blue {
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    ///ing
     .five-blue {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .six-blue {
+    ///abn
+    .four-blue {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -52,19 +57,19 @@
         grid-column: 1/2;
         grid-row: 6/7;
     }
-    .eight-blue {
+    .seven-blue {
         grid-column: 1/2;
         grid-row: 7/8;
     }
-    .nine-blue {
+    .eight-blue {
         grid-column: 1/2;
         grid-row: 8/9;
     }
-    .ten-blue {
+    .nine-blue {
         grid-column: 1/2;
         grid-row: 9/10;
     }
-    .eleven-blue {
+    .ten-blue {
         grid-column: 1/2;
         grid-row: 10/11;
     }
@@ -72,14 +77,15 @@
         grid-column: 1/2;
         grid-row: 11/12;
     }
-    .one-blue {
+    .three-blue {
         grid-column: 1/2;
         grid-row: 12/13;
     }
+
     ///CARD ONE
     #grid-wrapper-fiction-blue > div.one-blue > a div {
         background-size: auto 150%;
-        background-position: 47%;
+        background-position: center;
         background-repeat: no-repeat;
     }
     ///CARD TWO
@@ -91,7 +97,7 @@
     //CARD THREE
     #grid-wrapper-fiction-blue > div.three-blue > a div {
         background-size: auto 150%;
-        background-position: 26%;
+        background-position: 65%;
         background-repeat: no-repeat;
     }
     ///CARD FOUR
@@ -114,26 +120,26 @@
     }
     //CARD SEVEN
     #grid-wrapper-fiction-blue > div.seven-blue > a div {
-        background-size: auto 130%;
+        background-size: auto 135%;
         background-position: 55%;
         background-repeat: no-repeat;
     }
     //CARD EIGHT
     #grid-wrapper-fiction-blue > div.eight-blue > a div {
         background-size: auto 115%;
-        background-position: 41%;
+        background-position: 48%;
         background-repeat: no-repeat;
     }
     //CARD NINE
     #grid-wrapper-fiction-blue > div.nine-blue > a div {
         background-size: auto 112%;
-        background-position: center;
+        background-position: 62%;
         background-repeat: no-repeat;
     }
     //CARD TEN
     #grid-wrapper-fiction-blue > div.ten-blue > a div {
         background-size: auto 112%;
-        background-position: 88%;
+        background-position: 89%;
         background-repeat: no-repeat;
     }
     //CARD ELEVEN
@@ -144,8 +150,8 @@
     }
     //CARD TWELVE
     #grid-wrapper-fiction-blue > div.twelve-blue > a div {
-        background-size: auto 137%;
-        background-position: 45%;
+        background-size: auto 138%;
+        background-position: center;
         background-repeat: no-repeat;
     }
 }
@@ -435,11 +441,11 @@
         grid-template-rows: repeat(16, 200px);
     }
     /// 2 BIG
-    .one-blue {
+    .eleven-blue {
         grid-column: 1/4;
         grid-row: 2/5;
     }
-    .two-blue {
+    .six-blue {
         grid-column: 4/7;
         grid-row: 2/5;
     }
@@ -457,7 +463,7 @@
         grid-row: 5/8;
     }
     /// 2 BIG
-    .six-blue {
+    .two-blue {
         grid-column: 1/4;
         grid-row: 8/11;
     }
@@ -479,7 +485,7 @@
         grid-row: 11/14;
     }
     /// 2 BIG
-    .eleven-blue {
+    .one-blue {
         grid-column: 1/4;
         grid-row: 14/17;
     }
@@ -537,7 +543,7 @@
     }
     ///CARD FOUR
     #grid-wrapper-fiction-blue > div.four-blue > a div {
-        background-size: cover;
+        background-size: auto 138%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -591,11 +597,11 @@
         grid-template-rows: repeat(16, 200px);
     }
     /// 2 BIG
-    .one-blue {
+    .eleven-blue {
         grid-column: 1/4;
         grid-row: 2/5;
     }
-    .two-blue {
+    .six-blue {
         grid-column: 4/7;
         grid-row: 2/5;
     }
@@ -613,7 +619,7 @@
         grid-row: 5/8;
     }
     /// 2 BIG
-    .six-blue {
+    .two-blue {
         grid-column: 1/4;
         grid-row: 8/11;
     }
@@ -635,7 +641,7 @@
         grid-row: 11/14;
     }
     /// 2 BIG
-    .eleven-blue {
+    .one-blue {
         grid-column: 1/4;
         grid-row: 14/17;
     }
@@ -693,7 +699,7 @@
     }
     ///CARD FOUR
     #grid-wrapper-fiction-blue > div.four-blue > a div {
-        background-size: cover;
+        background-size: auto 138%;
         background-position: center;
         background-repeat: no-repeat;
     }
