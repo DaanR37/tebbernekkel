@@ -24,8 +24,7 @@
     "react-scripts": "5.0.0",
     "sass": "^1.50.1",
     "styled-components": "^5.3.3",
-    "vimeo": "^2.1.1",
-    "web-vitals": "^2.1.2"
+    "vimeo": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,3 @@
-// import IMAGESJSONSMALLFORMAT from "../../../imagesjsonsmallformat";
 import "./picsmariabodil.scss";
 
 export default function PicsMariaBodil() {
@@ -41,19 +40,5 @@ export default function PicsMariaBodil() {
                 <img src="imagesjsonsmallformat/small-2.jpg" alt="1" />
             </div>
         </div>
-
-        // <wrapper>
-        //     <div id="grid-wrapper-pics-row">
-        //         <wrapper className="column">
-        //             {
-        //                 IMAGESJSONSMALLFORMAT && IMAGESJSONSMALLFORMAT.map((item) =>
-        //                     <div key={item.id}>
-        //                         <img src={item.image} alt="" />
-        //                     </div>
-        //                 )
-        //             }
-        //         </wrapper>
-        //     </div>
-        // </wrapper>
     )
 }

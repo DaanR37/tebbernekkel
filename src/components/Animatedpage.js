@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 const animations = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
-    // exit: { opacity: 0, x: -300 },
 };
 
 export default function Animatedpage({ children }) {
@@ -13,7 +12,7 @@ export default function Animatedpage({ children }) {
             initial="initial"
             animate="animate"
             exit="exit"
-            transition={{ duration: 1.4 }}
+            transition={{ duration: 1 }}
         >
             {children}
         </motion.div>

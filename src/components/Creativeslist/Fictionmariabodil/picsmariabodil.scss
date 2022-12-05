@@ -1,15 +1,3 @@
-// #grid-wrapper-pics {
-//     --g: 5px; /* controls the gap */
-//     display: flex; ///was grid
-//     gap: var(--g);
-// }
-// #grid-wrapper-pics img {
-//     width: 0;
-//     height: 100%; ///was 0
-//     min-width: 100%;
-//     object-fit: contain;  ///was cover
-// }
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +7,6 @@
     vertical-align: middle;
     width: 100%;
 }
-
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .row {
@@ -30,15 +17,6 @@
         max-width: 100%;
         padding: 0 0px;
     }
-    // #grid-wrapper-pics {
-    //     --s: 150px; /* controls the size */ /// was 200px
-    //     // width: calc(3 * var(--s) + 2 * var(--g)); /* 3 times the size plus 2 times the gap */
-    //     aspect-ratio: 1;
-    //     grid-template-columns: repeat(1, auto);
-    // }
-    // #grid-wrapper-pics img {
-    //     height: 100%;
-    // }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
@@ -50,15 +28,6 @@
         max-width: 25%;
         padding: 0 2px;
     }
-    // #grid-wrapper-pics {
-    //     --s: 150px; /* controls the size */ /// was 200px
-    //     // width: calc(7.1 * var(--s) + 2 * var(--g)); /* 3 times the size plus 2 times the gap */
-    //     aspect-ratio: 0.5;
-    //     grid-template-columns: repeat(3, auto);
-    // }
-    // #grid-wrapper-pics img {
-    //     height: 100%; ////min-height, but Safari won't except that
-    // }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
@@ -70,15 +39,6 @@
         max-width: 25%;
         padding: 0 2px;
     }
-    // #grid-wrapper-pics {
-    //     --s: 150px; /* controls the size */ /// was 200px
-    //     // width: calc(7.1 * var(--s) + 2 * var(--g)); /* 3 times the size plus 2 times the gap */
-    //     aspect-ratio: 0.5;
-    //     grid-template-columns: repeat(3, auto);
-    // }
-    // #grid-wrapper-pics img {
-    //     height: 100%; ////min-height, but Safari won't except that
-    // }
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
@@ -90,15 +50,6 @@
         max-width: 25%;
         padding: 0 2px;
     }
-    // #grid-wrapper-pics {
-    //     --s: 201.5px; /* controls the size */ /// was 200px
-    //     // width: calc(7.1 * var(--s) + 2 * var(--g)); /* 3 times the size plus 2 times the gap */
-    //     aspect-ratio: 0.5;
-    //     grid-template-columns: repeat(3, auto);
-    // }
-    // #grid-wrapper-pics img {
-    //     height: 100%; ////min-height, but Safari won't except that
-    // }
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
@@ -110,15 +61,6 @@
         max-width: 25%;
         padding: 0 2px;
     }
-    // #grid-wrapper-pics {
-    //     --s: 201.5px; /* controls the size */ /// was 200px
-    //     width: calc(7.1 * var(--s) + 2 * var(--g)); /* 3 times the size plus 2 times the gap */
-    //     aspect-ratio: 1;
-    //     grid-template-columns: repeat(3, auto);
-    // }
-    // #grid-wrapper-pics img {
-    //     min-height: 100%; ////min-height, but Safari won't except that
-    // }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
@@ -130,13 +72,4 @@
         max-width: 25%;
         padding: 0 2px;
     }
-    //     #grid-wrapper-pics {
-    //         --s: 201.5px; /* controls the size */ /// was 200px
-    //         // width: calc(7.1 * var(--s) + 2 * var(--g)); /* 3 times the size plus 2 times the gap */
-    //         aspect-ratio: 0.5;
-    //         grid-template-columns: repeat(3, auto);
-    //     }
-    //     #grid-wrapper-pics img {
-    //         height: 100%; ////min-height, but Safari won't except that
-    //     }
 }
