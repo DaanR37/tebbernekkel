@@ -13,7 +13,7 @@ export default function FictionMariaBodil() {
     const [portfolioDataFictionMariaBodil, setPortfolioDataFictionMariaBodil] = useState([]);
     useEffect(() => {
         // fetch("http://localhost:3001/fictionmariabodil")
-            fetch("https://api.tebbernekkel.nl/fictionmariabodil")
+        fetch("https://api.tebbernekkel.nl/fictionmariabodil")
             .then(response => response.json())
             .then(portfolioDataFictionMariaBodil => {
                 setPortfolioDataFictionMariaBodil(portfolioDataFictionMariaBodil)
@@ -45,9 +45,6 @@ export default function FictionMariaBodil() {
                                 <div
                                     style={{
                                         backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                        // backgroundSize: "cover", /// "cover" initially
-                                        // backgroundRepeat: 'no-repeat',
-                                        // backgroundPosition: "center",
                                         height: "100%",
                                         width: "100%"
                                     }}>

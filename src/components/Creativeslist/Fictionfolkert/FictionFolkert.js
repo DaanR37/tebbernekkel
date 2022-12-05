@@ -11,7 +11,7 @@ export default function FictionFolkert() {
     const [portfolioDataFictionFolkert, setPortfolioDataFictionFolkert] = useState([]);
     useEffect(() => {
         // fetch("http://localhost:3001/fictionfolkert")
-            fetch("https://api.tebbernekkel.nl/fictionfolkert")
+        fetch("https://api.tebbernekkel.nl/fictionfolkert")
             .then(response => response.json())
             .then(portfolioDataFictionFolkert => {
                 setPortfolioDataFictionFolkert(portfolioDataFictionFolkert)
@@ -22,44 +22,41 @@ export default function FictionFolkert() {
 
     return (
         // <Animatedpage>
-            <section id="fiction-container-folkert">
-                <div className="header-transparent-fiction">
-                    <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
-                    <SliderCreatives />
-                </div>
-                <div id="grid-wrapper-fiction-folkert">
-                    {portfolioDataFictionFolkert.map((video, index) => {
-                        return (
-                            <div className={videoIndexFictionFolkert[index]} key={index}>
-                                <Link
-                                    to="/embeddedplayerfolkert"
-                                    state={{
-                                        link: `${video.uri}`,
-                                        title: `${video.name}`,
-                                        description: `${video.description}`,
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                            // backgroundSize: "cover", /// "cover" initially
-                                            // backgroundRepeat: 'no-repeat',
-                                            // backgroundPosition: "center",
-                                            height: "100%",
-                                            width: "100%"
-                                        }}>
-                                        <div id="ho-folkert">
-                                            <span aria-hidden="true">{video.name}</span>
-                                        </div>
+        <section id="fiction-container-folkert">
+            <div className="header-transparent-fiction">
+                <HeaderTransparent />
+            </div>
+            <div className="slider-nav">
+                <SliderCreatives />
+            </div>
+            <div id="grid-wrapper-fiction-folkert">
+                {portfolioDataFictionFolkert.map((video, index) => {
+                    return (
+                        <div className={videoIndexFictionFolkert[index]} key={index}>
+                            <Link
+                                to="/embeddedplayerfolkert"
+                                state={{
+                                    link: `${video.uri}`,
+                                    title: `${video.name}`,
+                                    description: `${video.description}`,
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                                        height: "100%",
+                                        width: "100%"
+                                    }}>
+                                    <div id="ho-folkert">
+                                        <span aria-hidden="true">{video.name}</span>
                                     </div>
-                                </Link>
-                            </div>
-                        )
-                    })}
-                </div>
-            </section>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                })}
+            </div>
+        </section>
         // </Animatedpage>
     );
 }

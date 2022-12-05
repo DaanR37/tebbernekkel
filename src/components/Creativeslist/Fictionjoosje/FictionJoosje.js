@@ -11,7 +11,7 @@ export default function FictionJoosje() {
     const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
     useEffect(() => {
         // fetch("http://localhost:3001/fictionjoosje")
-            fetch("https://api.tebbernekkel.nl/fictionjoosje")
+        fetch("https://api.tebbernekkel.nl/fictionjoosje")
             .then(response => response.json())
             .then(portfolioDataFictionJoosje => {
                 setPortfolioDataFictionJoosje(portfolioDataFictionJoosje)
@@ -22,44 +22,41 @@ export default function FictionJoosje() {
 
     return (
         // <Animatedpage>
-            <section id="fiction-container-joosje">
-                <div className="header-transparent-fiction">
-                    <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
-                    <SliderCreatives />
-                </div>
-                <div id="grid-wrapper-fiction-joosje">
-                    {portfolioDataFictionJoosje.map((video, index) => {
-                        return (
-                            <div className={videoIndexFictionJoosje[index]} key={index}>
-                                <Link
-                                    to="/embeddedplayerjoosje"
-                                    state={{
-                                        link: `${video.uri}`,
-                                        title: `${video.name}`,
-                                        description: `${video.description}`,
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                            // backgroundSize: "cover", /// "cover" initially
-                                            // backgroundRepeat: 'no-repeat',
-                                            // backgroundPosition: "center",
-                                            height: "100%",
-                                            width: "100%"
-                                        }}>
-                                        <div id="ho-joosje">
-                                            <span aria-hidden="true">{video.name}</span>
-                                        </div>
+        <section id="fiction-container-joosje">
+            <div className="header-transparent-fiction">
+                <HeaderTransparent />
+            </div>
+            <div className="slider-nav">
+                <SliderCreatives />
+            </div>
+            <div id="grid-wrapper-fiction-joosje">
+                {portfolioDataFictionJoosje.map((video, index) => {
+                    return (
+                        <div className={videoIndexFictionJoosje[index]} key={index}>
+                            <Link
+                                to="/embeddedplayerjoosje"
+                                state={{
+                                    link: `${video.uri}`,
+                                    title: `${video.name}`,
+                                    description: `${video.description}`,
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                                        height: "100%",
+                                        width: "100%"
+                                    }}>
+                                    <div id="ho-joosje">
+                                        <span aria-hidden="true">{video.name}</span>
                                     </div>
-                                </Link>
-                            </div>
-                        )
-                    })}
-                </div>
-            </section>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                })}
+            </div>
+        </section>
         // </Animatedpage>
     );
 }
