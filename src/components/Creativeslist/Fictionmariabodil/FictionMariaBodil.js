@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Animatedpage from "../../Animatedpage";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import "./fictionmariabodil.scss";
@@ -23,42 +24,44 @@ export default function FictionMariaBodil() {
     }, []);
 
     return (
-        <section id="fiction-container-mariabodil">
-            <div className="header-transparent-fiction">
-                <HeaderTransparent />
-            </div>
-            <div className="slider-nav">
-                <SliderCreatives />
-            </div>
-            <div id="grid-wrapper-fiction-mariabodil">
-                {portfolioDataFictionMariaBodil.map((video, index) => {
-                    return (
-                        <div className={videoIndexFictionMariaBodil[index]} key={index}>
-                            <Link
-                                to="/embeddedplayermariabodil"
-                                state={{
-                                    link: `${video.uri}`,
-                                    title: `${video.name}`,
-                                    description: `${video.description}`,
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                        height: "100%",
-                                        width: "100%"
-                                    }}>
-                                    <div id="ho-mariabodil">
-                                        <span aria-hidden="true">{video.name}</span>
+        <Animatedpage>
+            <section id="fiction-container-mariabodil">
+                <div className="header-transparent-fiction">
+                    <HeaderTransparent />
+                </div>
+                <div className="slider-nav">
+                    <SliderCreatives />
+                </div>
+                <div id="grid-wrapper-fiction-mariabodil">
+                    {portfolioDataFictionMariaBodil.map((video, index) => {
+                        return (
+                            <div className={videoIndexFictionMariaBodil[index]} key={index}>
+                                <Link
+                                    to="/embeddedplayermariabodil"
+                                    state={{
+                                        link: `${video.uri}`,
+                                        title: `${video.name}`,
+                                        description: `${video.description}`,
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                                            height: "100%",
+                                            width: "100%"
+                                        }}>
+                                        <div id="ho-mariabodil">
+                                            <span aria-hidden="true">{video.name}</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                    )
-                })}
-            </div>
-            <PicsMariaBodil />
-        </section>
+                                </Link>
+                            </div>
+                        )
+                    })}
+                </div>
+                <PicsMariaBodil />
+            </section>
+        </Animatedpage>
     )
 }
 

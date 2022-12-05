@@ -2,7 +2,7 @@ import "./fictionachmed.scss";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
-// import Animatedpage from "../../Animatedpage";
+import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 
 
@@ -22,42 +22,42 @@ export default function FictionAchmed() {
     }, []);
 
     return (
-        // <Animatedpage>
-        <section id="fiction-container-achmed">
-            <div className="header-transparent-achmed">
-                <HeaderTransparent />
-            </div>
-            <div className="slider-nav">
-                <SliderCreatives />
-            </div>
-            <div id="grid-wrapper-fiction-achmed">
-                {portfolioDataFictionAchmed.map((video, index) => {
-                    return (
-                        <div className={videoIndexFictionAchmed[index]} key={index}>
-                            <Link
-                                to="/embeddedplayerachmed"
-                                state={{
-                                    link: `${video.uri}`,
-                                    title: `${video.name}`,
-                                    description: `${video.description}`,
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                        height: "100%",
-                                        width: "100%"
-                                    }}>
-                                    <div id="ho-achmed">
-                                        <span aria-hidden="true">{video.name}</span>
+        <Animatedpage>
+            <section id="fiction-container-achmed">
+                <div className="header-transparent-achmed">
+                    <HeaderTransparent />
+                </div>
+                <div className="slider-nav">
+                    <SliderCreatives />
+                </div>
+                <div id="grid-wrapper-fiction-achmed">
+                    {portfolioDataFictionAchmed.map((video, index) => {
+                        return (
+                            <div className={videoIndexFictionAchmed[index]} key={index}>
+                                <Link
+                                    to="/embeddedplayerachmed"
+                                    state={{
+                                        link: `${video.uri}`,
+                                        title: `${video.name}`,
+                                        description: `${video.description}`,
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                                            height: "100%",
+                                            width: "100%"
+                                        }}>
+                                        <div id="ho-achmed">
+                                            <span aria-hidden="true">{video.name}</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                    )
-                })}
-            </div>
-        </section>
-        // </Animatedpage>
+                                </Link>
+                            </div>
+                        )
+                    })}
+                </div>
+            </section>
+        </Animatedpage>
     );
 }

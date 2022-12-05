@@ -39,8 +39,8 @@
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     .creatives-card {
         left: 50%;
-        top: 55%;
-        transform: translate(-50%, -55%);
+        top: 60%;
+        transform: translate(-50%, -60%);
     }
     .names-list {
         line-height: 2.5rem;
@@ -48,7 +48,7 @@
             margin-bottom: 5px;
         }
         a {
-            font-size: 2rem;
+            font-size: 1.85rem;
             letter-spacing: 1px;
         }
     }
@@ -57,17 +57,17 @@
 @media screen and (min-width: 600px) and (orientation: portrait) {
     .creatives-card {
         left: 50%;
-        top: 55%;
-        transform: translate(-50%, -55%);
+        top: 57.5%;
+        transform: translate(-50%, -57.5%);
         max-width: 300px;
     }
     .names-list {
-        line-height: 3rem;
+        line-height: 3.75rem;
         li {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         a {
-            font-size: 4rem;
+            font-size: 3rem;
             letter-spacing: 2px;
         }
     }
@@ -76,8 +76,8 @@
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     .creatives-card {
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: 60%;
+        transform: translate(-50%, -60%);
     }
     .names-list {
         line-height: 4rem;
