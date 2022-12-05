@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 import Animatedpage from "../../../Animatedpage";
-import "./embeddedplayerachmed.scss";
+import "./embeddedplayermariabodil.scss";
 
-export default function EmbeddedPlayerAchmed() {
+export default function EmbeddedPlayerMariaBodil() {
     const location = useLocation();
     console.log(location.state);
 
@@ -16,14 +16,14 @@ export default function EmbeddedPlayerAchmed() {
 
     return (
         <Animatedpage>
-            <section id="embedded-player-achmed">
-                <div className="embedded-container-dekstop-achmed">
-                    <a href="/fictionachmed">
-                        <div className="times-achmed">
+            <section id="embedded-player-mariabodil">
+                <div className="embedded-container-dekstop-mariabodil">
+                    <a href="/fictionmariabodil">
+                        <div className="times-mariabodil">
                             <img src="images/times-circle-regular-copy.svg" alt="times" />
                         </div>
                     </a>
-                    <div className="embedded-player-achmed">
+                    <div className="embedded-player-mariabodil">
                         <iframe
                             title={url}
                             src={url}
@@ -31,7 +31,7 @@ export default function EmbeddedPlayerAchmed() {
                             frameBorder="0"
                             allowFullScreen
                         ></iframe>
-                        <div className="player-text-achmed">
+                        <div className="player-text-mariabodil">
                             <p>{title}</p>
                             <br></br>
                             <p>{description}</p>
@@ -39,10 +39,10 @@ export default function EmbeddedPlayerAchmed() {
                     </div>
                 </div>
 
-                <div className="embedded-container-mobile-achmed">
-                    <div className="embedded-player-achmed">
-                        <a href="/fictionachmed">
-                            <div className="times-achmed">
+                <div className="embedded-container-mobile-mariabodil">
+                    <div className="embedded-player-mariabodil">
+                        <a href="/fictionmariabodil">
+                            <div className="times-mariabodil">
                                 <img src="images/times-circle-outline-mobile.svg" alt="times" />
                             </div>
                         </a>
@@ -53,7 +53,7 @@ export default function EmbeddedPlayerAchmed() {
                             frameBorder="0"
                             allowFullScreen
                         ></iframe>
-                        <div className="player-text-achmed">
+                        <div className="player-text-mariabodil">
                             <p>{title}</p>
                             <br></br>
                             <p>{description}</p>
@@ -62,5 +62,5 @@ export default function EmbeddedPlayerAchmed() {
                 </div>
             </section>
         </Animatedpage>
-    );
+    )
 }

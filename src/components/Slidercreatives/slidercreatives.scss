@@ -25,7 +25,8 @@
 a.achmed-btn-slider.active,
 a.blue-btn-slider.active,
 a.folkert-btn-slider.active,
-a.joosje-btn-slider.active {
+a.joosje-btn-slider.active,
+a.mariabodil-btn-slider.active {
     color: #f5a1a3;
     opacity: 1;
     transition: 350ms ease-in-out;
@@ -113,13 +114,6 @@ a.joosje-btn-slider.active {
         width: 100%;
         margin: 125px auto;
         cursor: pointer;
-        // height: 30%;
-        // left: 50%;
-        // top: 35%;
-        // transform: translate(-50%);
-        // transition: 500ms ease;
-        // perspective: 800px;
-        // transform-style: preserve-3d;
         li {
             margin: 0px 25px;
         }
@@ -135,12 +129,6 @@ a.joosje-btn-slider.active {
             }
         }
     }
-    // #slider-container > ul > li:nth-child(1) {
-    //     transform: translate3d(-20%, 15%, -400px);
-    // }
-    // #slider-container > ul > li:nth-child(4) {
-    //     transform: translate3d(20%, 15%,-400px);
-    // }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
