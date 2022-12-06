@@ -10,41 +10,90 @@ export default function Awards() {
                     <Header />
                 </div>
                 <div className="awards-container">
+                    <div className="awards 2022">
+                        <h1>Awards 2022</h1>
+                        <h3>Gold <b>ADCN</b> Lamp
+                            <br />
+                            <i>Society</i>
+                        </h3>
+                        <h3>Bronze <b>ADCN</b> Lamp
+                            <br />
+                            <i>Craft: Art Direction</i>
+                        </h3>
+                        <h3>Care <b>Award</b>
+                            <br />
+                            <i>NGO & Foundations</i>
+                        </h3>
+                        <h3>Silver <b>Lovie</b> Award
+                            <br />
+                            <i>Branded Content</i>
+                        </h3>
+                        <h3>People <b>Lovie</b> Award
+                            <br />
+                            <i>Branded Content</i>
+                        </h3>
+                        <h3>Gold <b>CMTA</b> Award
+                            <br />
+                            <i>B2E</i>
+                        </h3>
+                        <h3>Gold <b>CMTA</b> Award
+                            <br />
+                            <i>Campagnes</i>
+                        </h3>
+                        <h3>Silver <b>CMTA</b> Award
+                            <br />
+                            <i>B2B</i>
+                        </h3>
+                    </div>
                     <div className="awards 2021">
                         <h1>Awards 2021</h1>
                         <h3>Silver <b>ADCN</b> Lamp
                             <br></br>
-                            <i>Entertainment</i></h3>
+                            <i>Entertainment</i>
+                        </h3>
                         <h3>Bronze <b>ADCN</b> Lamp
                             <br></br>
-                            <i>Activation</i></h3>
+                            <i>Activation</i>
+                        </h3>
                         <h3><b>Gouden Kalf</b>
                             <br></br>
-                            <i>Best Drama</i></h3>
+                            <i>Best Drama</i>
+                        </h3>
                         <h3>Silver <b>Effie</b>
                             <br></br>
-                            <i>Behaviour Short</i></h3>
+                            <i>Behaviour Short</i>
+                        </h3>
                         <h3>Bronze <b>Spin</b> Award
                             <br></br>
-                            <i>Digital Campaign</i></h3>
+                            <i>Digital Campaign</i>
+                        </h3>
                         <h3><b>Webby</b> Award
                             <br></br>
-                            <i>Corporate Social Responsibility</i></h3>
-                        <h3><b>Webby</b> Nominee</h3>
+                            <i>Corporate Social Responsibility</i>
+                        </h3>
+                        <h3>
+                            <b>Webby</b> Nominee
+                        </h3>
                         <h3>Bronze <b>Esprix</b>
                             <br></br>
-                            <i>Business to Business & Employee Experience</i></h3>
-                        <h3><b>SAN Accent</b> Nomination</h3>
+                            <i>Business to Business & Employee Experience</i>
+                        </h3>
+                        <h3><b>SAN Accent</b> Nomination
+                        </h3>
                         <h3>2<small>x</small> <b>Dutch Creativity</b> Awards Finalist
                             <br></br>
-                            <i>Direct & Strategic Brand Ideas</i></h3>
+                            <i>Direct & Strategic Brand Ideas</i>
+                        </h3>
                         <h3><b>Youtube Works</b> Award
                             <br></br>
-                            <i>Creative Innovation</i></h3>
-                        <h3>3<small>x</small> <b>Youtube Works</b> Awards Finalist</h3>
+                            <i>Creative Innovation</i>
+                        </h3>
+                        <h3>3<small>x</small> <b>Youtube Works</b> Awards Finalist
+                        </h3>
                         <h3><b>Best Social</b> Award
                             <br></br>
-                            <i>Best Campaign</i></h3>
+                            <i>Best Campaign</i>
+                        </h3>
                     </div>
                     <div className="awards 2020">
                         <h1>Awards 2020</h1>
