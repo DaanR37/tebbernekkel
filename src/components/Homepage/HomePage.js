@@ -112,15 +112,6 @@ export default function HomePage() {
                     onWheel={onScroll}
                     className="slide-container__listener"
                 ></div>
-                {/* {!featureData.length && (
-        <CircularProgress
-          sx={{
-            top: "50%",
-            left: "50%",
-            zIndex: 90,
-          }}
-        />
-      )} */}
                 {featureData.map((video, index) => {
                     const url = `https://player.vimeo.com${video.uri.replace(
                         "/videos/",
@@ -150,10 +141,10 @@ export default function HomePage() {
                                         config={{
                                             playerOptions: {
                                                 background: true,
-                                                quality: "1080p", ///eventueel 480?
+                                                quality: "1080p", 
                                                 dnt: true,
                                                 loop: true,
-                                                height: height, ////optioneel
+                                                height: height,
                                             },
                                         }}
                                     />

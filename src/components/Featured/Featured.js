@@ -41,9 +41,6 @@ export default function Featured() {
                                     <div
                                         style={{
                                             backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                            // backgroundSize: "cover", /// "cover" initially
-                                            // backgroundRepeat: 'no-repeat',
-                                            // backgroundPosition: "center",
                                             height: "100%",
                                             width: "100%"
                                         }}>
