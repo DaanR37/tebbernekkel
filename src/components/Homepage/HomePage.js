@@ -51,7 +51,7 @@ export default function HomePage() {
             }
         }, 100);
         return () => clearInterval(interval);
-    }, [progress]);
+    }, [progress, current, featureData.length]);
 
     const moveNextSlide = (current, isUpDirection) => {
         if (!featureData.length) return;
@@ -99,7 +99,7 @@ export default function HomePage() {
                 containerRef.current.removeEventListener("touchend", endTouch);
             }
         };
-    }, [featureData.length, current]);
+    }, [featureData.length, current, moveNextSlide]);
 
     return (
         <Animatedpage>
