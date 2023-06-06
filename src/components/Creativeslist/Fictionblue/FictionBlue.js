@@ -6,7 +6,7 @@ import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 
 export default function FictionBlue() {
-    const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue"];
+    const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue", "twelve-blue"];
 
     const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
     useEffect(() => {
