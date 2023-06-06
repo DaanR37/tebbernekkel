@@ -8,20 +8,20 @@ import PicsMariaBodil from "./PicsMariaBodil";
 
 
 export default function FictionMariaBodil() {
-
-    const videoIndexFictionMariaBodil = ["one-mariabodil", "two-mariabodil"];
-
     const [portfolioDataFictionMariaBodil, setPortfolioDataFictionMariaBodil] = useState([]);
+    const videoIndexFictionMariaBodil = ["one-mariabodil", "two-mariabodil", "three-mariabodil"];
+
     useEffect(() => {
         // fetch("http://localhost:3001/fictionmariabodil")
         fetch("https://api.tebbernekkel.nl/fictionmariabodil")
             .then(response => response.json())
             .then(portfolioDataFictionMariaBodil => {
                 setPortfolioDataFictionMariaBodil(portfolioDataFictionMariaBodil)
+                console.log(portfolioDataFictionMariaBodil);
             }).catch(error => {
                 console.log(error.message)
             })
-    }, []);
+    }, [portfolioDataFictionMariaBodil]);
 
     return (
         <Animatedpage>
