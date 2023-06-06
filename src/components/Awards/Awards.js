@@ -11,7 +11,7 @@ export default function Awards() {
                 </div>
                 <div className="awards-container">
                     <div className="awards 2022">
-                        <h1>Award 2022</h1>
+                        <h1>Awards 2022</h1>
                         <h3>Gold <b>ADCN</b> Lamp
                             <br />
                             <i>Society</i>
