@@ -25,12 +25,12 @@
         transform: translate(-50%, -50%);
     }
     .names-list {
-        line-height: 2.2rem;
+        line-height: 1.5rem;
         li {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         a {
-            font-size: 1.85rem;
+            font-size: 1.5rem;
             letter-spacing: 1px;
         }
     }
@@ -43,12 +43,12 @@
         transform: translate(-50%, -60%);
     }
     .names-list {
-        line-height: 2.5rem;
+        line-height: 1.5rem;
         li {
             margin-bottom: 5px;
         }
         a {
-            font-size: 1.85rem;
+            font-size: 1.5rem;
             letter-spacing: 1px;
         }
     }
@@ -62,13 +62,12 @@
         max-width: 300px;
     }
     .names-list {
-        line-height: 3.75rem;
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         a {
-            font-size: 3rem;
-            letter-spacing: 2px;
+            font-size: 2.5rem;
+            letter-spacing: 1.75px;
         }
     }
 }
@@ -80,10 +79,9 @@
         transform: translate(-50%, -60%);
     }
     .names-list {
-        line-height: 4rem;
         a {
-            font-size: 4rem;
-            letter-spacing: 2.5px;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
         }
     }
 }
@@ -95,10 +93,9 @@
         transform: translate(-50%, -52.5%);
     }
     .names-list {
-        line-height: 4rem;
         a {
-            font-size: 4rem;
-            letter-spacing: 2.5px;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
             &:hover {
                 color: #f5a1a3;
                 transition: 400ms ease-in-out;
@@ -114,10 +111,9 @@
         transform: translate(-50%, -52.5%);
     }
     .names-list {
-        line-height: 4rem;
         a {
-            font-size: 4rem;
-            letter-spacing: 2.5px;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
             &:hover {
                 color: #f5a1a3;
                 transition: 400ms ease-in-out;

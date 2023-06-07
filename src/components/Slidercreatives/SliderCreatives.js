@@ -6,37 +6,37 @@ export default function SliderCreatives() {
         <section id="slider-container">
             <ul className="names-list-slider">
                 <li>
-                    <NavLink to="/fictionachmed" className="achmed-btn-slider">
+                    <NavLink to="/fictionachmed" className="achmed-btn-slider" reloadDocument>
                         <h1>Achmed</h1>
                     </NavLink>
                 </li>
                 <p>|</p>
                 <li>
-                    <NavLink to="/fictionblue" className="blue-btn-slider">
+                    <NavLink to="/fictionblue" className="blue-btn-slider" reloadDocument>
                         <h1>Blue</h1>
                     </NavLink>
                 </li>
                 <p>|</p>
                 <li>
-                    <NavLink to="/fictiondamien" className="damien-btn-slider">
+                    <NavLink to="/fictiondamien" className="damien-btn-slider" reloadDocument>
                         <h1>Damien</h1>
                     </NavLink>
                 </li>
                 <p>|</p>
                 <li>
-                    <NavLink to="/fictionfolkert" className="folkert-btn-slider">
+                    <NavLink to="/fictionfolkert" className="folkert-btn-slider" reloadDocument>
                         <h1>Folkert</h1>
                     </NavLink>
                 </li>
                 <p>|</p>
                 <li>
-                    <NavLink to="/fictionjoosje" className="joosje-btn-slider">
+                    <NavLink to="/fictionjoosje" className="joosje-btn-slider" reloadDocument>
                         <h1>Joosje</h1>
                     </NavLink>
                 </li>
                 <p>|</p>
                 <li>
-                    <NavLink to="/fictionmariabodil" className="mariabodil-btn-slider">
+                    <NavLink to="/fictionmariabodil" className="mariabodil-btn-slider" reloadDocument>
                         <h1>maria bodil</h1>
                     </NavLink>
                 </li>

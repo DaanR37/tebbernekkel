@@ -13,22 +13,22 @@ export default function CreativesList() {
                 <div className="creatives-card">
                     <ul className="names-list">
                         <li>
-                            <NavLink to="/fictionachmed" className="achmed-btn">achmed akkabi</NavLink>
+                            <NavLink to="/fictionachmed" className="achmed-btn" reloadDocument>achmed akkabi</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/fictionblue" className="blue-btn">blue ter burg</NavLink>
+                            <NavLink to="/fictionblue" className="blue-btn" reloadDocument>blue ter burg</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/fictiondamien" className="damien-btn">damien hope</NavLink>
+                            <NavLink to="/fictiondamien" className="damien-btn" reloadDocument>damien hope</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/fictionfolkert" className="folkert-btn">folkert verdoorn</NavLink>
+                            <NavLink to="/fictionfolkert" className="folkert-btn" reloadDocument>folkert verdoorn</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/fictionjoosje" className="joosje-btn">joosje duk</NavLink>
+                            <NavLink to="/fictionjoosje" className="joosje-btn" reloadDocument>joosje duk</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/fictionmariabodil" className="mariabodil-btn">maria bodil</NavLink>
+                            <NavLink to="/fictionmariabodil" className="mariabodil-btn" reloadDocument>maria bodil</NavLink>
                         </li>
                     </ul>
                 </div>
