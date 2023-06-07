@@ -37,7 +37,7 @@ export default function SliderCreatives() {
                 <p>|</p>
                 <li>
                     <NavLink to="/fictionmariabodil" className="mariabodil-btn-slider" reloadDocument>
-                        <h1>maria bodil</h1>
+                        <h1>mariabodil</h1>
                     </NavLink>
                 </li>
                 <p>|</p>
