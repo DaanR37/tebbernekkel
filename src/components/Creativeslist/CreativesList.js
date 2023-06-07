@@ -19,6 +19,9 @@ export default function CreativesList() {
                             <NavLink to="/fictionblue" className="blue-btn">blue ter burg</NavLink>
                         </li>
                         <li>
+                            <NavLink to="/fictiondamien" className="damien-btn">damien hope</NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/fictionfolkert" className="folkert-btn">folkert verdoorn</NavLink>
                         </li>
                         <li>

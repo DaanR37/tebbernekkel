@@ -17,7 +17,6 @@ export default function EmbeddedPlayerBlue() {
     return (
         <Animatedpage>
             <section id="embedded-player-blue">
-
                 <div className="embedded-container-dekstop-blue">
                     <a href="/fictionblue">
                         <div className="times-blue">

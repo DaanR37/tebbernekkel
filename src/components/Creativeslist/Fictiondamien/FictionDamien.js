@@ -1,0 +1,62 @@
+import "./fictiondamien.scss";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
+import Animatedpage from "../../Animatedpage";
+import SliderCreatives from "../../Slidercreatives/SliderCreatives";
+
+export default function FictionDamien() {
+    const videoIndexFictionDamien = ["one-damien", "two-damien", "three-damien", "four-damien", "five-damien", "six-damien", "seven-damien"];
+
+    const [portfolioDataFictionDamien, setPortfolioDataFictionDamien] = useState([]);
+    useEffect(() => {
+        // fetch("http://localhost:3001/fictiondamien")
+            fetch("https://api.tebbernekkel.nl/fictiondamien")
+            .then(response => response.json())
+            .then(portfolioDataFictionDamien => {
+                setPortfolioDataFictionDamien(portfolioDataFictionDamien)
+            }).catch(error => {
+                console.log(error.message)
+            })
+    }, []);
+
+    return (
+        <Animatedpage>
+            <section id="fiction-container-damien">
+                <div className="header-transparent-fiction">
+                    <HeaderTransparent />
+                </div>
+                <div className="slider-nav">
+                    <SliderCreatives />
+                </div>
+                <div id="grid-wrapper-fiction-damien">
+                    {portfolioDataFictionDamien.map((video, index) => {
+                        return (
+                            <div className={videoIndexFictionDamien[index]} key={index}>
+                                <Link
+                                    to="/embeddedplayerdamien"
+                                    state={{
+                                        link: `${video.uri}`,
+                                        title: `${video.name}`,
+                                        description: `${video.description}`,
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                                            height: "100%",
+                                            width: "100%"
+                                        }}>
+                                        <div id="ho-damien">
+                                            <span aria-hidden="true">{video.name}</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        )
+                    })}
+                </div>
+            </section>
+        </Animatedpage>
+    );
+}

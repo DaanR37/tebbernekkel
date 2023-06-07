@@ -16,6 +16,9 @@ import EmbeddedPlayerAchmed from "./components/Creativeslist/Fictionachmed/Embed
 import FictionBlue from "./components/Creativeslist/Fictionblue/FictionBlue";
 import EmbeddedPlayerBlue from "./components/Creativeslist/Fictionblue/Embeddedplayerblue/EmbeddedPlayerBlue";
 
+import FictionDamien from "./components/Creativeslist/Fictiondamien/FictionDamien";
+import EmbeddedPlayerDamien from "./components/Creativeslist/Fictiondamien/Embeddedplayerdamien/EmbeddedPlayerDamien";
+
 import FictionFolkert from "./components/Creativeslist/Fictionfolkert/FictionFolkert";
 import EmbeddedPlayerFolkert from "./components/Creativeslist/Fictionfolkert/Embeddedplayerfolkert/EmbeddedPlayerFolkert";
 
@@ -45,6 +48,9 @@ function App() {
 
         <Route path="/fictionblue" element={<FictionBlue />} />
         <Route path="/embeddedplayerblue" element={<EmbeddedPlayerBlue />} />
+
+        <Route path="/fictiondamien" element={<FictionDamien />} />
+        <Route path="/embeddedplayerdamien" element={<EmbeddedPlayerDamien />} />
 
         <Route path="/fictionfolkert" element={<FictionFolkert />} />
         <Route path="/embeddedplayerfolkert" element={<EmbeddedPlayerFolkert />} />
