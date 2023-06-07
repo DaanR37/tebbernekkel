@@ -30,6 +30,9 @@ export default function CreativesList() {
                         <li>
                             <NavLink to="/fictionmariabodil" className="mariabodil-btn" reloadDocument>maria bodil</NavLink>
                         </li>
+                        <li>
+                            <NavLink to="/fictionsimon" className="simon-btn" reloadDocument>simon becks</NavLink>
+                        </li>
                     </ul>
                 </div>
             </section>

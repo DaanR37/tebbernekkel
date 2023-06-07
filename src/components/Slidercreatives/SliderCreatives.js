@@ -40,6 +40,12 @@ export default function SliderCreatives() {
                         <h1>maria bodil</h1>
                     </NavLink>
                 </li>
+                <p>|</p>
+                <li>
+                    <NavLink to="/fictionsimon" className="simon-btn-slider" reloadDocument>
+                        <h1>Simon</h1>
+                    </NavLink>
+                </li>
             </ul>
         </section>
     );
