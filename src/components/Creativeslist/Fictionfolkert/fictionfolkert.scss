@@ -29,25 +29,25 @@
     }
     #grid-wrapper-fiction-folkert {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 90vh);
+        grid-template-rows: repeat(11, 90vh);
     }
     .seven-folkert {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .three-folkert {
+    .ten-folkert {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .nine-folkert {
+    .three-folkert {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .five-folkert {
+    .six-folkert {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .six-folkert {
+    .four-folkert {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -59,17 +59,21 @@
         grid-column: 1/2;
         grid-row: 7/8;
     }
-    .eight-folkert {
+    .five-folkert {
         grid-column: 1/2;
         grid-row: 8/9;
     }
-    .four-folkert {
+    .eight-folkert {
         grid-column: 1/2;
         grid-row: 9/10;
     }
-    .ten-folkert {
+    .nine-folkert {
         grid-column: 1/2;
         grid-row: 10/11;
+    }
+    .eleven-folkert {
+        grid-column: 1/2;
+        grid-row: 11/12;
     }
     ///CARD ONE
     #grid-wrapper-fiction-folkert > div.one-folkert > a div {
@@ -94,7 +98,7 @@
     ///CARD FIVE
     #grid-wrapper-fiction-folkert > div.five-folkert > a div {
         background-size: cover;
-        background-position: 38%;
+        background-position: center;
     }
     ///CARD SIX
     #grid-wrapper-fiction-folkert > div.six-folkert > a div {
@@ -114,12 +118,17 @@
     //CARD NINE
     #grid-wrapper-fiction-folkert > div.nine-folkert > a div {
         background-size: cover;
-        background-position: 43%;
+        background-position: center;
     }
     //CARD TEN
     #grid-wrapper-fiction-folkert > div.ten-folkert > a div {
-        background-size: auto 103%;
-        background-position: 48%;
+        background-size: cover;
+        background-position: center;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-folkert > div.eleven-folkert > a div {
+        background-size: cover;
+        background-position: center;
     }
 }
 ///Mobile Landscape
@@ -129,55 +138,65 @@
     }
     #grid-wrapper-fiction-folkert {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(8, 200px);
+        grid-template-rows: repeat(10, 200px);
     }
-    /// 2 BIGG
+    /// 1 BIG
     .seven-folkert {
-        grid-column: 1/4;
+        grid-column: 1/7;
         grid-row: 1/3;
+    }
+    /// 2 BIG
+    .ten-folkert {
+        grid-column: 1/4;
+        grid-row: 3/5;
     }
     .three-folkert {
         grid-column: 4/7;
-        grid-row: 1/3;
+        grid-row: 3/5;
     }
     /// 3 SMALL
-    .nine-folkert {
+    .six-folkert {
         grid-column: 1/3;
-        grid-row: 3/5;
+        grid-row: 5/7;
+    }
+    .four-folkert {
+        grid-column: 3/5;
+        grid-row: 5/7;
+    }
+    .two-folkert {
+        grid-column: 5/7;
+        grid-row: 5/7;
+    }
+    /// 2 BIG
+    .one-folkert {
+        grid-column: 1/4;
+        grid-row: 7/9;
     }
     .five-folkert {
-        grid-column: 3/5;
-        grid-row: 3/5;
-    }
-    .six-folkert {
-        grid-column: 5/7;
-        grid-row: 3/5;
-    }
-    /// 2 BIGG
-    .two-folkert {
-        grid-column: 1/4;
-        grid-row: 5/7;
-    }
-    .one-folkert {
         grid-column: 4/7;
-        grid-row: 5/7;
+        grid-row: 7/9;
     }
     /// 3 SMALL
     .eight-folkert {
         grid-column: 1/3;
-        grid-row: 7/9;
+        grid-row: 9/11;
     }
-    .four-folkert {
+    .nine-folkert {
         grid-column: 3/5;
-        grid-row: 7/9;
+        grid-row: 9/11;
     }
-    .ten-folkert {
+    .eleven-folkert {
         grid-column: 5/7;
-        grid-row: 7/9;
+        grid-row: 9/11;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-folkert > div.eleven-folkert > a div {
+        background-size: auto;
+        background-position: center;
     }
     //CARD TEN
     #grid-wrapper-fiction-folkert > div.ten-folkert > a div {
-        background-size: auto 105%;
+        background-size: cover;
         background-position: center;
     }
     //CARD NINE
@@ -192,22 +211,22 @@
     }
     //CARD SEVEN
     #grid-wrapper-fiction-folkert > div.seven-folkert > a div {
-        background-size: cover;
+        background-size: auto;
         background-position: center;
     }
     //CARD SIX
     #grid-wrapper-fiction-folkert > div.six-folkert > a div {
         background-size: cover;
-        background-position: 30%;
+        background-position: center;
     }
     ///CARD FIVE
     #grid-wrapper-fiction-folkert > div.five-folkert > a div {
         background-size: cover;
-        background-position: 40%;
+        background-position: center;
     }
     //CARD FOUR
     #grid-wrapper-fiction-folkert > div.four-folkert > a div {
-        background-size: auto 105%;
+        background-size: cover;
         background-position: center;
     }
     //CARD THREE
@@ -218,7 +237,7 @@
     //CARD TWO
     #grid-wrapper-fiction-folkert > div.two-folkert > a div {
         background-size: cover;
-        background-position: 70%;
+        background-position: center;
     }
     //CARD ONE
     #grid-wrapper-fiction-folkert > div.one-folkert > a div {
@@ -233,55 +252,65 @@
     }
     #grid-wrapper-fiction-folkert {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(9, 200px);
+        grid-template-rows: repeat(11, 200px);
+    }
+    /// 1 BIG
+    .seven-folkert {
+        grid-column: 1/7;
+        grid-row: 2/4;
     }
     /// 2 BIG
-    .seven-folkert {
+    .ten-folkert {
         grid-column: 1/4;
-        grid-row: 2/4;
+        grid-row: 4/6;
     }
     .three-folkert {
         grid-column: 4/7;
-        grid-row: 2/4;
+        grid-row: 4/6;
     }
     /// 3 SMALL
-    .nine-folkert {
+    .six-folkert {
         grid-column: 1/3;
-        grid-row: 4/6;
+        grid-row: 6/8;
+    }
+    .four-folkert {
+        grid-column: 3/5;
+        grid-row: 6/8;
     }
     .two-folkert {
-        grid-column: 3/5;
-        grid-row: 4/6;
-    }
-    .one-folkert {
         grid-column: 5/7;
-        grid-row: 4/6;
-    }
-    /// 2 BIGG
-    .four-folkert {
-        grid-column: 1/4;
         grid-row: 6/8;
+    }
+    /// 2 BIG
+    .one-folkert {
+        grid-column: 1/4;
+        grid-row: 8/10;
     }
     .five-folkert {
         grid-column: 4/7;
-        grid-row: 6/8;
+        grid-row: 8/10;
     }
     /// 3 SMALL
     .eight-folkert {
         grid-column: 1/3;
-        grid-row: 8/10;
+        grid-row: 10/12;
     }
-    .six-folkert {
+    .nine-folkert {
         grid-column: 3/5;
-        grid-row: 8/10;
+        grid-row: 10/12;
     }
-    .ten-folkert {
+    .eleven-folkert {
         grid-column: 5/7;
-        grid-row: 8/10;
+        grid-row: 10/12;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-folkert > div.eleven-folkert > a div {
+        background-size: auto;
+        background-position: center;
     }
     //CARD TEN
     #grid-wrapper-fiction-folkert > div.ten-folkert > a div {
-        background-size: auto 105%;
+        background-size: cover;
         background-position: center;
     }
     //CARD NINE
@@ -296,13 +325,13 @@
     }
     //CARD SEVEN
     #grid-wrapper-fiction-folkert > div.seven-folkert > a div {
-        background-size: cover;
+        background-size: auto;
         background-position: center;
     }
     //CARD SIX
     #grid-wrapper-fiction-folkert > div.six-folkert > a div {
         background-size: cover;
-        background-position: 35%;
+        background-position: 37.5%;
     }
     ///CARD FIVE
     #grid-wrapper-fiction-folkert > div.five-folkert > a div {
@@ -311,7 +340,7 @@
     }
     //CARD FOUR
     #grid-wrapper-fiction-folkert > div.four-folkert > a div {
-        background-size: auto 135%;
+        background-size: cover;
         background-position: center;
     }
     //CARD THREE
@@ -322,7 +351,7 @@
     //CARD TWO
     #grid-wrapper-fiction-folkert > div.two-folkert > a div {
         background-size: cover;
-        background-position: 80%;
+        background-position: center;
     }
     //CARD ONE
     #grid-wrapper-fiction-folkert > div.one-folkert > a div {
@@ -337,55 +366,65 @@
     }
     #grid-wrapper-fiction-folkert {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(9, 200px);
+        grid-template-rows: repeat(11, 200px);
+    }
+    /// 1 BIG
+    .seven-folkert {
+        grid-column: 1/7;
+        grid-row: 2/4;
     }
     /// 2 BIG
-    .seven-folkert {
+    .ten-folkert {
         grid-column: 1/4;
-        grid-row: 2/4;
+        grid-row: 4/6;
     }
     .three-folkert {
         grid-column: 4/7;
-        grid-row: 2/4;
+        grid-row: 4/6;
     }
     /// 3 SMALL
-    .nine-folkert {
+    .six-folkert {
         grid-column: 1/3;
-        grid-row: 4/6;
+        grid-row: 6/8;
+    }
+    .four-folkert {
+        grid-column: 3/5;
+        grid-row: 6/8;
     }
     .two-folkert {
-        grid-column: 3/5;
-        grid-row: 4/6;
-    }
-    .one-folkert {
         grid-column: 5/7;
-        grid-row: 4/6;
-    }
-    /// 2 BIGG
-    .four-folkert {
-        grid-column: 1/4;
         grid-row: 6/8;
+    }
+    /// 2 BIG
+    .one-folkert {
+        grid-column: 1/4;
+        grid-row: 8/10;
     }
     .five-folkert {
         grid-column: 4/7;
-        grid-row: 6/8;
+        grid-row: 8/10;
     }
     /// 3 SMALL
     .eight-folkert {
         grid-column: 1/3;
-        grid-row: 8/10;
+        grid-row: 10/12;
     }
-    .six-folkert {
+    .nine-folkert {
         grid-column: 3/5;
-        grid-row: 8/10;
+        grid-row: 10/12;
     }
-    .ten-folkert {
+    .eleven-folkert {
         grid-column: 5/7;
-        grid-row: 8/10;
+        grid-row: 10/12;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-folkert > div.eleven-folkert > a div {
+        background-size: auto;
+        background-position: center;
     }
     //CARD TEN
     #grid-wrapper-fiction-folkert > div.ten-folkert > a div {
-        background-size: auto 105%;
+        background-size: cover;
         background-position: center;
     }
     //CARD NINE
@@ -400,13 +439,13 @@
     }
     //CARD SEVEN
     #grid-wrapper-fiction-folkert > div.seven-folkert > a div {
-        background-size: cover;
+        background-size: auto 220%;
         background-position: center;
     }
     //CARD SIX
     #grid-wrapper-fiction-folkert > div.six-folkert > a div {
         background-size: cover;
-        background-position: 35%;
+        background-position: center;
     }
     ///CARD FIVE
     #grid-wrapper-fiction-folkert > div.five-folkert > a div {
@@ -415,7 +454,7 @@
     }
     //CARD FOUR
     #grid-wrapper-fiction-folkert > div.four-folkert > a div {
-        background-size: auto 135%;
+        background-size: cover;
         background-position: center;
     }
     //CARD THREE
@@ -426,7 +465,7 @@
     //CARD TWO
     #grid-wrapper-fiction-folkert > div.two-folkert > a div {
         background-size: cover;
-        background-position: 80%;
+        background-position: center;
     }
     //CARD ONE
     #grid-wrapper-fiction-folkert > div.one-folkert > a div {
@@ -441,55 +480,65 @@
     }
     #grid-wrapper-fiction-folkert {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(13, 200px);
+        grid-template-rows: repeat(16, 200px);
+    }
+    /// 1 BIG
+    .seven-folkert {
+        grid-column: 1/7;
+        grid-row: 2/5;
     }
     /// 2 BIG
-    .seven-folkert {
+    .ten-folkert {
         grid-column: 1/4;
-        grid-row: 2/5;
+        grid-row: 5/8;
     }
     .three-folkert {
         grid-column: 4/7;
-        grid-row: 2/5;
+        grid-row: 5/8;
     }
     /// 3 SMALL
-    .nine-folkert {
+    .six-folkert {
         grid-column: 1/3;
-        grid-row: 5/8;
+        grid-row: 8/11;
+    }
+    .four-folkert {
+        grid-column: 3/5;
+        grid-row: 8/11;
     }
     .two-folkert {
-        grid-column: 3/5;
-        grid-row: 5/8;
-    }
-    .one-folkert {
         grid-column: 5/7;
-        grid-row: 5/8;
-    }
-    /// 2 BIGG
-    .four-folkert {
-        grid-column: 1/4;
         grid-row: 8/11;
+    }
+    /// 2 BIG
+    .one-folkert {
+        grid-column: 1/4;
+        grid-row: 11/14;
     }
     .five-folkert {
         grid-column: 4/7;
-        grid-row: 8/11;
+        grid-row: 11/14;
     }
     /// 3 SMALL
     .eight-folkert {
         grid-column: 1/3;
-        grid-row: 11/14;
+        grid-row: 14/17;
     }
-    .six-folkert {
+    .nine-folkert {
         grid-column: 3/5;
-        grid-row: 11/14;
+        grid-row: 14/17;
     }
-    .ten-folkert {
+    .eleven-folkert {
         grid-column: 5/7;
-        grid-row: 11/14;
+        grid-row: 14/17;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-folkert > div.eleven-folkert > a div {
+        background-size: auto;
+        background-position: center;
     }
     //CARD TEN
     #grid-wrapper-fiction-folkert > div.ten-folkert > a div {
-        background-size: auto 105%;
+        background-size: cover;
         background-position: center;
     }
     //CARD NINE
@@ -504,7 +553,7 @@
     }
     //CARD SEVEN
     #grid-wrapper-fiction-folkert > div.seven-folkert > a div {
-        background-size: auto 115%;
+        background-size: auto 180%;
         background-position: center;
     }
     //CARD SIX
@@ -519,7 +568,7 @@
     }
     //CARD FOUR
     #grid-wrapper-fiction-folkert > div.four-folkert > a div {
-        background-size: auto 125%;
+        background-size: cover;
         background-position: center;
     }
     //CARD THREE
@@ -566,55 +615,65 @@
     }
     #grid-wrapper-fiction-folkert {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(13, 200px);
+        grid-template-rows: repeat(16, 200px);
+    }
+    /// 1 BIG
+    .seven-folkert {
+        grid-column: 1/7;
+        grid-row: 2/5;
     }
     /// 2 BIG
-    .seven-folkert {
+    .ten-folkert {
         grid-column: 1/4;
-        grid-row: 2/5;
+        grid-row: 5/8;
     }
     .three-folkert {
         grid-column: 4/7;
-        grid-row: 2/5;
+        grid-row: 5/8;
     }
     /// 3 SMALL
-    .nine-folkert {
+    .six-folkert {
         grid-column: 1/3;
-        grid-row: 5/8;
+        grid-row: 8/11;
+    }
+    .four-folkert {
+        grid-column: 3/5;
+        grid-row: 8/11;
     }
     .two-folkert {
-        grid-column: 3/5;
-        grid-row: 5/8;
-    }
-    .one-folkert {
         grid-column: 5/7;
-        grid-row: 5/8;
-    }
-    /// 2 BIGG
-    .four-folkert {
-        grid-column: 1/4;
         grid-row: 8/11;
+    }
+    /// 2 BIG
+    .one-folkert {
+        grid-column: 1/4;
+        grid-row: 11/14;
     }
     .five-folkert {
         grid-column: 4/7;
-        grid-row: 8/11;
+        grid-row: 11/14;
     }
     /// 3 SMALL
     .eight-folkert {
         grid-column: 1/3;
-        grid-row: 11/14;
+        grid-row: 14/17;
     }
-    .six-folkert {
+    .nine-folkert {
         grid-column: 3/5;
-        grid-row: 11/14;
+        grid-row: 14/17;
     }
-    .ten-folkert {
+    .eleven-folkert {
         grid-column: 5/7;
-        grid-row: 11/14;
+        grid-row: 14/17;
+    }
+    //CARD ELEVEN
+    #grid-wrapper-fiction-folkert > div.eleven-folkert > a div {
+        background-size: auto;
+        background-position: center;
     }
     //CARD TEN
     #grid-wrapper-fiction-folkert > div.ten-folkert > a div {
-        background-size: auto 105%;
+        background-size: cover;
         background-position: center;
     }
     //CARD NINE
@@ -629,7 +688,7 @@
     }
     //CARD SEVEN
     #grid-wrapper-fiction-folkert > div.seven-folkert > a div {
-        background-size: auto 125%;
+        background-size: auto 290%;
         background-position: center;
     }
     //CARD SIX
@@ -639,17 +698,17 @@
     }
     ///CARD FIVE
     #grid-wrapper-fiction-folkert > div.five-folkert > a div {
-        background-size: cover;
+        background-size: auto;
         background-position: center;
     }
     //CARD FOUR
     #grid-wrapper-fiction-folkert > div.four-folkert > a div {
-        background-size: auto 115%;
+        background-size: cover;
         background-position: center;
     }
     //CARD THREE
     #grid-wrapper-fiction-folkert > div.three-folkert > a div {
-        background-size: cover;
+        background-size: auto 125%;
         background-position: center;
     }
     //CARD TWO
