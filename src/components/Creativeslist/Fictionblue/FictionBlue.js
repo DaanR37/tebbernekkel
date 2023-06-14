@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
+import SliderMobile from "../../Slidermobile/SliderMobile";
 
 export default function FictionBlue() {
     const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue", "twelve-blue"];
@@ -23,12 +24,15 @@ export default function FictionBlue() {
     return (
         <Animatedpage>
             <section id="fiction-container-blue">
-                <div className="header-transparent-fiction">
+                <>
                     <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
+                </>
+                <>
                     <SliderCreatives />
-                </div>
+                </>
+                <>
+                    <SliderMobile />
+                </>
                 <div id="grid-wrapper-fiction-blue">
                     {portfolioDataFictionBlue.map((video, index) => {
                         return (

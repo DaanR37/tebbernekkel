@@ -28,6 +28,7 @@ a.damien-btn-slider.active,
 a.folkert-btn-slider.active,
 a.joosje-btn-slider.active,
 a.mariabodil-btn-slider.active,
+a.shay-btn-slider.active,
 a.simon-btn-slider.active {
     color: #f5a1a3;
     opacity: 1;
@@ -35,18 +36,21 @@ a.simon-btn-slider.active {
 }
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    .names-list-slider {
-        position: fixed;
-        width: 100%;
-        margin-top: 5rem;
-        z-index: 1;
-        li {
-            margin: 0px 4.5px;
-        }
-        h1 {
-            font-size: 11px;
-        }
+    #slider-container {
+        display: none;
     }
+    // .names-list-slider {
+    //     position: fixed;
+    //     width: 100%;
+    //     margin-top: 5rem;
+    //     z-index: 1;
+    //     li {
+    //         margin: 0px 4.5px;
+    //     }
+    //     h1 {
+    //         font-size: 11px;
+    //     }
+    // }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {

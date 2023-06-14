@@ -28,6 +28,9 @@ import EmbeddedPlayerJoosje from "./components/Creativeslist/Fictionjoosje/Embed
 import FictionMariaBodil from "./components/Creativeslist/Fictionmariabodil/FictionMariaBodil";
 import EmbeddedPlayerMariaBodil from "./components/Creativeslist/Fictionmariabodil/Embeddedplayermariabodil/EmbeddedPlayerMariaBodil";
 
+import FictionShay from "./components/Creativeslist/Fictionshay/FictionShay";
+import EmbeddedPlayerShay from "./components/Creativeslist/Fictionshay/Embeddedplayershay/EmbeddedPlayerShay";
+
 import FictionSimon from "./components/Creativeslist/Fictionsimon/FictionSimon";
 import EmbeddedPlayerSimon from "./components/Creativeslist/Fictionsimon/Embeddedplayersimon/EmbeddedPlayerSimon";
 
@@ -63,6 +66,9 @@ function App() {
 
         <Route path="/fictionmariabodil" element={<FictionMariaBodil />} />
         <Route path="/embeddedplayermariabodil" element={<EmbeddedPlayerMariaBodil />} />
+
+        <Route path="/fictionshay" element={<FictionShay />} />
+        <Route path="/embeddedplayershay" element={<EmbeddedPlayerShay />} />
 
         <Route path="/fictionsimon" element={<FictionSimon />} />
         <Route path="/embeddedplayersimon" element={<EmbeddedPlayerSimon />} />

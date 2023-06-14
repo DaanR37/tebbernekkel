@@ -5,6 +5,7 @@ import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import "./fictionmariabodil.scss";
 import PicsMariaBodil from "./PicsMariaBodil";
+import SliderMobile from "../../Slidermobile/SliderMobile";
 
 
 export default function FictionMariaBodil() {
@@ -26,12 +27,15 @@ export default function FictionMariaBodil() {
     return (
         <Animatedpage>
             <section id="fiction-container-mariabodil">
-                <div className="header-transparent-fiction">
+                <>
                     <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
+                </>
+                <>
                     <SliderCreatives />
-                </div>
+                </>
+                <>
+                    <SliderMobile />
+                </>
                 <div id="grid-wrapper-fiction-mariabodil">
                     {portfolioDataFictionMariaBodil.map((video, index) => {
                         return (

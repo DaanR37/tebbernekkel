@@ -42,6 +42,12 @@ export default function SliderCreatives() {
                 </li>
                 <p>|</p>
                 <li>
+                    <NavLink to="/fictionshay" className="shay-btn-slider" reloadDocument>
+                        <h1>Shay</h1>
+                    </NavLink>
+                </li>
+                <p>|</p>
+                <li>
                     <NavLink to="/fictionsimon" className="simon-btn-slider" reloadDocument>
                         <h1>Simon</h1>
                     </NavLink>

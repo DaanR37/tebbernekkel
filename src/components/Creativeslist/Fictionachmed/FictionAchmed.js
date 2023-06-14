@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
+import SliderMobile from "../../Slidermobile/SliderMobile";
 
 
 export default function FictionAchmed() {
@@ -24,12 +25,15 @@ export default function FictionAchmed() {
     return (
         <Animatedpage>
             <section id="fiction-container-achmed">
-                <div className="header-transparent-achmed">
+                <>
                     <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
+                </>
+                <>
                     <SliderCreatives />
-                </div>
+                </>
+                <>
+                    <SliderMobile />
+                </>
                 <div id="grid-wrapper-fiction-achmed">
                     {portfolioDataFictionAchmed.map((video, index) => {
                         return (

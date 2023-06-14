@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
+import SliderMobile from "../../Slidermobile/SliderMobile";
 
 export default function FictionJoosje() {
     const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje"];
@@ -23,12 +24,15 @@ export default function FictionJoosje() {
     return (
         <Animatedpage>
             <section id="fiction-container-joosje">
-                <div className="header-transparent-fiction">
+                <>
                     <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
+                </>
+                <>
                     <SliderCreatives />
-                </div>
+                </>
+                <>
+                    <SliderMobile />
+                </>
                 <div id="grid-wrapper-fiction-joosje">
                     {portfolioDataFictionJoosje.map((video, index) => {
                         return (

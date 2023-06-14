@@ -113,6 +113,18 @@ app.get("/fictionmariabodil", (req, res) => {
         res.send(body.data)
     });
 });
+///SHAY ENDPOINT
+app.get("/fictionshay", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/16586298/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
 ///SIMON ENDPOINT
 app.get("/fictionsimon", (req, res) => {
     client.request({

@@ -1,4 +1,4 @@
-import "./fictionsimon.scss";
+import "./fictionshay.scss";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
@@ -6,16 +6,17 @@ import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 
-export default function FictionSimon() {
-    const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon"];
 
-    const [portfolioDataFictionSimon, setPortfolioDataFictionSimon] = useState([]);
+export default function FictionShay() {
+    const videoIndexFictionShay = ["one-shay", "two-shay", "three-shay", "four-shay", "five-shay"];
+
+    const [portfolioDataFictionShay, setPortfolioDataFictionShay] = useState([]);
     useEffect(() => {
-        // fetch("http://localhost:3001/fictionsimon")
-        fetch("https://api.tebbernekkel.nl/fictionsimon")
+        // fetch("http://localhost:3001/fictionshay")
+            fetch("https://api.tebbernekkel.nl/fictionshay")
             .then(response => response.json())
-            .then(portfolioDataFictionSimon => {
-                setPortfolioDataFictionSimon(portfolioDataFictionSimon)
+            .then(portfolioDataFictionShay => {
+                setPortfolioDataFictionShay(portfolioDataFictionShay)
             }).catch(error => {
                 console.log(error.message)
             })
@@ -23,7 +24,7 @@ export default function FictionSimon() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-simon">
+            <section id="fiction-container-shay">
                 <>
                     <HeaderTransparent />
                 </>
@@ -33,12 +34,12 @@ export default function FictionSimon() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-simon">
-                    {portfolioDataFictionSimon.map((video, index) => {
+                <div id="grid-wrapper-fiction-shay">
+                    {portfolioDataFictionShay.map((video, index) => {
                         return (
-                            <div className={videoIndexFictionSimon[index]} key={index}>
+                            <div className={videoIndexFictionShay[index]} key={index}>
                                 <Link
-                                    to="/embeddedplayersimon"
+                                    to="/embeddedplayershay"
                                     state={{
                                         link: `${video.uri}`,
                                         title: `${video.name}`,
@@ -51,7 +52,7 @@ export default function FictionSimon() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-simon">
+                                        <div id="ho-shay">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

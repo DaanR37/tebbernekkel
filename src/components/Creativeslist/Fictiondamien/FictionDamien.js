@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
+import SliderMobile from "../../Slidermobile/SliderMobile";
 
 export default function FictionDamien() {
     const videoIndexFictionDamien = ["one-damien", "two-damien", "three-damien", "four-damien", "five-damien", "six-damien", "seven-damien"];
@@ -11,7 +12,7 @@ export default function FictionDamien() {
     const [portfolioDataFictionDamien, setPortfolioDataFictionDamien] = useState([]);
     useEffect(() => {
         // fetch("http://localhost:3001/fictiondamien")
-            fetch("https://api.tebbernekkel.nl/fictiondamien")
+        fetch("https://api.tebbernekkel.nl/fictiondamien")
             .then(response => response.json())
             .then(portfolioDataFictionDamien => {
                 setPortfolioDataFictionDamien(portfolioDataFictionDamien)
@@ -23,12 +24,15 @@ export default function FictionDamien() {
     return (
         <Animatedpage>
             <section id="fiction-container-damien">
-                <div className="header-transparent-fiction">
+                <>
                     <HeaderTransparent />
-                </div>
-                <div className="slider-nav">
+                </>
+                <>
                     <SliderCreatives />
-                </div>
+                </>
+                <>
+                    <SliderMobile />
+                </>
                 <div id="grid-wrapper-fiction-damien">
                     {portfolioDataFictionDamien.map((video, index) => {
                         return (
