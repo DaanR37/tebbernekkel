@@ -16,8 +16,8 @@ a.dropdown-menu__link.simon.active {
         // position: absolute;
         position: fixed;
         left: 50%;
-        top: 12.5%;
-        transform: translate(-50%, -12.5%);
+        top: 13%;
+        transform: translate(-50%, -13%);
         z-index: 10;
     }
     .dropdown-menu__toggle {
@@ -25,11 +25,14 @@ a.dropdown-menu__link.simon.active {
         align-items: center;
         background: transparent;
         border: none;
-        color: white;
-        font-size: 16px;
+        letter-spacing: 0.035em;
         padding: 0;
         font-family: "Roboto Condensed", sans-serif;
         transition: opacity 0.8s ease, visibility 0.8s ease, transform 0.8s ease;
+        span {
+            font-size: 19px;
+            color: whitesmoke;
+        }
     }
     .dropdown-menu__arrow {
         border: solid white;
