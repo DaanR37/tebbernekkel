@@ -1,14 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import "./slidermobile.scss";
 
 export default function SliderMobile() {
-    // const [selectedOption, setSelectedOption] = useState("");
-
-    // function handleSelectChange(e) {
-    //     setSelectedOption(e.target.value);
-    // }
-
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -72,17 +66,6 @@ export default function SliderMobile() {
                     </li>
                 </ul>
             )}
-
-            {/* <select onChange={handleSelectChange}>
-                <option value="fictionachmed">Achmed</option>
-                <option value="blue">Blue</option>
-            </select>
-
-            {selectedOption && (
-                <Link to={`/${selectedOption}`}></Link>
-            )} */}
-
-
         </div>
     );
 };
