@@ -5,12 +5,12 @@ import HeaderTransparent from '../Headertransparent/HeaderTransparent';
 import "./featured.scss";
 
 export default function Featured() {
-    const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven", "nine", "ten", "eleven"];
+    const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven", "nine", "ten", "eleven", "twelve"];
     const [portfolioData, setPortfolioData] = useState([]);
 
     useEffect(() => {
-        // fetch("http://localhost:3001/featured")
-        fetch("https://api.tebbernekkel.nl/featured")
+        fetch("http://localhost:3001/featured")
+        // fetch("https://api.tebbernekkel.nl/featured")
             .then(response => response.json())
             .then(portfolioData => {
                 setPortfolioData(portfolioData)

@@ -7,7 +7,7 @@ import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 
 export default function FictionFolkert() {
-    const videoIndexFictionFolkert = ["seven-folkert", "three-folkert", "four-folkert", "five-folkert", "six-folkert", "two-folkert", "one-folkert", "eight-folkert", "nine-folkert", "ten-folkert", "eleven-folkert"];
+    const videoIndexFictionFolkert = ["seven-folkert", "three-folkert", "four-folkert", "five-folkert", "six-folkert", "two-folkert", "one-folkert", "eight-folkert", "nine-folkert", "ten-folkert", "eleven-folkert", "twelve-folkert"];
 
     const [portfolioDataFictionFolkert, setPortfolioDataFictionFolkert] = useState([]);
     useEffect(() => {
