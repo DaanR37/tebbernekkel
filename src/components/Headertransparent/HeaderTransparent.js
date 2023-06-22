@@ -27,7 +27,7 @@ export default function HeaderTransparent() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/creativeslist" reloadDocument className="fiction-btn-transparent">creatives</NavLink>
+                        <NavLink to="/directorslist" reloadDocument className="fiction-btn-transparent">directors</NavLink>
                     </motion.li>
                 </ul>
                 <div>
@@ -76,7 +76,7 @@ export default function HeaderTransparent() {
                         <NavLink to="/featured" reloadDocument className="commercial-btn-transparent">featured</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/creativeslist" reloadDocument className="fiction-btn-transparent">creatives</NavLink>
+                        <NavLink to="/directorslist" reloadDocument className="fiction-btn-transparent">directors</NavLink>
                     </li>
                     <li>
                         <NavLink to="/awards" reloadDocument className="about-btn-transparent">awards</NavLink>

@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 
 export default function Header() {
-
     return (
         <header className="header-container">
             <div className="desktop-container">
@@ -28,7 +27,7 @@ export default function Header() {
                             stiffness: 80
                         }}
                     >
-                        <NavLink to="/creativeslist" reloadDocument className="fiction-btn">creatives</NavLink>
+                        <NavLink to="/directorslist" reloadDocument className="fiction-btn">directors</NavLink>
                     </motion.li>
                 </ul>
                 <div>
@@ -77,7 +76,7 @@ export default function Header() {
                         <NavLink to="/featured" reloadDocument className="commercial-btn">featured</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/creativeslist" reloadDocument className="fiction-btn">creatives</NavLink>
+                        <NavLink to="/directorslist" reloadDocument className="fiction-btn">directors</NavLink>
                     </li>
                     <li>
                         <NavLink to="/awards" reloadDocument className="about-btn">awards</NavLink>

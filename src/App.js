@@ -7,32 +7,31 @@ import HomePage from "./components/Homepage/HomePage";
 import Featured from "./components/Featured/Featured";
 import EmbeddedPlayerFeatured from "./components/Featured/Embeddedplayerfeatured/EmbeddedPlayerFeatured";
 
-import CreativesList from "./components/Creativeslist/CreativesList";
-import SliderCreatives from "./components/Slidercreatives/SliderCreatives";
+import DirectorsList from "./components/Directorslist/DirectorsList";
 
-import FictionAchmed from "./components/Creativeslist/Fictionachmed/FictionAchmed";
-import EmbeddedPlayerAchmed from "./components/Creativeslist/Fictionachmed/Embeddedplayerachmed/EmbeddedPlayerAchmed";
+import FictionAchmed from "./components/Directorslist/Fictionachmed/FictionAchmed";
+import EmbeddedPlayerAchmed from "./components/Directorslist/Fictionachmed/Embeddedplayerachmed/EmbeddedPlayerAchmed";
 
-import FictionBlue from "./components/Creativeslist/Fictionblue/FictionBlue";
-import EmbeddedPlayerBlue from "./components/Creativeslist/Fictionblue/Embeddedplayerblue/EmbeddedPlayerBlue";
+import FictionBlue from "./components/Directorslist/Fictionblue/FictionBlue";
+import EmbeddedPlayerBlue from "./components/Directorslist/Fictionblue/Embeddedplayerblue/EmbeddedPlayerBlue";
 
-import FictionDamien from "./components/Creativeslist/Fictiondamien/FictionDamien";
-import EmbeddedPlayerDamien from "./components/Creativeslist/Fictiondamien/Embeddedplayerdamien/EmbeddedPlayerDamien";
+import FictionDamien from "./components/Directorslist/Fictiondamien/FictionDamien";
+import EmbeddedPlayerDamien from "./components/Directorslist/Fictiondamien/Embeddedplayerdamien/EmbeddedPlayerDamien";
 
-import FictionFolkert from "./components/Creativeslist/Fictionfolkert/FictionFolkert";
-import EmbeddedPlayerFolkert from "./components/Creativeslist/Fictionfolkert/Embeddedplayerfolkert/EmbeddedPlayerFolkert";
+import FictionFolkert from "./components/Directorslist/Fictionfolkert/FictionFolkert";
+import EmbeddedPlayerFolkert from "./components/Directorslist/Fictionfolkert/Embeddedplayerfolkert/EmbeddedPlayerFolkert";
 
-import FictionJoosje from "./components/Creativeslist/Fictionjoosje/FictionJoosje";
-import EmbeddedPlayerJoosje from "./components/Creativeslist/Fictionjoosje/Embeddedplayerjoosje/EmbeddedPlayerJoosje";
+import FictionJoosje from "./components/Directorslist/Fictionjoosje/FictionJoosje";
+import EmbeddedPlayerJoosje from "./components/Directorslist/Fictionjoosje/Embeddedplayerjoosje/EmbeddedPlayerJoosje";
 
-import FictionMariaBodil from "./components/Creativeslist/Fictionmariabodil/FictionMariaBodil";
-import EmbeddedPlayerMariaBodil from "./components/Creativeslist/Fictionmariabodil/Embeddedplayermariabodil/EmbeddedPlayerMariaBodil";
+import FictionMariaBodil from "./components/Directorslist/Fictionmariabodil/FictionMariaBodil";
+import EmbeddedPlayerMariaBodil from "./components/Directorslist/Fictionmariabodil/Embeddedplayermariabodil/EmbeddedPlayerMariaBodil";
 
-import FictionShay from "./components/Creativeslist/Fictionshay/FictionShay";
-import EmbeddedPlayerShay from "./components/Creativeslist/Fictionshay/Embeddedplayershay/EmbeddedPlayerShay";
+import FictionShay from "./components/Directorslist/Fictionshay/FictionShay";
+import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedplayershay/EmbeddedPlayerShay";
 
-import FictionSimon from "./components/Creativeslist/Fictionsimon/FictionSimon";
-import EmbeddedPlayerSimon from "./components/Creativeslist/Fictionsimon/Embeddedplayersimon/EmbeddedPlayerSimon";
+import FictionSimon from "./components/Directorslist/Fictionsimon/FictionSimon";
+import EmbeddedPlayerSimon from "./components/Directorslist/Fictionsimon/Embeddedplayersimon/EmbeddedPlayerSimon";
 
 import Awards from "./components/Awards/Awards";
 import Contact from "./components/Contact/Contact";
@@ -47,7 +46,7 @@ function App() {
         <Route path="/featured" element={<Featured />} />
         <Route path="/embeddedplayerfeatured" element={<EmbeddedPlayerFeatured />} />
 
-        <Route path="/creativeslist" element={<CreativesList />} />
+        <Route path="/directorslist" element={<DirectorsList />} />
 
         <Route path="/fictionachmed" element={<FictionAchmed />} />
         <Route path="/embeddedplayerachmed" element={<EmbeddedPlayerAchmed />} />
@@ -72,8 +71,6 @@ function App() {
 
         <Route path="/fictionsimon" element={<FictionSimon />} />
         <Route path="/embeddedplayersimon" element={<EmbeddedPlayerSimon />} />
-
-        <Route path="/slidercreatives" element={<SliderCreatives />} />
 
         <Route path="/awards" element={<Awards />} />
         <Route path="/contact" element={<Contact />} />

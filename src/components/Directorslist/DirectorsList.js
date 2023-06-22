@@ -1,9 +1,9 @@
-import "./creativeslist.scss";
+import "./directorslist.scss";
 import { NavLink } from 'react-router-dom';
 import HeaderTransparent from "../Headertransparent/HeaderTransparent";
 import Animatedpage from "../Animatedpage";
 
-export default function CreativesList() {
+export default function DirectorsList() {
     return (
         <Animatedpage>
             <section id="list-container">
