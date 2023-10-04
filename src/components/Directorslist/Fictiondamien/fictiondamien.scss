@@ -25,7 +25,7 @@
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     #grid-wrapper-fiction-damien a div {
-        font-size: 25px;
+        font-size: 21px;
     }
     #grid-wrapper-fiction-damien {
         grid-template-columns: repeat(1, 1fr);
@@ -98,7 +98,7 @@
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
     #grid-wrapper-fiction-damien a div {
-        font-size: 25px;
+        font-size: 19px;
     }
     #grid-wrapper-fiction-damien {
         grid-template-columns: repeat(6, 1fr);

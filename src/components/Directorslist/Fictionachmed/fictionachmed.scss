@@ -25,7 +25,7 @@
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     #grid-wrapper-fiction-achmed a div {
-        font-size: 25px;
+        font-size: 21px;
     }
     #grid-wrapper-fiction-achmed {
         grid-template-columns: repeat(1, 1fr);
@@ -101,7 +101,7 @@
         display: none;
     }
     #grid-wrapper-fiction-achmed a div {
-        font-size: 25px;
+        font-size: 19px;
     }
     #grid-wrapper-fiction-achmed {
         grid-template-columns: repeat(6, 1fr);
