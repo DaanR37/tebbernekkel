@@ -7,7 +7,7 @@ import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 
 export default function FictionJoosje() {
-    const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje"];
+    const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje", "six-joosje"];
 
     const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
     useEffect(() => {
