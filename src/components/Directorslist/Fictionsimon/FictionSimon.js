@@ -7,7 +7,7 @@ import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 
 export default function FictionSimon() {
-    const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon"];
+    const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon", "five-simon"];
 
     const [portfolioDataFictionSimon, setPortfolioDataFictionSimon] = useState([]);
     useEffect(() => {
