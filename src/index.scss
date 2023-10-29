@@ -106,9 +106,57 @@ a {
     }
   }
 }
+/// Header
+.header-container {
+  position: absolute;
+  width: 100vw;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 2000;
+}
+.header-left-side {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  a.commercial-btn.active {
+    color: #75d5fd;
+    transition: 350ms ease-in-out;
+  }
+  a.fiction-btn.active {
+    color: #75d5fd;
+    transition: 350ms ease-in-out;
+  }
+}
+.bbk-logo {
+  position: relative;
+}
+.header-right-side {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  a.about-btn.active {
+    color: #75d5fd;
+    transition: 350ms ease-in-out;
+  }
+  a.contact-btn.active {
+    color: #75d5fd;
+    transition: 350ms ease-in-out;
+  }
+}
 
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
+  .desktop-container {
+    display: none;
+  }
   .grid-wrapper a div {
     font-size: 21px;
   }
@@ -123,12 +171,75 @@ a {
     height: 30vh;
     bottom: 5rem;
   }
+  .mobile-container {
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 11.5%;
+  }
+  .mobile-container:after {
+    content: "";
+    position: absolute;
+    background: #060603;
+    border-bottom: 1px solid #f5a1a2ba;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+  }
+  #mobile-container {
+    background: linear-gradient(90deg, #060603, #060606);
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 0;
+    list-style-type: none;
+    a {
+      color: whitesmoke;
+      font-size: 13px;
+      text-decoration: none;
+      letter-spacing: 0.09em;
+    }
+    a.commercial-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+    a.fiction-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+    a.about-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+    a.contact-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+  }
+  .nav-buttons > li:nth-child(1) {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 87%;
+  }
+  .bbk-logo-mobile {
+    position: absolute;
+    width: 22vw;
+    margin-bottom: 0.5rem;
+    img {
+      width: 100%;
+    }
+  }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-  .dropdown-menu {
-    display: none;
-  }
   .grid-wrapper a div {
     font-size: 19px;
   }
@@ -145,12 +256,67 @@ a {
       transform: scale(1.1);
     }
   }
+  .desktop-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 16.5vh;
+  }
+  .desktop-container-colored {
+    background: linear-gradient(90deg, #060603, #060606);
+  }
+  .header-left-side {
+    display: flex;
+    justify-content: flex-end;
+    width: 45vw;
+    a {
+      font-size: 13.5px;
+      font-weight: 100;
+      letter-spacing: 0.1em;
+    }
+  }
+  .header-left-side > li:nth-child(1) {
+    position: relative;
+    right: 4rem;
+  }
+  .header-left-side > li:nth-child(2) {
+    position: relative;
+    right: 2rem;
+  }
+  .bbk-logo {
+    display: flex;
+    width: 10vw;
+    img {
+      width: 100%;
+    }
+  }
+  .header-right-side {
+    display: flex;
+    justify-content: flex-start;
+    width: 45vw;
+    a {
+      font-size: 13.5px;
+      font-weight: 100;
+      letter-spacing: 0.1em;
+    }
+  }
+  .header-right-side > li:nth-child(2) {
+    position: relative;
+    left: 4rem;
+  }
+  .header-right-side > li:nth-child(1) {
+    position: relative;
+    left: 2rem;
+  }
+  .bbk-logo-mobile {
+    display: none;
+  }
+  .mobile-container {
+    display: none;
+  }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-  .dropdown-menu {
-    display: none;
-  }
   .grid-wrapper a div {
     font-size: 25px;
   }
@@ -165,12 +331,74 @@ a {
     height: 35vh;
     bottom: 5rem;
   }
+  .desktop-container {
+    display: none;
+  }
+  .mobile-container {
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 11.5%;
+  }
+  .mobile-container:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #f5a1a2ba;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 0;
+    list-style-type: none;
+    a {
+      color: whitesmoke;
+      font-size: 21.5px;
+      text-decoration: none;
+      letter-spacing: 0.09em;
+    }
+    a.commercial-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+    a.fiction-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+    a.about-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+    a.contact-btn.active {
+      color: #75d5fd;
+      transition: 350ms ease-in-out;
+    }
+  }
+  .nav-buttons > li:nth-child(1) {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 87%;
+  }
+  .bbk-logo-mobile {
+    position: fixed;
+    width: 19vw;
+    margin-bottom: 0.5rem;
+    img {
+      width: 100%;
+    }
+  }
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-  .dropdown-menu {
-    display: none;
-  }
   .grid-wrapper a div {
     font-size: 25px;
   }
@@ -188,12 +416,72 @@ a {
       transform: scale(1.1);
     }
   }
+  .mobile-container {
+    display: none;
+  }
+  .bbk-logo-mobile {
+    display: none;
+  }
+  .desktop-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+  }
+  .desktop-container-colored {
+    background: linear-gradient(90deg, #060603, #060606);
+  }
+  .header-left-side {
+    display: flex;
+    justify-content: flex-end;
+    width: 45vw;
+    a {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 100;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+    }
+  }
+  .header-left-side > li:nth-child(1) {
+    position: relative;
+    right: 4rem;
+  }
+  .header-left-side > li:nth-child(2) {
+    position: relative;
+    right: 2rem;
+  }
+  .bbk-logo {
+    display: flex;
+    width: 10vw;
+    img {
+      width: 100%;
+    }
+  }
+  .header-right-side {
+    display: flex;
+    justify-content: flex-start;
+    width: 45vw;
+    transform: scale(1);
+    a {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 100;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+    }
+  }
+  .header-right-side > li:nth-child(2) {
+    position: relative;
+    left: 4rem;
+  }
+  .header-right-side > li:nth-child(1) {
+    position: relative;
+    left: 2rem;
+  }
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-  .dropdown-menu {
-    display: none;
-  }
   .grid-wrapper a div {
     font-size: 27.5px;
   }
@@ -239,12 +527,77 @@ a {
       transform: scale(1.2);
     }
   }
+  .mobile-container {
+    display: none;
+  }
+  .bbk-logo-mobile {
+    display: none;
+  }
+  .desktop-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    background: linear-gradient(90deg, #060603, #060606);
+  }
+  .header-left-side {
+    display: flex;
+    justify-content: flex-end;
+    width: 45vw;
+    a {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      &:hover {
+        color: #f5a1a3;
+        transition: 400ms ease-in-out;
+      }
+    }
+  }
+  .header-left-side > li:nth-child(1) {
+    position: relative;
+    right: 8rem;
+  }
+  .header-left-side > li:nth-child(2) {
+    position: relative;
+    right: 4rem;
+  }
+  .bbk-logo {
+    display: flex;
+    width: 10vw;
+    img {
+      width: 100%;
+    }
+  }
+  .header-right-side {
+    display: flex;
+    justify-content: flex-start;
+    width: 45vw;
+    a {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      &:hover {
+        color: #f5a1a3;
+        transition: 400ms ease-in-out;
+      }
+    }
+  }
+  .header-right-side > li:nth-child(2) {
+    position: relative;
+    left: 8rem;
+  }
+  .header-right-side > li:nth-child(1) {
+    position: relative;
+    left: 4rem;
+  }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-  .dropdown-menu {
-    display: none;
-  }
   .grid-wrapper a div {
     font-size: 27.5px;
   }
@@ -289,5 +642,74 @@ a {
     iframe {
       transform: scale(1.2);
     }
+  }
+  .mobile-container {
+    display: none;
+  }
+  .bbk-logo-mobile {
+    display: none;
+  }
+  .desktop-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #060603, #060606);
+  }
+  .header-left-side {
+    display: flex;
+    justify-content: flex-end;
+    width: 45vw;
+    a {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      &:hover {
+        color: #f5a1a3;
+        transition: 400ms ease-in-out;
+      }
+    }
+  }
+  .header-left-side > li:nth-child(1) {
+    position: relative;
+    right: 8rem;
+  }
+  .header-left-side > li:nth-child(2) {
+    position: relative;
+    right: 4rem;
+  }
+  .bbk-logo {
+    display: flex;
+    width: 10vw;
+    img {
+      width: 90%;
+    }
+  }
+  .header-right-side {
+    display: flex;
+    justify-content: flex-start;
+    width: 45vw;
+    a {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      &:hover {
+        color: #f5a1a3;
+        transition: 400ms ease-in-out;
+      }
+    }
+  }
+  .header-right-side > li:nth-child(2) {
+    position: relative;
+    left: 8rem;
+  }
+  .header-right-side > li:nth-child(1) {
+    position: relative;
+    left: 4rem;
   }
 }

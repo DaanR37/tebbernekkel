@@ -16,7 +16,7 @@ export default function EmbeddedPlayerDamien() {
   return (
     <Animatedpage>
       <section id="embedded-player-damien" className="embedded_player">
-        <div className="embedded-container-dekstop-damien">
+        <div>
           <a href="/fictiondamien">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

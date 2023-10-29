@@ -16,7 +16,7 @@ export default function EmbeddedPlayerMariaBodil() {
   return (
     <Animatedpage>
       <section id="embedded-player-mariabodil" className="embedded_player">
-        <div className="embedded-container-dekstop-mariabodil">
+        <div>
           <a href="/fictionmariabodil">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

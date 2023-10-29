@@ -16,7 +16,7 @@ export default function EmbeddedPlayerFormats() {
   return (
     <Animatedpage>
       <section id="embedded-player-formats" className="embedded_player">
-        <div className="embedded-container-desktop-formats">
+        <div>
           <a href="/formats">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

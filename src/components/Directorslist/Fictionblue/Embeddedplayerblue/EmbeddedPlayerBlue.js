@@ -16,7 +16,7 @@ export default function EmbeddedPlayerBlue() {
   return (
     <Animatedpage>
       <section id="embedded-player-blue" className="embedded_player">
-        <div className="embedded-container-dekstop-blue">
+        <div>
           <a href="/fictionblue">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

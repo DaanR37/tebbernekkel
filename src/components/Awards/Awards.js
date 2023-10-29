@@ -1,6 +1,6 @@
+import "./awards.scss";
 import Animatedpage from "../Animatedpage";
 import Header from "../Header/Header";
-import "./awards.scss";
 
 export default function Awards() {
   return (

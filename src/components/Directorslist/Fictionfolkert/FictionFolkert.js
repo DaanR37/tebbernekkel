@@ -5,16 +5,19 @@ import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
+import { useMediaQuery } from "@mui/material";
 
 export default function FictionFolkert() {
   const videoIndexFictionFolkert = ["seven-folkert", "three-folkert", "four-folkert", "five-folkert",
     "six-folkert", "two-folkert", "one-folkert", "eight-folkert", "nine-folkert", "ten-folkert",
     "eleven-folkert", "twelve-folkert", "thirteen-folkert", "fourteen-folkert"];
-
   const [portfolioDataFictionFolkert, setPortfolioDataFictionFolkert] = useState([]);
+
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+
   useEffect(() => {
     // fetch("http://localhost:3001/fictionfolkert")
-      fetch("https://api.tebbernekkel.nl/fictionfolkert")
+    fetch("https://api.tebbernekkel.nl/fictionfolkert")
       .then(response => response.json())
       .then(portfolioDataFictionFolkert => {
         setPortfolioDataFictionFolkert(portfolioDataFictionFolkert)
@@ -29,12 +32,11 @@ export default function FictionFolkert() {
         <>
           <HeaderTransparent />
         </>
-        <>
-          <SliderCreatives />
-        </>
-        <>
+        {isSmallScreen ? (
           <SliderMobile />
-        </>
+        ) : (
+          <SliderCreatives />
+        )}
         <div id="grid-wrapper-fiction-folkert" className='grid-wrapper'>
           {portfolioDataFictionFolkert.map((video, index) => {
             return (

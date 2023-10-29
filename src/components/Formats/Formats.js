@@ -5,12 +5,15 @@ import HeaderTransparent from '../Headertransparent/HeaderTransparent';
 import "./formats.scss";
 import SliderFeatured from '../Sliderfeatured/SliderFeatured';
 import SliderFeaturedMobile from '../Sliderfeaturedmobile/SliderFeaturedMobile';
+import { useMediaQuery } from "@mui/material";
 
 export default function Formats() {
   const videoIndexFormats = ["one-formats", "two-formats", "three-formats", "four-formats", "five-formats",
     "six-formats", "seven-formats", "eight-formats", "nine-formats", "ten-formats", "eleven-formats", "twelve-formats", "thirteen-formats",
     "fourteen-formats", "fifteen-formats", "sixteen-formats", "seventeen-formats", "eighteen-formats", "nineteen-formats", "twenty-formats"];
   const [portfolioDataFormats, setPortfolioDataFormats] = useState([]);
+
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
     // fetch("http://localhost:3001/formats")
@@ -31,12 +34,11 @@ export default function Formats() {
         <>
           <HeaderTransparent />
         </>
-        <>
-          <SliderFeatured />
-        </>
-        <>
+        {isSmallScreen ? (
           <SliderFeaturedMobile />
-        </>
+        ) : (
+          <SliderFeatured />
+        )}
         <div id="grid-wrapper-formats" className='grid-wrapper'>
           {portfolioDataFormats.map((video, index) => {
             return (

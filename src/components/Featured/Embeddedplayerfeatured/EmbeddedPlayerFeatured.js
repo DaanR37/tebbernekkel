@@ -16,7 +16,7 @@ export default function EmbeddedPlayerFeatured() {
   return (
     <Animatedpage>
       <section id="embedded-player" className="embedded_player">
-        <div className="embedded-container-desktop">
+        <div>
           <a href="/featured">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

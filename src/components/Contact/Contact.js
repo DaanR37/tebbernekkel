@@ -1,5 +1,5 @@
-import Header from "../Header/Header";
 import "./contact.scss";
+import Header from "../Header/Header";
 
 export default function Contact() {
 

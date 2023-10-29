@@ -16,7 +16,7 @@ export default function EmbeddedPlayerJoosje() {
   return (
     <Animatedpage>
       <section id="embedded-player-joosje" className="embedded_player">
-        <div className="embedded-container-dekstop-joosje">
+        <div>
           <a href="/fictionjoosje">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

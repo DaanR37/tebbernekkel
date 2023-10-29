@@ -5,62 +5,64 @@ import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
 import Animatedpage from "../../Animatedpage";
 import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
+import { useMediaQuery } from "@mui/material";
 
 export default function FictionJoosje() {
-    const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje", "six-joosje"];
+  const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje", "six-joosje"];
+  const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
 
-    const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
-    useEffect(() => {
-        // fetch("http://localhost:3001/fictionjoosje")
-        fetch("https://api.tebbernekkel.nl/fictionjoosje")
-            .then(response => response.json())
-            .then(portfolioDataFictionJoosje => {
-                setPortfolioDataFictionJoosje(portfolioDataFictionJoosje)
-            }).catch(error => {
-                console.log(error.message)
-            })
-    }, []);
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
-    return (
-        <Animatedpage>
-            <section>
-                <>
-                    <HeaderTransparent />
-                </>
-                <>
-                    <SliderCreatives />
-                </>
-                <>
-                    <SliderMobile />
-                </>
-                <div id="grid-wrapper-fiction-joosje" className='grid-wrapper'>
-                    {portfolioDataFictionJoosje.map((video, index) => {
-                        return (
-                            <div className={videoIndexFictionJoosje[index]} key={index}>
-                                <Link
-                                    to="/embeddedplayerjoosje"
-                                    state={{
-                                        link: `${video.uri}`,
-                                        title: `${video.name}`,
-                                        description: `${video.description}`,
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                                            height: "100%",
-                                            width: "100%"
-                                        }}>
-                                        <div className="hover-thumbnails">
-                                            <span aria-hidden="true">{video.name}</span>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        )
-                    })}
-                </div>
-            </section>
-        </Animatedpage>
-    );
+  useEffect(() => {
+    // fetch("http://localhost:3001/fictionjoosje")
+    fetch("https://api.tebbernekkel.nl/fictionjoosje")
+      .then(response => response.json())
+      .then(portfolioDataFictionJoosje => {
+        setPortfolioDataFictionJoosje(portfolioDataFictionJoosje)
+      }).catch(error => {
+        console.log(error.message)
+      })
+  }, []);
+
+  return (
+    <Animatedpage>
+      <section>
+        <>
+          <HeaderTransparent />
+        </>
+        {isSmallScreen ? (
+          <SliderMobile />
+        ) : (
+          <SliderCreatives />
+        )}
+        <div id="grid-wrapper-fiction-joosje" className='grid-wrapper'>
+          {portfolioDataFictionJoosje.map((video, index) => {
+            return (
+              <div className={videoIndexFictionJoosje[index]} key={index}>
+                <Link
+                  to="/embeddedplayerjoosje"
+                  state={{
+                    link: `${video.uri}`,
+                    title: `${video.name}`,
+                    description: `${video.description}`,
+                  }}
+                >
+                  <div
+                    style={{
+                      backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                      height: "100%",
+                      width: "100%"
+                    }}>
+                    <div className="hover-thumbnails">
+                      <span aria-hidden="true">{video.name}</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+    </Animatedpage>
+  );
 }

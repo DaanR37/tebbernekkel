@@ -16,7 +16,7 @@ export default function EmbeddedPlayerShay() {
   return (
     <Animatedpage>
       <section id="embedded-player-shay" className="embedded_player">
-        <div className="embedded-container-dekstop-shay">
+        <div>
           <a href="/fictionshay">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

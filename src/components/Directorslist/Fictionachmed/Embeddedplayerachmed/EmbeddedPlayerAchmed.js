@@ -16,7 +16,7 @@ export default function EmbeddedPlayerAchmed() {
   return (
     <Animatedpage>
       <section id="embedded-player-achmed" className="embedded_player">
-        <div className="embedded-container-desktop-achmed">
+        <div>
           <a href="/fictionachmed">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

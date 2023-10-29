@@ -16,7 +16,7 @@ export default function EmbeddedPlayerSimon() {
   return (
     <Animatedpage>
       <section id="embedded-player-simon" className="embedded_player">
-        <div className="embedded-container-dekstop-simon">
+        <div>
           <a href="/fictionsimon">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />

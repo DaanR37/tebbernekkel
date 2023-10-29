@@ -16,7 +16,7 @@ export default function EmbeddedPlayerFolkert() {
   return (
     <Animatedpage>
       <section id="embedded-player-folkert" className="embedded_player">
-        <div className="embedded-container-dekstop-folkert">
+        <div>
           <a href="/fictionfolkert">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />
