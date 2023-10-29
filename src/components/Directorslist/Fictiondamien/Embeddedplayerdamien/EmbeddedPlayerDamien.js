@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import Animatedpage from "../../../Animatedpage";
-import "./embeddedplayerdamien.scss";
 
 export default function EmbeddedPlayerDamien() {
   const location = useLocation();
@@ -16,14 +15,14 @@ export default function EmbeddedPlayerDamien() {
 
   return (
     <Animatedpage>
-      <section id="embedded-player-damien">
+      <section id="embedded-player-damien" className="embedded_player">
         <div className="embedded-container-dekstop-damien">
           <a href="/fictiondamien">
-            <div className="times-damien">
+            <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />
             </div>
           </a>
-          <div className="embedded-player-damien">
+          <div className="embedded-player">
             <iframe
               title={url}
               src={url}
@@ -31,29 +30,7 @@ export default function EmbeddedPlayerDamien() {
               frameBorder="0"
               allowFullScreen
             ></iframe>
-            <div className="player-text-damien">
-              <p>{title}</p>
-              <br></br>
-              <p>{description}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="embedded-container-mobile-damien">
-          <div className="embedded-player-damien">
-            <a href="/fictiondamien">
-              <div className="times-damien">
-                <img src="images/times-circle-outline-mobile.svg" alt="times" />
-              </div>
-            </a>
-            <iframe
-              title={url}
-              src={url}
-              responsive="true"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-            <div className="player-text-damien">
+            <div className="player-text">
               <p>{title}</p>
               <br></br>
               <p>{description}</p>

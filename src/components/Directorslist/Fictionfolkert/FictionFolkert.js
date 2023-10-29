@@ -25,7 +25,7 @@ export default function FictionFolkert() {
 
   return (
     <Animatedpage>
-      <section id="fiction-container-folkert">
+      <section>
         <>
           <HeaderTransparent />
         </>
@@ -35,7 +35,7 @@ export default function FictionFolkert() {
         <>
           <SliderMobile />
         </>
-        <div id="grid-wrapper-fiction-folkert">
+        <div id="grid-wrapper-fiction-folkert" className='grid-wrapper'>
           {portfolioDataFictionFolkert.map((video, index) => {
             return (
               <div className={videoIndexFictionFolkert[index]} key={index}>
@@ -53,7 +53,7 @@ export default function FictionFolkert() {
                       height: "100%",
                       width: "100%"
                     }}>
-                    <div id="ho-folkert">
+                    <div className="hover-thumbnails">
                       <span aria-hidden="true">{video.name}</span>
                     </div>
                   </div>

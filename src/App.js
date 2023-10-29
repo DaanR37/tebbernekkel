@@ -1,12 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-///import Components
+/// Homepage
 import HomePage from "./components/Homepage/HomePage";
 
-///Commercials
+/// Featured & Formats
 import Featured from "./components/Featured/Featured";
 import EmbeddedPlayerFeatured from "./components/Featured/Embeddedplayerfeatured/EmbeddedPlayerFeatured";
+import Formats from "./components/Formats/Formats";
+import EmbeddedPlayerFormats from "./components/Formats/Embeddedplayerformats/EmbeddedPlayerFormats";
 
+/// Directorslist
 import DirectorsList from "./components/Directorslist/DirectorsList";
 
 import FictionAchmed from "./components/Directorslist/Fictionachmed/FictionAchmed";
@@ -33,6 +36,7 @@ import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedp
 import FictionSimon from "./components/Directorslist/Fictionsimon/FictionSimon";
 import EmbeddedPlayerSimon from "./components/Directorslist/Fictionsimon/Embeddedplayersimon/EmbeddedPlayerSimon";
 
+/// Awards & Contact
 import Awards from "./components/Awards/Awards";
 import Contact from "./components/Contact/Contact";
 
@@ -45,6 +49,9 @@ function App() {
 
         <Route path="/featured" element={<Featured />} />
         <Route path="/embeddedplayerfeatured" element={<EmbeddedPlayerFeatured />} />
+
+        <Route path="/formats" element={<Formats />} />
+        <Route path="/embeddedplayerformats" element={<EmbeddedPlayerFormats />} />
 
         <Route path="/directorslist" element={<DirectorsList />} />
 

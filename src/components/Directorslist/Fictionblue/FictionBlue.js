@@ -23,7 +23,7 @@ export default function FictionBlue() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-blue">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -33,7 +33,7 @@ export default function FictionBlue() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-blue">
+                <div id="grid-wrapper-fiction-blue" className='grid-wrapper'>
                     {portfolioDataFictionBlue.map((video, index) => {
                         return (
                             <div className={videoIndexFictionBlue[index]} key={index}>
@@ -51,7 +51,7 @@ export default function FictionBlue() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-blue">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

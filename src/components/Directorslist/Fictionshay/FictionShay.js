@@ -24,7 +24,7 @@ export default function FictionShay() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-shay">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -34,7 +34,7 @@ export default function FictionShay() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-shay">
+                <div id="grid-wrapper-fiction-shay" className='grid-wrapper'>
                     {portfolioDataFictionShay.map((video, index) => {
                         return (
                             <div className={videoIndexFictionShay[index]} key={index}>
@@ -52,7 +52,7 @@ export default function FictionShay() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-shay">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

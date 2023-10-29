@@ -2,21 +2,22 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Animatedpage from '../Animatedpage';
 import HeaderTransparent from '../Headertransparent/HeaderTransparent';
-import "./featured.scss";
+import "./formats.scss";
 import SliderFeatured from '../Sliderfeatured/SliderFeatured';
 import SliderFeaturedMobile from '../Sliderfeaturedmobile/SliderFeaturedMobile';
 
-export default function Featured() {
-  const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven",
-    "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen"];
-  const [portfolioData, setPortfolioData] = useState([]);
+export default function Formats() {
+  const videoIndexFormats = ["one-formats", "two-formats", "three-formats", "four-formats", "five-formats",
+    "six-formats", "seven-formats", "eight-formats", "nine-formats", "ten-formats", "eleven-formats", "twelve-formats", "thirteen-formats",
+    "fourteen-formats", "fifteen-formats", "sixteen-formats", "seventeen-formats", "eighteen-formats", "nineteen-formats", "twenty-formats"];
+  const [portfolioDataFormats, setPortfolioDataFormats] = useState([]);
 
   useEffect(() => {
-    // fetch("http://localhost:3001/featured")
-    fetch("https://api.tebbernekkel.nl/featured")
+    // fetch("http://localhost:3001/formats")
+    fetch("https://api.tebbernekkel.nl/formats")
       .then(response => response.json())
-      .then(portfolioData => {
-        setPortfolioData(portfolioData)
+      .then(portfolioDataFormats => {
+        setPortfolioDataFormats(portfolioDataFormats)
       }
       ).catch(error => {
         console.log(error.message)
@@ -36,12 +37,12 @@ export default function Featured() {
         <>
           <SliderFeaturedMobile />
         </>
-        <div id="grid-wrapper-featured" className='grid-wrapper'>
-          {portfolioData.map((video, index) => {
+        <div id="grid-wrapper-formats" className='grid-wrapper'>
+          {portfolioDataFormats.map((video, index) => {
             return (
-              <div className={videoIndex[index]} key={index}>
+              <div className={videoIndexFormats[index]} key={index}>
                 <Link
-                  to="/embeddedplayerfeatured"
+                  to="/embeddedplayerformats"
                   state={{
                     link: `${video.uri}`,
                     title: `${video.name}`,
@@ -65,5 +66,5 @@ export default function Featured() {
         </div>
       </section>
     </Animatedpage>
-  );
+  )
 }

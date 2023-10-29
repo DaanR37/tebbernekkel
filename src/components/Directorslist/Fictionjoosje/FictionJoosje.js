@@ -23,7 +23,7 @@ export default function FictionJoosje() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-joosje">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -33,7 +33,7 @@ export default function FictionJoosje() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-joosje">
+                <div id="grid-wrapper-fiction-joosje" className='grid-wrapper'>
                     {portfolioDataFictionJoosje.map((video, index) => {
                         return (
                             <div className={videoIndexFictionJoosje[index]} key={index}>
@@ -51,7 +51,7 @@ export default function FictionJoosje() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-joosje">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

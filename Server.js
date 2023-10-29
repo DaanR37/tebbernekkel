@@ -28,11 +28,24 @@ app.get("/homepage", (req, res) => {
     });
 });
 
-///FEATURED (COMMERCIALS) ENDPOINTS
+///FEATURED (BBKK) ENDPOINT
 app.get("/featured", (req, res) => {
     client.request({
         method: 'GET',
         path: '/me/projects/7511929/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+
+///FORMATS ENDPOINT
+app.get("/formats", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/18185220/videos?fields=name,uri,description,pictures.sizes.link',
     }, function (error, body, status_code, headers) {
         if (error) {
             console.log(error)

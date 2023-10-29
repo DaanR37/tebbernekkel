@@ -27,3 +27,267 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-family: "Roboto Condensed", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+/// Grid CSS Featured & Directors
+.grid-wrapper {
+  display: grid;
+  margin: 0 auto;
+  gap: 5px;
+}
+.grid-wrapper a div {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+.grid-wrapper > div > a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/// Awards & Contact
+.awards-container,
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+}
+.topsection-container {
+  position: relative;
+  width: 100vw;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.awards-container .awards,
+.contact-container .cards {
+  width: 100%;
+  h1 {
+    color: whitesmoke;
+  }
+  h3 {
+    color: whitesmoke;
+    font-weight: 100;
+  }
+}
+/// EmbeddedPlayer
+.embedded_player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; ///was 100%
+  width: 100vw; ///was 100%
+  background-color: #001f32;
+  .times {
+    position: absolute;
+    z-index: 999;
+    img {
+      width: 100%;
+      filter: invert(1);
+    }
+  }
+  .embedded-player {
+    position: relative;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .player-text {
+      display: none;
+    }
+  }
+}
+
+///Mobile Portrait
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .grid-wrapper a div {
+    font-size: 21px;
+  }
+  .times {
+    width: 5vw;
+    top: 15%;
+    right: 0.9rem;
+    opacity: 1;
+  }
+  .embedded-player {
+    width: 85vw;
+    height: 30vh;
+    bottom: 5rem;
+  }
+}
+///Mobile Landscape
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+  .dropdown-menu {
+    display: none;
+  }
+  .grid-wrapper a div {
+    font-size: 19px;
+  }
+  .times {
+    width: 2vw;
+    top: 5%;
+    right: 4%;
+    opacity: 1;
+  }
+  .embedded-player {
+    width: 50vw;
+    height: 55vh;
+    iframe {
+      transform: scale(1.1);
+    }
+  }
+}
+///Tablet Portrait
+@media screen and (min-width: 600px) and (orientation: portrait) {
+  .dropdown-menu {
+    display: none;
+  }
+  .grid-wrapper a div {
+    font-size: 25px;
+  }
+  .times {
+    width: 4vw;
+    top: 7%;
+    right: 1.4rem;
+    opacity: 1;
+  }
+  .embedded-player {
+    width: 85vw;
+    height: 35vh;
+    bottom: 5rem;
+  }
+}
+///Tablet Landscape
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
+  .dropdown-menu {
+    display: none;
+  }
+  .grid-wrapper a div {
+    font-size: 25px;
+  }
+  ///Times
+  .times {
+    width: 2vw;
+    top: 5%;
+    right: 4%;
+    opacity: 1;
+  }
+  .embedded-player {
+    width: 65vw;
+    height: 55vh;
+    iframe {
+      transform: scale(1.1);
+    }
+  }
+}
+///Desktop
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+  .dropdown-menu {
+    display: none;
+  }
+  .grid-wrapper a div {
+    font-size: 27.5px;
+  }
+  ///HOVER EFFECT GRID AREA'S
+  .hover-thumbnails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.25s;
+    &:hover {
+      opacity: 1;
+      backdrop-filter: blur(5px);
+      transition: ease-in-out 350ms;
+    }
+  }
+  .hover-thumbnails > * {
+    transform: translateY(30px);
+    transition: transform 0.5s;
+  }
+  .hover-thumbnails:hover > * {
+    transform: translateY(0);
+  }
+  ///Times
+  .times {
+    width: 1.5vw;
+    top: 5%;
+    right: 4%;
+    opacity: 0.8;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+      transform: rotate(180deg);
+      transition: 300ms linear;
+    }
+  }
+  .embedded-player {
+    width: 55vw;
+    height: 60vh;
+    margin-top: 4%;
+    iframe {
+      transform: scale(1.2);
+    }
+  }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
+  .dropdown-menu {
+    display: none;
+  }
+  .grid-wrapper a div {
+    font-size: 27.5px;
+  }
+  //HOVER EFFECT GRID AREA'S
+  .hover-thumbnails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.25s;
+    &:hover {
+      opacity: 1;
+      backdrop-filter: blur(5px);
+      transition: ease-in-out 350ms;
+    }
+  }
+  .hover-thumbnails > * {
+    transform: translateY(30px);
+    transition: transform 0.5s;
+  }
+  .hover-thumbnails:hover > * {
+    transform: translateY(0);
+  }
+  ///Times
+  .times {
+    width: 1.5vw;
+    top: 5%;
+    right: 4%;
+    opacity: 0.8;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+      transform: rotate(180deg);
+      transition: 300ms linear;
+    }
+  }
+  .embedded-player {
+    width: 55vw;
+    height: 60vh;
+    margin-top: 4%;
+    iframe {
+      transform: scale(1.2);
+    }
+  }
+}

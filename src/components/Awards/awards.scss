@@ -1,162 +1,146 @@
-.topsection-awards-container {
-    position: relative;
-    width: 100vw;
-    text-transform: uppercase;
-    font-family: "Roboto Condensed", sans-serif;
-}
-.awards-container {
-    width: 100%;
-    min-height: 100vh;
-}
 .awards-container .awards {
-    width: 100%;
-    h1 {
-        color: whitesmoke;
-    }
-    h3 {
-        color: whitesmoke;
-        font-weight: 100;
-        opacity: 0.9;
-    }
-    i {
-        font-size: 10px;
-        color: #f5a1a3;
-    }
+  h3 {
+    opacity: 0.9;
+  }
+  i {
+    font-size: 10px;
+    color: #f5a1a3;
+  }
 }
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    .awards-container {
-        max-width: 30em;
-        padding: 14vh 5.5em;
+  .awards-container {
+    max-width: 30em;
+    padding: 14vh 5.5em;
+  }
+  .awards-container .awards {
+    max-width: 200px;
+    margin: 35px auto;
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 14px;
+      margin-bottom: 5px;
     }
-    .awards-container .awards {
-        max-width: 200px;
-        margin: 35px auto;
-        h1 {
-            letter-spacing: 0.05rem;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.03rem;
-            line-height: 12px;
-            font-size: 12.5px;
-        }
+    h3 {
+      letter-spacing: 0.03rem;
+      line-height: 12px;
+      font-size: 12.5px;
     }
+  }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    .awards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 22vh 8vw;
+  .awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 22vh 8vw;
+  }
+  .awards-container .awards {
+    max-width: 200px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 14px;
+      margin-bottom: 5px;
     }
-    .awards-container .awards {
-        max-width: 200px;
-        margin: 10px 0px 10px 0px;
-        padding: 0px 10px 0px 10px;
-        h1 {
-            letter-spacing: 0.05rem;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        h3 {
-            letter-spacing: 0.03rem;
-            line-height: 12px;
-            font-size: 12.5px;
-        }
+    h3 {
+      letter-spacing: 0.03rem;
+      line-height: 12px;
+      font-size: 12.5px;
     }
+  }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-    .awards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20vh 1em 0vh 1em;
+  .awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20vh 1em 0vh 1em;
+  }
+  .awards-container .awards {
+    max-width: 250px;
+    padding: 0px 10px 0px 10px;
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
-    .awards-container .awards {
-        max-width: 250px;
-        padding: 0px 10px 0px 10px;
-        h1 {
-            letter-spacing: 0.05rem;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        h3 {
-            letter-spacing: 0.05rem;
-            line-height: 1rem;
-            font-size: 18px;
-        }
+    h3 {
+      letter-spacing: 0.05rem;
+      line-height: 1rem;
+      font-size: 18px;
     }
+  }
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-    .awards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 15vh 10em 15vh 10em;
+  .awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15vh 10em 15vh 10em;
+  }
+  .awards-container .awards {
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 0px 10px 0px 10px;
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
-    .awards-container .awards {
-        max-width: 250px;
-        margin: 15px auto;
-        padding: 0px 10px 0px 10px;
-        h1 {
-            letter-spacing: 0.05rem;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        h3 {
-            letter-spacing: 0.05rem;
-            line-height: 1.1rem;
-            font-size: 18px;
-        }
+    h3 {
+      letter-spacing: 0.05rem;
+      line-height: 1.1rem;
+      font-size: 18px;
     }
+  }
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-    .awards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 11% 0% 10% 10%;
+  .awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 11% 0% 10% 10%;
+  }
+  .awards-container .awards {
+    max-width: 300px;
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
-    .awards-container .awards {
-        max-width: 300px;
-        h1 {
-            letter-spacing: 0.05rem;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        h3 {
-            letter-spacing: 0.05rem;
-            line-height: 0.89rem;
-            font-size: 18px;
-            margin-bottom: 0;
-        }
+    h3 {
+      letter-spacing: 0.05rem;
+      line-height: 0.89rem;
+      font-size: 18px;
+      margin-bottom: 0;
     }
+  }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-    .awards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 11% 0% 10% 6%;
+  .awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 11% 0% 10% 6%;
+  }
+  .awards-container .awards {
+    max-width: 300px;
+    h1 {
+      letter-spacing: 0.05rem;
+      font-size: 21px;
+      margin-bottom: 10px;
     }
-    .awards-container .awards {
-        max-width: 300px;
-        h1 {
-            letter-spacing: 0.05rem;
-            font-size: 21px;
-            margin-bottom: 10px;
-        }
-        h3 {
-            letter-spacing: 0.05rem;
-            line-height: 0.89rem;
-            font-size: 19px;
-        }
+    h3 {
+      letter-spacing: 0.05rem;
+      line-height: 0.89rem;
+      font-size: 19px;
     }
+  }
 }

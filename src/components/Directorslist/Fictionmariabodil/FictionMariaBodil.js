@@ -26,7 +26,7 @@ export default function FictionMariaBodil() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-mariabodil">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -36,7 +36,7 @@ export default function FictionMariaBodil() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-mariabodil">
+                <div id="grid-wrapper-fiction-mariabodil" className='grid-wrapper'>
                     {portfolioDataFictionMariaBodil.map((video, index) => {
                         return (
                             <div className={videoIndexFictionMariaBodil[index]} key={index}>
@@ -54,7 +54,7 @@ export default function FictionMariaBodil() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-mariabodil">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

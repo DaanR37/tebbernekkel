@@ -23,7 +23,7 @@ export default function FictionDamien() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-damien">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -33,7 +33,7 @@ export default function FictionDamien() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-damien">
+                <div id="grid-wrapper-fiction-damien" className='grid-wrapper'>
                     {portfolioDataFictionDamien.map((video, index) => {
                         return (
                             <div className={videoIndexFictionDamien[index]} key={index}>
@@ -51,7 +51,7 @@ export default function FictionDamien() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-damien">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

@@ -7,9 +7,9 @@ export default function DirectorsList() {
     return (
         <Animatedpage>
             <section id="list-container">
-                <div className="header-transparent-creativeslist">
+                {/* <div className="header-transparent-creativeslist"> */}
                     <HeaderTransparent />
-                </div>
+                {/* </div> */}
                 <div className="creatives-card">
                     <ul className="names-list">
                         <li>

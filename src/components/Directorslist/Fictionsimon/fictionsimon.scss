@@ -1,32 +1,5 @@
-///APPLIES TO ALL CARDS
-#grid-wrapper-fiction-simon {
-  display: grid;
-  margin: 0 auto;
-  gap: 5px;
-}
-#grid-wrapper-fiction-simon a div {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  color: whitesmoke;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-}
-#grid-wrapper-fiction-simon > div > a {
-  text-decoration: none;
-  text-align: center;
-}
-#grid-wrapper-fiction-simon > div > a div {
-  background-repeat: no-repeat;
-}
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-  #grid-wrapper-fiction-simon a div {
-    font-size: 21px;
-  }
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 90vh);
@@ -79,9 +52,6 @@
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-  #grid-wrapper-fiction-simon a div {
-    font-size: 19px;
-  }
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 200px);
@@ -136,9 +106,6 @@
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-  #grid-wrapper-fiction-simon a div {
-    font-size: 25px;
-  }
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 200px);
@@ -193,9 +160,6 @@
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-  #grid-wrapper-fiction-simon a div {
-    font-size: 25px;
-  }
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 200px);
@@ -250,9 +214,6 @@
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-  #grid-wrapper-fiction-simon a div {
-    font-size: 27.5px;
-  }
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 200px);
@@ -304,33 +265,9 @@
     background-size: auto 115%;
     background-position: center;
   }
-  //HOVER EFFECT GRID AREA'S
-  #ho-simon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.4);
-    transition: opacity 0.25s;
-    &:hover {
-      opacity: 1;
-      backdrop-filter: blur(5px);
-      transition: ease-in-out 350ms;
-    }
-  }
-  #ho-simon > * {
-    transform: translateY(30px);
-    transition: transform 0.5s;
-  }
-  #ho-simon:hover > * {
-    transform: translateY(0);
-  }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-  #grid-wrapper-fiction-simon a div {
-    font-size: 27.5px;
-  }
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 200px);
@@ -381,26 +318,5 @@
   #grid-wrapper-fiction-simon > div.five-simon > a div {
     background-size: auto 115%;
     background-position: center;
-  }
-  //HOVER EFFECT GRID AREA'S
-  #ho-simon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.4);
-    transition: opacity 0.25s;
-    &:hover {
-      opacity: 1;
-      backdrop-filter: blur(5px);
-      transition: ease-in-out 350ms;
-    }
-  }
-  #ho-simon > * {
-    transform: translateY(30px);
-    transition: transform 0.5s;
-  }
-  #ho-simon:hover > * {
-    transform: translateY(0);
   }
 }

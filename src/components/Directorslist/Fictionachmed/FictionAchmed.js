@@ -24,7 +24,7 @@ export default function FictionAchmed() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-achmed">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -34,7 +34,7 @@ export default function FictionAchmed() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-achmed">
+                <div id="grid-wrapper-fiction-achmed" className='grid-wrapper'>
                     {portfolioDataFictionAchmed.map((video, index) => {
                         return (
                             <div className={videoIndexFictionAchmed[index]} key={index}>
@@ -52,7 +52,7 @@ export default function FictionAchmed() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-achmed">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

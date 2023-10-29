@@ -23,7 +23,7 @@ export default function FictionSimon() {
 
     return (
         <Animatedpage>
-            <section id="fiction-container-simon">
+            <section>
                 <>
                     <HeaderTransparent />
                 </>
@@ -33,7 +33,7 @@ export default function FictionSimon() {
                 <>
                     <SliderMobile />
                 </>
-                <div id="grid-wrapper-fiction-simon">
+                <div id="grid-wrapper-fiction-simon" className='grid-wrapper'>
                     {portfolioDataFictionSimon.map((video, index) => {
                         return (
                             <div className={videoIndexFictionSimon[index]} key={index}>
@@ -51,7 +51,7 @@ export default function FictionSimon() {
                                             height: "100%",
                                             width: "100%"
                                         }}>
-                                        <div id="ho-simon">
+                                        <div className="hover-thumbnails">
                                             <span aria-hidden="true">{video.name}</span>
                                         </div>
                                     </div>

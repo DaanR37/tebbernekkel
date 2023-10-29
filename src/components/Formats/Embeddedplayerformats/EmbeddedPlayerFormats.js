@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
-import Animatedpage from "../../../Animatedpage";
+import Animatedpage from "../../Animatedpage";
 
-export default function EmbeddedPlayerFolkert() {
+export default function EmbeddedPlayerFormats() {
   const location = useLocation();
   console.log(location.state);
 
@@ -15,9 +15,9 @@ export default function EmbeddedPlayerFolkert() {
 
   return (
     <Animatedpage>
-      <section id="embedded-player-folkert" className="embedded_player">
-        <div className="embedded-container-dekstop-folkert">
-          <a href="/fictionfolkert">
+      <section id="embedded-player-formats" className="embedded_player">
+        <div className="embedded-container-desktop-formats">
+          <a href="/formats">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />
             </div>
@@ -39,5 +39,5 @@ export default function EmbeddedPlayerFolkert() {
         </div>
       </section>
     </Animatedpage>
-  );
+  )
 }

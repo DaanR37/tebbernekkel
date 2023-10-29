@@ -1,0 +1,148 @@
+///APPLIES TO ALL CARDS
+#slider-container-featured {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.names-list-slider-featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  p {
+    color: whitesmoke;
+  }
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  h1 {
+    font-weight: 100;
+    margin: 0;
+  }
+}
+a.bbkk-btn-slider.active,
+a.formats-btn-slider.active {
+  color: #f5a1a3;
+  opacity: 1;
+  transition: 350ms ease-in-out;
+}
+///Mobile Portrait
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  #slider-container-featured {
+    display: none;
+  }
+}
+///Mobile Landscape
+@media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
+  .names-list-slider-featured {
+    position: fixed;
+    width: 100%;
+    margin-top: 50px;
+    z-index: 1;
+    li {
+      margin: 0px 7.5px;
+    }
+    h1 {
+      font-size: 13.5px;
+    }
+  }
+}
+///Tablet Portrait
+@media screen and (min-width: 600px) and (orientation: portrait) {
+  #slider-container-featured {
+    width: 100vw;
+    height: 100vh;
+  }
+  .names-list-slider-featured {
+    position: sticky;
+    top: 130px;
+    width: 100%;
+    margin: 150px auto;
+    li {
+      margin: 0px 12.5px;
+    }
+    h1 {
+      font-size: 18.5px;
+    }
+  }
+}
+///Tablet Landscape
+@media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
+  #slider-container-featured {
+    width: 100vw;
+    height: 100vh;
+  }
+  .names-list-slider-featured {
+    position: sticky;
+    top: 80px;
+    width: 100%;
+    margin: 130px auto;
+    li {
+      margin: 0px 12px;
+    }
+    h1 {
+      font-size: 18.5px;
+    }
+  }
+}
+///Desktop
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+  #slider-container-featured {
+    width: 100vw;
+    height: 100vh;
+  }
+  .names-list-slider-featured {
+    position: sticky;
+    top: 90px;
+    width: 100%;
+    margin: 125px auto;
+    cursor: pointer;
+    li {
+      margin: 0px 12.5px;
+    }
+    a:hover {
+      color: #75d5fd;
+      transition: 250ms ease-in-out;
+    }
+    h1 {
+      font-size: 19px;
+      letter-spacing: 0.05rem;
+      &:hover {
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+      }
+    }
+  }
+}
+///Desktop Big
+@media screen and (min-width: 1961px) and (max-width: 2400px) {
+  #slider-container-featured {
+    width: 100vw;
+    height: 100vh;
+  }
+  .names-list-slider-featured {
+    position: sticky;
+    top: 90px;
+    width: 100%;
+    margin: 125px auto;
+    cursor: pointer;
+    li {
+      margin: 0px 12.5px;
+    }
+    a:hover {
+      transform: scale(1.1);
+      color: #75d5fd;
+      transition: 250ms ease-in-out;
+    }
+    h1 {
+      font-size: 20px;
+      letter-spacing: 0.05rem;
+      &:hover {
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+      }
+    }
+  }
+}

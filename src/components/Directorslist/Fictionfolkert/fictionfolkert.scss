@@ -1,32 +1,5 @@
-///APPLIES TO ALL CARDS
-#grid-wrapper-fiction-folkert {
-  display: grid;
-  margin: 0 auto;
-  gap: 5px;
-}
-#grid-wrapper-fiction-folkert a div {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  color: whitesmoke;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-}
-#grid-wrapper-fiction-folkert > div > a {
-  text-decoration: none;
-  text-align: center;
-}
-#grid-wrapper-fiction-folkert > div > a div {
-  background-repeat: no-repeat;
-}
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-  #grid-wrapper-fiction-folkert a div {
-    font-size: 21px;
-  }
   #grid-wrapper-fiction-folkert {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(14, 90vh);
@@ -160,9 +133,6 @@
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-  #grid-wrapper-fiction-folkert a div {
-    font-size: 19px;
-  }
   #grid-wrapper-fiction-folkert {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 200px);
@@ -301,9 +271,6 @@
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-  #grid-wrapper-fiction-folkert a div {
-    font-size: 25px;
-  }
   #grid-wrapper-fiction-folkert {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(11, 200px);
@@ -442,9 +409,6 @@
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-  #grid-wrapper-fiction-folkert a div {
-    font-size: 25px;
-  }
   #grid-wrapper-fiction-folkert {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(11, 200px);
@@ -583,14 +547,10 @@
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-  #grid-wrapper-fiction-folkert a div {
-    font-size: 27.5px;
-  }
   #grid-wrapper-fiction-folkert {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(16, 200px);
   }
-
   /// 3 SMALL
   .seven-folkert {
     grid-column: 1/3;
@@ -721,34 +681,10 @@
   #grid-wrapper-fiction-folkert > div.one-folkert > a div {
     background-size: cover;
     background-position: center;
-  }
-  //HOVER EFFECT GRID AREA'S
-  #ho-folkert {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.4);
-    transition: opacity 0.25s;
-    &:hover {
-      opacity: 1;
-      backdrop-filter: blur(5px);
-      transition: ease-in-out 350ms;
-    }
-  }
-  #ho-folkert > * {
-    transform: translateY(30px);
-    transition: transform 0.5s;
-  }
-  #ho-folkert:hover > * {
-    transform: translateY(0);
   }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-  #grid-wrapper-fiction-folkert a div {
-    font-size: 27.5px;
-  }
   #grid-wrapper-fiction-folkert {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(16, 200px);
@@ -884,26 +820,5 @@
   #grid-wrapper-fiction-folkert > div.one-folkert > a div {
     background-size: cover;
     background-position: center;
-  }
-  //HOVER EFFECT GRID AREA'S
-  #ho-folkert {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.4);
-    transition: opacity 0.25s;
-    &:hover {
-      opacity: 1;
-      backdrop-filter: blur(5px);
-      transition: ease-in-out 350ms;
-    }
-  }
-  #ho-folkert > * {
-    transform: translateY(30px);
-    transition: transform 0.5s;
-  }
-  #ho-folkert:hover > * {
-    transform: translateY(0);
   }
 }
