@@ -30,7 +30,7 @@ export default function Formats() {
 
   return (
     <Animatedpage>
-      <section>
+      <section className='wrapper'>
         <>
           <HeaderTransparent />
         </>
@@ -39,7 +39,10 @@ export default function Formats() {
         ) : (
           <SliderFeatured />
         )}
-        <div id="grid-wrapper-formats" className='grid-wrapper'>
+        <h1 className='anouncement'>
+          Coming Soon, very soon!
+        </h1>
+        {/* <div id="grid-wrapper-formats" className='grid-wrapper'>
           {portfolioDataFormats.map((video, index) => {
             return (
               <div className={videoIndexFormats[index]} key={index}>
@@ -65,7 +68,7 @@ export default function Formats() {
               </div>
             )
           })}
-        </div>
+        </div> */}
       </section>
     </Animatedpage>
   )
