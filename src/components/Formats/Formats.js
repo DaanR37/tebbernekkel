@@ -1,16 +1,15 @@
+import "./formats.scss";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Animatedpage from '../Animatedpage';
 import HeaderTransparent from '../Headertransparent/HeaderTransparent';
-import "./formats.scss";
 import SliderFeatured from '../Sliderfeatured/SliderFeatured';
 import SliderFeaturedMobile from '../Sliderfeaturedmobile/SliderFeaturedMobile';
 import { useMediaQuery } from "@mui/material";
 
 export default function Formats() {
   const videoIndexFormats = ["one-formats", "two-formats", "three-formats", "four-formats", "five-formats",
-    "six-formats", "seven-formats", "eight-formats", "nine-formats", "ten-formats", "eleven-formats", "twelve-formats", "thirteen-formats",
-    "fourteen-formats", "fifteen-formats", "sixteen-formats", "seventeen-formats", "eighteen-formats", "nineteen-formats", "twenty-formats"];
+    "six-formats", "seven-formats", "eight-formats", "nine-formats", "ten-formats", "eleven-formats"];
   const [portfolioDataFormats, setPortfolioDataFormats] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
@@ -39,10 +38,7 @@ export default function Formats() {
         ) : (
           <SliderFeatured />
         )}
-        <h1 className='anouncement'>
-          Coming Soon, very soon!
-        </h1>
-        {/* <div id="grid-wrapper-formats" className='grid-wrapper'>
+        <div id="grid-wrapper-formats" className='grid-wrapper'>
           {portfolioDataFormats.map((video, index) => {
             return (
               <div className={videoIndexFormats[index]} key={index}>
@@ -68,7 +64,7 @@ export default function Formats() {
               </div>
             )
           })}
-        </div> */}
+        </div>
       </section>
     </Animatedpage>
   )
