@@ -27,7 +27,6 @@ app.get("/homepage", (req, res) => {
         res.send(body.data)
     });
 });
-
 ///FEATURED (BBKK) ENDPOINT
 app.get("/featured", (req, res) => {
     client.request({
@@ -40,7 +39,6 @@ app.get("/featured", (req, res) => {
         res.send(body.data)
     });
 });
-
 ///FORMATS ENDPOINT
 app.get("/formats", (req, res) => {
     client.request({
@@ -53,7 +51,6 @@ app.get("/formats", (req, res) => {
         res.send(body.data)
     });
 });
-
 ///ACHMED ENDPOINT
 app.get("/fictionachmed", (req, res) => {
     client.request({
