@@ -11,7 +11,6 @@ export default function Featured() {
   const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven",
     "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
   const [portfolioData, setPortfolioData] = useState([]);
-
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
