@@ -23,6 +23,7 @@ export default function FictionAchmed() {
         console.log(error.message)
       })
   }, []);
+  
 
   return (
     <Animatedpage>
