@@ -14,7 +14,7 @@ export default function Featured() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/featured`)
+    fetch("https://api.tebbernekkel.nl/featured")
       .then(response => response.json())
       .then(portfolioData => {
         setPortfolioData(portfolioData)

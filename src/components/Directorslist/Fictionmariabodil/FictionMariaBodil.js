@@ -15,7 +15,7 @@ export default function FictionMariaBodil() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/fictionmariabodil`)
+    fetch("https://api.tebbernekkel.nl/fictionmariabodil")
       .then(response => response.json())
       .then(portfolioDataFictionMariaBodil => {
         setPortfolioDataFictionMariaBodil(portfolioDataFictionMariaBodil)

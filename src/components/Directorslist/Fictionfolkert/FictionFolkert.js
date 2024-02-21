@@ -16,7 +16,7 @@ export default function FictionFolkert() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/fictionfolkert`)
+    fetch("https://api.tebbernekkel.nl/fictionfolkert")
       .then(response => response.json())
       .then(portfolioDataFictionFolkert => {
         setPortfolioDataFictionFolkert(portfolioDataFictionFolkert)

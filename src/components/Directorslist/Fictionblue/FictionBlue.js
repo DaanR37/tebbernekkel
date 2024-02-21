@@ -14,7 +14,7 @@ export default function FictionBlue() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/fictionblue`)
+    fetch("https://api.tebbernekkel.nl/fictionblue")
       .then(response => response.json())
       .then(portfolioDataFictionBlue => {
         setPortfolioDataFictionBlue(portfolioDataFictionBlue)

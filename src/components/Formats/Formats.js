@@ -15,7 +15,7 @@ export default function Formats() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/formats`)
+    fetch("https://api.tebbernekkel.nl/formats")
       .then(response => response.json())
       .then(portfolioDataFormats => {
         setPortfolioDataFormats(portfolioDataFormats)
