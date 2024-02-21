@@ -14,8 +14,7 @@ export default function FictionShay() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionshay")
-    fetch("https://api.tebbernekkel.nl/fictionshay")
+    fetch(`${process.env.REACT_APP_API_URL}/fictionshay`)
       .then(response => response.json())
       .then(portfolioDataFictionShay => {
         setPortfolioDataFictionShay(portfolioDataFictionShay)

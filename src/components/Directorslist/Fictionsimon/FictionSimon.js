@@ -14,8 +14,7 @@ export default function FictionSimon() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionsimon")
-    fetch("https://api.tebbernekkel.nl/fictionsimon")
+    fetch(`${process.env.REACT_APP_API_URL}/fictionsimon`)
       .then(response => response.json())
       .then(portfolioDataFictionSimon => {
         setPortfolioDataFictionSimon(portfolioDataFictionSimon)

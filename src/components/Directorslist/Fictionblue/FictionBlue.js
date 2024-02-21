@@ -8,14 +8,13 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionBlue() {
-  const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue", "twelve-blue", "thirteen-blue"];
+  const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue"];
   const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionblue")
-    fetch("https://api.tebbernekkel.nl/fictionblue")
+    fetch(`${process.env.REACT_APP_API_URL}/fictionblue`)
       .then(response => response.json())
       .then(portfolioDataFictionBlue => {
         setPortfolioDataFictionBlue(portfolioDataFictionBlue)

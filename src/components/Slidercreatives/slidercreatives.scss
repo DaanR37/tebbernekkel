@@ -70,7 +70,7 @@ a.simon-btn-slider.active {
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
     #slider-container {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
     .names-list-slider {
@@ -89,7 +89,7 @@ a.simon-btn-slider.active {
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
     #slider-container {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
     .names-list-slider {
@@ -108,7 +108,7 @@ a.simon-btn-slider.active {
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
     #slider-container {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
     .names-list-slider {
@@ -137,7 +137,7 @@ a.simon-btn-slider.active {
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
     #slider-container {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
     .names-list-slider {

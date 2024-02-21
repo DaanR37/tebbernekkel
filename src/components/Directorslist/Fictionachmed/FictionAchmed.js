@@ -14,8 +14,7 @@ export default function FictionAchmed() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionachmed")
-    fetch("https://api.tebbernekkel.nl/fictionachmed")
+    fetch(`${process.env.REACT_APP_API_URL}/fictionachmed`)
       .then(response => response.json())
       .then(portfolioDataFictionAchmed => {
         setPortfolioDataFictionAchmed(portfolioDataFictionAchmed)
@@ -23,7 +22,6 @@ export default function FictionAchmed() {
         console.log(error.message)
       })
   }, []);
-  
 
   return (
     <Animatedpage>

@@ -14,8 +14,7 @@ export default function FictionJoosje() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionjoosje")
-    fetch("https://api.tebbernekkel.nl/fictionjoosje")
+    fetch(`${process.env.REACT_APP_API_URL}/fictionjoosje`)
       .then(response => response.json())
       .then(portfolioDataFictionJoosje => {
         setPortfolioDataFictionJoosje(portfolioDataFictionJoosje)

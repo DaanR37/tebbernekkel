@@ -21,8 +21,7 @@ export default function HomePage() {
 
   //FETCHING DATA
   useEffect(() => {
-    // fetch("http://localhost:3001/homepage")
-    fetch("https://api.tebbernekkel.nl/homepage")
+    fetch(`${process.env.REACT_APP_API_URL}/homepage`)
       .then((response) => response.json())
       .then((featureData) => {
         setFeatureData(featureData)

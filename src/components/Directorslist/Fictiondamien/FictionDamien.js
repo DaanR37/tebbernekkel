@@ -14,8 +14,7 @@ export default function FictionDamien() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictiondamien")
-    fetch("https://api.tebbernekkel.nl/fictiondamien")
+    fetch(`${process.env.REACT_APP_API_URL}/fictiondamien`)
       .then(response => response.json())
       .then(portfolioDataFictionDamien => {
         setPortfolioDataFictionDamien(portfolioDataFictionDamien)
