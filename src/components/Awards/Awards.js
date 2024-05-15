@@ -10,6 +10,21 @@ export default function Awards() {
           <Header />
         </>
         <div className="awards-container">
+          <div className="awards 2023">
+            <h1>Awards 2023</h1>
+            <h3>CICLOPE <b>Awards</b>
+              <br></br>
+              <i>Best direction</i>
+            </h3>
+            <h3>Silver <b>ADCN</b> Lamp
+              <br></br>
+              <i>Best Cinematography</i>
+            </h3>
+            <h3>Berlin <b>Music Video Awards</b>
+              <br></br>
+              <i>Best Cinematography</i>
+            </h3>
+          </div>
           <div className="awards 2022">
             <h1>Awards 2022</h1>
             <h3>Gold <b>ADCN</b> Lamp
