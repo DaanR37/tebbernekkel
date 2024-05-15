@@ -1,322 +1,376 @@
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    #grid-wrapper-fiction-shay {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 90vh);
-    }
-    .two-shay {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .five-shay {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .one-shay {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .three-shay {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .four-shay {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    ///CARD ONE
-    #grid-wrapper-fiction-shay > div.one-shay > a div {
-        background-size: auto 135%;
-        background-position: center;
-    }
-    ///CARD TWO
-    #grid-wrapper-fiction-shay > div.two-shay > a div {
-        background-size: cover;
-        background-position: 60%;
-    }
-    //CARD THREE
-    #grid-wrapper-fiction-shay > div.three-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FOUR
-    #grid-wrapper-fiction-shay > div.four-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FIVE
-    #grid-wrapper-fiction-shay > div.five-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
+  #grid-wrapper-fiction-shay {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 90vh);
+  }
+  .two-shay {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .one-shay {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .five-shay {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .six-shay {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .four-shay {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .three-shay {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  ///CARD ONE
+  #grid-wrapper-fiction-shay > div.one-shay > a div {
+    background-size: auto 135%;
+    background-position: center;
+  }
+  ///CARD TWO
+  #grid-wrapper-fiction-shay > div.two-shay > a div {
+    background-size: cover;
+    background-position: 60%;
+  }
+  //CARD THREE
+  #grid-wrapper-fiction-shay > div.three-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FOUR
+  #grid-wrapper-fiction-shay > div.four-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FIVE
+  #grid-wrapper-fiction-shay > div.five-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD SIX
+  #grid-wrapper-fiction-shay > div.six-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    #grid-wrapper-fiction-shay {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 200px);
-    }
-    /// 2 BIG
-    .two-shay {
-        grid-column: 1/4;
-        grid-row: 1/3;
-    }
-    .five-shay {
-        grid-column: 4/7;
-        grid-row: 1/3;
-    }
-    /// 3 SMALL
-    .one-shay {
-        grid-column: 1/3;
-        grid-row: 3/5;
-    }
-    .three-shay {
-        grid-column: 3/5;
-        grid-row: 3/5;
-    }
-    .four-shay {
-        grid-column: 5/7;
-        grid-row: 3/5;
-    }
-    ///CARD ONE
-    #grid-wrapper-fiction-shay > div.one-shay > a div {
-        background-size: auto 135%;
-        background-position: center;
-    }
-    ///CARD TWO
-    #grid-wrapper-fiction-shay > div.two-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    //CARD THREE
-    #grid-wrapper-fiction-shay > div.three-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FOUR
-    #grid-wrapper-fiction-shay > div.four-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FIVE
-    #grid-wrapper-fiction-shay > div.five-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
+  #grid-wrapper-fiction-shay {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 200px);
+  }
+  /// 3 SMALL
+  .two-shay {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .one-shay {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  .five-shay {
+    grid-column: 5/7;
+    grid-row: 1/3;
+  }
+  /// 3 SMALL
+  .six-shay {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+  .four-shay {
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+  .three-shay {
+    grid-column: 5/7;
+    grid-row: 3/5;
+  }
+  ///CARD ONE
+  #grid-wrapper-fiction-shay > div.one-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD TWO
+  #grid-wrapper-fiction-shay > div.two-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  //CARD THREE
+  #grid-wrapper-fiction-shay > div.three-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FOUR
+  #grid-wrapper-fiction-shay > div.four-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FIVE
+  #grid-wrapper-fiction-shay > div.five-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD SIX
+  #grid-wrapper-fiction-shay > div.six-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-    #grid-wrapper-fiction-shay {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 200px);
-    }
-    /// 2 BIG
-    .two-shay {
-        grid-column: 1/4;
-        grid-row: 2/4;
-    }
-    .five-shay {
-        grid-column: 4/7;
-        grid-row: 2/4;
-    }
-    /// 3 SMALL
-    .one-shay {
-        grid-column: 1/3;
-        grid-row: 4/6;
-    }
-    .three-shay {
-        grid-column: 3/5;
-        grid-row: 4/6;
-    }
-    .four-shay {
-        grid-column: 5/7;
-        grid-row: 4/6;
-    }
-    ///CARD ONE
-    #grid-wrapper-fiction-shay > div.one-shay > a div {
-        background-size: auto 135%;
-        background-position: center;
-    }
-    ///CARD TWO
-    #grid-wrapper-fiction-shay > div.two-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    //CARD THREE
-    #grid-wrapper-fiction-shay > div.three-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FOUR
-    #grid-wrapper-fiction-shay > div.four-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FIVE
-    #grid-wrapper-fiction-shay > div.five-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
+  #grid-wrapper-fiction-shay {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 200px);
+  }
+  /// 3 SMALL
+  .two-shay {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .one-shay {
+    grid-column: 3/5;
+    grid-row: 2/4;
+  }
+  .five-shay {
+    grid-column: 5/7;
+    grid-row: 2/4;
+  }
+  /// 3 SMALL
+  .six-shay {
+    grid-column: 1/3;
+    grid-row: 4/6;
+  }
+  .four-shay {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+  .three-shay {
+    grid-column: 5/7;
+    grid-row: 4/6;
+  }
+  ///CARD ONE
+  #grid-wrapper-fiction-shay > div.one-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD TWO
+  #grid-wrapper-fiction-shay > div.two-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  //CARD THREE
+  #grid-wrapper-fiction-shay > div.three-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FOUR
+  #grid-wrapper-fiction-shay > div.four-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FIVE
+  #grid-wrapper-fiction-shay > div.five-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD SIX
+  #grid-wrapper-fiction-shay > div.six-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-    #grid-wrapper-fiction-shay {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 200px);
-    }
-    /// 2 BIG
-    .two-shay {
-        grid-column: 1/4;
-        grid-row: 2/4;
-    }
-    .five-shay {
-        grid-column: 4/7;
-        grid-row: 2/4;
-    }
-    /// 3 SMALL
-    .one-shay {
-        grid-column: 1/3;
-        grid-row: 4/6;
-    }
-    .three-shay {
-        grid-column: 3/5;
-        grid-row: 4/6;
-    }
-    .four-shay {
-        grid-column: 5/7;
-        grid-row: 4/6;
-    }
-    ///CARD ONE
-    #grid-wrapper-fiction-shay > div.one-shay > a div {
-        background-size: auto 135%;
-        background-position: center;
-    }
-    ///CARD TWO
-    #grid-wrapper-fiction-shay > div.two-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    //CARD THREE
-    #grid-wrapper-fiction-shay > div.three-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FOUR
-    #grid-wrapper-fiction-shay > div.four-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FIVE
-    #grid-wrapper-fiction-shay > div.five-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
+  #grid-wrapper-fiction-shay {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 200px);
+  }
+  /// 3 SMALL
+  .two-shay {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .one-shay {
+    grid-column: 3/5;
+    grid-row: 2/4;
+  }
+  .five-shay {
+    grid-column: 5/7;
+    grid-row: 2/4;
+  }
+  /// 3 SMALL
+  .six-shay {
+    grid-column: 1/3;
+    grid-row: 4/6;
+  }
+  .four-shay {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+  .three-shay {
+    grid-column: 5/7;
+    grid-row: 4/6;
+  }
+  ///CARD ONE
+  #grid-wrapper-fiction-shay > div.one-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD TWO
+  #grid-wrapper-fiction-shay > div.two-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  //CARD THREE
+  #grid-wrapper-fiction-shay > div.three-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FOUR
+  #grid-wrapper-fiction-shay > div.four-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FIVE
+  #grid-wrapper-fiction-shay > div.five-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD SIX
+  #grid-wrapper-fiction-shay > div.six-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-    #grid-wrapper-fiction-shay {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(7, 200px);
-    }
-    /// 2 BIG
-    .two-shay {
-        grid-column: 1/4;
-        grid-row: 2/5;
-    }
-    .five-shay {
-        grid-column: 4/7;
-        grid-row: 2/5;
-    }
-    /// 3 SMALL
-    .one-shay {
-        grid-column: 1/3;
-        grid-row: 5/8;
-    }
-    .three-shay {
-        grid-column: 3/5;
-        grid-row: 5/8;
-    }
-    .four-shay {
-        grid-column: 5/7;
-        grid-row: 5/8;
-    }
-    ///CARD ONE
-    #grid-wrapper-fiction-shay > div.one-shay > a div {
-        background-size: auto 135%;
-        background-position: center;
-    }
-    ///CARD TWO
-    #grid-wrapper-fiction-shay > div.two-shay > a div {
-        background-size: auto;
-        background-position: center;
-    }
-    //CARD THREE
-    #grid-wrapper-fiction-shay > div.three-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FOUR
-    #grid-wrapper-fiction-shay > div.four-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FIVE
-    #grid-wrapper-fiction-shay > div.five-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
+  #grid-wrapper-fiction-shay {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 200px);
+  }
+  /// 3 SMALL
+  .two-shay {
+    grid-column: 1/3;
+    grid-row: 2/5;
+  }
+  .one-shay {
+    grid-column: 3/5;
+    grid-row: 2/5;
+  }
+  .five-shay {
+    grid-column: 5/7;
+    grid-row: 2/5;
+  }
+  /// 3 SMALL
+  .six-shay {
+    grid-column: 1/3;
+    grid-row: 5/8;
+  }
+  .four-shay {
+    grid-column: 3/5;
+    grid-row: 5/8;
+  }
+  .three-shay {
+    grid-column: 5/7;
+    grid-row: 5/8;
+  }
+  ///CARD ONE
+  #grid-wrapper-fiction-shay > div.one-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD TWO
+  #grid-wrapper-fiction-shay > div.two-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  //CARD THREE
+  #grid-wrapper-fiction-shay > div.three-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FOUR
+  #grid-wrapper-fiction-shay > div.four-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FIVE
+  #grid-wrapper-fiction-shay > div.five-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD SIX
+  #grid-wrapper-fiction-shay > div.six-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-    #grid-wrapper-fiction-shay {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(7, 200px);
-    }
-    /// 2 BIG
-    .two-shay {
-        grid-column: 1/4;
-        grid-row: 2/5;
-    }
-    .five-shay {
-        grid-column: 4/7;
-        grid-row: 2/5;
-    }
-    /// 3 SMALL
-    .one-shay {
-        grid-column: 1/3;
-        grid-row: 5/8;
-    }
-    .three-shay {
-        grid-column: 3/5;
-        grid-row: 5/8;
-    }
-    .four-shay {
-        grid-column: 5/7;
-        grid-row: 5/8;
-    }
-    ///CARD ONE
-    #grid-wrapper-fiction-shay > div.one-shay > a div {
-        background-size: auto 135%;
-        background-position: center;
-    }
-    ///CARD TWO
-    #grid-wrapper-fiction-shay > div.two-shay > a div {
-        background-size: auto 125%;
-        background-position: center;
-    }
-    //CARD THREE
-    #grid-wrapper-fiction-shay > div.three-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FOUR
-    #grid-wrapper-fiction-shay > div.four-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
-    ///CARD FIVE
-    #grid-wrapper-fiction-shay > div.five-shay > a div {
-        background-size: cover;
-        background-position: center;
-    }
+  #grid-wrapper-fiction-shay {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 200px);
+  }
+  /// 3 SMALL
+  .two-shay {
+    grid-column: 1/3;
+    grid-row: 2/5;
+  }
+  .one-shay {
+    grid-column: 3/5;
+    grid-row: 2/5;
+  }
+  .five-shay {
+    grid-column: 5/7;
+    grid-row: 2/5;
+  }
+  /// 3 SMALL
+  .six-shay {
+    grid-column: 1/3;
+    grid-row: 5/8;
+  }
+  .four-shay {
+    grid-column: 3/5;
+    grid-row: 5/8;
+  }
+  .three-shay {
+    grid-column: 5/7;
+    grid-row: 5/8;
+  }
+  ///CARD ONE
+  #grid-wrapper-fiction-shay > div.one-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD TWO
+  #grid-wrapper-fiction-shay > div.two-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  //CARD THREE
+  #grid-wrapper-fiction-shay > div.three-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FOUR
+  #grid-wrapper-fiction-shay > div.four-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD FIVE
+  #grid-wrapper-fiction-shay > div.five-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
+  ///CARD SIX
+  #grid-wrapper-fiction-shay > div.six-shay > a div {
+    background-size: cover;
+    background-position: center;
+  }
 }
