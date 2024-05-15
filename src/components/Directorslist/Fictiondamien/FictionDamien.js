@@ -14,7 +14,6 @@ export default function FictionDamien() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictiondamien")
     fetch("https://api.tebbernekkel.nl/fictiondamien")
       .then(response => response.json())
       .then(portfolioDataFictionDamien => {

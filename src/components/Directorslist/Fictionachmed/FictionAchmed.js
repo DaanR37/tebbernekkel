@@ -8,20 +8,30 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionAchmed() {
-  const videoIndexFictionAchmed = ["seven-achmed", "three-achmed", "four-achmed", "five-achmed", "six-achmed", "two-achmed", "one-achmed"];
-  const [portfolioDataFictionAchmed, setPortfolioDataFictionAchmed] = useState([]);
+  const videoIndexFictionAchmed = [
+    "seven-achmed",
+    "three-achmed",
+    "four-achmed",
+    "five-achmed",
+    "six-achmed",
+    "two-achmed",
+    "one-achmed",
+  ];
+  const [portfolioDataFictionAchmed, setPortfolioDataFictionAchmed] = useState(
+    []
+  );
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionachmed")
     fetch("https://api.tebbernekkel.nl/fictionachmed")
-      .then(response => response.json())
-      .then(portfolioDataFictionAchmed => {
-        setPortfolioDataFictionAchmed(portfolioDataFictionAchmed)
-      }).catch(error => {
-        console.log(error.message)
+      .then((response) => response.json())
+      .then((portfolioDataFictionAchmed) => {
+        setPortfolioDataFictionAchmed(portfolioDataFictionAchmed);
       })
+      .catch((error) => {
+        console.log(error.message);
+      });
   }, []);
 
   return (
@@ -30,12 +40,8 @@ export default function FictionAchmed() {
         <>
           <HeaderTransparent />
         </>
-        {isSmallScreen ? (
-          <SliderMobile />
-        ) : (
-          <SliderCreatives />
-        )}
-        <div id="grid-wrapper-fiction-achmed" className='grid-wrapper'>
+        {isSmallScreen ? <SliderMobile /> : <SliderCreatives />}
+        <div id="grid-wrapper-fiction-achmed" className="grid-wrapper">
           {portfolioDataFictionAchmed.map((video, index) => {
             return (
               <div className={videoIndexFictionAchmed[index]} key={index}>
@@ -51,15 +57,16 @@ export default function FictionAchmed() {
                     style={{
                       backgroundImage: `url(${video.pictures.sizes[5].link})`,
                       height: "100%",
-                      width: "100%"
-                    }}>
+                      width: "100%",
+                    }}
+                  >
                     <div className="hover-thumbnails">
                       <span aria-hidden="true">{video.name}</span>
                     </div>
                   </div>
                 </Link>
               </div>
-            )
+            );
           })}
         </div>
       </section>

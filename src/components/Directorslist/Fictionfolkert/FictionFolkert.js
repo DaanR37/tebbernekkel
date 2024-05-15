@@ -10,13 +10,12 @@ import { useMediaQuery } from "@mui/material";
 export default function FictionFolkert() {
   const videoIndexFictionFolkert = ["seven-folkert", "three-folkert", "four-folkert", "five-folkert",
     "six-folkert", "two-folkert", "one-folkert", "eight-folkert", "nine-folkert", "ten-folkert",
-    "eleven-folkert", "twelve-folkert", "thirteen-folkert", "fourteen-folkert"];
+    "eleven-folkert", "twelve-folkert", "thirteen-folkert", "fourteen-folkert", "fifteen-folkert"];
   const [portfolioDataFictionFolkert, setPortfolioDataFictionFolkert] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // fetch("http://localhost:3001/fictionfolkert")
     fetch("https://api.tebbernekkel.nl/fictionfolkert")
       .then(response => response.json())
       .then(portfolioDataFictionFolkert => {

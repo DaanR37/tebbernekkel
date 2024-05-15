@@ -7,7 +7,6 @@ a.dropdown-menu__link.formats.active {
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
     .dropdown-menu {
-        // position: absolute;
         position: fixed;
         left: 50%;
         top: 13%;
