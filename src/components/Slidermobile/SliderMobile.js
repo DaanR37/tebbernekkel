@@ -39,11 +39,11 @@ export default function SliderMobile() {
               Damien
             </NavLink>
           </li>
-          <li className='dropdown-menu__item shadowed-text'>
+          {/* <li className='dropdown-menu__item shadowed-text'>
             <NavLink to="/fictionfolkert" className="dropdown-menu__link folkert" reloadDocument>
               Folkert
             </NavLink>
-          </li>
+          </li> */}
           <li className='dropdown-menu__item shadowed-text'>
             <NavLink to="/fictionjoosje" className="dropdown-menu__link joosje" reloadDocument>
               Joosje

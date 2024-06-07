@@ -21,8 +21,8 @@ import EmbeddedPlayerBlue from "./components/Directorslist/Fictionblue/Embeddedp
 import FictionDamien from "./components/Directorslist/Fictiondamien/FictionDamien";
 import EmbeddedPlayerDamien from "./components/Directorslist/Fictiondamien/Embeddedplayerdamien/EmbeddedPlayerDamien";
 
-import FictionFolkert from "./components/Directorslist/Fictionfolkert/FictionFolkert";
-import EmbeddedPlayerFolkert from "./components/Directorslist/Fictionfolkert/Embeddedplayerfolkert/EmbeddedPlayerFolkert";
+// import FictionFolkert from "./components/Directorslist/Fictionfolkert/FictionFolkert";
+// import EmbeddedPlayerFolkert from "./components/Directorslist/Fictionfolkert/Embeddedplayerfolkert/EmbeddedPlayerFolkert";
 
 import FictionJoosje from "./components/Directorslist/Fictionjoosje/FictionJoosje";
 import EmbeddedPlayerJoosje from "./components/Directorslist/Fictionjoosje/Embeddedplayerjoosje/EmbeddedPlayerJoosje";
@@ -64,8 +64,8 @@ function App() {
         <Route path="/fictiondamien" element={<FictionDamien />} />
         <Route path="/embeddedplayerdamien" element={<EmbeddedPlayerDamien />} />
 
-        <Route path="/fictionfolkert" element={<FictionFolkert />} />
-        <Route path="/embeddedplayerfolkert" element={<EmbeddedPlayerFolkert />} />
+        {/* <Route path="/fictionfolkert" element={<FictionFolkert />} />
+        <Route path="/embeddedplayerfolkert" element={<EmbeddedPlayerFolkert />} /> */}
 
         <Route path="/fictionjoosje" element={<FictionJoosje />} />
         <Route path="/embeddedplayerjoosje" element={<EmbeddedPlayerJoosje />} />

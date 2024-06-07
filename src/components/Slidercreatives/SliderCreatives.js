@@ -23,12 +23,12 @@ export default function SliderCreatives() {
                     </NavLink>
                 </li>
                 <p>|</p>
-                <li>
+                {/* <li>
                     <NavLink to="/fictionfolkert" className="folkert-btn-slider" reloadDocument>
                         <h1>Folkert</h1>
                     </NavLink>
                 </li>
-                <p>|</p>
+                <p>|</p> */}
                 <li>
                     <NavLink to="/fictionjoosje" className="joosje-btn-slider" reloadDocument>
                         <h1>Joosje</h1>
