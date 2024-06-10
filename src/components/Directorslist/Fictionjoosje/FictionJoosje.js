@@ -8,7 +8,7 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionJoosje() {
-  const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje", "six-joosje"];
+  const videoIndexFictionJoosje = ["three-joosje", "four-joosje", "five-joosje", "two-joosje", "one-joosje", "six-joosje", "seven-joosje"];
   const [portfolioDataFictionJoosje, setPortfolioDataFictionJoosje] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
