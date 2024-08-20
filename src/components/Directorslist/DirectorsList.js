@@ -33,15 +33,6 @@ export default function DirectorsList() {
                 damien hope
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink
-                to="/fictionfolkert"
-                className="folkert-btn"
-                reloadDocument
-              >
-                folkert verdoorn
-              </NavLink>
-            </li> */}
             <li>
               <NavLink
                 to="/fictionjoosje"
@@ -68,6 +59,11 @@ export default function DirectorsList() {
             <li>
               <NavLink to="/fictionsimon" className="simon-btn" reloadDocument>
                 simon becks
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/fictionbram" className="bram-btn" reloadDocument>
+                bram koopman
               </NavLink>
             </li>
           </ul>

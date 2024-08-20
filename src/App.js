@@ -21,9 +21,6 @@ import EmbeddedPlayerBlue from "./components/Directorslist/Fictionblue/Embeddedp
 import FictionDamien from "./components/Directorslist/Fictiondamien/FictionDamien";
 import EmbeddedPlayerDamien from "./components/Directorslist/Fictiondamien/Embeddedplayerdamien/EmbeddedPlayerDamien";
 
-// import FictionFolkert from "./components/Directorslist/Fictionfolkert/FictionFolkert";
-// import EmbeddedPlayerFolkert from "./components/Directorslist/Fictionfolkert/Embeddedplayerfolkert/EmbeddedPlayerFolkert";
-
 import FictionJoosje from "./components/Directorslist/Fictionjoosje/FictionJoosje";
 import EmbeddedPlayerJoosje from "./components/Directorslist/Fictionjoosje/Embeddedplayerjoosje/EmbeddedPlayerJoosje";
 
@@ -36,10 +33,12 @@ import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedp
 import FictionSimon from "./components/Directorslist/Fictionsimon/FictionSimon";
 import EmbeddedPlayerSimon from "./components/Directorslist/Fictionsimon/Embeddedplayersimon/EmbeddedPlayerSimon";
 
+import FictionBram from "./components/Directorslist/Fictionbram/FictionBram";
+import EmbeddedPlayerBram from "./components/Directorslist/Fictionbram/Embeddedplayerbram/EmbeddedPlayerBram";
+
 /// Awards & Contact
 import Awards from "./components/Awards/Awards";
 import Contact from "./components/Contact/Contact";
-
 
 function App() {
   return (
@@ -64,9 +63,6 @@ function App() {
         <Route path="/fictiondamien" element={<FictionDamien />} />
         <Route path="/embeddedplayerdamien" element={<EmbeddedPlayerDamien />} />
 
-        {/* <Route path="/fictionfolkert" element={<FictionFolkert />} />
-        <Route path="/embeddedplayerfolkert" element={<EmbeddedPlayerFolkert />} /> */}
-
         <Route path="/fictionjoosje" element={<FictionJoosje />} />
         <Route path="/embeddedplayerjoosje" element={<EmbeddedPlayerJoosje />} />
 
@@ -78,6 +74,9 @@ function App() {
 
         <Route path="/fictionsimon" element={<FictionSimon />} />
         <Route path="/embeddedplayersimon" element={<EmbeddedPlayerSimon />} />
+
+        <Route path="/fictionbram" element={<FictionBram />} />
+        <Route path="/embeddedplayerbram" element={<EmbeddedPlayerBram />} />
 
         <Route path="/awards" element={<Awards />} />
         <Route path="/contact" element={<Contact />} />
