@@ -18,6 +18,12 @@ export default function SliderCreatives() {
         </li>
         <p>|</p>
         <li>
+          <NavLink to="/fictionbram" className="bram-btn-slider" reloadDocument>
+            <h1>Bram</h1>
+          </NavLink>
+        </li>
+        <p>|</p>
+        <li>
           <NavLink to="/fictiondamien" className="damien-btn-slider" reloadDocument>
             <h1>Damien</h1>
           </NavLink>
@@ -44,12 +50,6 @@ export default function SliderCreatives() {
         <li>
           <NavLink to="/fictionsimon" className="simon-btn-slider" reloadDocument>
             <h1>Simon</h1>
-          </NavLink>
-        </li>
-        <p>|</p>
-        <li>
-          <NavLink to="/fictionbram" className="bram-btn-slider" reloadDocument>
-            <h1>Bram</h1>
           </NavLink>
         </li>
       </ul>

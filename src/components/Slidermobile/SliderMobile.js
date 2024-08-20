@@ -35,15 +35,15 @@ export default function SliderMobile() {
             </NavLink>
           </li>
           <li className="dropdown-menu__item shadowed-text">
+            <NavLink to="/fictionbram" className="dropdown-menu__link bram" reloadDocument>
+              Bram
+            </NavLink>
+          </li>
+          <li className="dropdown-menu__item shadowed-text">
             <NavLink to="/fictiondamien" className="dropdown-menu__link damien" reloadDocument>
               Damien
             </NavLink>
           </li>
-          {/* <li className='dropdown-menu__item shadowed-text'>
-            <NavLink to="/fictionfolkert" className="dropdown-menu__link folkert" reloadDocument>
-              Folkert
-            </NavLink>
-          </li> */}
           <li className="dropdown-menu__item shadowed-text">
             <NavLink to="/fictionjoosje" className="dropdown-menu__link joosje" reloadDocument>
               Joosje
@@ -62,11 +62,6 @@ export default function SliderMobile() {
           <li className="dropdown-menu__item shadowed-text">
             <NavLink to="/fictionsimon" className="dropdown-menu__link simon" reloadDocument>
               Simon
-            </NavLink>
-          </li>
-          <li className="dropdown-menu__item shadowed-text">
-            <NavLink to="/fictionbram" className="dropdown-menu__link bram" reloadDocument>
-              Bram
             </NavLink>
           </li>
         </ul>
