@@ -1,125 +1,125 @@
 #list-container {
-    text-transform: uppercase;
-    font-family: "Roboto Condensed", sans-serif;
-    width: 100vw;
-    height: 100vh;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 .creatives-card {
-    position: absolute;
-    display: flex;
+  position: absolute;
+  display: flex;
 }
 .names-list {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    a {
-        text-decoration: none;
-        color: whitesmoke;
-    }
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 }
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    .creatives-card {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+  .creatives-card {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .names-list {
+    line-height: 1.5rem;
+    li {
+      margin-bottom: 15px;
     }
-    .names-list {
-        line-height: 1.5rem;
-        li {
-            margin-bottom: 15px;
-        }
-        a {
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-        }
+    a {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
     }
+  }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-    .creatives-card {
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -60%);
+  .creatives-card {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
+  .names-list {
+    line-height: 1.5rem;
+    li {
+      margin-bottom: 5px;
     }
-    .names-list {
-        line-height: 1.5rem;
-        li {
-            margin-bottom: 5px;
-        }
-        a {
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-        }
+    a {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
     }
+  }
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
-    .creatives-card {
-        left: 50%;
-        top: 57.5%;
-        transform: translate(-50%, -57.5%);
-        max-width: 300px;
+  .creatives-card {
+    left: 50%;
+    top: 57.5%;
+    transform: translate(-50%, -57.5%);
+    max-width: 300px;
+  }
+  .names-list {
+    line-height: 2.5rem;
+    li {
+      margin-bottom: 15px;
     }
-    .names-list {
-        line-height: 2.5rem;
-        li {
-            margin-bottom: 15px;
-        }
-        a {
-            font-size: 2rem;
-            letter-spacing: 1.75px;
-        }
+    a {
+      font-size: 2rem;
+      letter-spacing: 1.75px;
     }
+  }
 }
 ///Tablet Landscape
 @media screen and (min-width: 1023px) and (max-width: 1280px) and (orientation: landscape) {
-    .creatives-card {
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -60%);
+  .creatives-card {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
+  .names-list {
+    line-height: 2.8rem;
+    a {
+      font-size: 3rem;
+      letter-spacing: 2px;
     }
-    .names-list {
-        line-height: 2.8rem;
-        a {
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-    }
+  }
 }
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-    .creatives-card {
-        left: 50%;
-        top: 52.5%;
-        transform: translate(-50%, -52.5%);
+  .creatives-card {
+    left: 50%;
+    top: 52.5%;
+    transform: translate(-50%, -52.5%);
+  }
+  .names-list {
+    a {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      &:hover {
+        color: #f5a1a3;
+        transition: 400ms ease-in-out;
+      }
     }
-    .names-list {
-        a {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            &:hover {
-                color: #f5a1a3;
-                transition: 400ms ease-in-out;
-            }
-        }
-    }
+  }
 }
 ///Desktop Big
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
-    .creatives-card {
-        left: 50%;
-        top: 52.5%;
-        transform: translate(-50%, -52.5%);
+  .creatives-card {
+    left: 50%;
+    top: 52.5%;
+    transform: translate(-50%, -52.5%);
+  }
+  .names-list {
+    a {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      &:hover {
+        color: #f5a1a3;
+        transition: 400ms ease-in-out;
+      }
     }
-    .names-list {
-        a {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            &:hover {
-                color: #f5a1a3;
-                transition: 400ms ease-in-out;
-            }
-        }
-    }
+  }
 }
