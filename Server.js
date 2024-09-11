@@ -87,18 +87,6 @@ app.get("/fictiondamien", (req, res) => {
         res.send(body.data)
     });
 });
-///FOLKERT ENDPOINT
-app.get("/fictionfolkert", (req, res) => {
-    client.request({
-        method: 'GET',
-        path: '/me/projects/12885057/videos?fields=name,uri,description,pictures.sizes.link',
-    }, function (error, body, status_code, headers) {
-        if (error) {
-            console.log(error)
-        }
-        res.send(body.data)
-    });
-});
 ///JOOSJE ENDPOINT
 app.get("/fictionjoosje", (req, res) => {
     client.request({
@@ -140,6 +128,18 @@ app.get("/fictionsimon", (req, res) => {
     client.request({
         method: 'GET',
         path: '/me/projects/16503604/videos?fields=name,uri,description,pictures.sizes.link',
+    }, function (error, body, status_code, headers) {
+        if (error) {
+            console.log(error)
+        }
+        res.send(body.data)
+    });
+});
+///BRAM ENDPOINT
+app.get("/fictionbram", (req, res) => {
+    client.request({
+        method: 'GET',
+        path: '/me/projects/21844386/videos?fields=name,uri,description,pictures.sizes.link',
     }, function (error, body, status_code, headers) {
         if (error) {
             console.log(error)

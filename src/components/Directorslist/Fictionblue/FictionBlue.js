@@ -8,19 +8,34 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionBlue() {
-  const videoIndexFictionBlue = ["seven-blue", "three-blue", "four-blue", "five-blue", "six-blue", "two-blue", "one-blue", "eight-blue", "nine-blue", "ten-blue", "eleven-blue"];
+  const videoIndexFictionBlue = [
+    "seven-blue",
+    "three-blue",
+    "four-blue",
+    "five-blue",
+    "six-blue",
+    "two-blue",
+    "one-blue",
+    "eight-blue",
+    "nine-blue",
+    "ten-blue",
+    "eleven-blue",
+    "twelve-blue",
+    "thirteen-blue",
+  ];
   const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
     fetch("https://api.tebbernekkel.nl/fictionblue")
-      .then(response => response.json())
-      .then(portfolioDataFictionBlue => {
-        setPortfolioDataFictionBlue(portfolioDataFictionBlue)
-      }).catch(error => {
-        console.log(error.message)
+      .then((response) => response.json())
+      .then((portfolioDataFictionBlue) => {
+        setPortfolioDataFictionBlue(portfolioDataFictionBlue);
       })
+      .catch((error) => {
+        console.log(error.message);
+      });
   }, []);
 
   return (
@@ -29,12 +44,8 @@ export default function FictionBlue() {
         <>
           <HeaderTransparent />
         </>
-        {isSmallScreen ? (
-          <SliderMobile />
-        ) : (
-          <SliderCreatives />
-        )}
-        <div id="grid-wrapper-fiction-blue" className='grid-wrapper'>
+        {isSmallScreen ? <SliderMobile /> : <SliderCreatives />}
+        <div id="grid-wrapper-fiction-blue" className="grid-wrapper">
           {portfolioDataFictionBlue.map((video, index) => {
             return (
               <div className={videoIndexFictionBlue[index]} key={index}>
@@ -50,15 +61,16 @@ export default function FictionBlue() {
                     style={{
                       backgroundImage: `url(${video.pictures.sizes[5].link})`,
                       height: "100%",
-                      width: "100%"
-                    }}>
+                      width: "100%",
+                    }}
+                  >
                     <div className="hover-thumbnails">
                       <span aria-hidden="true">{video.name}</span>
                     </div>
                   </div>
                 </Link>
               </div>
-            )
+            );
           })}
         </div>
       </section>

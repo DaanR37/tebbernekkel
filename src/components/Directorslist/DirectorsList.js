@@ -10,61 +10,50 @@ export default function DirectorsList() {
         <HeaderTransparent />
         <div className="creatives-card">
           <ul className="names-list">
+            {/* Achmed Akkabi */}
             <li>
-              <NavLink
-                to="/fictionachmed"
-                className="achmed-btn"
-                reloadDocument
-              >
+              <NavLink to="/fictionachmed" className="achmed-btn" reloadDocument>
                 achmed akkabi
               </NavLink>
             </li>
+            {/* Blue Ter Burg */}
             <li>
               <NavLink to="/fictionblue" className="blue-btn" reloadDocument>
                 blue ter burg
               </NavLink>
             </li>
+            {/* Bram Koopman */}
             <li>
-              <NavLink
-                to="/fictiondamien"
-                className="damien-btn"
-                reloadDocument
-              >
+              <NavLink to="/fictionbram" className="bram-btn" reloadDocument>
+                bram koopman
+              </NavLink>
+            </li>
+
+            {/* Damien Hope */}
+            <li>
+              <NavLink to="/fictiondamien" className="damien-btn" reloadDocument>
                 damien hope
               </NavLink>
             </li>
+            {/* Joosje Duk */}
             <li>
-              <NavLink
-                to="/fictionfolkert"
-                className="folkert-btn"
-                reloadDocument
-              >
-                folkert verdoorn
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/fictionjoosje"
-                className="joosje-btn"
-                reloadDocument
-              >
+              <NavLink to="/fictionjoosje" className="joosje-btn" reloadDocument>
                 joosje duk
               </NavLink>
             </li>
+            {/* Maria Bodil */}
             <li>
-              <NavLink
-                to="/fictionmariabodil"
-                className="mariabodil-btn"
-                reloadDocument
-              >
+              <NavLink to="/fictionmariabodil" className="mariabodil-btn" reloadDocument>
                 maria bodil
               </NavLink>
             </li>
+            {/* Shay Latukolan */}
             <li>
               <NavLink to="/fictionshay" className="shay-btn" reloadDocument>
                 shay latukolan
               </NavLink>
             </li>
+            {/* Simon Becks */}
             <li>
               <NavLink to="/fictionsimon" className="simon-btn" reloadDocument>
                 simon becks

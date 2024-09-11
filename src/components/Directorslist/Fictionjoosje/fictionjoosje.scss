@@ -2,21 +2,21 @@
 @media screen and (max-width: 600px) and (orientation: portrait) {
   #grid-wrapper-fiction-joosje {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 90vh);
+    grid-template-rows: repeat(7, 90vh);
   }
   .three-joosje {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .one-joosje {
+  .four-joosje {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .two-joosje {
+  .six-joosje {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .four-joosje {
+  .one-joosje {
     grid-column: 1/2;
     grid-row: 4/5;
   }
@@ -24,9 +24,13 @@
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  .six-joosje {
+  .two-joosje {
     grid-column: 1/2;
     grid-row: 6/7;
+  }
+  .seven-joosje {
+    grid-column: 1/2;
+    grid-row: 7/8;
   }
   ///CARD ONE
   #grid-wrapper-fiction-joosje > div.one-joosje > a div {
@@ -35,93 +39,107 @@
   }
   ///CARD TWO
   #grid-wrapper-fiction-joosje > div.two-joosje > a div {
-    background-size: cover;
-    background-position: center;
+    background-size: auto 135%;
+    background-position: 65%;
   }
   //CARD THREE
   #grid-wrapper-fiction-joosje > div.three-joosje > a div {
-    background-size: auto 135%;
+    background-size: auto 130%;
     background-position: center;
   }
   ///CARD FOUR
   #grid-wrapper-fiction-joosje > div.four-joosje > a div {
-    background-size: auto 150%;
+    background-size: auto 140%;
     background-position: center;
   }
   ///CARD FIVE
   #grid-wrapper-fiction-joosje > div.five-joosje > a div {
-    background-size: auto 130%;
-    background-position: 30%;
+    background-size: auto 150%;
+    background-position: center;
   }
   ///CARD SIX
   #grid-wrapper-fiction-joosje > div.six-joosje > a div {
+    background-size: cover;
+    background-position: 55%;
+  }
+  ///CARD SEVEN
+  #grid-wrapper-fiction-joosje > div.seven-joosje > a div {
     background-size: cover;
     background-position: center;
   }
 }
 ///Mobile Landscape
 @media only screen and (min-width: 600px) and (max-width: 926px) and (orientation: landscape) {
-  #grid-wrapper-fiction-joosje {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 200px);
-  }
-  /// 2 BIG
-  .three-joosje {
-    grid-column: 1/4;
-    grid-row: 1/3;
-  }
-  .one-joosje {
-    grid-column: 4/7;
-    grid-row: 1/3;
-  }
-  /// 2 BIG
-  .two-joosje {
-    grid-column: 1/4;
-    grid-row: 3/5;
-  }
-  .four-joosje {
-    grid-column: 4/7;
-    grid-row: 3/5;
-  }
-  // 2 BIG
-  .five-joosje {
-    grid-column: 1/4;
-    grid-row: 5/7;
-  }
-  .six-joosje {
-    grid-column: 4/7;
-    grid-row: 5/7;
-  }
-  ///CARD ONE
-  #grid-wrapper-fiction-joosje > div.one-joosje > a div {
-    background-size: cover;
-    background-position: center;
-  }
-  //CARD TWO
-  #grid-wrapper-fiction-joosje > div.two-joosje > a div {
-    background-size: cover;
-    background-position: center;
-  }
-  ///CARD THREE
-  #grid-wrapper-fiction-joosje > div.three-joosje > a div {
-    background-size: auto 135%;
-    background-position: center;
-  }
-  ///CARD FOUR
-  #grid-wrapper-fiction-joosje > div.four-joosje > a div {
-    background-size: auto 150%;
-    background-position: center;
-  }
-  ///CARD FIVE
-  #grid-wrapper-fiction-joosje > div.five-joosje > a div {
-    background-size: auto 135%;
-    background-position: 30%;
-  }
-  ///CARD SIX
-  #grid-wrapper-fiction-joosje > div.six-joosje > a div {
-    background-size: cover;
-    background-position: center;
-  }
+#grid-wrapper-fiction-joosje {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 200px);
+}
+/// 2 BIG
+.three-joosje {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+.four-joosje {
+  grid-column: 4/7;
+  grid-row: 1/3;
+}
+/// 3 SMALL
+.six-joosje {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+.one-joosje {
+  grid-column: 3/5;
+  grid-row: 3/5;
+}
+.five-joosje {
+  grid-column: 5/7;
+  grid-row: 3/5;
+}
+/// 2 BIG
+.two-joosje {
+  grid-column: 1/4;
+  grid-row: 5/7;
+}
+.seven-joosje {
+  grid-column: 4/7;
+  grid-row: 5/7;
+}
+///CARD SEVEN
+#grid-wrapper-fiction-joosje > div.seven-joosje > a div {
+  background-size: cover;
+  background-position: center;
+}
+///CARD SIX
+#grid-wrapper-fiction-joosje > div.six-joosje > a div {
+  background-size: cover;
+  background-position: center;
+}
+///CARD FIVE
+#grid-wrapper-fiction-joosje > div.five-joosje > a div {
+  background-size: auto 150%;
+  background-position: center;
+}
+//CARD FOUR
+#grid-wrapper-fiction-joosje > div.four-joosje > a div {
+  background-size: auto 140%;
+  background-position: center;
+}
+//CARD THREE
+#grid-wrapper-fiction-joosje > div.three-joosje > a div {
+  background-size: auto 130%;
+  background-position: center;
+}
+//CARD TWO
+#grid-wrapper-fiction-joosje > div.two-joosje > a div {
+  background-size: auto 135%;
+  background-position: center;
+}
+//CARD ONE
+#grid-wrapper-fiction-joosje > div.one-joosje > a div {
+  background-size: cover;
+  background-position: center;
+}
 }
 ///Tablet Portrait
 @media screen and (min-width: 600px) and (orientation: portrait) {
@@ -134,27 +152,36 @@
     grid-column: 1/4;
     grid-row: 2/4;
   }
-  .one-joosje {
+  .four-joosje {
     grid-column: 4/7;
     grid-row: 2/4;
+  }
+  /// 3 SMALL
+  .six-joosje {
+    grid-column: 1/3;
+    grid-row: 4/6;
+  }
+  .one-joosje {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+  .five-joosje {
+    grid-column: 5/7;
+    grid-row: 4/6;
   }
   /// 2 BIG
   .two-joosje {
     grid-column: 1/4;
-    grid-row: 4/6;
-  }
-  .four-joosje {
-    grid-column: 4/7;
-    grid-row: 4/6;
-  }
-  // 2 BIG
-  .five-joosje {
-    grid-column: 1/4;
     grid-row: 6/8;
   }
-  .six-joosje {
+  .seven-joosje {
     grid-column: 4/7;
     grid-row: 6/8;
+  }
+  ///CARD SEVEN
+  #grid-wrapper-fiction-joosje > div.seven-joosje > a div {
+    background-size: cover;
+    background-position: center;
   }
   ///CARD SIX
   #grid-wrapper-fiction-joosje > div.six-joosje > a div {
@@ -163,22 +190,22 @@
   }
   ///CARD FIVE
   #grid-wrapper-fiction-joosje > div.five-joosje > a div {
-    background-size: auto 135%;
-    background-position: 30%;
+    background-size: auto 150%;
+    background-position: center;
   }
   //CARD FOUR
   #grid-wrapper-fiction-joosje > div.four-joosje > a div {
-    background-size: auto 150%;
+    background-size: auto 140%;
     background-position: center;
   }
   //CARD THREE
   #grid-wrapper-fiction-joosje > div.three-joosje > a div {
-    background-size: auto 145%;
+    background-size: auto 130%;
     background-position: center;
   }
   //CARD TWO
   #grid-wrapper-fiction-joosje > div.two-joosje > a div {
-    background-size: cover;
+    background-size: auto 135%;
     background-position: center;
   }
   //CARD ONE
@@ -198,27 +225,36 @@
     grid-column: 1/4;
     grid-row: 2/4;
   }
-  .one-joosje {
+  .four-joosje {
     grid-column: 4/7;
     grid-row: 2/4;
+  }
+  /// 3 SMALL
+  .six-joosje {
+    grid-column: 1/3;
+    grid-row: 4/6;
+  }
+  .one-joosje {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+  .five-joosje {
+    grid-column: 5/7;
+    grid-row: 4/6;
   }
   /// 2 BIG
   .two-joosje {
     grid-column: 1/4;
-    grid-row: 4/6;
-  }
-  .four-joosje {
-    grid-column: 4/7;
-    grid-row: 4/6;
-  }
-  // 2 BIG
-  .five-joosje {
-    grid-column: 1/4;
     grid-row: 6/8;
   }
-  .six-joosje {
+  .seven-joosje {
     grid-column: 4/7;
     grid-row: 6/8;
+  }
+  ///CARD SEVEN
+  #grid-wrapper-fiction-joosje > div.seven-joosje > a div {
+    background-size: cover;
+    background-position: center;
   }
   ///CARD SIX
   #grid-wrapper-fiction-joosje > div.six-joosje > a div {
@@ -227,22 +263,22 @@
   }
   ///CARD FIVE
   #grid-wrapper-fiction-joosje > div.five-joosje > a div {
-    background-size: auto 135%;
-    background-position: 30%;
+    background-size: auto 150%;
+    background-position: center;
   }
   //CARD FOUR
   #grid-wrapper-fiction-joosje > div.four-joosje > a div {
-    background-size: auto 150%;
+    background-size: auto 140%;
     background-position: center;
   }
   //CARD THREE
   #grid-wrapper-fiction-joosje > div.three-joosje > a div {
-    background-size: auto 145%;
+    background-size: auto 130%;
     background-position: center;
   }
   //CARD TWO
   #grid-wrapper-fiction-joosje > div.two-joosje > a div {
-    background-size: cover;
+    background-size: auto 135%;
     background-position: center;
   }
   //CARD ONE
@@ -262,27 +298,36 @@
     grid-column: 1/4;
     grid-row: 2/5;
   }
-  .one-joosje {
+  .four-joosje {
     grid-column: 4/7;
     grid-row: 2/5;
+  }
+  /// 3 SMALL
+  .six-joosje {
+    grid-column: 1/3;
+    grid-row: 5/8;
+  }
+  .one-joosje {
+    grid-column: 3/5;
+    grid-row: 5/8;
+  }
+  .five-joosje {
+    grid-column: 5/7;
+    grid-row: 5/8;
   }
   /// 2 BIG
   .two-joosje {
     grid-column: 1/4;
-    grid-row: 5/8;
-  }
-  .four-joosje {
-    grid-column: 4/7;
-    grid-row: 5/8;
-  }
-  // 2 BIG
-  .five-joosje {
-    grid-column: 1/4;
     grid-row: 8/11;
   }
-  .six-joosje {
+  .seven-joosje {
     grid-column: 4/7;
     grid-row: 8/11;
+  }
+  ///CARD SEVEN
+  #grid-wrapper-fiction-joosje > div.seven-joosje > a div {
+    background-size: cover;
+    background-position: center;
   }
   ///CARD SIX
   #grid-wrapper-fiction-joosje > div.six-joosje > a div {
@@ -291,22 +336,22 @@
   }
   ///CARD FIVE
   #grid-wrapper-fiction-joosje > div.five-joosje > a div {
-    background-size: auto 135%;
+    background-size: auto 150%;
     background-position: center;
   }
   //CARD FOUR
   #grid-wrapper-fiction-joosje > div.four-joosje > a div {
-    background-size: auto 150%;
+    background-size: auto 140%;
     background-position: center;
   }
   //CARD THREE
   #grid-wrapper-fiction-joosje > div.three-joosje > a div {
-    background-size: auto 135%;
+    background-size: auto 130%;
     background-position: center;
   }
   //CARD TWO
   #grid-wrapper-fiction-joosje > div.two-joosje > a div {
-    background-size: cover;
+    background-size: auto 135%;
     background-position: center;
   }
   //CARD ONE
@@ -321,61 +366,70 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 200px);
   }
-  /// 2 BIG
-  .three-joosje {
-    grid-column: 1/4;
-    grid-row: 2/5;
-  }
-  .one-joosje {
-    grid-column: 4/7;
-    grid-row: 2/5;
-  }
-  /// 2 BIG
-  .two-joosje {
-    grid-column: 1/4;
-    grid-row: 5/8;
-  }
-  .four-joosje {
-    grid-column: 4/7;
-    grid-row: 5/8;
-  }
-  // 2 BIG
-  .five-joosje {
-    grid-column: 1/4;
-    grid-row: 8/11;
-  }
-  .six-joosje {
-    grid-column: 4/7;
-    grid-row: 8/11;
-  }
-  ///CARD SIX
-  #grid-wrapper-fiction-joosje > div.six-joosje > a div {
-    background-size: cover;
-    background-position: center;
-  }
-  ///CARD FIVE
-  #grid-wrapper-fiction-joosje > div.five-joosje > a div {
-    background-size: auto 135%;
-    background-position: center;
-  }
-  //CARD FOUR
-  #grid-wrapper-fiction-joosje > div.four-joosje > a div {
-    background-size: auto 155%;
-    background-position: center;
-  }
-  //CARD THREE
-  #grid-wrapper-fiction-joosje > div.three-joosje > a div {
-    background-size: auto 150%;
-    background-position: center;
-  }
-  //CARD TWO
-  #grid-wrapper-fiction-joosje > div.two-joosje > a div {
-    background-size: cover;
-    background-position: center;
-  }
-  //CARD ONE
-  #grid-wrapper-fiction-joosje > div.one-joosje > a div {
-    background-size: cover;
-    background-position: center;
-  }
+    /// 2 BIG
+    .three-joosje {
+      grid-column: 1/4;
+      grid-row: 2/5;
+    }
+    .four-joosje {
+      grid-column: 4/7;
+      grid-row: 2/5;
+    }
+    /// 3 SMALL
+    .six-joosje {
+      grid-column: 1/3;
+      grid-row: 5/8;
+    }
+    .one-joosje {
+      grid-column: 3/5;
+      grid-row: 5/8;
+    }
+    .five-joosje {
+      grid-column: 5/7;
+      grid-row: 5/8;
+    }
+    /// 2 BIG
+    .two-joosje {
+      grid-column: 1/4;
+      grid-row: 8/11;
+    }
+    .seven-joosje {
+      grid-column: 4/7;
+      grid-row: 8/11;
+    }
+    ///CARD SEVEN
+    #grid-wrapper-fiction-joosje > div.seven-joosje > a div {
+      background-size: cover;
+      background-position: center;
+    }
+    ///CARD SIX
+    #grid-wrapper-fiction-joosje > div.six-joosje > a div {
+      background-size: cover;
+      background-position: center;
+    }
+    ///CARD FIVE
+    #grid-wrapper-fiction-joosje > div.five-joosje > a div {
+      background-size: auto 150%;
+      background-position: center;
+    }
+    //CARD FOUR
+    #grid-wrapper-fiction-joosje > div.four-joosje > a div {
+      background-size: auto 140%;
+      background-position: center;
+    }
+    //CARD THREE
+    #grid-wrapper-fiction-joosje > div.three-joosje > a div {
+      background-size: auto 130%;
+      background-position: center;
+    }
+    //CARD TWO
+    #grid-wrapper-fiction-joosje > div.two-joosje > a div {
+      background-size: auto 135%;
+      background-position: center;
+    }
+    //CARD ONE
+    #grid-wrapper-fiction-joosje > div.one-joosje > a div {
+      background-size: cover;
+      background-position: center;
+    }
 }

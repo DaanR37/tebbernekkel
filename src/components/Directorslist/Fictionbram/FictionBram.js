@@ -1,4 +1,4 @@
-import "./fictionsimon.scss";
+import "./fictionbram.scss";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
@@ -7,17 +7,18 @@ import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
-export default function FictionSimon() {
-  const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon", "five-simon", "six-simon"];
-  const [portfolioDataFictionSimon, setPortfolioDataFictionSimon] = useState([]);
+export default function FictionBram() {
+  const videoIndexFictionBram = ["one-bram", "two-bram", "three-bram", "four-bram", "five-bram", "six-bram"];
+  const [portfolioDataFictionBram, setPortfolioDataFictionBram] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    fetch("https://api.tebbernekkel.nl/fictionsimon")
+    // fetch("http://localhost:3001/fictionbram")
+    fetch("https://api.tebbernekkel.nl/fictionbram")
       .then(response => response.json())
-      .then(portfolioDataFictionSimon => {
-        setPortfolioDataFictionSimon(portfolioDataFictionSimon)
+      .then(portfolioDataFictionBram => {
+        setPortfolioDataFictionBram(portfolioDataFictionBram)
       }).catch(error => {
         console.log(error.message)
       })
@@ -34,12 +35,12 @@ export default function FictionSimon() {
         ) : (
           <SliderCreatives />
         )}
-        <div id="grid-wrapper-fiction-simon" className='grid-wrapper'>
-          {portfolioDataFictionSimon.map((video, index) => {
+        <div id="grid-wrapper-fiction-bram" className='grid-wrapper'>
+          {portfolioDataFictionBram.map((video, index) => {
             return (
-              <div className={videoIndexFictionSimon[index]} key={index}>
+              <div className={videoIndexFictionBram[index]} key={index}>
                 <Link
-                  to="/embeddedplayersimon"
+                  to="/embeddedplayerbram"
                   state={{
                     link: `${video.uri}`,
                     title: `${video.name}`,
@@ -63,5 +64,6 @@ export default function FictionSimon() {
         </div>
       </section>
     </Animatedpage>
-  );
+  )
+
 }
