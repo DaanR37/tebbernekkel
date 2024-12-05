@@ -20,8 +20,6 @@ export default function FictionBlue() {
     "nine-blue",
     "ten-blue",
     "eleven-blue",
-    "twelve-blue",
-    "thirteen-blue",
   ];
   const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
 
