@@ -9,7 +9,7 @@ import { useMediaQuery } from "@mui/material";
 
 export default function Featured() {
   const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven",
-    "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three"];
+    "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
   const [portfolioData, setPortfolioData] = useState([]);
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
