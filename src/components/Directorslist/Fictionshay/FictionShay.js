@@ -8,7 +8,7 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionShay() {
-  const videoIndexFictionShay = ["one-shay", "two-shay", "three-shay", "four-shay", "five-shay", "six-shay"];
+  const videoIndexFictionShay = ["one-shay", "two-shay", "three-shay", "four-shay", "five-shay", "six-shay", "seven-shay"];
   const [portfolioDataFictionShay, setPortfolioDataFictionShay] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
