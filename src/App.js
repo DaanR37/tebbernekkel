@@ -6,8 +6,6 @@ import HomePage from "./components/Homepage/HomePage";
 /// Featured & Formats
 import Featured from "./components/Featured/Featured";
 import EmbeddedPlayerFeatured from "./components/Featured/Embeddedplayerfeatured/EmbeddedPlayerFeatured";
-import Formats from "./components/Formats/Formats";
-import EmbeddedPlayerFormats from "./components/Formats/Embeddedplayerformats/EmbeddedPlayerFormats";
 
 /// Directorslist
 import DirectorsList from "./components/Directorslist/DirectorsList";
@@ -48,9 +46,6 @@ function App() {
 
         <Route path="/featured" element={<Featured />} />
         <Route path="/embeddedplayerfeatured" element={<EmbeddedPlayerFeatured />} />
-
-        <Route path="/formats" element={<Formats />} />
-        <Route path="/embeddedplayerformats" element={<EmbeddedPlayerFormats />} />
 
         <Route path="/directorslist" element={<DirectorsList />} />
 

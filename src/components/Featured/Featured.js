@@ -3,15 +3,11 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Animatedpage from '../Animatedpage';
 import HeaderTransparent from '../Headertransparent/HeaderTransparent';
-import SliderFeatured from '../Sliderfeatured/SliderFeatured';
-import SliderFeaturedMobile from '../Sliderfeaturedmobile/SliderFeaturedMobile';
-import { useMediaQuery } from "@mui/material";
 
 export default function Featured() {
   const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven",
     "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one"];
   const [portfolioData, setPortfolioData] = useState([]);
-  const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
     fetch("https://api.tebbernekkel.nl/featured")
@@ -31,11 +27,6 @@ export default function Featured() {
         <>
           <HeaderTransparent />
         </>
-        {isSmallScreen ? (
-          <SliderFeaturedMobile />
-        ) : (
-          <SliderFeatured />
-        )}
         <div id="grid-wrapper-featured" className='grid-wrapper'>
           {portfolioData.map((video, index) => {
             return (
