@@ -9,8 +9,8 @@ export default function EmbeddedPlayerSimonSpecial() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3001/fictionsimoncarrousel")
-      // fetch("https://api.tebbernekkel.nl/fictionsimoncarrousel")
+    // fetch("http://localhost:3001/fictionsimoncarrousel")
+      fetch("https://api.tebbernekkel.nl/fictionsimoncarrousel")
       .then(response => response.json())
       .then(data => {
         setVideos(data)
