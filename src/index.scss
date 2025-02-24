@@ -79,15 +79,16 @@ a {
     font-weight: 100;
   }
 }
+
 /// EmbeddedPlayer
 .embedded_player {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
   background-color: #001f32;
   .times {
     position: absolute;
@@ -108,6 +109,68 @@ a {
     }
   }
 }
+
+/// Carrousel
+.embedded_player_special {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #001f32;
+  .times {
+    position: absolute;
+    z-index: 999;
+    img {
+      width: 100%;
+      filter: invert(1);
+    }
+  }
+  .button-player-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .arrow-button.left {
+      position: absolute;
+      left: 0;
+      margin-left: 6rem;
+      rotate: 180deg;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: #f8f0e5;
+    }
+    .arrow-button.right {
+      position: absolute;
+      right: 0;
+      margin-right: 6rem;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: #f8f0e5;
+    }
+    .embedded-player-special {
+      position: absolute;
+      width: 60vw;
+      // max-width: 800px;
+      aspect-ratio: 16 / 9;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
 /// Header
 .header-container {
   position: absolute;

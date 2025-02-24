@@ -8,9 +8,8 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionSimon() {
-  const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon", "five-simon", "six-simon", "seven-simon"];
+  const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon", "five-simon", "six-simon"];
   const [portfolioDataFictionSimon, setPortfolioDataFictionSimon] = useState([]);
-
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
@@ -38,25 +37,43 @@ export default function FictionSimon() {
           {portfolioDataFictionSimon.map((video, index) => {
             return (
               <div className={videoIndexFictionSimon[index]} key={index}>
-                <Link
-                  to="/embeddedplayersimon"
-                  state={{
-                    link: `${video.uri}`,
-                    title: `${video.name}`,
-                    description: `${video.description}`,
-                  }}
-                >
-                  <div
-                    style={{
-                      backgroundImage: `url(${video.pictures.sizes[5].link})`,
-                      height: "100%",
-                      width: "100%"
-                    }}>
-                    <div className="hover-thumbnails">
-                      <span aria-hidden="true">{video.name}</span>
+                {videoIndexFictionSimon[index] === "one-simon" ? (
+                  <Link
+                    to="/embeddedplayersimonspecial"
+                  >
+                    <div
+                      style={{
+                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                        height: "100%",
+                        width: "100%"
+                      }}
+                    >
+                      <div className="hover-thumbnails">
+                        <span aria-hidden="true">{video.name}</span>
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                ) : (
+                  <Link
+                    to="/embeddedplayersimon"
+                    state={{
+                      link: `${video.uri}`,
+                      title: `${video.name}`,
+                      description: `${video.description}`,
+                    }}
+                  >
+                    <div
+                      style={{
+                        backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                        height: "100%",
+                        width: "100%"
+                      }}>
+                      <div className="hover-thumbnails">
+                        <span aria-hidden="true">{video.name}</span>
+                      </div>
+                    </div>
+                  </Link>
+                )}
               </div>
             )
           })}

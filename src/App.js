@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 /// Homepage
 import HomePage from "./components/Homepage/HomePage";
@@ -30,6 +32,7 @@ import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedp
 
 import FictionSimon from "./components/Directorslist/Fictionsimon/FictionSimon";
 import EmbeddedPlayerSimon from "./components/Directorslist/Fictionsimon/Embeddedplayersimon/EmbeddedPlayerSimon";
+import EmbeddedPlayerSimonSpecial from "./components/Directorslist/Fictionsimon/Embeddedplayersimonspecial/EmbeddedPlayerSimonSpecial";
 
 import FictionBram from "./components/Directorslist/Fictionbram/FictionBram";
 import EmbeddedPlayerBram from "./components/Directorslist/Fictionbram/Embeddedplayerbram/EmbeddedPlayerBram";
@@ -69,6 +72,7 @@ function App() {
 
         <Route path="/fictionsimon" element={<FictionSimon />} />
         <Route path="/embeddedplayersimon" element={<EmbeddedPlayerSimon />} />
+        <Route path="/embeddedplayersimonspecial" element={<EmbeddedPlayerSimonSpecial />} />
 
         <Route path="/fictionbram" element={<FictionBram />} />
         <Route path="/embeddedplayerbram" element={<EmbeddedPlayerBram />} />
