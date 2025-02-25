@@ -37,7 +37,7 @@ export default function FictionSimon() {
           {portfolioDataFictionSimon.map((video, index) => {
             return (
               <div className={videoIndexFictionSimon[index]} key={index}>
-                {videoIndexFictionSimon[index] === "one-simon" ? (
+                {videoIndexFictionSimon[index] === "two-simon" ? (
                   <Link
                     to="/embeddedplayersimonspecial"
                   >
