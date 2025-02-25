@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column img {
+  margin-top: 5px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+///Desktop
+@media screen and (min-width: 1281px) and (max-width: 1960px) {
+  .row {
+    padding: 0 2px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 2px;
+  }
+}

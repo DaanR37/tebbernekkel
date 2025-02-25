@@ -548,6 +548,7 @@ a {
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
   .grid-wrapper a div {
+    position: relative;
     font-size: 27.5px;
   }
   ///HOVER EFFECT GRID AREA'S
@@ -555,22 +556,56 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 27.5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
     &:hover {
       opacity: 1;
       backdrop-filter: blur(5px);
       transition: ease-in-out 350ms;
     }
-  }
-  .hover-thumbnails > * {
-    transform: translateY(30px);
-    transition: transform 0.5s;
+    > * {
+      transform: translateY(30px);
+      transition: transform 0.5s;
+    }
   }
   .hover-thumbnails:hover > * {
     transform: translateY(0);
   }
+
+  .hover-options {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    a {
+      background: #ffffff;
+      opacity: 0.4;
+      color: #000;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: opacity 0.25s;
+      &:hover {
+        background: #ddd;
+        opacity: 1;
+        transition: ease-in-out 350ms;
+      }
+    }
+  }
+
   ///Times
   .times {
     width: 1.5vw;
