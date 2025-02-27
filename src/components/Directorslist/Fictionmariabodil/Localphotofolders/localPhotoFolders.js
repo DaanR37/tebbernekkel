@@ -99,7 +99,7 @@ export const localPhotoFolders = [
     id: "veluxImages",
     title: "Velux",
     route: "/mariabodil/veluxImages",
-    thumbnail: "images/veluxImages/velux-1.jpg",
+    thumbnail: "images/veluxImages/velux-2.jpg",
     images: [
       "images/veluxImages/velux-1.jpg",
       "images/veluxImages/velux-2.jpg",
