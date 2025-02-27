@@ -10,7 +10,7 @@ export default function EmbeddedPlayerSimonSpecial() {
 
   useEffect(() => {
     // fetch("http://localhost:3001/fictionsimoncarrousel")
-      fetch("https://api.tebbernekkel.nl/fictionsimoncarrousel")
+    fetch("https://api.tebbernekkel.nl/fictionsimoncarrousel")
       .then(response => response.json())
       .then(data => {
         setVideos(data)
@@ -37,8 +37,6 @@ export default function EmbeddedPlayerSimonSpecial() {
       }
     },
     exit: { opacity: 0 }
-    // enter: { x: 0, opacity: 1, transition: { duration: 0.5 } },
-    // exit: { x: -100, opacity: 0, transition: { duration: 0.5 } },
   };
 
   if (!videos || videos.length === 0) {
@@ -56,14 +54,9 @@ export default function EmbeddedPlayerSimonSpecial() {
   return (
     <Animatedpage>
       <section className="embedded_player_special">
-
         <div className="times" onClick={handleClose}>
           <img src="images/times-circle-regular-copy.svg" alt="times" />
         </div>
-
-
-
-
         {/* Container Buttons & Player */}
         <div className="button-player-container">
 
@@ -77,7 +70,6 @@ export default function EmbeddedPlayerSimonSpecial() {
           >
             <img src="images/arrows-slider-copy.svg" alt="arrows" />
           </motion.button>
-
           {/* Player */}
           <AnimatePresence mode="wait">
             <motion.div
@@ -98,7 +90,6 @@ export default function EmbeddedPlayerSimonSpecial() {
               />
             </motion.div>
           </AnimatePresence>
-
           <motion.button
             whileHover={{
               backgroundColor: "#555555",
@@ -110,10 +101,6 @@ export default function EmbeddedPlayerSimonSpecial() {
             <img src="images/arrows-slider-copy.svg" alt="arrows" />
           </motion.button>
         </div>
-
-
-
-
       </section>
     </Animatedpage >
   )

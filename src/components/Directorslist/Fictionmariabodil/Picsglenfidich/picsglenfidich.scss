@@ -1,21 +1,37 @@
-.row {
+.photo-grid-glenfidich {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-top: 8.5rem;
+    .column {
+      flex: 33.33%;
+      // max-width: 25%;
+      padding: 0 2px;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 5px;
+        // vertical-align: middle;
+      }
+    }
+  }
 }
-.column img {
-  margin-top: 5px;
-  vertical-align: middle;
-  width: 100%;
+
+.logo-bbkk {
+  position: absolute;
+  width: 10vw;
+  margin-top: 2.5rem;
+  z-index: 1000;
+  img {
+    width: 100%;
+  }
 }
 
 ///Desktop
 @media screen and (min-width: 1281px) and (max-width: 1960px) {
-  .row {
-    padding: 0 2px;
-  }
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 2px;
-  }
 }

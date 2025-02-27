@@ -1,6 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 /// Homepage
 import HomePage from "./components/Homepage/HomePage";
@@ -27,6 +25,7 @@ import EmbeddedPlayerJoosje from "./components/Directorslist/Fictionjoosje/Embed
 import FictionMariaBodil from "./components/Directorslist/Fictionmariabodil/FictionMariaBodil";
 import EmbeddedPlayerMariaBodil from "./components/Directorslist/Fictionmariabodil/Embeddedplayermariabodil/EmbeddedPlayerMariaBodil";
 import PicsGlenFidich from "./components/Directorslist/Fictionmariabodil/Picsglenfidich/PicsGlenFidich";
+import PhotoFolderPage from "./components/Directorslist/Fictionmariabodil/Photofolderpage/PhotoFolderPage";
 
 import FictionShay from "./components/Directorslist/Fictionshay/FictionShay";
 import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedplayershay/EmbeddedPlayerShay";
@@ -68,6 +67,7 @@ function App() {
         <Route path="/fictionmariabodil" element={<FictionMariaBodil />} />
         <Route path="/embeddedplayermariabodil" element={<EmbeddedPlayerMariaBodil />} />
         <Route path="/mariabodilstills" element={<PicsGlenFidich />} />
+        <Route path="/mariabodil/:folderId" element={<PhotoFolderPage />} />
 
         <Route path="/fictionshay" element={<FictionShay />} />
         <Route path="/embeddedplayershay" element={<EmbeddedPlayerShay />} />
