@@ -43,7 +43,7 @@ export const localPhotoFolders = [
     id: "nikeImages",
     title: "Nike",
     route: "/mariabodil/nikeImages",
-    thumbnail: "images/nikeImages/nike-1.jpg",
+    thumbnail: "images/nikeImages/nike-2.jpg",
     images: [
       "images/nikeImages/nike-1.jpg",
       "images/nikeImages/nike-2.jpg",
