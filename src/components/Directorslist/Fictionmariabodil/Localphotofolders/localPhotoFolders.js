@@ -133,7 +133,7 @@ export const localPhotoFolders = [
     images: [
       "/images/signaturesImages/signatures-1.jpg",
       "/images/signaturesImages/signatures-2.jpg",
-      "/images/signaturesImages/signatures-3.jpg"
+      "/images/signaturesImages/signatures-3.png"
     ],
     layout: "photo-grid-signatures"
   }
