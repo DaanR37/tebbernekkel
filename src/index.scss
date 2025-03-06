@@ -54,7 +54,6 @@ a {
   text-decoration: none;
   text-align: center;
 }
-
 .times {
   position: absolute;
   z-index: 999;
@@ -66,8 +65,8 @@ a {
 
 .logo-bbkk {
   position: absolute;
-  width: 10vw;
-  margin-top: 2.5rem;
+  // width: 10vw;
+  // margin-top: 2.5rem;
   z-index: 1000;
   img {
     width: 100%;
@@ -223,12 +222,54 @@ a {
     display: none;
   }
   .grid-wrapper a div {
-    font-size: 21px;
+    // font-size: 21px;
+    font-size: 27.5px;
+  }
+  .hover-thumbnails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 27.5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    > * {
+      transform: translateY(30px);
+      transition: transform 0.5s;
+    }
+  }
+  .hover-options {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    a {
+      background: #ffffff;
+      opacity: 0.6;
+      color: #000;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+
+  .logo-bbkk {
+    width: 20vw;
+    top: 0;
+    margin-top: 10%;
   }
   .times {
     width: 5vw;
-    top: 15%;
-    right: 0.9rem;
+    top: 0;
+    margin-top: 10%;
+    right: 8%;
     opacity: 1;
   }
   .embedded-player {
@@ -308,9 +349,50 @@ a {
   .grid-wrapper a div {
     font-size: 19px;
   }
+
+  .hover-thumbnails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 19px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    > * {
+      transform: translateY(30px);
+      transition: transform 0.5s;
+    }
+  }
+  .hover-options {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+    a {
+      background: #ffffff;
+      opacity: 0.6;
+      color: #000;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+  .logo-bbkk {
+    width: 10vw;
+    top: 0;
+    margin-top: 4%;
+  }
   .times {
     width: 2vw;
-    top: 5%;
+    top: 0;
+    margin-top: 4%;
     right: 4%;
     opacity: 1;
   }
@@ -385,12 +467,50 @@ a {
   .grid-wrapper a div {
     font-size: 25px;
   }
+  .hover-thumbnails {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .hover-options {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+    a {
+      background: #ffffff;
+      opacity: 0.6;
+      color: #000;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+
+  .logo-bbkk {
+    width: 15vw;
+    top: 0;
+    margin-top: 7%;
+  }
   .times {
-    width: 4vw;
-    top: 7%;
-    right: 1.4rem;
+    width: 3.5vw;
+    top: 0;
+    margin-top: 7%;
+    right: 2rem;
     opacity: 1;
   }
+
   .embedded-player {
     width: 85vw;
     height: 35vh;
@@ -467,13 +587,51 @@ a {
   .grid-wrapper a div {
     font-size: 25px;
   }
-  ///Times
+
+  .hover-thumbnails {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .hover-options {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+    a {
+      background: #ffffff;
+      opacity: 0.6;
+      color: #000;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+
+  .logo-bbkk {
+    width: 15vw;
+    top: 0;
+    margin-top: 5%;
+  }
   .times {
-    width: 2vw;
-    top: 5%;
-    right: 4%;
+    width: 2.5vw;
+    top: 0;
+    margin-top: 5%;
+    right: 2.5rem;
     opacity: 1;
   }
+
   .embedded-player {
     width: 65vw;
     height: 55vh;
@@ -604,12 +762,18 @@ a {
       }
     }
   }
+
+  .logo-bbkk {
+    width: 10vw;
+    top: 0;
+    margin-top: 2.5%;
+  }
   .times {
     width: 1.5vw;
-    // top: 5%;
     top: 0;
     margin-top: 3%;
     right: 4%;
+    opacity: 1;
     opacity: 0.8;
     cursor: pointer;
     &:hover {
@@ -618,6 +782,7 @@ a {
       transition: 300ms linear;
     }
   }
+
   .embedded-player {
     width: 55vw;
     height: 60vh;
@@ -755,11 +920,17 @@ a {
       }
     }
   }
-  ///Times
+  .logo-bbkk {
+    width: 10vw;
+    top: 0;
+    margin-top: 2.5%;
+  }
   .times {
     width: 1.5vw;
-    top: 5%;
+    top: 0;
+    margin-top: 5%;
     right: 4%;
+    opacity: 1;
     opacity: 0.8;
     cursor: pointer;
     &:hover {

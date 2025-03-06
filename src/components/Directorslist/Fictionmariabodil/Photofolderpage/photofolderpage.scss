@@ -22,3 +22,17 @@
   }
 }
 
+///Mobile Portrait
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .photo-folder-page {
+    .row {
+      padding: 0 0px;
+      flex-direction: column;
+    }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+      padding: 0 0px;
+    }
+  }
+}

@@ -7,7 +7,6 @@ import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 import { localPhotoFolders } from "./Localphotofolders/localPhotoFolders";
-// import PicsMariaBodil from "./PicsMariaBodil";
 
 export default function FictionMariaBodil() {
   const [portfolioDataFictionMariaBodil, setPortfolioDataFictionMariaBodil] = useState([]);
