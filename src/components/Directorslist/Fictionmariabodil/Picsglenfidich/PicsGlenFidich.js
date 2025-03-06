@@ -16,6 +16,7 @@ export default function PicsGlenFidich() {
       <div className="times" onClick={handleClose}>
         <img src="images/times-circle-regular-copy.svg" alt="times" />
       </div>
+
       <div className="row">
         <div className="column">
           <img src="images/picsglenfidichjson/3.jpg" alt="1" />
@@ -34,6 +35,7 @@ export default function PicsGlenFidich() {
           <img src="images/picsglenfidichjson/12.jpg" alt="1" />
         </div>
       </div>
+      
     </section>
   )
 }

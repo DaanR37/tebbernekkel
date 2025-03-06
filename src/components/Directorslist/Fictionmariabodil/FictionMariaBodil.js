@@ -105,7 +105,7 @@ export default function FictionMariaBodil() {
             <div className={photoIndexFictionMariaBodil[index]} key={folder.id}>
               <Link
               // to={folder.route}
-              // to={`/mariabodil/${folder.id}`}
+              to={`/mariabodil/${folder.id}`}
               >
                 <div
                   style={{
