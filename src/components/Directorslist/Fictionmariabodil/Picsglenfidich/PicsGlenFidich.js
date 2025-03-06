@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import "./picsglenfidich.scss";
 
 export default function PicsGlenFidich() {
   const navigate = useNavigate();
@@ -9,7 +8,8 @@ export default function PicsGlenFidich() {
   };
 
   return (
-    <section className="photo-grid-glenfidich">
+    // <section className="photo-grid-glenfidich">
+    <section className="photo-folder-page">
       <div className="logo-bbkk">
         <img src="images/BBKK-pink.png" alt="tebbernekkel logo" />
       </div>

@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { localPhotoFolders } from "../Localphotofolders/localPhotoFolders";
 import { useNavigate } from "react-router-dom";
-import "./photofolderpage.scss";
 
 import React from 'react'
 

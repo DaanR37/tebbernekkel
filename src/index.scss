@@ -54,22 +54,36 @@ a {
   text-decoration: none;
   text-align: center;
 }
+
+.photo-folder-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .row {
+    display: flex;
+    .column {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+  .logo-bbkk {
+    position: absolute;
+    z-index: 1000;
+    img {
+      width: 100%;
+    }
+  }
+}
 .times {
   position: absolute;
   z-index: 999;
   img {
     width: 100%;
     filter: invert(1);
-  }
-}
-
-.logo-bbkk {
-  position: absolute;
-  // width: 10vw;
-  // margin-top: 2.5rem;
-  z-index: 1000;
-  img {
-    width: 100%;
   }
 }
 
@@ -260,11 +274,23 @@ a {
     }
   }
 
-  .logo-bbkk {
-    width: 20vw;
-    top: 0;
-    margin-top: 10%;
+  .photo-folder-page {
+    .row {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 7rem;
+      padding: 0 0px;
+      .column {
+        flex: 100%;
+      }
+    }
+    .logo-bbkk {
+      width: 20vw;
+      top: 0;
+      margin-top: 10%;
+    }
   }
+
   .times {
     width: 5vw;
     top: 0;
@@ -384,11 +410,23 @@ a {
       font-size: 14px;
     }
   }
-  .logo-bbkk {
-    width: 10vw;
-    top: 0;
-    margin-top: 4%;
+
+  .photo-folder-page {
+    .row {
+      padding: 0 0px;
+      flex-wrap: wrap;
+      margin-top: 5.5rem;
+      .column {
+        flex: 33.33%;
+      }
+    }
+    .logo-bbkk {
+      width: 10vw;
+      top: 0;
+      margin-top: 4%;
+    }
   }
+
   .times {
     width: 2vw;
     top: 0;
@@ -498,10 +536,20 @@ a {
     }
   }
 
-  .logo-bbkk {
-    width: 15vw;
-    top: 0;
-    margin-top: 7%;
+  .photo-folder-page {
+    .row {
+      padding: 0 0px;
+      flex-wrap: wrap;
+      margin-top: 8.5rem;
+      .column {
+        flex: 50%;
+      }
+    }
+    .logo-bbkk {
+      width: 15vw;
+      top: 0;
+      margin-top: 7%;
+    }
   }
   .times {
     width: 3.5vw;
@@ -619,11 +667,23 @@ a {
     }
   }
 
-  .logo-bbkk {
-    width: 15vw;
-    top: 0;
-    margin-top: 5%;
+  .photo-folder-page {
+    .row {
+      padding: 0 0px;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 8.5rem;
+      .column {
+        flex: 50%;
+      }
+    }
+    .logo-bbkk {
+      width: 15vw;
+      top: 0;
+      margin-top: 5%;
+    }
   }
+
   .times {
     width: 2.5vw;
     top: 0;
@@ -763,10 +823,21 @@ a {
     }
   }
 
-  .logo-bbkk {
-    width: 10vw;
-    top: 0;
-    margin-top: 2.5%;
+  .photo-folder-page {
+    .row {
+      padding: 0 0px;
+      flex-wrap: wrap;
+      margin-top: 8.5rem;
+      .column {
+        flex: 33.33%;
+        padding: 0 2px;
+      }
+    }
+    .logo-bbkk {
+      width: 10vw;
+      top: 0;
+      margin-top: 2.5%;
+    }
   }
   .times {
     width: 1.5vw;
@@ -920,10 +991,22 @@ a {
       }
     }
   }
-  .logo-bbkk {
-    width: 10vw;
-    top: 0;
-    margin-top: 2.5%;
+
+  .photo-folder-page {
+    .row {
+      padding: 0 0px;
+      flex-wrap: wrap;
+      margin-top: 8.5rem;
+      .column {
+        flex: 33.33%;
+        padding: 0 2px;
+      }
+    }
+    .logo-bbkk {
+      width: 10vw;
+      top: 0;
+      margin-top: 2.5%;
+    }
   }
   .times {
     width: 1.5vw;
