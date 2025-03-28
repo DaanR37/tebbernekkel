@@ -8,7 +8,7 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionSimon() {
-  const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon", "five-simon", "six-simon"];
+  const videoIndexFictionSimon = ["one-simon", "two-simon", "three-simon", "four-simon"];
   const [portfolioDataFictionSimon, setPortfolioDataFictionSimon] = useState([]);
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
