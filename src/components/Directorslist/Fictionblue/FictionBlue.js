@@ -9,17 +9,11 @@ import { useMediaQuery } from "@mui/material";
 
 export default function FictionBlue() {
   const videoIndexFictionBlue = [
-    "seven-blue",
+    "one-blue",
+    "two-blue",
     "three-blue",
     "four-blue",
     "five-blue",
-    "six-blue",
-    "two-blue",
-    "one-blue",
-    "eight-blue",
-    "nine-blue",
-    "ten-blue",
-    "eleven-blue",
   ];
   const [portfolioDataFictionBlue, setPortfolioDataFictionBlue] = useState([]);
 
