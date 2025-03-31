@@ -9,13 +9,10 @@ import { useMediaQuery } from "@mui/material";
 
 export default function FictionAchmed() {
   const videoIndexFictionAchmed = [
-    "seven-achmed",
+    "one-achmed",
+    "two-achmed",
     "three-achmed",
     "four-achmed",
-    "five-achmed",
-    "six-achmed",
-    "two-achmed",
-    "one-achmed",
   ];
   const [portfolioDataFictionAchmed, setPortfolioDataFictionAchmed] = useState(
     []

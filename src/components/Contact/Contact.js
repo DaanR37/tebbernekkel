@@ -46,12 +46,9 @@ export default function Contact() {
 
         <div className="cards four">
           <h1>Finance</h1>
-          <h3>Lauren Visser</h3>
+          <h3>José Naaktgeboren</h3>
           <a href='mailto:invoices@tebbernekkel.com' target="_blank" rel="noreferrer">
             <h3>invoices@tebbernekkel.com</h3>
-          </a>
-          <a href='tel:0645727687' target="_blank" rel="noreferrer" className="content-details-phone-four">
-            <h3>+31 (0)6 45 72 76 87</h3>
           </a>
         </div>
 

@@ -202,17 +202,17 @@
   }
   ///CARD ONE
   #grid-wrapper-fiction-simon > div.one-simon > a div {
-    background-size: cover;
+    background-size: auto 135%;
     background-position: center;
   }
   ///CARD TWO
   #grid-wrapper-fiction-simon > div.two-simon > a div {
-    background-size: cover;
+    background-size: auto 125%;
     background-position: center;
   }
   ///CARD THREE
   #grid-wrapper-fiction-simon > div.three-simon > a div {
-    background-size: cover;
+    background-size: auto 130%;
     background-position: center;
   }
   ///CARD FOUR
@@ -225,7 +225,7 @@
 @media screen and (min-width: 1961px) and (max-width: 2400px) {
   #grid-wrapper-fiction-simon {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 200px);
+    grid-template-rows: repeat(7, 200px);
   }
   /// 2 BIG
   .one-simon {
@@ -247,17 +247,17 @@
   }
   ///CARD ONE
   #grid-wrapper-fiction-simon > div.one-simon > a div {
-    background-size: cover;
+    background-size: auto 165%;
     background-position: center;
   }
   ///CARD TWO
   #grid-wrapper-fiction-simon > div.two-simon > a div {
-    background-size: cover;
+    background-size: auto 140%;
     background-position: center;
   }
   ///CARD THREE
   #grid-wrapper-fiction-simon > div.three-simon > a div {
-    background-size: cover;
+    background-size: auto 145%;
     background-position: center;
   }
   ///CARD FOUR

@@ -8,7 +8,7 @@ import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
 export default function FictionBram() {
-  const videoIndexFictionBram = ["one-bram", "two-bram", "three-bram", "four-bram"];
+  const videoIndexFictionBram = ["one-bram", "two-bram", "three-bram"];
   const [portfolioDataFictionBram, setPortfolioDataFictionBram] = useState([]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
