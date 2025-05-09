@@ -111,6 +111,18 @@ app.get("/fictionmariabodil", (req, res) => {
     res.send(body.data)
   });
 });
+///SACHA ENDPOINT
+app.get("/fictionsacha", (req, res) => {
+  client.request({
+    method: 'GET',
+    path: '/me/projects/25246284/videos?fields=name,uri,description,pictures.sizes.link',
+  }, function (error, body, status_code, headers) {
+    if (error) {
+      console.log(error)
+    }
+    res.send(body.data)
+  });
+});
 ///SHAY ENDPOINT
 app.get("/fictionshay", (req, res) => {
   client.request({
@@ -159,7 +171,6 @@ app.get("/fictionbram", (req, res) => {
     res.send(body.data)
   });
 });
-
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)

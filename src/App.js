@@ -27,6 +27,9 @@ import EmbeddedPlayerMariaBodil from "./components/Directorslist/Fictionmariabod
 import PicsGlenFidich from "./components/Directorslist/Fictionmariabodil/Picsglenfidich/PicsGlenFidich";
 import PhotoFolderPage from "./components/Directorslist/Fictionmariabodil/Photofolderpage/PhotoFolderPage";
 
+import FictionSacha from "./components/Directorslist/Fictionsacha/FictionSacha";
+import EmbeddedPlayerSacha from "./components/Directorslist/Fictionsacha/Embeddedplayersacha/EmbeddedPlayerSacha";
+
 import FictionShay from "./components/Directorslist/Fictionshay/FictionShay";
 import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedplayershay/EmbeddedPlayerShay";
 
@@ -68,6 +71,9 @@ function App() {
         <Route path="/embeddedplayermariabodil" element={<EmbeddedPlayerMariaBodil />} />
         <Route path="/mariabodilstills" element={<PicsGlenFidich />} />
         <Route path="/mariabodil/:folderId" element={<PhotoFolderPage />} />
+
+        <Route path="/fictionsacha" element={<FictionSacha />} />
+        <Route path="/embeddedplayersacha" element={<EmbeddedPlayerSacha />} />
 
         <Route path="/fictionshay" element={<FictionShay />} />
         <Route path="/embeddedplayershay" element={<EmbeddedPlayerShay />} />

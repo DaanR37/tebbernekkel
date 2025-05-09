@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Animatedpage from "../../../Animatedpage";
 
-export default function EmbeddedPlayerShay() {
+export default function EmbeddedPlayerSacha() {
   const location = useLocation();
   console.log(location.state);
 
@@ -14,9 +14,9 @@ export default function EmbeddedPlayerShay() {
 
   return (
     <Animatedpage>
-      <section id="embedded-player-shay" className="embedded_player">
+      <section id="embedded-player-sacha" className="embedded_player">
         <div>
-          <a href="/fictionshay">
+          <a href="/fictionsacha">
             <div className="times">
               <img src="images/times-circle-regular-copy.svg" alt="times" />
             </div>
@@ -33,5 +33,5 @@ export default function EmbeddedPlayerShay() {
         </div>
       </section>
     </Animatedpage>
-  )
+  );
 }
