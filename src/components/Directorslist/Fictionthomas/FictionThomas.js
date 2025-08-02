@@ -1,4 +1,4 @@
-import "./fictionsacha.scss";
+import "./fictionthomas.scss";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeaderTransparent from "../../Headertransparent/HeaderTransparent";
@@ -7,18 +7,17 @@ import SliderCreatives from "../../Slidercreatives/SliderCreatives";
 import SliderMobile from "../../Slidermobile/SliderMobile";
 import { useMediaQuery } from "@mui/material";
 
-export default function FictionSacha() {
-  const videoIndexFictionSacha = ["one-sacha", "two-sacha", "three-sacha"];
-  const [portfolioDataFictionSacha, setPortfolioDataFictionSacha] = useState([]);
+export default function FictionThomas() {
+  const videoIndexFictionThomas = ["one-thomas", "two-thomas", "three-thomas", "four-thomas"];
+  const [portfolioDataFictionThomas, setPortfolioDataFictionThomas] = useState([]);
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
 
   useEffect(() => {
-    // console.log("fetching data")
-    // fetch("http://localhost:3001/fictionsacha")
-    fetch("https://api.tebbernekkel.nl/fictionsacha")
+    // fetch("http://localhost:3001/fictionthomas")
+    fetch("https://api.tebbernekkel.nl/fictionthomas")
       .then(response => response.json())
-      .then(portfolioDataFictionSacha => {
-        setPortfolioDataFictionSacha(portfolioDataFictionSacha)
+      .then(portfolioDataFictionThomas => {
+        setPortfolioDataFictionThomas(portfolioDataFictionThomas)
       }).catch(error => {
         console.log(error.message)
       })
@@ -35,19 +34,19 @@ export default function FictionSacha() {
         ) : (
           <SliderCreatives />
         )}
-        <div id="grid-wrapper-fiction-sacha" className='grid-wrapper'>
-          {portfolioDataFictionSacha.map((video, index) => {
+        <div id="grid-wrapper-fiction-thomas" className='grid-wrapper'>
+          {portfolioDataFictionThomas.map((video, index) => {
             return (
-              <div className={videoIndexFictionSacha[index]} key={index}>
+              <div className={videoIndexFictionThomas[index]} key={index}>
                 <Link
-                  to="/embeddedplayersacha"
+                  to="/embeddedplayerthomas"
                   state={{
                     link: `${video.uri}`,
                     title: `${video.name}`,
                     description: `${video.description}`,
                   }}
                 >
-                  <div  
+                  <div
                     style={{
                       backgroundImage: `url(${video.pictures.sizes[5].link})`,
                       height: "100%",

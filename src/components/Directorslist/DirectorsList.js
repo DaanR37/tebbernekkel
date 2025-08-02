@@ -65,6 +65,12 @@ export default function DirectorsList() {
                 simon becks
               </NavLink>
             </li>
+            {/* Thomas Jullien */}
+            <li>
+              <NavLink to="/fictionthomas" className="thomas-btn" reloadDocument>
+                thomas jullien
+              </NavLink>
+            </li>
           </ul>
         </div>
       </section>

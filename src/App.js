@@ -40,6 +40,9 @@ import EmbeddedPlayerSimonSpecial from "./components/Directorslist/Fictionsimon/
 import FictionBram from "./components/Directorslist/Fictionbram/FictionBram";
 import EmbeddedPlayerBram from "./components/Directorslist/Fictionbram/Embeddedplayerbram/EmbeddedPlayerBram";
 
+import FictionThomas from "./components/Directorslist/Fictionthomas/FictionThomas";
+import EmbeddedPlayerThomas from "./components/Directorslist/Fictionthomas/Embeddedplayerthomas/EmbeddedPlayerThomas";
+
 /// Awards & Contact
 import Awards from "./components/Awards/Awards";
 import Contact from "./components/Contact/Contact";
@@ -84,6 +87,9 @@ function App() {
 
         <Route path="/fictionbram" element={<FictionBram />} />
         <Route path="/embeddedplayerbram" element={<EmbeddedPlayerBram />} />
+
+        <Route path="/fictionthomas" element={<FictionThomas />} />
+        <Route path="/embeddedplayerthomas" element={<EmbeddedPlayerThomas />} />
 
         <Route path="/awards" element={<Awards />} />
         <Route path="/contact" element={<Contact />} />

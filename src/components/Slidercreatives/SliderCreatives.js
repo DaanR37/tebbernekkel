@@ -58,6 +58,12 @@ export default function SliderCreatives() {
             <h1>Simon</h1>
           </NavLink>
         </li>
+        <p>|</p>
+        <li>
+          <NavLink to="/fictionthomas" className="thomas-btn-slider" reloadDocument>
+            <h1>Thomas</h1>
+          </NavLink>
+        </li>
       </ul>
     </section>
   );
