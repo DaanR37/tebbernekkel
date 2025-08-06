@@ -135,30 +135,6 @@ app.get("/fictionshay", (req, res) => {
     res.send(body.data)
   });
 });
-///SIMON ENDPOINT
-app.get("/fictionsimon", (req, res) => {
-  client.request({
-    method: 'GET',
-    path: '/me/projects/16503604/videos?fields=name,uri,description,pictures.sizes.link',
-  }, function (error, body, status_code, headers) {
-    if (error) {
-      console.log(error)
-    }
-    res.send(body.data)
-  });
-});
-///SIMON CARROUSEL ENDPOINT
-app.get("/fictionsimoncarrousel", (req, res) => {
-  client.request({
-    method: 'GET',
-    path: '/me/projects/24241460/videos?fields=name,uri,description,pictures.sizes.link',
-  }, function (error, body, status_code, headers) {
-    if (error) {
-      console.log(error)
-    }
-    res.send(body.data)
-  });
-});
 ///BRAM ENDPOINT
 app.get("/fictionbram", (req, res) => {
   client.request({

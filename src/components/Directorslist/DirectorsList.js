@@ -59,12 +59,6 @@ export default function DirectorsList() {
                 shay latukolan
               </NavLink>
             </li>
-            {/* Simon Becks */}
-            <li>
-              <NavLink to="/fictionsimon" className="simon-btn" reloadDocument>
-                simon becks
-              </NavLink>
-            </li>
             {/* Thomas Jullien */}
             <li>
               <NavLink to="/fictionthomas" className="thomas-btn" reloadDocument>
