@@ -23,22 +23,20 @@
   }
 }
 a.achmed-btn-slider.active,
+a.arjen-btn-slider.active,
 a.blue-btn-slider.active,
+a.bram-btn-slider.active,
 a.damien-btn-slider.active,
-a.folkert-btn-slider.active,
 a.joosje-btn-slider.active,
 a.mariabodil-btn-slider.active,
+a.sacha-btn-slider.active,
 a.shay-btn-slider.active,
-a.bram-btn-slider.active {
-  color: #f5a1a3;
-  opacity: 1;
-  transition: 350ms ease-in-out;
-}
 a.thomas-btn-slider.active {
   color: #f5a1a3;
   opacity: 1;
   transition: 350ms ease-in-out;
 }
+
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
   #slider-container {

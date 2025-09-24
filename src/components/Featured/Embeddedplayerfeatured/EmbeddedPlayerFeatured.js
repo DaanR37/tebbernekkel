@@ -29,7 +29,7 @@ export default function EmbeddedPlayerFeatured() {
               responsive="true"
               frameBorder="0"
               allowFullScreen
-            ></iframe>
+            />
             <div className="player-text">
               <p>{title}</p>
               <br></br>

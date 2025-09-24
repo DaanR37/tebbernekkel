@@ -16,6 +16,12 @@ export default function DirectorsList() {
                 achmed akkabi
               </NavLink>
             </li>
+            {/* Arjen Schotel */}
+            <li>
+              <NavLink to="/fictionarjen" className="arjen-btn" reloadDocument>
+                arjen schotel
+              </NavLink>
+            </li>
             {/* Blue Ter Burg */}
             <li>
               <NavLink to="/fictionblue" className="blue-btn" reloadDocument>

@@ -1,20 +1,18 @@
 a.dropdown-menu__link.achmed.active,
+a.dropdown-menu__link.arjen.active,
 a.dropdown-menu__link.blue.active,
+a.dropdown-menu__link.bram.active,
 a.dropdown-menu__link.damien.active,
-a.dropdown-menu__link.folkert.active,
 a.dropdown-menu__link.joosje.active,
 a.dropdown-menu__link.mariabodil.active,
+a.dropdown-menu__link.sacha.active,
 a.dropdown-menu__link.shay.active,
-a.dropdown-menu__link.bram.active {
-  color: #f5a1a3;
-  opacity: 1;
-  transition: 350ms ease-in-out;
-}
 a.dropdown-menu__link.thomas.active {
   color: #f5a1a3;
   opacity: 1;
   transition: 350ms ease-in-out;
 }
+
 ///Mobile Portrait
 @media screen and (max-width: 600px) and (orientation: portrait) {
   .dropdown-menu {

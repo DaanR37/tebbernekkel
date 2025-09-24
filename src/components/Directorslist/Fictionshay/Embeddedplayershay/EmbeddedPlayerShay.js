@@ -28,7 +28,7 @@ export default function EmbeddedPlayerShay() {
               responsive="true"
               frameBorder="0"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </div>
       </section>

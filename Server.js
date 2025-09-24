@@ -51,6 +51,18 @@ app.get("/formats", (req, res) => {
     res.send(body.data)
   });
 });
+///ARJEN ENDPOINT
+app.get("/fictionarjen", (req, res) => {
+  client.request({
+    method: 'GET',
+    path: '/me/projects/26708523/videos?fields=name,uri,description,pictures.sizes.link',
+  }, function (error, body, status_code, headers) {
+    if (error) {
+      console.log(error)
+    }
+    res.send(body.data)
+  });
+});
 ///ACHMED ENDPOINT
 app.get("/fictionachmed", (req, res) => {
   client.request({
