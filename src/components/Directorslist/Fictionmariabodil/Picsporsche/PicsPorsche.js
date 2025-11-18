@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function PicsGlenFidich() {
+export default function PicsPorsche() {
   const navigate = useNavigate();
 
   const handleClose = () => {
@@ -18,21 +18,20 @@ export default function PicsGlenFidich() {
 
       <div className="row">
         <div className="column">
-          <img src="images/picsglenfidichjson/9.jpg" alt="1" />
-          <img src="images/picsglenfidichjson/3.jpg" alt="1" />
+          <img src="images/picsporschejson/1.jpg" alt="1" />
+          <img src="images/picsporschejson/6.jpg" alt="1" />
+          <img src="images/picsporschejson/27.jpg" alt="1" />
         </div>
         <div className="column">
-          <img src="images/picsglenfidichjson/5.jpg" alt="1" />
-          <img src="images/picsglenfidichjson/8.jpg" alt="1" />
+          <img src="images/picsporschejson/5.jpg" alt="1" />
+          <img src="images/picsporschejson/9.jpg" alt="1" />
+          <img src="images/picsporschejson/25.jpg" alt="1" />
         </div>
         <div className="column">
-          <img src="images/picsglenfidichjson/10.jpg" alt="1" />
-          <img src="images/picsglenfidichjson/6.jpg" alt="1" />
+          <img src="images/picsporschejson/2.jpg" alt="1" />
+          <img src="images/picsporschejson/34.jpg" alt="1" />
+          <img src="images/picsporschejson/37.jpg" alt="1" />
         </div>
-        {/* <div className="column">
-          <img src="images/picsglenfidichjson/11.jpg" alt="1" />
-          <img src="images/picsglenfidichjson/12.jpg" alt="1" />
-        </div> */}
       </div>
     </section>
   )

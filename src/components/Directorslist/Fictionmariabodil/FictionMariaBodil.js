@@ -43,11 +43,18 @@ export default function FictionMariaBodil() {
         <HeaderTransparent />
         {isSmallScreen ? <SliderMobile /> : <SliderCreatives />}
         <div id="grid-wrapper-fiction-mariabodil" className='grid-wrapper'>
+
+          {/* Video Section */}
           {portfolioDataFictionMariaBodil.map((video, index) => {
-            const isSpecial = videoIndexFictionMariaBodil[index] === "three-mariabodil";
+            const currentIndex = videoIndexFictionMariaBodil[index];
+            const isGlenFidich = currentIndex === "three-mariabodil";
+            const isPorsche = currentIndex === "one-mariabodil";
+
             return (
-              <div className={videoIndexFictionMariaBodil[index]} key={index}>
-                {isSpecial ? (
+              <div className={currentIndex} key={index}>
+
+                {/* TasteTheFuture video */}
+                {isGlenFidich ? (
                   <div
                     style={{
                       backgroundImage: `url(${video.pictures.sizes[5].link})`,
@@ -73,7 +80,34 @@ export default function FictionMariaBodil() {
                       </div>
                     </div>
                   </div>
+                ) : isPorsche ? (
+                  <div
+                    style={{
+                      backgroundImage: `url(${video.pictures.sizes[5].link})`,
+                      position: "relative",
+                      height: "100%",
+                      width: "100%"
+                    }}
+                  >
+                    <div className="hover-thumbnails">
+                      <span aria-hidden="true">{video.name}</span>
+                      <div className="hover-options">
+                        <Link
+                          to="/embeddedplayermariabodil"
+                          state={{
+                            link: video.uri,
+                            title: video.name,
+                            description: video.description,
+                          }}
+                        >
+                          Video
+                        </Link>
+                        <Link to="/mariabodilstillsporsche">Stills</Link>
+                      </div>
+                    </div>
+                  </div>
                 ) : (
+                  /* Other videos */
                   <Link
                     to="/embeddedplayermariabodil"
                     state={{
@@ -103,8 +137,7 @@ export default function FictionMariaBodil() {
           {localPhotoFolders.map((folder, index) => (
             <div className={photoIndexFictionMariaBodil[index]} key={folder.id}>
               <Link
-              // to={folder.route}
-              to={`/mariabodil/${folder.id}`}
+                to={`/mariabodil/${folder.id}`}
               >
                 <div
                   style={{
@@ -122,7 +155,6 @@ export default function FictionMariaBodil() {
             </div>
           ))}
         </div>
-        {/* <PicsMariaBodil /> */}
       </section >
     </Animatedpage >
   )
