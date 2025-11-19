@@ -14,7 +14,8 @@ export default function FictionMariaBodil() {
 
   const videoIndexFictionMariaBodil = [
     "one-mariabodil", "two-mariabodil",
-    "three-mariabodil", "four-mariabodil"
+    "three-mariabodil", "four-mariabodil",
+    "five-mariabodil",
   ];
   const photoIndexFictionMariaBodil = [
     "one-thumbnail", "two-thumbnail",
@@ -47,8 +48,8 @@ export default function FictionMariaBodil() {
           {/* Video Section */}
           {portfolioDataFictionMariaBodil.map((video, index) => {
             const currentIndex = videoIndexFictionMariaBodil[index];
-            const isGlenFidich = currentIndex === "three-mariabodil";
-            const isPorsche = currentIndex === "one-mariabodil";
+            const isGlenFidich = currentIndex === "four-mariabodil";
+            const isPorsche = currentIndex === "three-mariabodil";
 
             return (
               <div className={currentIndex} key={index}>

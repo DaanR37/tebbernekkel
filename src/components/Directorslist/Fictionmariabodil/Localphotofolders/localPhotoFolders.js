@@ -17,7 +17,7 @@ export const localPhotoFolders = [
     id: "numeroEditorialImages",
     title: "Numero Editorial",
     route: "/mariabodil/numeroEditorialImages",
-    thumbnail: "images/numeroEditorialImages/numeroeditorial-1.jpg",
+    thumbnail: "images/numeroEditorialImages/numeroeditorial-3.jpg",
     images: [
       "/images/numeroEditorialImages/numeroeditorial-3.jpg",
       "/images/numeroEditorialImages/numeroeditorial-2.jpg",
@@ -90,7 +90,7 @@ export const localPhotoFolders = [
     id: "tweekImages",
     title: "Tweek",
     route: "/mariabodil/tweekImages",
-    thumbnail: "images/tweekImages/tweek-1.jpg",
+    thumbnail: "images/tweekImages/tweek-2.jpg",
     images: [
       "/images/tweekImages/tweek-3.jpg",
       "/images/tweekImages/tweek-1.jpg",
@@ -116,7 +116,7 @@ export const localPhotoFolders = [
     id: "claesIversenImages",
     title: "Claes Iversen",
     route: "/mariabodil/claesIversenImages",
-    thumbnail: "images/claesIversenImages/claesiversen-1.jpg",
+    thumbnail: "images/claesIversenImages/claesiversen-6.jpg",
     images: [
       "/images/claesIversenImages/claesiversen-1.jpg",
       "/images/claesIversenImages/claesiversen-2.jpg",
