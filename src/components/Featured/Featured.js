@@ -5,12 +5,12 @@ import Animatedpage from '../Animatedpage';
 import HeaderTransparent from '../Headertransparent/HeaderTransparent';
 
 export default function Featured() {
-  const videoIndex = ["two", "one", "three", "four", "six", "five", "eight", "seven",
-    "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one"];
+  const videoIndex = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
   const [portfolioData, setPortfolioData] = useState([]);
 
   useEffect(() => {
     fetch("https://api.tebbernekkel.nl/featured")
+    // fetch("http://localhost:3001/featured")
       .then(response => response.json())
       .then(portfolioData => {
         setPortfolioData(portfolioData)
