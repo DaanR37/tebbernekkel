@@ -58,7 +58,7 @@ export default function Contact() {
           <a href='mailto:achmed@tebbernekkel.com' target="_blank" rel="noreferrer">
             <h3>achmed@tebbernekkel.com</h3>
           </a>
-          <h3>Blue Ter Burg</h3>
+          <h3>Blue</h3>
           <a href='mailto:blue@tebbernekkel.com' target="_blank" rel="noreferrer" className="content-details-mail-three-blue">
             <h3>blue@tebbernekkel.com</h3>
           </a>

@@ -1,5 +1,5 @@
 import "./homepage.scss";
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import ReactPlayer from "react-player/vimeo";
 import { Box } from "@mui/material";
 import classNames from "classnames";
@@ -17,6 +17,8 @@ export default function HomePage() {
   const [featureData, setFeatureData] = useState([]);
   const [progress, setProgress] = useState(0);
   const [winHeight, setwinHeight] = useState(window.innerHeight);
+  const [mountedSlides, setMountedSlides] = useState(() => new Set([0]));
+  const [readySlides, setReadySlides] = useState(() => new Set());
   const containerRef = useRef();
 
   //FETCHING DATA
@@ -39,6 +41,53 @@ export default function HomePage() {
       window.removeEventListener("resize", resizeHeight);
     };
   }, []);
+
+  // Phase B: zodra een slide klaar is om te spelen, mount alvast de volgende.
+  // Dit zorgt dat slide 0 eerst exclusieve bandwidth krijgt, en pas wanneer
+  // hij echt draait wordt slide 1 in de achtergrond geladen.
+  const handleReady = useCallback((index) => {
+    setReadySlides((prev) => {
+      if (prev.has(index)) return prev;
+      const next = new Set(prev);
+      next.add(index);
+      return next;
+    });
+    setMountedSlides((prev) => {
+      if (featureData.length === 0) return prev;
+      const nextIndex = (index + 1) % featureData.length;
+      if (prev.has(nextIndex)) return prev;
+      const next = new Set(prev);
+      next.add(nextIndex);
+      return next;
+    });
+  }, [featureData.length]);
+
+  // Phase C: 2 seconden nadat slide 0 ready is, mount alle overige slides
+  // in de achtergrond. Tegen de tijd dat auto-advance ze nodig heeft (10s+)
+  // zijn ze al gebufferd.
+  useEffect(() => {
+    if (!readySlides.has(0) || featureData.length === 0) return;
+    const timer = setTimeout(() => {
+      setMountedSlides((prev) => {
+        const next = new Set(prev);
+        for (let i = 0; i < featureData.length; i++) next.add(i);
+        return next;
+      });
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [readySlides, featureData.length]);
+
+  // Safety net: als de gebruiker handmatig sneller scrollt dan progressive
+  // mount bijhoudt, zorg dat de actieve slide in elk geval gemount is.
+  useEffect(() => {
+    if (featureData.length === 0) return;
+    setMountedSlides((prev) => {
+      if (prev.has(current)) return prev;
+      const next = new Set(prev);
+      next.add(current);
+      return next;
+    });
+  }, [current, featureData.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -100,12 +149,21 @@ export default function HomePage() {
     };
   }, [featureData.length, current]);
 
+  const showLoader = featureData.length === 0 || !readySlides.has(current);
+
   return (
     <Animatedpage>
       <section role="presentation" className="slide-container" id="featured">
         <>
           <HeaderTransparent />
         </>
+        <div
+          className={classNames("slide-loader", {
+            "slide-loader--hidden": !showLoader,
+          })}
+        >
+          <img src="images/BBKK-pink.png" alt="" />
+        </div>
         <div
           ref={containerRef}
           onWheel={onScroll}
@@ -117,6 +175,7 @@ export default function HomePage() {
             "/video/"
           )}`;
           const height = `${winHeight}px`;
+          const isMounted = mountedSlides.has(index);
           return (
             <div
               key={index}
@@ -130,23 +189,26 @@ export default function HomePage() {
                     "slide-item__video--inactive": index !== current,
                   })}
                 >
-                  <ReactPlayer
-                    width="100vw"
-                    height={height}
-                    url={url}
-                    playing={index === current}
-                    muted
-                    playsinline
-                    config={{
-                      playerOptions: {
-                        background: true,
-                        quality: "1080p",
-                        dnt: true,
-                        loop: true,
-                        height: height,
-                      },
-                    }}
-                  />
+                  {isMounted && (
+                    <ReactPlayer
+                      width="100vw"
+                      height={height}
+                      url={url}
+                      playing={index === current}
+                      muted
+                      playsinline
+                      onReady={() => handleReady(index)}
+                      config={{
+                        playerOptions: {
+                          background: true,
+                          quality: "1080p",
+                          dnt: true,
+                          loop: true,
+                          height: height,
+                        },
+                      }}
+                    />
+                  )}
                 </div>
                 <Card title={video.name} active={index === current} key={index} />
               </div>

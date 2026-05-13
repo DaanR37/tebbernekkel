@@ -5,7 +5,12 @@ export default function Header() {
   return (
     <header className="header-container">
       <div className="desktop-container desktop-container-colored">
-        <ul className="header-left-side">
+        <Link to="/" className="bbk-logo">
+          <img
+            src="images/BBKK-pink.png" alt="tebbernekkel logo"
+          />
+        </Link>
+        <ul className="header-right-side">
           <motion.li
             whileHover={{
               scale: 1.1
@@ -27,26 +32,6 @@ export default function Header() {
             }}
           >
             <NavLink to="/directorslist" reloadDocument className="fiction-btn">directors</NavLink>
-          </motion.li>
-        </ul>
-        <div>
-          <Link to="/" className="bbk-logo">
-            <img
-              src="images/BBKK-pink.png" alt="tebbernekkel logo"
-            />
-          </Link>
-        </div>
-        <ul className="header-right-side">
-          <motion.li
-            whileHover={{
-              scale: 1.1
-            }}
-            transition={{
-              type: 'spring',
-              stiffness: 80
-            }}
-          >
-            <NavLink to="/awards" reloadDocument className="about-btn">awards</NavLink>
           </motion.li>
           <motion.li
             whileHover={{
@@ -78,9 +63,6 @@ export default function Header() {
             <NavLink to="/directorslist" reloadDocument className="fiction-btn">directors</NavLink>
           </li>
           <li>
-            <NavLink to="/awards" reloadDocument className="about-btn">awards</NavLink>
-          </li>
-          <li>
             <NavLink to="/contact" reloadDocument className="contact-btn">contact</NavLink>
           </li>
         </ul>
@@ -89,4 +71,3 @@ export default function Header() {
     </header>
   );
 }
-

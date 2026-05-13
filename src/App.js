@@ -31,6 +31,9 @@ import PicsGlenFidich from "./components/Directorslist/Fictionmariabodil/Picsgle
 import PicsPorsche from "./components/Directorslist/Fictionmariabodil/Picsporsche/PicsPorsche";
 import PhotoFolderPage from "./components/Directorslist/Fictionmariabodil/Photofolderpage/PhotoFolderPage";
 
+import FictionMoreMagenta from "./components/Directorslist/Fictionmoremagenta/FictionMoreMagenta";
+import EmbeddedPlayerMoreMagenta from "./components/Directorslist/Fictionmoremagenta/Embeddedplayermoremagenta/EmbeddedPlayerMoreMagenta";
+
 import FictionSacha from "./components/Directorslist/Fictionsacha/FictionSacha";
 import EmbeddedPlayerSacha from "./components/Directorslist/Fictionsacha/Embeddedplayersacha/EmbeddedPlayerSacha";
 
@@ -78,6 +81,9 @@ function App() {
         <Route path="/mariabodilstills" element={<PicsGlenFidich />} />
         <Route path="/mariabodilstillsporsche" element={<PicsPorsche />} />
         <Route path="/mariabodil/:folderId" element={<PhotoFolderPage />} />
+
+        <Route path="/fictionmoremagenta" element={<FictionMoreMagenta />} />
+        <Route path="/embeddedplayermoremagenta" element={<EmbeddedPlayerMoreMagenta />} />
 
         <Route path="/fictionsacha" element={<FictionSacha />} />
         <Route path="/embeddedplayersacha" element={<EmbeddedPlayerSacha />} />
