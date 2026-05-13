@@ -5,7 +5,12 @@ export default function HeaderTransparent() {
   return (
     <header className="header-container header-container-transparent">
       <div className="desktop-container">
-        <ul className="header-left-side header-left-side-transparent">
+        <Link to="/" className="bbk-logo bbk-logo-transparent">
+          <img
+            src="images/BBKK-pink.png" alt="tebbernekkel logo"
+          />
+        </Link>
+        <ul className="header-right-side header-right-side-transparent">
           <motion.li
             whileHover={{
               scale: 1.1
@@ -27,26 +32,6 @@ export default function HeaderTransparent() {
             }}
           >
             <NavLink to="/directorslist" reloadDocument className="fiction-btn fiction-btn-transparent">directors</NavLink>
-          </motion.li>
-        </ul>
-        <div>
-          <Link to="/" className="bbk-logo bbk-logo-transparent">
-            <img
-              src="images/BBKK-pink.png" alt="tebbernekkel logo"
-            />
-          </Link>
-        </div>
-        <ul className="header-right-side header-right-side-transparent">
-          <motion.li
-            whileHover={{
-              scale: 1.1
-            }}
-            transition={{
-              type: 'spring',
-              stiffness: 80
-            }}
-          >
-            <NavLink to="/awards" reloadDocument className="about-btn-transparent">awards</NavLink>
           </motion.li>
           <motion.li
             whileHover={{
@@ -76,9 +61,6 @@ export default function HeaderTransparent() {
           </li>
           <li>
             <NavLink to="/directorslist" reloadDocument className="fiction-btn">directors</NavLink>
-          </li>
-          <li>
-            <NavLink to="/awards" reloadDocument className="about-btn">awards</NavLink>
           </li>
           <li>
             <NavLink to="/contact" reloadDocument className="contact-btn">contact</NavLink>

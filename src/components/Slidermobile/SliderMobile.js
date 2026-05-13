@@ -60,6 +60,11 @@ export default function SliderMobile() {
             </NavLink>
           </li>
           <li className="dropdown-menu__item shadowed-text">
+            <NavLink to="/fictionmoremagenta" className="dropdown-menu__link moremagenta" reloadDocument>
+              More Magenta
+            </NavLink>
+          </li>
+          <li className="dropdown-menu__item shadowed-text">
             <NavLink to="/fictionsacha" className="dropdown-menu__link sacha" reloadDocument>
               Sacha
             </NavLink>

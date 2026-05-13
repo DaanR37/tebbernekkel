@@ -22,10 +22,10 @@ export default function DirectorsList() {
                 arjen schotel
               </NavLink>
             </li>
-            {/* Blue Ter Burg */}
+            {/* Blue */}
             <li>
               <NavLink to="/fictionblue" className="blue-btn" reloadDocument>
-                blue ter burg
+                blue
               </NavLink>
             </li>
             {/* Bram Koopman */}
@@ -51,6 +51,12 @@ export default function DirectorsList() {
             <li>
               <NavLink to="/fictionmariabodil" className="mariabodil-btn" reloadDocument>
                 maria bodil
+              </NavLink>
+            </li>
+            {/* More Magenta */}
+            <li>
+              <NavLink to="/fictionmoremagenta" className="moremagenta-btn" reloadDocument>
+                more magenta
               </NavLink>
             </li>
             {/* Sacha */}

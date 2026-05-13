@@ -1102,3 +1102,136 @@ a {
     left: 4rem;
   }
 }
+
+/// Header layout override: logo links, navigatie rechts uitgelijnd
+.desktop-container {
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  padding: 1.75rem 5vw 2.25rem 5vw;
+  box-sizing: border-box;
+}
+.desktop-container > .bbk-logo {
+  flex: 0 0 auto;
+  width: 7vw;
+}
+.desktop-container > .header-right-side {
+  width: auto;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin: 0;
+  > li {
+    position: static;
+    left: auto;
+    right: auto;
+  }
+}
+
+/// Light theme override: lichte (bijna-witte) achtergrond, donkere tekst
+html,
+body,
+#root,
+.slide-container,
+.embedded_player,
+.embedded_player_special {
+  background-color: #f5f5f5;
+}
+
+// Header bar: gradient weg zodat het naadloos in de witte pagina overgaat
+.desktop-container-colored {
+  background: transparent;
+}
+
+// Header tekst:
+// - op de landingspagina (body.slide-page): wit
+// - op alle andere pagina's: pink
+body.slide-page .header-left-side a,
+body.slide-page .header-right-side a,
+body.slide-page .nav-buttons a {
+  color: whitesmoke;
+}
+body:not(.slide-page) .header-left-side a,
+body:not(.slide-page) .header-right-side a,
+body:not(.slide-page) .nav-buttons a {
+  color: #f5a1a3;
+}
+
+// Awards content — donker voor leesbaarheid op wit
+.awards-container .awards h1,
+.awards-container .awards h3 {
+  color: #060606;
+}
+
+// Contact content — donker blauw (matcht directors list)
+.contact-container .cards h1,
+.contact-container .cards h3 {
+  color: #143c5a;
+}
+
+// Regisseurs lijst (/directorslist) → donker blauw (concurrent is al pink)
+.names-list a {
+  color: #143c5a;
+}
+
+// Hover-thumbnails tekst op niet-homepage pagina's → pink
+body:not(.slide-page) .hover-thumbnails {
+  color: #f5a1a3;
+}
+
+// Slider met andere regisseur-namen op director-detail pagina's → navy
+// (matcht /directorslist en contact). Active state blijft pink (oorspronkelijke styling).
+.names-list-slider a,
+.names-list-slider p,
+.dropdown-menu__toggle span {
+  color: #143c5a;
+}
+.dropdown-menu__arrow {
+  border-color: #143c5a;
+}
+
+// Slide-navigation (cijfer-indicator linksonder op homepage) → wit (leesbaar op video)
+.slide-navigation {
+  color: whitesmoke;
+}
+.slide-navigation__divider {
+  background-color: whitesmoke;
+}
+.slide-navigation__total {
+  color: rgba(245, 245, 245, 0.7);
+}
+
+// Progress-bar (rechter rand) — was background: black
+.slide-progress {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+// Content pull-up: pagina-layouts hadden top-buffer voor oude grote header.
+// Met de nieuwe compacte header schuif ik content omhoog. Gebruik translate
+// i.p.v. margin-top om margin-collapse (die de header mee omhoog trekt) te vermijden.
+.grid-wrapper {
+  transform: translateY(-110px);
+}
+.awards-container,
+.contact-container {
+  transform: translateY(-70px);
+}
+
+// Slider met regisseur-namen dichter bij de header (was margin-top: 130px,
+// gaf te grote witruimte boven de slider).
+#slider-container .names-list-slider {
+  margin-top: 96px;
+}
+
+// z-index zodat de slider klikbaar blijft boven op de grid-wrapper
+// (die door z'n translateY een eigen stacking context maakt).
+#slider-container {
+  z-index: 10;
+}
+
+// Director-detail pagina's: items dichter bij slider zodat de gap onder = boven.
+// Most director-grids hebben een ingebouwde lege rij 1 (~200px buffer);
+// translate pull-up brengt items onder de slider met dezelfde gap als boven.
+[id^="grid-wrapper-fiction-"] {
+  transform: translateY(-14px);
+  padding-top: 0;
+}
