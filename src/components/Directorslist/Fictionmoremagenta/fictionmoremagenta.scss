@@ -1,8 +1,9 @@
 ///Base — overschrijf de globale .grid-wrapper pull-up zodat de header z'n
-///witte ruimte bovenaan houdt + ruimte voor de regisseur-slider erboven.
+///witte ruimte bovenaan houdt. padding-top voor de regisseur-slider wordt
+///alleen op tablet+desktop toegepast (mobiel heeft een dropdown i.p.v. een
+///horizontale slider, dus daar zou de padding een witte balk creëren).
 #grid-wrapper-fiction-moremagenta {
   transform: none;
-  padding-top: 186px;
   // background-size 135% (i.p.v. cover) zoomt de thumbnail in zodat eventuele
   // zwarte balken van Vimeo's source-frame uit beeld worden gecropt.
   > div > a div {
@@ -30,6 +31,7 @@
 ///Tablet+ en Desktop — 4 rijen: 2 / 3 / 2 / 1 video (laatste full-width)
 @media screen and (min-width: 600px) {
   #grid-wrapper-fiction-moremagenta {
+    padding-top: 186px;            // ruimte voor de horizontale regisseur-slider
     grid-template-columns: repeat(6, 1fr);
     // 9 rijen voor de eerste 3 contentblokken + 4 extra rijen voor de
     // full-width laatste video (16:9 aspect over 6 kolommen is ~ 4 rijen hoog).

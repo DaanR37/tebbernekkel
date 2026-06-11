@@ -1224,15 +1224,26 @@ body:not(.slide-page) .hover-thumbnails {
 
 // z-index zodat de slider klikbaar blijft boven op de grid-wrapper
 // (die door z'n translateY een eigen stacking context maakt).
-// pointer-events: none op de container zorgt dat z'n 100vh lege gebied
-// geen klikken op de top-row thumbnails meer onderschept; .names-list-slider
-// krijgt zelf weer auto zodat de director-links wel klikbaar blijven.
+// pointer-events: none op de container + de slider zelf zorgt dat de
+// 100vh lege wrapper EN de lege ruimte links/rechts van de namen geen
+// klikken meer onderscheppen. Alleen de individuele <a>-links vangen
+// klikken op, zodat thumbnails eronder altijd klikbaar zijn.
 #slider-container {
   z-index: 10;
   pointer-events: none;
 }
 .names-list-slider {
+  pointer-events: none;
+}
+.names-list-slider a {
   pointer-events: auto;
+}
+
+// Hover-scale uit op de slider-namen — anders kan een geschaalde naam de
+// klik-zone van de buur-naam overlappen waardoor die buur kort onklikbaar lijkt.
+.names-list-slider a:hover,
+.names-list-slider a:hover h1 {
+  transform: none;
 }
 
 // Director-detail pagina's: items dichter bij slider zodat de gap onder = boven.
