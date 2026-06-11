@@ -28,13 +28,6 @@ export default function DirectorsList() {
                 blue
               </NavLink>
             </li>
-            {/* Bram Koopman */}
-            <li>
-              <NavLink to="/fictionbram" className="bram-btn" reloadDocument>
-                bram koopman
-              </NavLink>
-            </li>
-
             {/* Damien Hope */}
             <li>
               <NavLink to="/fictiondamien" className="damien-btn" reloadDocument>

@@ -40,9 +40,6 @@ import EmbeddedPlayerSacha from "./components/Directorslist/Fictionsacha/Embedde
 import FictionShay from "./components/Directorslist/Fictionshay/FictionShay";
 import EmbeddedPlayerShay from "./components/Directorslist/Fictionshay/Embeddedplayershay/EmbeddedPlayerShay";
 
-import FictionBram from "./components/Directorslist/Fictionbram/FictionBram";
-import EmbeddedPlayerBram from "./components/Directorslist/Fictionbram/Embeddedplayerbram/EmbeddedPlayerBram";
-
 import FictionThomas from "./components/Directorslist/Fictionthomas/FictionThomas";
 import EmbeddedPlayerThomas from "./components/Directorslist/Fictionthomas/Embeddedplayerthomas/EmbeddedPlayerThomas";
 
@@ -90,9 +87,6 @@ function App() {
 
         <Route path="/fictionshay" element={<FictionShay />} />
         <Route path="/embeddedplayershay" element={<EmbeddedPlayerShay />} />
-
-        <Route path="/fictionbram" element={<FictionBram />} />
-        <Route path="/embeddedplayerbram" element={<EmbeddedPlayerBram />} />
 
         <Route path="/fictionthomas" element={<FictionThomas />} />
         <Route path="/embeddedplayerthomas" element={<EmbeddedPlayerThomas />} />
